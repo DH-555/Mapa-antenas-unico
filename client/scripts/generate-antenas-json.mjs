@@ -35,12 +35,28 @@ function normalizeOperator(value) {
   return raw
 }
 
-function parsePhase1(csv) {
-  const rows = parse(csv, {
+function detectDelimiter(csv) {
+  const firstLine = String(csv ?? '')
+    .split(/\r?\n/)
+    .find((line) => line.trim().length > 0) || ''
+
+  const semicolons = (firstLine.match(/;/g) || []).length
+  const commas = (firstLine.match(/,/g) || []).length
+
+  return semicolons > commas ? ';' : ','
+}
+
+function parseCsvRows(csv) {
+  return parse(csv, {
+    delimiter: detectDelimiter(csv),
     skip_empty_lines: true,
     trim: true,
     relax_column_count: true,
   })
+}
+
+function parsePhase1(csv) {
+  const rows = parseCsvRows(csv)
 
   return rows.slice(1).map((row) => {
     const lon = toNumber(row[2])
@@ -67,11 +83,7 @@ function parsePhase1(csv) {
 }
 
 function parsePhase2(csv, projectOperatorMap) {
-  const rows = parse(csv, {
-    skip_empty_lines: true,
-    trim: true,
-    relax_column_count: true,
-  })
+  const rows = parseCsvRows(csv)
 
   return rows.slice(1).map((row) => {
     const lon = toNumber(row[4])
