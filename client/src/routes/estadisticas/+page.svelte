@@ -274,12 +274,23 @@
           <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
             {#each statsSeries as item, index}
               {@const slice = calculatePieSlice(index, statsSeries)}
-              <path
-                d={describeArc(150, 150, 120, slice.startAngle, slice.endAngle)}
-                fill={getColor(item.label)}
-                stroke="white"
-                stroke-width="2"
-              />
+              {#if slice.endAngle - slice.startAngle >= 359.999}
+                <circle
+                  cx="150"
+                  cy="150"
+                  r="120"
+                  fill={getColor(item.label)}
+                  stroke="white"
+                  stroke-width="2"
+                />
+              {:else}
+                <path
+                  d={describeArc(150, 150, 120, slice.startAngle, slice.endAngle)}
+                  fill={getColor(item.label)}
+                  stroke="white"
+                  stroke-width="2"
+                />
+              {/if}
             {/each}
           </svg>
         </div>
