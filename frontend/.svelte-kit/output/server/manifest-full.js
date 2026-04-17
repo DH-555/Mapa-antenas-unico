@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set([]),
-	mimeTypes: {},
+	assets: new Set(["data/antenas.json","icons.svg","markers/movistar-icon.png","markers/orange-icon.png","markers/vodafone-icon.png"]),
+	mimeTypes: {".json":"application/json",".svg":"image/svg+xml",".png":"image/png"},
 	_: {
-		client: {start:"_app/immutable/entry/start.CIXWP228.js",app:"_app/immutable/entry/app.CQuLRIeG.js",imports:["_app/immutable/entry/start.CIXWP228.js","_app/immutable/chunks/-noYIAA3.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/entry/app.CQuLRIeG.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/chunks/BcgnSMxp.js","_app/immutable/chunks/DXLwiZ0H.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BYydQfvw.js",app:"_app/immutable/entry/app.BuSWEOX0.js",imports:["_app/immutable/entry/start.BYydQfvw.js","_app/immutable/chunks/CioD0yWc.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/entry/app.BuSWEOX0.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/chunks/BcgnSMxp.js","_app/immutable/chunks/DXLwiZ0H.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
