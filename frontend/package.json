@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run generate:data && vite dev",
     "generate:data": "node scripts/generate-antenas-json.mjs",
-    "build": "npm run generate:data && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
