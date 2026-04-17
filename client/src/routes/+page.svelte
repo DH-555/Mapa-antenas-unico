@@ -22,6 +22,7 @@
     let selectedProvinces = [];
     let selectedCommunities = [];
     let idQuery = "";
+    let addressQuery = "";
 
     let isFilterPanelOpen = false;
     let filterMode = "province"; // 'province' o 'community'
@@ -116,6 +117,42 @@
         };
     }
 
+    function normalizeText(value) {
+        return String(value ?? "")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-zA-Z0-9]+/g, " ")
+            .replace(/\s+/g, " ")
+            .trim()
+            .toLowerCase();
+    }
+
+    function matchesAddressQuery(direccion, query) {
+        if (query.length === 0) {
+            return true;
+        }
+
+        const normalized = normalizeText(direccion);
+        const compact = normalized.replace(/\s+/g, "");
+        const queryCompact = query.replace(/\s+/g, "");
+
+        // Coincidencia directa y sin separadores (villa / villa-verde / villaverde).
+        if (normalized.includes(query) || compact.includes(queryCompact)) {
+            return true;
+        }
+
+        // Coincidencia por prefijos de palabra para tolerar entradas parciales.
+        const words = normalized.split(" ").filter(Boolean);
+        const queryWords = query.split(" ").filter(Boolean);
+        if (queryWords.length === 0) {
+            return true;
+        }
+
+        return queryWords.every((queryWord) =>
+            words.some((word) => word.startsWith(queryWord)),
+        );
+    }
+
     function calculateBounds(antenas) {
         const bounds = new maplibregl.LngLatBounds();
         antenas.forEach((antena) => bounds.extend(antena.coordenadas));
@@ -151,15 +188,19 @@
 
     function applyFilters({ fit = false } = {}) {
         const idText = idQuery.trim();
+        const addressText = normalizeText(addressQuery.trim());
         const selectedRegions = getSelectedRegions();
+        const hasAddressSearch = addressText.length > 0;
 
         filteredAntenas = allAntenas.filter(
             (antena) =>
                 selectedPhases.includes(antena.fase) &&
                 selectedOperators.includes(antena.operador) &&
-                (selectedRegions.length === 0 ||
+                (hasAddressSearch ||
+                    selectedRegions.length === 0 ||
                     selectedRegions.includes(antena.provincia)) &&
-                (idText.length === 0 || String(antena.id).includes(idText)),
+                (idText.length === 0 || String(antena.id).includes(idText)) &&
+                matchesAddressQuery(antena.direccion, addressText),
         );
 
         if (!sourceReady) {
@@ -174,6 +215,24 @@
         source.setData(buildGeoJson(filteredAntenas));
 
         if (fit && filteredAntenas.length > 0) {
+            if (hasAddressSearch) {
+                if (filteredAntenas.length === 1) {
+                    map.easeTo({
+                        center: filteredAntenas[0].coordenadas,
+                        zoom: 12,
+                        duration: 400,
+                    });
+                    return;
+                }
+
+                map.fitBounds(calculateBounds(filteredAntenas), {
+                    padding: { top: 60, right: 60, bottom: 60, left: 60 },
+                    maxZoom: 12,
+                    duration: 400,
+                });
+                return;
+            }
+
             map.fitBounds(calculateBounds(filteredAntenas), {
                 padding: { top: 60, right: 60, bottom: 60, left: 60 },
                 maxZoom: 7,
@@ -188,6 +247,7 @@
         selectedProvinces = [];
         selectedCommunities = [];
         idQuery = "";
+        addressQuery = "";
         applyFilters({ fit: true });
     }
 
@@ -549,6 +609,17 @@
         </section>
 
         <section>
+            <h3>Buscar por dirección</h3>
+            <input
+                class="search-input"
+                type="text"
+                placeholder="Ej: Calle Mayor"
+                bind:value={addressQuery}
+                on:input={() => applyFilters({ fit: true })}
+            />
+        </section>
+
+        <section>
             <h3>Fase</h3>
             {#each phaseOptions as phase}
                 <label>
@@ -582,7 +653,9 @@
 
         <section class="filters-credits">
             <h3>Aplicar filtros</h3>
-            <p>Los filtros se aplican automaticamente al seleccionar opciones.</p>
+            <p>
+                Los filtros se aplican automaticamente al seleccionar opciones.
+            </p>
             <p>
                 Creditos: Datos del
                 <a
@@ -590,7 +663,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Ministerio para la Transformacion Digital y de la Funcion Publica
+                    Ministerio para la Transformacion Digital y de la Funcion
+                    Publica
                 </a>
                 y de la
                 <a
@@ -599,8 +673,7 @@
                     rel="noopener noreferrer"
                 >
                     Fundacion publica
-                </a>.
-                Elaboracion de iconos:
+                </a>. Elaboracion de iconos:
                 <a
                     href="https://antenasmoviles.es/"
                     target="_blank"

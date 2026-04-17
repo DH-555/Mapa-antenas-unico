@@ -10,7 +10,7 @@ return {
 	assets: new Set(["data/antenas.json","icons.svg","markers/movistar-icon.png","markers/orange-icon.png","markers/vodafone-icon.png"]),
 	mimeTypes: {".json":"application/json",".svg":"image/svg+xml",".png":"image/png"},
 	_: {
-		client: {start:"_app/immutable/entry/start.Dmd22QuM.js",app:"_app/immutable/entry/app.DuH7A0lO.js",imports:["_app/immutable/entry/start.Dmd22QuM.js","_app/immutable/chunks/C2XxCyfN.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/entry/app.DuH7A0lO.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/chunks/BcgnSMxp.js","_app/immutable/chunks/DXLwiZ0H.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BbxkulPA.js",app:"_app/immutable/entry/app.CZdwCvIC.js",imports:["_app/immutable/entry/start.BbxkulPA.js","_app/immutable/chunks/B6nDcA9u.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/entry/app.CZdwCvIC.js","_app/immutable/chunks/DXwb0rUS.js","_app/immutable/chunks/BcgnSMxp.js","_app/immutable/chunks/DXLwiZ0H.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
