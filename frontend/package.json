@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run generate:data && vite dev",
+    "generate:data": "node scripts/generate-antenas-json.mjs",
+    "build": "npm run generate:data && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^7.0.1",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.57.1",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "svelte": "^5.55.1",
+    "vite": "^8.0.4"
+  },
+  "dependencies": {
+    "csv-parse": "^6.2.1",
+    "maplibre-gl": "^5.23.0"
+  }
+}
