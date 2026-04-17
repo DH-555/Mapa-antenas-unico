@@ -580,6 +580,45 @@
             </div>
         </section>
 
+        <section class="filters-credits">
+            <h3>Aplicar filtros</h3>
+            <p>Los filtros se aplican automaticamente al seleccionar opciones.</p>
+            <p>
+                Creditos: Datos del
+                <a
+                    href="https://digital.gob.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ministerio para la Transformacion Digital y de la Funcion Publica
+                </a>
+                y de la
+                <a
+                    href="https://www.red.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Fundacion publica
+                </a>.
+                Elaboracion de iconos:
+                <a
+                    href="https://antenasmoviles.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Antenasmoviles.es
+                </a>
+            </p>
+            <a
+                class="follow-link-button"
+                href="https://antenasmoviles.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver todas las antenas
+            </a>
+        </section>
+
         <section>
             <button
                 class="stats-link-button"
@@ -744,6 +783,39 @@
         max-height: 48vh;
         overflow-y: auto;
         padding-right: 6px;
+    }
+
+    .filters-credits p {
+        margin: 0 0 10px;
+        font-size: 0.82rem;
+        line-height: 1.35;
+        color: #cbd5e1;
+    }
+
+    .filters-credits p a {
+        color: #86efac;
+        text-decoration: underline;
+    }
+
+    .follow-link-button {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgba(134, 239, 172, 0.35);
+        border-radius: 10px;
+        padding: 10px 12px;
+        background: rgba(20, 83, 45, 0.35);
+        color: #dcfce7;
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    .follow-link-button:hover {
+        background: rgba(20, 83, 45, 0.5);
     }
 
     .stats-link-button {
