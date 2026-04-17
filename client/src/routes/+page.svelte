@@ -96,6 +96,12 @@
             : provinceOptions;
     }
 
+    function sortEs(a, b) {
+        return String(a).localeCompare(String(b), "es", {
+            sensitivity: "base",
+        });
+    }
+
     function buildGeoJson(antenas) {
         return {
             type: "FeatureCollection",
@@ -264,20 +270,20 @@
 
                 phaseOptions = [
                     ...new Set(allAntenas.map((antena) => antena.fase)),
-                ].sort();
+                ].sort(sortEs);
                 operatorOptions = [
                     ...new Set(allAntenas.map((antena) => antena.operador)),
-                ].sort();
+                ].sort(sortEs);
                 provinceOptions = [
                     ...new Set(allAntenas.map((antena) => antena.provincia)),
-                ].sort();
+                ].sort(sortEs);
                 communityOptions = [
                     ...new Set(
                         provinceOptions.map(
                             (p) => provinciaToCommunity[p] || p,
                         ),
                     ),
-                ].sort();
+                ].sort(sortEs);
 
                 selectedPhases = [...phaseOptions];
                 selectedOperators = [...operatorOptions];

@@ -1,150 +1,198 @@
 <script>
-  import { goto } from '$app/navigation'
-  import { onMount } from 'svelte'
+  import { goto } from "$app/navigation";
+  import { onMount } from "svelte";
 
-  let loading = true
-  let error = ''
-  let allAntenas = []
+  let loading = true;
+  let error = "";
+  let allAntenas = [];
 
-  let provinceOptions = []
-  let communityOptions = []
+  let provinceOptions = [];
+  let communityOptions = [];
 
-  let selectedProvinces = []
-  let selectedCommunities = []
-  let filterMode = 'province' // 'province' o 'community'
+  let selectedProvinces = [];
+  let selectedCommunities = [];
+  let filterMode = "province"; // 'province' o 'community'
 
-  // Mapeo de provincias a comunidades autónomas
+  // Mapeo de provincias a comunidades autónomas (normalizado para absorber variantes de nombres)
   const provinciaToCommunity = {
-    'Álava': 'País Vasco',
-    'Albacete': 'Castilla-La Mancha',
-    'Alicante': 'Comunitat Valenciana',
-    'Almería': 'Andalucía',
-    'Ávila': 'Castilla y León',
-    'Badajoz': 'Extremadura',
-    'Barcelona': 'Cataluña',
-    'Burgos': 'Castilla y León',
-    'Cáceres': 'Extremadura',
-    'Cádiz': 'Andalucía',
-    'Cantabria': 'Cantabria',
-    'Castellón': 'Comunitat Valenciana',
-    'Ciudad Real': 'Castilla-La Mancha',
-    'Córdoba': 'Andalucía',
-    'Cuenca': 'Castilla-La Mancha',
-    'Girona': 'Cataluña',
-    'Granada': 'Andalucía',
-    'Guadalajara': 'Castilla-La Mancha',
-    'Guipúzcoa': 'País Vasco',
-    'Huelva': 'Andalucía',
-    'Huesca': 'Aragón',
-    'Jaén': 'Andalucía',
-    'La Coruña': 'Galicia',
-    'La Rioja': 'La Rioja',
-    'Las Palmas de Gran Canaria': 'Canarias',
-    'León': 'Castilla y León',
-    'Lleida': 'Cataluña',
-    'Lugo': 'Galicia',
-    'Madrid': 'Comunidad de Madrid',
-    'Málaga': 'Andalucía',
-    'Murcia': 'Región de Murcia',
-    'Navarra': 'Navarra',
-    'Ourense': 'Galicia',
-    'Palencia': 'Castilla y León',
-    'Palmas': 'Canarias',
-    'Pontevedra': 'Galicia',
-    'Salamanca': 'Castilla y León',
-    'Santa Cruz de Tenerife': 'Canarias',
-    'Segovia': 'Castilla y León',
-    'Sevilla': 'Andalucía',
-    'Soria': 'Castilla y León',
-    'Tarragona': 'Cataluña',
-    'Tenerife': 'Canarias',
-    'Teruel': 'Aragón',
-    'Toledo': 'Castilla-La Mancha',
-    'Valencia': 'Comunitat Valenciana',
-    'Valladolid': 'Castilla y León',
-    'Vizcaya': 'País Vasco',
-    'Zamora': 'Castilla y León',
-    'Zaragoza': 'Aragón',
+    alava: "País Vasco",
+    "araba alava": "País Vasco",
+    albacete: "Castilla-La Mancha",
+    alicante: "Comunitat Valenciana",
+    "alicante alacant": "Comunitat Valenciana",
+    almeria: "Andalucía",
+    asturias: "Asturias",
+    avila: "Castilla y León",
+    badajoz: "Extremadura",
+    "balears illes": "Balears, Illes",
+    barcelona: "Cataluña",
+    bizkaia: "País Vasco",
+    burgos: "Castilla y León",
+    caceres: "Extremadura",
+    cadiz: "Andalucía",
+    cantabria: "Cantabria",
+    castellon: "Comunitat Valenciana",
+    "castellon castello": "Comunitat Valenciana",
+    "ciudad real": "Castilla-La Mancha",
+    cordoba: "Andalucía",
+    cuenca: "Castilla-La Mancha",
+    coruna: "Galicia",
+    "coruna a": "Galicia",
+    "a coruna": "Galicia",
+    girona: "Cataluña",
+    granada: "Andalucía",
+    guadalajara: "Castilla-La Mancha",
+    gipuzkoa: "País Vasco",
+    guipuzcoa: "País Vasco",
+    huelva: "Andalucía",
+    huesca: "Aragón",
+    jaen: "Andalucía",
+    leon: "Castilla y León",
+    lleida: "Cataluña",
+    lugo: "Galicia",
+    madrid: "Comunidad de Madrid",
+    malaga: "Andalucía",
+    murcia: "Región de Murcia",
+    navarra: "Navarra",
+    ourense: "Galicia",
+    palencia: "Castilla y León",
+    palmas: "Canarias",
+    "palmas las": "Canarias",
+    "las palmas": "Canarias",
+    pontevedra: "Galicia",
+    rioja: "Rioja, La",
+    "la rioja": "Rioja, La",
+    "rioja la": "Rioja, La",
+    salamanca: "Castilla y León",
+    "santa cruz de tenerife": "Canarias",
+    segovia: "Castilla y León",
+    sevilla: "Andalucía",
+    soria: "Castilla y León",
+    tarragona: "Cataluña",
+    tenerife: "Canarias",
+    teruel: "Aragón",
+    toledo: "Castilla-La Mancha",
+    valencia: "Comunitat Valenciana",
+    "valencia valencia": "Comunitat Valenciana",
+    valladolid: "Castilla y León",
+    vizcaya: "País Vasco",
+    zamora: "Castilla y León",
+    zaragoza: "Aragón",
+  };
+
+  function normalizeProvinceName(value) {
+    return String(value ?? "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-zA-Z0-9]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  function getCommunityForProvince(province) {
+    return provinciaToCommunity[normalizeProvinceName(province)] || province;
+  }
+
+  const communityLabelMap = {
+    "Rioja, La": "La Rioja",
+    "Balears, Illes": "Islas Baleares",
+    "Comunitat Valenciana": "Valencia",
+    "Región de Murcia": "Murcia",
+    "Comunidad de Madrid": "Madrid",
+  };
+
+  function getCommunityLabel(community) {
+    return communityLabelMap[community] || community;
+  }
+
+  function sortEs(a, b) {
+    return String(a).localeCompare(String(b), "es", {
+      sensitivity: "base",
+    });
   }
 
   $: getSelectedRegions = () => {
-    if (filterMode === 'province') {
-      return selectedProvinces
+    if (filterMode === "province") {
+      return selectedProvinces;
     }
     return selectedCommunities.length > 0
       ? provinceOptions.filter((p) => {
-          const community = provinciaToCommunity[p] || p
-          return selectedCommunities.includes(community)
+          const community = getCommunityForProvince(p);
+          return selectedCommunities.includes(community);
         })
-      : provinceOptions
-  }
+      : provinceOptions;
+  };
 
   $: statsSeries = (() => {
-    const regions = getSelectedRegions()
+    const regions = getSelectedRegions();
     const filtered =
       regions.length === 0
         ? allAntenas
-        : allAntenas.filter((antena) => regions.includes(antena.provincia))
+        : allAntenas.filter((antena) => regions.includes(antena.provincia));
 
-    const counts = new Map()
+    const counts = new Map();
     filtered.forEach((antena) => {
-      counts.set(antena.operador, (counts.get(antena.operador) ?? 0) + 1)
-    })
+      counts.set(antena.operador, (counts.get(antena.operador) ?? 0) + 1);
+    });
 
     return [...counts.entries()]
       .map(([label, value]) => ({ label, value }))
-      .sort((a, b) => b.value - a.value)
-  })()
+      .sort((a, b) => b.value - a.value);
+  })();
 
-  $: totalCount = statsSeries.reduce((sum, item) => sum + item.value, 0)
+  $: totalCount = statsSeries.reduce((sum, item) => sum + item.value, 0);
 
   const colorMap = {
-    'TELEFÓNICA MÓVILES ESPAÑA, S.A.': '#3b82f6', // Azul
-    'ORANGE ESPAGNE S.A.': '#f97316', // Naranja
-    'VODAFONE ESPAÑA S.A.': '#ef4444', // Rojo
-    'AVATEL TELECOM S.A.': '#8b5cf6', // Morado
-  }
+    "TELEFÓNICA MÓVILES ESPAÑA, S.A.": "#3b82f6", // Azul
+    "ORANGE ESPAGNE S.A.": "#f97316", // Naranja
+    "VODAFONE ESPAÑA S.A.": "#ef4444", // Rojo
+    "AVATEL TELECOM S.A.": "#8b5cf6", // Morado
+  };
 
   function getColor(label) {
-    return colorMap[label] || '#10b981' // Verde por defecto
+    return colorMap[label] || "#10b981"; // Verde por defecto
   }
 
   function calculatePieSlice(index, data) {
-    const slices = []
-    let currentAngle = 0
+    const slices = [];
+    let currentAngle = 0;
 
     data.forEach((item, i) => {
-      const sliceAngle = (item.value / totalCount) * 360
+      const sliceAngle = (item.value / totalCount) * 360;
       if (i === index) {
-        slices.push({ startAngle: currentAngle, endAngle: currentAngle + sliceAngle })
+        slices.push({
+          startAngle: currentAngle,
+          endAngle: currentAngle + sliceAngle,
+        });
       }
-      currentAngle += sliceAngle
-    })
+      currentAngle += sliceAngle;
+    });
 
-    return slices[0]
+    return slices[0];
   }
 
   function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
-    const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0
+    const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
     return {
       x: centerX + radius * Math.cos(angleInRadians),
       y: centerY + radius * Math.sin(angleInRadians),
-    }
+    };
   }
 
   function describeArc(x, y, radius, startAngle, endAngle) {
-    const start = polarToCartesian(x, y, radius, endAngle)
-    const end = polarToCartesian(x, y, radius, startAngle)
-    const largeArc = endAngle - startAngle <= 180 ? '0' : '1'
+    const start = polarToCartesian(x, y, radius, endAngle);
+    const end = polarToCartesian(x, y, radius, startAngle);
+    const largeArc = endAngle - startAngle <= 180 ? "0" : "1";
 
     return [
-      'M',
+      "M",
       x,
       y,
-      'L',
+      "L",
       start.x,
       start.y,
-      'A',
+      "A",
       radius,
       radius,
       0,
@@ -152,37 +200,40 @@
       0,
       end.x,
       end.y,
-      'Z',
-    ].join(' ')
+      "Z",
+    ].join(" ");
   }
 
   onMount(async () => {
     try {
-      const response = await fetch('/data/antenas.json')
+      const response = await fetch("/data/antenas.json");
       if (!response.ok) {
-        throw new Error('No se pudo cargar el JSON de antenas.')
+        throw new Error("No se pudo cargar el JSON de antenas.");
       }
 
-      const data = await response.json()
-      allAntenas = data.antenas ?? []
+      const data = await response.json();
+      allAntenas = data.antenas ?? [];
 
-      provinceOptions = [...new Set(allAntenas.map((antena) => antena.provincia))].sort()
+      provinceOptions = [
+        ...new Set(allAntenas.map((antena) => antena.provincia)),
+      ].sort(sortEs);
       communityOptions = [
-        ...new Set(provinceOptions.map((p) => provinciaToCommunity[p] || p)),
-      ].sort()
+        ...new Set(provinceOptions.map((p) => getCommunityForProvince(p))),
+      ].sort(sortEs);
     } catch (loadError) {
-      error = loadError instanceof Error ? loadError.message : 'Error desconocido.'
+      error =
+        loadError instanceof Error ? loadError.message : "Error desconocido.";
     } finally {
-      loading = false
+      loading = false;
     }
-  })
+  });
 </script>
 
 <main>
   <div class="stats-page">
     <div class="stats-header">
       <h1>Estadísticas</h1>
-      <button type="button" on:click={() => goto('/')}>Volver al mapa</button>
+      <button type="button" on:click={() => goto("/")}>Volver al mapa</button>
     </div>
 
     {#if loading}
@@ -194,30 +245,36 @@
         <div class="filter-mode-toggle">
           <button
             type="button"
-            class:active={filterMode === 'province'}
+            class:active={filterMode === "province"}
             on:click={() => {
-              filterMode = 'province'
-              selectedCommunities = []
+              filterMode = "province";
+              selectedCommunities = [];
             }}
           >
             Por Provincia
           </button>
           <button
             type="button"
-            class:active={filterMode === 'community'}
+            class:active={filterMode === "community"}
             on:click={() => {
-              filterMode = 'community'
-              selectedProvinces = []
+              filterMode = "community";
+              selectedProvinces = [];
             }}
           >
             Por Comunidad
           </button>
         </div>
 
-        {#if filterMode === 'province'}
+        {#if filterMode === "province"}
           <div class="regions-grid">
             <label class="select-all">
-              <input type="checkbox" checked={selectedProvinces.length === 0} on:change={() => { selectedProvinces = [] }} />
+              <input
+                type="checkbox"
+                checked={selectedProvinces.length === 0}
+                on:change={() => {
+                  selectedProvinces = [];
+                }}
+              />
               <span>Todas las provincias</span>
             </label>
             {#each provinceOptions as province}
@@ -227,9 +284,11 @@
                   checked={selectedProvinces.includes(province)}
                   on:change={(e) => {
                     if (e.currentTarget.checked) {
-                      selectedProvinces = [...selectedProvinces, province]
+                      selectedProvinces = [...selectedProvinces, province];
                     } else {
-                      selectedProvinces = selectedProvinces.filter((p) => p !== province)
+                      selectedProvinces = selectedProvinces.filter(
+                        (p) => p !== province,
+                      );
                     }
                   }}
                 />
@@ -244,7 +303,7 @@
                 type="checkbox"
                 checked={selectedCommunities.length === 0}
                 on:change={() => {
-                  selectedCommunities = []
+                  selectedCommunities = [];
                 }}
               />
               <span>Todas las comunidades</span>
@@ -256,13 +315,15 @@
                   checked={selectedCommunities.includes(community)}
                   on:change={(e) => {
                     if (e.currentTarget.checked) {
-                      selectedCommunities = [...selectedCommunities, community]
+                      selectedCommunities = [...selectedCommunities, community];
                     } else {
-                      selectedCommunities = selectedCommunities.filter((c) => c !== community)
+                      selectedCommunities = selectedCommunities.filter(
+                        (c) => c !== community,
+                      );
                     }
                   }}
                 />
-                <span>{community}</span>
+                <span>{getCommunityLabel(community)}</span>
               </label>
             {/each}
           </div>
@@ -285,7 +346,13 @@
                 />
               {:else}
                 <path
-                  d={describeArc(150, 150, 120, slice.startAngle, slice.endAngle)}
+                  d={describeArc(
+                    150,
+                    150,
+                    120,
+                    slice.startAngle,
+                    slice.endAngle,
+                  )}
                   fill={getColor(item.label)}
                   stroke="white"
                   stroke-width="2"
@@ -296,18 +363,25 @@
         </div>
 
         <div class="chart-legend">
-          <h2>Antenas por operadora {totalCount > 0 && `(${totalCount} total)`}</h2>
+          <h2>
+            Antenas por operadora {totalCount > 0 && `(${totalCount} total)`}
+          </h2>
           {#if statsSeries.length === 0}
             <p>No hay datos para los filtros seleccionados.</p>
           {:else}
             <div class="legend-items">
               {#each statsSeries as item, index}
                 <div class="legend-item">
-                  <div class="legend-color" style={`background: ${getColor(item.label)}`}></div>
+                  <div
+                    class="legend-color"
+                    style={`background: ${getColor(item.label)}`}
+                  ></div>
                   <div class="legend-text">
                     <span class="legend-label">{item.label}</span>
                     <span class="legend-value">
-                      {item.value} ({((item.value / totalCount) * 100).toFixed(1)}%)
+                      {item.value} ({((item.value / totalCount) * 100).toFixed(
+                        1,
+                      )}%)
                     </span>
                   </div>
                 </div>
@@ -414,7 +488,7 @@
     font-weight: 600;
   }
 
-  .regions-grid input[type='checkbox'] {
+  .regions-grid input[type="checkbox"] {
     cursor: pointer;
   }
 
