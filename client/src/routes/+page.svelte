@@ -324,6 +324,14 @@
                                 showCompass: true,
                             }),
                         );
+                        map.addControl(
+                            new maplibregl.GeolocateControl({
+                                positionOptions: {
+                                    enableHighAccuracy: true,
+                                },
+                                trackUserLocation: true,
+                            }),
+                        );
                         map.addSource("antenas", {
                             type: "geojson",
                             data: buildGeoJson(filteredAntenas),
