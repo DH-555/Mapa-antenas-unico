@@ -562,6 +562,7 @@
                 selectedOperators = [...operatorOptions];
 
                 filteredAntenas = [...allAntenas];
+                await ensureDeclaredDataLoaded();
 
                 map = new maplibregl.Map({
                     container: mapContainer,
