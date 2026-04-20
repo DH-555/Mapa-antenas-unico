@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "npm run generate:data && vite dev",
     "generate:data": "node scripts/generate-antenas-json.mjs",
+    "generate:antenasmoviles": "node scripts/fetch-antenasmoviles-json.mjs",
+    "generate:all": "npm run generate:data && npm run generate:antenasmoviles",
     "build": "vite build",
     "preview": "vite preview"
   },
