@@ -44,7 +44,6 @@
         "Ciudad Real": "Castilla-La Mancha",
         Córdoba: "Andalucía",
         Cuenca: "Castilla-La Mancha",
-        Cádiz: "Andalucía",
         Girona: "Cataluña",
         Granada: "Andalucía",
         Guadalajara: "Castilla-La Mancha",
@@ -192,6 +191,19 @@
         }
     }
 
+    async function tryAddResizedMarkerImage(id, url, size = 64) {
+        try {
+            await addResizedMarkerImage(id, url, size);
+            return true;
+        } catch (loadError) {
+            console.warn(
+                `No se pudo cargar icono ${id} desde ${url}.`,
+                loadError,
+            );
+            return false;
+        }
+    }
+
     function applyFilters({ fit = false } = {}) {
         const idText = idQuery.trim();
         const addressText = normalizeText(addressQuery.trim());
@@ -299,23 +311,6 @@
 
                 map.on("load", async () => {
                     try {
-                        await Promise.all([
-                            addResizedMarkerImage(
-                                "marker-movistar",
-                                "/markers/movistar-icon.png",
-                                64,
-                            ),
-                            addResizedMarkerImage(
-                                "marker-orange",
-                                "/markers/orange-icon.png",
-                                64,
-                            ),
-                            addResizedMarkerImage(
-                                "marker-vodafone",
-                                "/markers/vodafone-icon.png",
-                                64,
-                            ),
-                        ]);
                         map.addControl(
                             new maplibregl.NavigationControl({
                                 visualizePitch: true,
@@ -332,84 +327,41 @@
                                 trackUserLocation: true,
                             }),
                         );
+
+                        const iconLoadResults = await Promise.all([
+                            tryAddResizedMarkerImage(
+                                "icon-vodafone",
+                                "/markers/vodafone-icon.png",
+                                56,
+                            ),
+                            tryAddResizedMarkerImage(
+                                "icon-movistar",
+                                "/markers/movistar-icon.png",
+                                56,
+                            ),
+                            tryAddResizedMarkerImage(
+                                "icon-orange",
+                                "/markers/orange-icon.png",
+                                56,
+                            ),
+                        ]);
+
                         map.addSource("antenas", {
                             type: "geojson",
                             data: buildGeoJson(filteredAntenas),
-                            cluster: true,
-                            clusterMaxZoom: 6,
-                            clusterRadius: 45,
                         });
 
+                        // 1) Lejos: puntos pequeños de color
                         map.addLayer({
-                            id: "clusters",
+                            id: "antenas-dots",
                             type: "circle",
                             source: "antenas",
-                            filter: [
-                                ">",
-                                [
-                                    "coalesce",
-                                    ["to-number", ["get", "point_count"]],
-                                    0,
-                                ],
-                                0,
-                            ],
+                            maxzoom: 7,
                             paint: {
+                                "circle-radius": 4,
+                                "circle-stroke-width": 0.7,
+                                "circle-stroke-color": "#ffffff",
                                 "circle-color": [
-                                    "step",
-                                    ["get", "point_count"],
-                                    "#bbf7d0",
-                                    20,
-                                    "#86efac",
-                                    80,
-                                    "#4ade80",
-                                ],
-                                "circle-radius": [
-                                    "step",
-                                    ["get", "point_count"],
-                                    16,
-                                    20,
-                                    20,
-                                    80,
-                                    26,
-                                ],
-                                "circle-stroke-width": 1,
-                                "circle-stroke-color": "#dcfce7",
-                            },
-                        });
-
-                        map.addLayer({
-                            id: "cluster-count",
-                            type: "symbol",
-                            source: "antenas",
-                            filter: [
-                                ">",
-                                [
-                                    "coalesce",
-                                    ["to-number", ["get", "point_count"]],
-                                    0,
-                                ],
-                                0,
-                            ],
-                            layout: {
-                                "text-field": [
-                                    "get",
-                                    "point_count_abbreviated",
-                                ],
-                                "text-size": 12,
-                            },
-                            paint: {
-                                "text-color": "#14532d",
-                            },
-                        });
-
-                        map.addLayer({
-                            id: "antenas-layer",
-                            type: "symbol",
-                            source: "antenas",
-                            filter: ["!", ["has", "point_count"]],
-                            minzoom: 6,
-                            layout: {
-                                "icon-image": [
                                     "case",
                                     [
                                         "in",
@@ -419,13 +371,55 @@
                                             [
                                                 "coalesce",
                                                 ["get", "compania"],
+                                                ["get", "operador"],
                                                 "",
                                             ],
                                         ],
                                     ],
-                                    "marker-vodafone",
+                                    "#e60000",
                                     [
-                                        "any",
+                                        "in",
+                                        "orange",
+                                        [
+                                            "downcase",
+                                            [
+                                                "coalesce",
+                                                ["get", "compania"],
+                                                ["get", "operador"],
+                                                "",
+                                            ],
+                                        ],
+                                    ],
+                                    "#ff7900",
+                                    "#019df4",
+                                ],
+                            },
+                        });
+
+                        // 2) Cerca: iconos (solo si cargaron correctamente)
+                        if (iconLoadResults.every(Boolean)) {
+                            map.addLayer({
+                                id: "antenas-icons",
+                                type: "symbol",
+                                source: "antenas",
+                                minzoom: 7,
+                                layout: {
+                                    "icon-image": [
+                                        "case",
+                                        [
+                                            "in",
+                                            "vodafone",
+                                            [
+                                                "downcase",
+                                                [
+                                                    "coalesce",
+                                                    ["get", "compania"],
+                                                    ["get", "operador"],
+                                                    "",
+                                                ],
+                                            ],
+                                        ],
+                                        "icon-vodafone",
                                         [
                                             "in",
                                             "orange",
@@ -434,53 +428,21 @@
                                                 [
                                                     "coalesce",
                                                     ["get", "compania"],
+                                                    ["get", "operador"],
                                                     "",
                                                 ],
                                             ],
                                         ],
-                                        [
-                                            "in",
-                                            "xfera",
-                                            [
-                                                "downcase",
-                                                [
-                                                    "coalesce",
-                                                    ["get", "compania"],
-                                                    "",
-                                                ],
-                                            ],
-                                        ],
-                                        [
-                                            "in",
-                                            "avatel",
-                                            [
-                                                "downcase",
-                                                [
-                                                    "coalesce",
-                                                    ["get", "compania"],
-                                                    "",
-                                                ],
-                                            ],
-                                        ],
+                                        "icon-orange",
+                                        "icon-movistar",
                                     ],
-                                    "marker-orange",
-                                    "marker-movistar",
-                                ],
-                                "icon-size": [
-                                    "interpolate",
-                                    ["linear"],
-                                    ["zoom"],
-                                    6,
-                                    0.45,
-                                    10,
-                                    0.6,
-                                    13,
-                                    0.75,
-                                ],
-                                "icon-anchor": "bottom",
-                                "icon-allow-overlap": true,
-                            },
-                        });
+                                    "icon-size": 0.64,
+                                    "icon-anchor": "bottom",
+                                    "icon-allow-overlap": true,
+                                    "icon-ignore-placement": true,
+                                },
+                            });
+                        }
 
                         sourceReady = true;
 
@@ -497,38 +459,10 @@
                             });
                         }
 
-                        map.on("click", "clusters", (event) => {
-                            const clusterFeature = event.features?.[0];
-                            if (
-                                !clusterFeature ||
-                                clusterFeature.geometry.type !== "Point"
-                            ) {
-                                return;
-                            }
-
-                            const clusterId =
-                                clusterFeature.properties.cluster_id;
-                            map.getSource("antenas").getClusterExpansionZoom(
-                                clusterId,
-                                (zoomError, zoom) => {
-                                    if (zoomError) {
-                                        return;
-                                    }
-
-                                    map.easeTo({
-                                        center: clusterFeature.geometry
-                                            .coordinates,
-                                        zoom,
-                                    });
-                                },
-                            );
-                        });
-
-                        map.on("click", "antenas-layer", (event) => {
+                        const showPopup = (event) => {
                             const feature = event.features?.[0];
-                            if (!feature || feature.geometry.type !== "Point") {
+                            if (!feature || feature.geometry.type !== "Point")
                                 return;
-                            }
 
                             const [lon, lat] = feature.geometry.coordinates;
                             const { id, fase, operador, provincia, direccion } =
@@ -540,22 +474,20 @@
                                     `<strong>ID:</strong> ${id}<br/><strong>Fase:</strong> ${fase}<br/><strong>Operador:</strong> ${operador}<br/><strong>Provincia:</strong> ${provincia}<br/><strong>Dirección:</strong> ${direccion}`,
                                 )
                                 .addTo(map);
-                        });
+                        };
 
-                        map.on("mouseenter", "antenas-layer", () => {
-                            map.getCanvas().style.cursor = "pointer";
-                        });
+                        ["antenas-dots", "antenas-icons"].forEach((layerId) => {
+                            if (!map.getLayer(layerId)) {
+                                return;
+                            }
 
-                        map.on("mouseenter", "clusters", () => {
-                            map.getCanvas().style.cursor = "pointer";
-                        });
-
-                        map.on("mouseleave", "antenas-layer", () => {
-                            map.getCanvas().style.cursor = "";
-                        });
-
-                        map.on("mouseleave", "clusters", () => {
-                            map.getCanvas().style.cursor = "";
+                            map.on("click", layerId, showPopup);
+                            map.on("mouseenter", layerId, () => {
+                                map.getCanvas().style.cursor = "pointer";
+                            });
+                            map.on("mouseleave", layerId, () => {
+                                map.getCanvas().style.cursor = "";
+                            });
                         });
                     } catch (layerError) {
                         error =
