@@ -32,7 +32,7 @@
     let isFilterPanelOpen = false;
     let filterMode = "province"; // 'province' o 'community'
     const DECLARED_MATCH_DISTANCE_METERS = 900;
-    const REQUIRED_5G_BANDS = new Set(["B1", "N78", "N78+", "N28", "N28+"]);
+    const REQUIRED_5G_BANDS = new Set(["N78", "N78+", "N28", "N28+"]);
 
     // Mapeo de provincias a comunidades autónomas
     const provinciaToCommunity = {
