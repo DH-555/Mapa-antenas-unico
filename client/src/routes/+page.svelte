@@ -23,9 +23,16 @@
     let selectedCommunities = [];
     let idQuery = "";
     let addressQuery = "";
+    let showDeclaredStatus = false;
+    let declaredDataLoading = false;
+    let declaredDataLoaded = false;
+    let declaredDataError = "";
+    let declaredDataPromise = null;
 
     let isFilterPanelOpen = false;
     let filterMode = "province"; // 'province' o 'community'
+    const DECLARED_MATCH_DISTANCE_METERS = 900;
+    const REQUIRED_5G_BANDS = new Set(["B1", "N78", "N78+", "N28", "N28+"]);
 
     // Mapeo de provincias a comunidades autónomas
     const provinciaToCommunity = {
@@ -117,9 +124,263 @@
                     compania: antena.compania,
                     provincia: antena.provincia,
                     direccion: antena.direccion,
+                    declared: Boolean(antena.declared),
+                    declaredMatched: Boolean(antena.declaredMatched),
+                    declaredBands: (antena.declaredBands ?? []).join(", "),
+                    declaredCodes: (antena.declaredCodes ?? []).join(", "),
+                    declaredLat: antena.declaredLat ?? null,
+                    declaredLon: antena.declaredLon ?? null,
                 },
             })),
         };
+    }
+
+    function resolveDeclaredOperatorCode(operador) {
+        const normalized = normalizeText(operador);
+        if (normalized.includes("vodafone")) {
+            return "1";
+        }
+
+        if (
+            normalized.includes("telefonica") ||
+            normalized.includes("moviles espana") ||
+            normalized.includes("movistar")
+        ) {
+            return "7";
+        }
+
+        if (normalized.includes("orange") || normalized.includes("avatel")) {
+            return "3";
+        }
+
+        return null;
+    }
+
+    function toRadians(value) {
+        return (value * Math.PI) / 180;
+    }
+
+    function haversineDistanceMeters(lat1, lon1, lat2, lon2) {
+        const earthRadiusMeters = 6371000;
+        const dLat = toRadians(lat2 - lat1);
+        const dLon = toRadians(lon2 - lon1);
+        const a =
+            Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(toRadians(lat1)) *
+                Math.cos(toRadians(lat2)) *
+                Math.sin(dLon / 2) *
+                Math.sin(dLon / 2);
+
+        return (
+            2 * earthRadiusMeters * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+        );
+    }
+
+    function buildDeclaredIndex(declaredAntenas, cellSizeDegrees) {
+        const index = new Map();
+
+        declaredAntenas.forEach((declared) => {
+            const operatorCode = String(declared.operator ?? "").trim();
+            if (!operatorCode) {
+                return;
+            }
+
+            const lat = Number(declared.lat);
+            const lon = Number(declared.lon);
+            if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+                return;
+            }
+
+            const latCell = Math.floor(lat / cellSizeDegrees);
+            const lonCell = Math.floor(lon / cellSizeDegrees);
+            const key = `${operatorCode}:${latCell}:${lonCell}`;
+
+            if (!index.has(key)) {
+                index.set(key, []);
+            }
+
+            index.get(key).push({ ...declared, lat, lon });
+        });
+
+        return index;
+    }
+
+    function findDeclaredMatch(antena, declaredIndex, cellSizeDegrees) {
+        const operatorCode = resolveDeclaredOperatorCode(
+            antena.compania || antena.operador,
+        );
+        if (!operatorCode) {
+            return null;
+        }
+
+        const [lon, lat] = antena.coordenadas ?? [];
+        if (!Number.isFinite(lon) || !Number.isFinite(lat)) {
+            return null;
+        }
+
+        const latCell = Math.floor(lat / cellSizeDegrees);
+        const lonCell = Math.floor(lon / cellSizeDegrees);
+
+        let bestMatch = null;
+        let bestDistance = Number.POSITIVE_INFINITY;
+
+        for (let dLat = -1; dLat <= 1; dLat += 1) {
+            for (let dLon = -1; dLon <= 1; dLon += 1) {
+                const key = `${operatorCode}:${latCell + dLat}:${lonCell + dLon}`;
+                const candidates = declaredIndex.get(key) ?? [];
+
+                candidates.forEach((candidate) => {
+                    const distance = haversineDistanceMeters(
+                        lat,
+                        lon,
+                        candidate.lat,
+                        candidate.lon,
+                    );
+
+                    if (
+                        distance <= DECLARED_MATCH_DISTANCE_METERS &&
+                        distance < bestDistance
+                    ) {
+                        bestMatch = candidate;
+                        bestDistance = distance;
+                    }
+                });
+            }
+        }
+
+        return bestMatch;
+    }
+
+    function mergeDeclaredStatus(antenas, declaredAntenas) {
+        const cellSizeDegrees = DECLARED_MATCH_DISTANCE_METERS / 111320;
+        const declaredIndex = buildDeclaredIndex(
+            declaredAntenas,
+            cellSizeDegrees,
+        );
+
+        const hasRequired5GBand = (bands) =>
+            bands.some((band) =>
+                REQUIRED_5G_BANDS.has(String(band).toUpperCase()),
+            );
+
+        return antenas.map((antena) => {
+            const match = findDeclaredMatch(
+                antena,
+                declaredIndex,
+                cellSizeDegrees,
+            );
+            if (!match) {
+                return {
+                    ...antena,
+                    declared: false,
+                    declaredMatched: false,
+                    declaredBands: [],
+                    declaredCodes: [],
+                    declaredLat: null,
+                    declaredLon: null,
+                };
+            }
+
+            const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+
+            return {
+                ...antena,
+                declared: hasRequired5GBand(matchedBands),
+                declaredMatched: true,
+                declaredBands: matchedBands,
+                declaredCodes: Array.isArray(match.codes) ? match.codes : [],
+                declaredLat: match.lat,
+                declaredLon: match.lon,
+            };
+        });
+    }
+
+    function updateDeclaredVisibility() {
+        if (!map) {
+            return;
+        }
+
+        const opacityExpression = showDeclaredStatus
+            ? ["case", ["boolean", ["get", "declared"], false], 1, 0.25]
+            : 1;
+
+        if (map.getLayer("antenas-dots")) {
+            map.setPaintProperty(
+                "antenas-dots",
+                "circle-opacity",
+                opacityExpression,
+            );
+        }
+
+        if (map.getLayer("antenas-icons")) {
+            map.setPaintProperty(
+                "antenas-icons",
+                "icon-opacity",
+                opacityExpression,
+            );
+        }
+    }
+
+    async function ensureDeclaredDataLoaded() {
+        if (declaredDataLoaded) {
+            return true;
+        }
+
+        if (declaredDataPromise) {
+            return declaredDataPromise;
+        }
+
+        declaredDataLoading = true;
+        declaredDataError = "";
+
+        declaredDataPromise = (async () => {
+            try {
+                const declaredResponse = await fetch(
+                    "/data/antenasMoviles.json",
+                );
+                if (!declaredResponse.ok) {
+                    throw new Error(
+                        "No se pudo cargar el fichero de antenas declaradas.",
+                    );
+                }
+
+                const declaredData = await declaredResponse.json();
+                const declaredAntenas = Array.isArray(declaredData.antenas)
+                    ? declaredData.antenas
+                    : [];
+
+                allAntenas = mergeDeclaredStatus(allAntenas, declaredAntenas);
+                declaredDataLoaded = true;
+                applyFilters();
+                updateDeclaredVisibility();
+                return true;
+            } catch (loadError) {
+                declaredDataError =
+                    loadError instanceof Error
+                        ? loadError.message
+                        : "No se pudieron cargar las antenas declaradas.";
+                return false;
+            } finally {
+                declaredDataLoading = false;
+                declaredDataPromise = null;
+            }
+        })();
+
+        return declaredDataPromise;
+    }
+
+    async function handleDeclaredToggle(event) {
+        const checked = event.currentTarget.checked;
+        showDeclaredStatus = checked;
+
+        if (checked) {
+            const loadedOk = await ensureDeclaredDataLoaded();
+            if (!loadedOk) {
+                showDeclaredStatus = false;
+            }
+        }
+
+        updateDeclaredVisibility();
     }
 
     function normalizeText(value) {
@@ -361,6 +622,7 @@
                                 "circle-radius": 4,
                                 "circle-stroke-width": 0.7,
                                 "circle-stroke-color": "#ffffff",
+                                "circle-opacity": 1,
                                 "circle-color": [
                                     "case",
                                     [
@@ -469,6 +731,9 @@
                                     "icon-allow-overlap": true,
                                     "icon-ignore-placement": true,
                                 },
+                                paint: {
+                                    "icon-opacity": 1,
+                                },
                             });
                         }
 
@@ -493,13 +758,53 @@
                                 return;
 
                             const [lon, lat] = feature.geometry.coordinates;
-                            const { id, fase, operador, provincia, direccion } =
-                                feature.properties;
+                            const {
+                                id,
+                                fase,
+                                operador,
+                                provincia,
+                                direccion,
+                                declared,
+                                declaredMatched,
+                                declaredBands,
+                                declaredCodes,
+                                declaredLat,
+                                declaredLon,
+                            } = feature.properties;
+
+                            const isDeclared =
+                                declared === true || declared === "true";
+                            const hasDeclaredMatch =
+                                declaredMatched === true ||
+                                declaredMatched === "true";
+                            const declaredCodeList = String(declaredCodes ?? "")
+                                .split(",")
+                                .map((value) => value.trim())
+                                .filter(Boolean);
+                            const primaryDeclaredCode =
+                                declaredCodeList[0] ?? "";
+                            const targetLat = Number.isFinite(
+                                Number(declaredLat),
+                            )
+                                ? Number(declaredLat)
+                                : Number(lat);
+                            const targetLon = Number.isFinite(
+                                Number(declaredLon),
+                            )
+                                ? Number(declaredLon)
+                                : Number(lon);
+                            const antenasMovilesUrl =
+                                hasDeclaredMatch && primaryDeclaredCode
+                                    ? `https://antenasmoviles.es/?b&${encodeURIComponent(primaryDeclaredCode)}#19/${targetLat.toFixed(6)}/${targetLon.toFixed(6)}/osm`
+                                    : "";
+                            const declaredInfo = hasDeclaredMatch
+                                ? `<br/><strong>Declarada:</strong> ${isDeclared ? "Si" : "No (sin banda 5G requerida)"}<br/><strong>Bandas:</strong> ${declaredBands || "Sin datos"}${declaredCodes ? `<br/><strong>Codigos declarados:</strong> ${declaredCodes}` : ""}${antenasMovilesUrl ? `<br/><a href="${antenasMovilesUrl}" target="_blank" rel="noopener noreferrer">Ver en AntenasMoviles</a>` : ""}`
+                                : "<br/><strong>Declarada:</strong> No";
 
                             new maplibregl.Popup({ offset: 12 })
                                 .setLngLat([lon, lat])
                                 .setHTML(
-                                    `<strong>ID:</strong> ${id}<br/><strong>Fase:</strong> ${fase}<br/><strong>Operador:</strong> ${operador}<br/><strong>Provincia:</strong> ${provincia}<br/><strong>Dirección:</strong> ${direccion}`,
+                                    `<strong>ID:</strong> ${id}<br/><strong>Fase:</strong> ${fase}<br/><strong>Operador:</strong> ${operador}<br/><strong>Provincia:</strong> ${provincia}<br/><strong>Dirección:</strong> ${direccion}${declaredInfo}`,
                                 )
                                 .addTo(map);
                         };
@@ -517,6 +822,8 @@
                                 map.getCanvas().style.cursor = "";
                             });
                         });
+
+                        updateDeclaredVisibility();
                     } catch (layerError) {
                         error =
                             layerError instanceof Error
@@ -540,6 +847,10 @@
             map?.remove();
         };
     });
+
+    $: if (sourceReady) {
+        updateDeclaredVisibility();
+    }
 </script>
 
 <main>
@@ -623,6 +934,29 @@
                     </label>
                 {/each}
             </div>
+        </section>
+
+        <section>
+            <h3>Declaradas (AntenasMoviles)</h3>
+            <label>
+                <input
+                    type="checkbox"
+                    bind:checked={showDeclaredStatus}
+                    disabled={declaredDataLoading}
+                    on:change={handleDeclaredToggle}
+                />
+                <span>Resaltar declaradas</span>
+            </label>
+            <p class="filter-help">
+                Desactivado por defecto. Al activarlo, las no declaradas se ven
+                tenues.
+            </p>
+            {#if declaredDataLoading}
+                <p class="filter-loader">Cargando antenas declaradas...</p>
+            {/if}
+            {#if declaredDataError}
+                <p class="filter-error">{declaredDataError}</p>
+            {/if}
         </section>
 
         <section class="filters-credits">
@@ -837,6 +1171,27 @@
         font-size: 0.82rem;
         line-height: 1.35;
         color: #cbd5e1;
+    }
+
+    .filter-help {
+        margin: 8px 0 0;
+        font-size: 0.78rem;
+        color: #cbd5e1;
+        line-height: 1.35;
+    }
+
+    .filter-loader {
+        margin: 8px 0 0;
+        font-size: 0.78rem;
+        color: #bfdbfe;
+        line-height: 1.35;
+    }
+
+    .filter-error {
+        margin: 8px 0 0;
+        font-size: 0.78rem;
+        color: #fecaca;
+        line-height: 1.35;
     }
 
     .filters-credits p a {
