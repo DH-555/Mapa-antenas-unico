@@ -12,6 +12,8 @@
   let selectedProvinces = [];
   let selectedCommunities = [];
   let filterMode = "province"; // 'province' o 'community'
+  const DECLARED_MATCH_DISTANCE_METERS = 900;
+  const REQUIRED_5G_BANDS = new Set(["N78", "N78+", "N28", "N28+"]);
 
   // Mapeo de provincias a comunidades autónomas (normalizado para absorber variantes de nombres)
   const provinciaToCommunity = {
@@ -112,6 +114,154 @@
     });
   }
 
+  function normalizeText(value) {
+    return String(value ?? "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-zA-Z0-9]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  function resolveDeclaredOperatorCode(operador) {
+    const normalized = normalizeText(operador);
+    if (normalized.includes("vodafone")) {
+      return "1";
+    }
+
+    if (
+      normalized.includes("telefonica") ||
+      normalized.includes("moviles espana") ||
+      normalized.includes("movistar")
+    ) {
+      return "7";
+    }
+
+    if (normalized.includes("orange") || normalized.includes("avatel")) {
+      return "3";
+    }
+
+    return null;
+  }
+
+  function toRadians(value) {
+    return (value * Math.PI) / 180;
+  }
+
+  function haversineDistanceMeters(lat1, lon1, lat2, lon2) {
+    const earthRadiusMeters = 6371000;
+    const dLat = toRadians(lat2 - lat1);
+    const dLon = toRadians(lon2 - lon1);
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(toRadians(lat1)) *
+        Math.cos(toRadians(lat2)) *
+        Math.sin(dLon / 2) *
+        Math.sin(dLon / 2);
+
+    return 2 * earthRadiusMeters * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function buildDeclaredIndex(declaredAntenas, cellSizeDegrees) {
+    const index = new Map();
+
+    declaredAntenas.forEach((declared) => {
+      const operatorCode = String(declared.operator ?? "").trim();
+      if (!operatorCode) {
+        return;
+      }
+
+      const lat = Number(declared.lat);
+      const lon = Number(declared.lon);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+        return;
+      }
+
+      const latCell = Math.floor(lat / cellSizeDegrees);
+      const lonCell = Math.floor(lon / cellSizeDegrees);
+      const key = `${operatorCode}:${latCell}:${lonCell}`;
+
+      if (!index.has(key)) {
+        index.set(key, []);
+      }
+
+      index.get(key).push({ ...declared, lat, lon });
+    });
+
+    return index;
+  }
+
+  function findDeclaredMatch(antena, declaredIndex, cellSizeDegrees) {
+    const operatorCode = resolveDeclaredOperatorCode(
+      antena.compania || antena.operador,
+    );
+    if (!operatorCode) {
+      return null;
+    }
+
+    const [lon, lat] = antena.coordenadas ?? [];
+    if (!Number.isFinite(lon) || !Number.isFinite(lat)) {
+      return null;
+    }
+
+    const latCell = Math.floor(lat / cellSizeDegrees);
+    const lonCell = Math.floor(lon / cellSizeDegrees);
+
+    let bestMatch = null;
+    let bestDistance = Number.POSITIVE_INFINITY;
+
+    for (let dLat = -1; dLat <= 1; dLat += 1) {
+      for (let dLon = -1; dLon <= 1; dLon += 1) {
+        const key = `${operatorCode}:${latCell + dLat}:${lonCell + dLon}`;
+        const candidates = declaredIndex.get(key) ?? [];
+
+        candidates.forEach((candidate) => {
+          const distance = haversineDistanceMeters(
+            lat,
+            lon,
+            candidate.lat,
+            candidate.lon,
+          );
+
+          if (
+            distance <= DECLARED_MATCH_DISTANCE_METERS &&
+            distance < bestDistance
+          ) {
+            bestMatch = candidate;
+            bestDistance = distance;
+          }
+        });
+      }
+    }
+
+    return bestMatch;
+  }
+
+  function mergeDeclaredStatus(antenas, declaredAntenas) {
+    const cellSizeDegrees = DECLARED_MATCH_DISTANCE_METERS / 111320;
+    const declaredIndex = buildDeclaredIndex(declaredAntenas, cellSizeDegrees);
+
+    const hasRequired5GBand = (bands) =>
+      bands.some((band) => REQUIRED_5G_BANDS.has(String(band).toUpperCase()));
+
+    return antenas.map((antena) => {
+      const match = findDeclaredMatch(antena, declaredIndex, cellSizeDegrees);
+      if (!match) {
+        return {
+          ...antena,
+          declared: false,
+        };
+      }
+
+      const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+      return {
+        ...antena,
+        declared: hasRequired5GBand(matchedBands),
+      };
+    });
+  }
+
   $: getSelectedRegions = () => {
     if (filterMode === "province") {
       return selectedProvinces;
@@ -124,15 +274,16 @@
       : provinceOptions;
   };
 
-  $: statsSeries = (() => {
+  $: filteredAntenasByRegion = (() => {
     const regions = getSelectedRegions();
-    const filtered =
-      regions.length === 0
-        ? allAntenas
-        : allAntenas.filter((antena) => regions.includes(antena.provincia));
+    return regions.length === 0
+      ? allAntenas
+      : allAntenas.filter((antena) => regions.includes(antena.provincia));
+  })();
 
+  $: statsSeries = (() => {
     const counts = new Map();
-    filtered.forEach((antena) => {
+    filteredAntenasByRegion.forEach((antena) => {
       counts.set(antena.operador, (counts.get(antena.operador) ?? 0) + 1);
     });
 
@@ -142,6 +293,45 @@
   })();
 
   $: totalCount = statsSeries.reduce((sum, item) => sum + item.value, 0);
+
+  $: declaredStatsSeries = (() => {
+    const counts = new Map();
+
+    filteredAntenasByRegion.forEach((antena) => {
+      const key =
+        String(antena.operador ?? "Sin operador").trim() || "Sin operador";
+
+      if (!counts.has(key)) {
+        counts.set(key, { operator: key, total: 0, declared: 0, percent: 0 });
+      }
+
+      const item = counts.get(key);
+      item.total += 1;
+      if (antena.declared) {
+        item.declared += 1;
+      }
+    });
+
+    return [...counts.values()]
+      .map((item) => ({
+        ...item,
+        percent: item.total > 0 ? (item.declared / item.total) * 100 : 0,
+      }))
+      .sort((a, b) => b.percent - a.percent || b.total - a.total);
+  })();
+
+  $: declaredTotals = declaredStatsSeries.reduce(
+    (acc, item) => ({
+      total: acc.total + item.total,
+      declared: acc.declared + item.declared,
+    }),
+    { total: 0, declared: 0 },
+  );
+
+  $: declaredOverallPercent =
+    declaredTotals.total > 0
+      ? (declaredTotals.declared / declaredTotals.total) * 100
+      : 0;
 
   const colorMap = {
     "TELEFÓNICA MÓVILES ESPAÑA, S.A.": "#3b82f6", // Azul
@@ -206,13 +396,26 @@
 
   onMount(async () => {
     try {
-      const response = await fetch("/data/antenas.json");
+      const [response, declaredResponse] = await Promise.all([
+        fetch("/data/antenas.json"),
+        fetch("/data/antenasMoviles.json"),
+      ]);
       if (!response.ok) {
         throw new Error("No se pudo cargar el JSON de antenas.");
       }
+      if (!declaredResponse.ok) {
+        throw new Error("No se pudo cargar el JSON de antenas declaradas.");
+      }
 
-      const data = await response.json();
-      allAntenas = data.antenas ?? [];
+      const [data, declaredData] = await Promise.all([
+        response.json(),
+        declaredResponse.json(),
+      ]);
+      const mergedAntenas = mergeDeclaredStatus(
+        data.antenas ?? [],
+        Array.isArray(declaredData.antenas) ? declaredData.antenas : [],
+      );
+      allAntenas = mergedAntenas;
 
       provinceOptions = [
         ...new Set(allAntenas.map((antena) => antena.provincia)),
@@ -390,6 +593,37 @@
           {/if}
         </div>
       </div>
+
+      <div class="declared-chart-container">
+        <h2>
+          Declaradas por operadora
+          {declaredTotals.total > 0 &&
+            `(${declaredTotals.declared}/${declaredTotals.total}, ${declaredOverallPercent.toFixed(1)}%)`}
+        </h2>
+
+        {#if declaredStatsSeries.length === 0}
+          <p>No hay datos para los filtros seleccionados.</p>
+        {:else}
+          <div class="declared-progress-list">
+            {#each declaredStatsSeries as item}
+              <div class="declared-progress-item">
+                <div class="declared-progress-head">
+                  <span class="declared-progress-label">{item.operator}</span>
+                  <span class="declared-progress-value">
+                    {item.declared}/{item.total} ({item.percent.toFixed(1)}%)
+                  </span>
+                </div>
+                <div class="declared-progress-track">
+                  <div
+                    class="declared-progress-fill"
+                    style={`width: ${item.percent.toFixed(2)}%; background: ${getColor(item.operator)}`}
+                  ></div>
+                </div>
+              </div>
+            {/each}
+          </div>
+        {/if}
+      </div>
     {/if}
   </div>
 </main>
@@ -554,6 +788,57 @@
     padding: 12px;
     background: #fee2e2;
     border-radius: 8px;
+  }
+
+  .declared-chart-container {
+    margin-top: 24px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .declared-chart-container h2 {
+    margin: 0 0 16px;
+    font-size: 1rem;
+    color: #0f172a;
+  }
+
+  .declared-progress-list {
+    display: grid;
+    gap: 14px;
+  }
+
+  .declared-progress-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .declared-progress-label {
+    font-size: 0.9rem;
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  .declared-progress-value {
+    font-size: 0.82rem;
+    color: #475569;
+  }
+
+  .declared-progress-track {
+    height: 10px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    overflow: hidden;
+  }
+
+  .declared-progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.25s ease;
   }
 
   @media (max-width: 900px) {
