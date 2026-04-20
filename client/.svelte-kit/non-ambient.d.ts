@@ -41,6 +41,6 @@ declare module "$app/types" {
 		};
 		Pathname(): "/" | "/estadisticas" | `/${string}` & {};
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/data/antenas.json" | "/icons.svg" | "/markers/movistar-icon.png" | "/markers/orange-icon.png" | "/markers/vodafone-icon.png" | string & {};
+		Asset(): "/data/antenas.json" | "/data/antenasMoviles.json" | "/icons.svg" | "/markers/movistar-icon.png" | "/markers/orange-icon.png" | "/markers/vodafone-icon.png" | string & {};
 	}
 }
