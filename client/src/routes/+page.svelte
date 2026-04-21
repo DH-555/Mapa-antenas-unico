@@ -160,6 +160,11 @@
         return (value * Math.PI) / 180;
     }
 
+    function normalizeDeclaredApiOperatorCode(code) {
+        const normalized = String(code ?? "").trim();
+        return normalized === "4" ? "3" : normalized;
+    }
+
     function haversineDistanceMeters(lat1, lon1, lat2, lon2) {
         const earthRadiusMeters = 6371000;
         const dLat = toRadians(lat2 - lat1);
@@ -180,7 +185,9 @@
         const index = new Map();
 
         declaredAntenas.forEach((declared) => {
-            const operatorCode = String(declared.operator ?? "").trim();
+            const operatorCode = normalizeDeclaredApiOperatorCode(
+                declared.operator,
+            );
             if (!operatorCode) {
                 return;
             }

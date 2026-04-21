@@ -14,6 +14,11 @@ const historyPath = path.resolve(__dirname, "../public/data/history.json");
 const planAntenasPath = path.resolve(__dirname, "../public/data/antenas.json");
 const DECLARED_MATCH_DISTANCE_METERS = 900;
 const REQUIRED_5G_BANDS = new Set(["N78", "N78+", "N28", "N28+"]);
+const CURRENT_RULES = {
+    requiredBands: [...REQUIRED_5G_BANDS],
+    distanceMeters: DECLARED_MATCH_DISTANCE_METERS,
+    yoigoAsOrange: true,
+};
 
 function toNumber(value) {
     const parsed = Number(value);
@@ -62,6 +67,15 @@ function toRadians(value) {
     return (value * Math.PI) / 180;
 }
 
+function normalizeDeclaredApiOperatorCode(code, { yoigoAsOrange = true } = {}) {
+    const normalized = String(code ?? "").trim();
+    if (yoigoAsOrange && normalized === "4") {
+        return "3";
+    }
+
+    return normalized;
+}
+
 function haversineDistanceMeters(lat1, lon1, lat2, lon2) {
     const earthRadiusMeters = 6371000;
     const dLat = toRadians(lat2 - lat1);
@@ -69,9 +83,9 @@ function haversineDistanceMeters(lat1, lon1, lat2, lon2) {
     const a =
         Math.sin(dLat / 2) * Math.sin(dLat / 2) +
         Math.cos(toRadians(lat1)) *
-            Math.cos(toRadians(lat2)) *
-            Math.sin(dLon / 2) *
-            Math.sin(dLon / 2);
+        Math.cos(toRadians(lat2)) *
+        Math.sin(dLon / 2) *
+        Math.sin(dLon / 2);
 
     return 2 * earthRadiusMeters * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
@@ -80,11 +94,14 @@ function hasRequired5GBand(bands) {
     return bands.some((band) => REQUIRED_5G_BANDS.has(String(band).toUpperCase()));
 }
 
-function buildDeclaredIndex(declaredAntenas, cellSizeDegrees) {
+function buildDeclaredIndex(declaredAntenas, cellSizeDegrees, rules = CURRENT_RULES) {
     const index = new Map();
 
     declaredAntenas.forEach((declared) => {
-        const operatorCode = String(declared.operator ?? "").trim();
+        const operatorCode = normalizeDeclaredApiOperatorCode(
+            declared.operator,
+            rules,
+        );
         if (!operatorCode) {
             return;
         }
@@ -155,9 +172,17 @@ function findDeclaredMatch(planAntena, declaredIndex, cellSizeDegrees) {
     return bestMatch;
 }
 
-function computeDeclaredStatusByPlanId(planAntenas, declaredAntenas) {
+function computeDeclaredStatusByPlanId(
+    planAntenas,
+    declaredAntenas,
+    rules = CURRENT_RULES,
+) {
     const cellSizeDegrees = DECLARED_MATCH_DISTANCE_METERS / 111320;
-    const declaredIndex = buildDeclaredIndex(declaredAntenas, cellSizeDegrees);
+    const declaredIndex = buildDeclaredIndex(
+        declaredAntenas,
+        cellSizeDegrees,
+        rules,
+    );
     const states = new Map();
 
     planAntenas.forEach((planAntena) => {
@@ -186,6 +211,21 @@ async function readJsonIfExists(filePath) {
 }
 
 async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
+    const existingHistory = await readJsonIfExists(historyPath);
+    const previousRules = {
+        requiredBands: Array.isArray(existingHistory?.rules?.requiredBands)
+            ? existingHistory.rules.requiredBands
+            : CURRENT_RULES.requiredBands,
+        distanceMeters:
+            typeof existingHistory?.rules?.distanceMeters === "number"
+                ? existingHistory.rules.distanceMeters
+                : CURRENT_RULES.distanceMeters,
+        yoigoAsOrange:
+            typeof existingHistory?.rules?.yoigoAsOrange === "boolean"
+                ? existingHistory.rules.yoigoAsOrange
+                : false,
+    };
+
     const previousAntenas = Array.isArray(previousSnapshot?.antenas)
         ? previousSnapshot.antenas
         : [];
@@ -193,8 +233,16 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
         ? currentSnapshot.antenas
         : [];
 
-    const previousStates = computeDeclaredStatusByPlanId(planAntenas, previousAntenas);
-    const currentStates = computeDeclaredStatusByPlanId(planAntenas, currentAntenas);
+    const previousStates = computeDeclaredStatusByPlanId(
+        planAntenas,
+        previousAntenas,
+        previousRules,
+    );
+    const currentStates = computeDeclaredStatusByPlanId(
+        planAntenas,
+        currentAntenas,
+        CURRENT_RULES,
+    );
 
     const changes = [];
     planAntenas.forEach((planAntena) => {
@@ -234,7 +282,6 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
     const gained = changes.filter((item) => item.change === "declara_ahora").length;
     const lost = changes.filter((item) => item.change === "deja_de_declarar").length;
 
-    const existingHistory = await readJsonIfExists(historyPath);
     const previousRuns = Array.isArray(existingHistory?.runs) ? existingHistory.runs : [];
 
     const run = {
@@ -250,10 +297,7 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
 
     const history = {
         updatedAt: currentSnapshot.generatedAt,
-        rules: {
-            requiredBands: [...REQUIRED_5G_BANDS],
-            distanceMeters: DECLARED_MATCH_DISTANCE_METERS,
-        },
+        rules: CURRENT_RULES,
         runs: [run, ...previousRuns].slice(0, 30),
     };
 

@@ -150,6 +150,11 @@
     return (value * Math.PI) / 180;
   }
 
+  function normalizeDeclaredApiOperatorCode(code) {
+    const normalized = String(code ?? "").trim();
+    return normalized === "4" ? "3" : normalized;
+  }
+
   function haversineDistanceMeters(lat1, lon1, lat2, lon2) {
     const earthRadiusMeters = 6371000;
     const dLat = toRadians(lat2 - lat1);
@@ -168,7 +173,7 @@
     const index = new Map();
 
     declaredAntenas.forEach((declared) => {
-      const operatorCode = String(declared.operator ?? "").trim();
+      const operatorCode = normalizeDeclaredApiOperatorCode(declared.operator);
       if (!operatorCode) {
         return;
       }
@@ -335,7 +340,7 @@
       : 0;
 
   $: latestHistoryRun = Array.isArray(declarationHistory?.runs)
-    ? declarationHistory.runs[0] ?? null
+    ? (declarationHistory.runs[0] ?? null)
     : null;
 
   $: latestHistoryChanges = Array.isArray(latestHistoryRun?.changes)
@@ -409,7 +414,9 @@
 
   function getHistoryPrimaryCode(item) {
     const current = Array.isArray(item?.currentCodes) ? item.currentCodes : [];
-    const previous = Array.isArray(item?.previousCodes) ? item.previousCodes : [];
+    const previous = Array.isArray(item?.previousCodes)
+      ? item.previousCodes
+      : [];
     return (current[0] ?? previous[0] ?? "").trim();
   }
 
@@ -700,7 +707,9 @@
           <p>No hay historial disponible todavía.</p>
         {:else}
           <p class="history-summary">
-            Última actualización: {new Date(latestHistoryRun.generatedAt).toLocaleString("es-ES")}
+            Última actualización: {new Date(
+              latestHistoryRun.generatedAt,
+            ).toLocaleString("es-ES")}
             · Cambios: {latestHistoryRun.summary?.totalChanges ?? 0}
             · Declaran ahora: {latestHistoryRun.summary?.gained ?? 0}
             · Dejan de declarar: {latestHistoryRun.summary?.lost ?? 0}
@@ -725,14 +734,20 @@
                     <span class="history-id">ID {item.id}</span>
                   </div>
                   <p class="history-operator">{item.operador}</p>
-                  <p class="history-address">{item.provincia} · {item.direccion}</p>
+                  <p class="history-address">
+                    {item.provincia} · {item.direccion}
+                  </p>
                   <p class="history-bands">
                     Bandas:
                     {#if getHistoryBandDiff(item).length === 0}
                       Sin bandas
                     {:else}
                       {#each getHistoryBandDiff(item) as bandPart, index}
-                        <span class={`history-band ${bandPart.kind}`}>{bandPart.value}</span>{index < getHistoryBandDiff(item).length - 1 ? ", " : ""}
+                        <span class={`history-band ${bandPart.kind}`}
+                          >{bandPart.value}</span
+                        >{index < getHistoryBandDiff(item).length - 1
+                          ? ", "
+                          : ""}
                       {/each}
                     {/if}
                   </p>

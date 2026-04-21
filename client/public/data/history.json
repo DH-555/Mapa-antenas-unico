@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21T12:06:51.448Z",
+  "updatedAt": "2026-04-21T15:26:45.934Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -7,9 +7,40 @@
       "N28",
       "N28+"
     ],
-    "distanceMeters": 900
+    "distanceMeters": 900,
+    "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-04-21T15:26:45.934Z",
+      "previousSnapshotAt": "2026-04-21T15:26:10.414Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "changes": []
+    },
+    {
+      "generatedAt": "2026-04-21T15:26:10.414Z",
+      "previousSnapshotAt": "2026-04-21T15:23:53.144Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "changes": []
+    },
+    {
+      "generatedAt": "2026-04-21T15:23:53.144Z",
+      "previousSnapshotAt": "2026-04-21T12:06:51.448Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "changes": []
+    },
     {
       "generatedAt": "2026-04-21T12:06:51.448Z",
       "previousSnapshotAt": "2026-04-20T11:11:26.112Z",
