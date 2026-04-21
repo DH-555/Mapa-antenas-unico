@@ -162,7 +162,15 @@
 
     function normalizeDeclaredApiOperatorCode(code) {
         const normalized = String(code ?? "").trim();
-        return normalized === "4" ? "3" : normalized;
+        if (normalized === "4") {
+            return "3";
+        }
+
+        if (normalized === "22") {
+            return "7";
+        }
+
+        return normalized;
     }
 
     function haversineDistanceMeters(lat1, lon1, lat2, lon2) {

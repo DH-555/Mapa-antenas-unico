@@ -73,6 +73,10 @@ function normalizeDeclaredApiOperatorCode(code, { yoigoAsOrange = true } = {}) {
         return "3";
     }
 
+    if (normalized === "22") {
+        return "7";
+    }
+
     return normalized;
 }
 
