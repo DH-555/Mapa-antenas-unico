@@ -5,6 +5,7 @@
   let loading = true;
   let error = "";
   let allAntenas = [];
+  let declarationHistory = null;
 
   let provinceOptions = [];
   let communityOptions = [];
@@ -333,6 +334,18 @@
       ? (declaredTotals.declared / declaredTotals.total) * 100
       : 0;
 
+  $: latestHistoryRun = Array.isArray(declarationHistory?.runs)
+    ? declarationHistory.runs[0] ?? null
+    : null;
+
+  $: latestHistoryChanges = Array.isArray(latestHistoryRun?.changes)
+    ? latestHistoryRun.changes
+    : [];
+
+  $: antenaById = new Map(
+    allAntenas.map((antena) => [Number(antena.id), antena]),
+  );
+
   const colorMap = {
     "TELEFÓNICA MÓVILES ESPAÑA, S.A.": "#3b82f6", // Azul
     "ORANGE ESPAGNE S.A.": "#f97316", // Naranja
@@ -394,11 +407,62 @@
     ].join(" ");
   }
 
+  function getHistoryPrimaryCode(item) {
+    const current = Array.isArray(item?.currentCodes) ? item.currentCodes : [];
+    const previous = Array.isArray(item?.previousCodes) ? item.previousCodes : [];
+    return (current[0] ?? previous[0] ?? "").trim();
+  }
+
+  function getAntenasMovilesHistoryUrl(item) {
+    const code = getHistoryPrimaryCode(item);
+    if (!code) {
+      return "";
+    }
+
+    const sourceAntena = antenaById.get(Number(item?.id));
+    const [lon, lat] = sourceAntena?.coordenadas ?? [];
+    if (!Number.isFinite(lon) || !Number.isFinite(lat)) {
+      return `https://antenasmoviles.es/?b&${encodeURIComponent(code)}`;
+    }
+
+    return `https://antenasmoviles.es/?b&${encodeURIComponent(code)}#19/${Number(lat).toFixed(6)}/${Number(lon).toFixed(6)}/osm`;
+  }
+
+  function getHistoryBandDiff(item) {
+    const previousBands = Array.isArray(item?.previousBands)
+      ? item.previousBands.map((band) => String(band).trim()).filter(Boolean)
+      : [];
+    const currentBands = Array.isArray(item?.currentBands)
+      ? item.currentBands.map((band) => String(band).trim()).filter(Boolean)
+      : [];
+
+    const previousSet = new Set(previousBands);
+    const currentSet = new Set(currentBands);
+    const parts = [];
+
+    currentBands.forEach((band) => {
+      if (previousSet.has(band)) {
+        parts.push({ value: band, kind: "same" });
+      } else {
+        parts.push({ value: band, kind: "added" });
+      }
+    });
+
+    previousBands.forEach((band) => {
+      if (!currentSet.has(band)) {
+        parts.push({ value: band, kind: "removed" });
+      }
+    });
+
+    return parts;
+  }
+
   onMount(async () => {
     try {
-      const [response, declaredResponse] = await Promise.all([
+      const [response, declaredResponse, historyResponse] = await Promise.all([
         fetch("/data/antenas.json"),
         fetch("/data/antenasMoviles.json"),
+        fetch("/data/history.json"),
       ]);
       if (!response.ok) {
         throw new Error("No se pudo cargar el JSON de antenas.");
@@ -411,6 +475,11 @@
         response.json(),
         declaredResponse.json(),
       ]);
+
+      if (historyResponse.ok) {
+        declarationHistory = await historyResponse.json();
+      }
+
       const mergedAntenas = mergeDeclaredStatus(
         data.antenas ?? [],
         Array.isArray(declaredData.antenas) ? declaredData.antenas : [],
@@ -622,6 +691,65 @@
               </div>
             {/each}
           </div>
+        {/if}
+      </div>
+
+      <div class="history-container">
+        <h2>Historial de cambios de declaración</h2>
+        {#if !latestHistoryRun}
+          <p>No hay historial disponible todavía.</p>
+        {:else}
+          <p class="history-summary">
+            Última actualización: {new Date(latestHistoryRun.generatedAt).toLocaleString("es-ES")}
+            · Cambios: {latestHistoryRun.summary?.totalChanges ?? 0}
+            · Declaran ahora: {latestHistoryRun.summary?.gained ?? 0}
+            · Dejan de declarar: {latestHistoryRun.summary?.lost ?? 0}
+          </p>
+
+          {#if latestHistoryChanges.length === 0}
+            <p>No hubo cambios respecto a la actualización anterior.</p>
+          {:else}
+            <div class="history-list">
+              {#each latestHistoryChanges as item}
+                <article
+                  class={`history-item ${item.change === "declara_ahora" ? "history-item-up" : "history-item-down"}`}
+                >
+                  <div class="history-item-head">
+                    <span
+                      class={`history-badge ${item.change === "declara_ahora" ? "up" : "down"}`}
+                    >
+                      {item.change === "declara_ahora"
+                        ? "Declara ahora"
+                        : "Deja de declarar"}
+                    </span>
+                    <span class="history-id">ID {item.id}</span>
+                  </div>
+                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-address">{item.provincia} · {item.direccion}</p>
+                  <p class="history-bands">
+                    Bandas:
+                    {#if getHistoryBandDiff(item).length === 0}
+                      Sin bandas
+                    {:else}
+                      {#each getHistoryBandDiff(item) as bandPart, index}
+                        <span class={`history-band ${bandPart.kind}`}>{bandPart.value}</span>{index < getHistoryBandDiff(item).length - 1 ? ", " : ""}
+                      {/each}
+                    {/if}
+                  </p>
+                  {#if getAntenasMovilesHistoryUrl(item)}
+                    <a
+                      class="history-link"
+                      href={getAntenasMovilesHistoryUrl(item)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                </article>
+              {/each}
+            </div>
+          {/if}
         {/if}
       </div>
     {/if}
@@ -839,6 +967,122 @@
     height: 100%;
     border-radius: 999px;
     transition: width 0.25s ease;
+  }
+
+  .history-container {
+    margin-top: 24px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .history-container h2 {
+    margin: 0 0 12px;
+    font-size: 1rem;
+    color: #0f172a;
+  }
+
+  .history-summary {
+    margin: 0 0 12px;
+    font-size: 0.85rem;
+    color: #475569;
+  }
+
+  .history-list {
+    display: grid;
+    gap: 10px;
+    max-height: 420px;
+    overflow-y: auto;
+  }
+
+  .history-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: #f8fafc;
+  }
+
+  .history-item-up {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+  }
+
+  .history-item-down {
+    border-color: #fecaca;
+    background: #fef2f2;
+  }
+
+  .history-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .history-badge {
+    font-size: 0.73rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+
+  .history-badge.up {
+    background: #dcfce7;
+    color: #166534;
+  }
+
+  .history-badge.down {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+
+  .history-id {
+    font-size: 0.8rem;
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .history-operator {
+    margin: 0 0 3px;
+    font-size: 0.88rem;
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  .history-address {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #475569;
+  }
+
+  .history-bands {
+    margin: 6px 0 0;
+    font-size: 0.8rem;
+  }
+
+  .history-band {
+    color: #334155;
+  }
+
+  .history-band.removed {
+    color: #b91c1c;
+    text-decoration: line-through;
+  }
+
+  .history-band.added {
+    color: #166534;
+    font-weight: 700;
+  }
+
+  .history-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #0369a1;
+    text-decoration: underline;
+    font-weight: 600;
   }
 
   @media (max-width: 900px) {

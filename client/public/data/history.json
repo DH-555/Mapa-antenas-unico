@@ -1,0 +1,47 @@
+{
+  "updatedAt": "2026-04-21T12:06:51.448Z",
+  "rules": {
+    "requiredBands": [
+      "N78",
+      "N78+",
+      "N28",
+      "N28+"
+    ],
+    "distanceMeters": 900
+  },
+  "runs": [
+    {
+      "generatedAt": "2026-04-21T12:06:51.448Z",
+      "previousSnapshotAt": "2026-04-20T11:11:26.112Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 0,
+        "lost": 1
+      },
+      "changes": [
+        {
+          "id": 5808,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Castillo de las Guardas, El",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "currentBands": [],
+          "previousCodes": [
+            "ANDR2218A"
+          ],
+          "currentCodes": []
+        }
+      ]
+    }
+  ]
+}
