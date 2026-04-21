@@ -34,6 +34,10 @@
     const DECLARED_MATCH_DISTANCE_METERS = 900;
     const REQUIRED_5G_BANDS = new Set(["N78", "N78+", "N28", "N28+"]);
 
+    function isMobileViewport() {
+        return window.matchMedia("(max-width: 768px)").matches;
+    }
+
     // Mapeo de provincias a comunidades autónomas
     const provinciaToCommunity = {
         Álava: "País Vasco",
@@ -767,6 +771,12 @@
                                 duration: 0,
                             });
                         }
+
+                        map.on("click", () => {
+                            if (isFilterPanelOpen && isMobileViewport()) {
+                                isFilterPanelOpen = false;
+                            }
+                        });
 
                         const showPopup = (event) => {
                             const feature = event.features?.[0];
