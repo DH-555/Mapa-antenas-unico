@@ -127,7 +127,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.D6K1IlpY.css"
+      "_app/immutable/assets/_page.DP7UA3jN.css"
     ]
   },
   "src/routes/[...path]/+server.js": {
@@ -147,7 +147,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DUoLXBjW.css"
+      "_app/immutable/assets/_page.Dc1IE4vm.css"
     ]
   }
 }

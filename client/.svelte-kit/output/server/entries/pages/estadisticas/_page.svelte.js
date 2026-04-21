@@ -4,8 +4,9 @@ import "../../../chunks/navigation.js";
 //#region src/routes/estadisticas/+page.svelte
 function _page($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
-		let getSelectedRegions, statsSeries;
+		let getSelectedRegions, filteredAntenasByRegion, statsSeries, declaredStatsSeries, declaredTotals, latestHistoryRun;
 		let allAntenas = [];
+		let declarationHistory = null;
 		let provinceOptions = [];
 		let selectedProvinces = [];
 		let selectedCommunities = [];
@@ -88,11 +89,13 @@ function _page($$renderer, $$props) {
 				return selectedCommunities.includes(community);
 			}) : provinceOptions;
 		};
-		$: statsSeries = (() => {
+		$: filteredAntenasByRegion = (() => {
 			const regions = getSelectedRegions();
-			const filtered = regions.length === 0 ? allAntenas : allAntenas.filter((antena) => regions.includes(antena.provincia));
+			return regions.length === 0 ? allAntenas : allAntenas.filter((antena) => regions.includes(antena.provincia));
+		})();
+		$: statsSeries = (() => {
 			const counts = /* @__PURE__ */ new Map();
-			filtered.forEach((antena) => {
+			filteredAntenasByRegion.forEach((antena) => {
 				counts.set(antena.operador, (counts.get(antena.operador) ?? 0) + 1);
 			});
 			return [...counts.entries()].map(([label, value]) => ({
@@ -101,6 +104,36 @@ function _page($$renderer, $$props) {
 			})).sort((a, b) => b.value - a.value);
 		})();
 		$: statsSeries.reduce((sum, item) => sum + item.value, 0);
+		$: declaredStatsSeries = (() => {
+			const counts = /* @__PURE__ */ new Map();
+			filteredAntenasByRegion.forEach((antena) => {
+				const key = String(antena.operador ?? "Sin operador").trim() || "Sin operador";
+				if (!counts.has(key)) counts.set(key, {
+					operator: key,
+					total: 0,
+					declared: 0,
+					percent: 0
+				});
+				const item = counts.get(key);
+				item.total += 1;
+				if (antena.declared) item.declared += 1;
+			});
+			return [...counts.values()].map((item) => ({
+				...item,
+				percent: item.total > 0 ? item.declared / item.total * 100 : 0
+			})).sort((a, b) => b.percent - a.percent || b.total - a.total);
+		})();
+		$: declaredTotals = declaredStatsSeries.reduce((acc, item) => ({
+			total: acc.total + item.total,
+			declared: acc.declared + item.declared
+		}), {
+			total: 0,
+			declared: 0
+		});
+		$: declaredTotals.total > 0 && declaredTotals.declared / declaredTotals.total * 100;
+		$: latestHistoryRun = Array.isArray(declarationHistory?.runs) ? declarationHistory.runs[0] ?? null : null;
+		$: Array.isArray(latestHistoryRun?.changes) && latestHistoryRun.changes;
+		$: new Map(allAntenas.map((antena) => [Number(antena.id), antena]));
 		$$renderer.push(`<main class="svelte-1iknb9c"><div class="stats-page svelte-1iknb9c"><div class="stats-header svelte-1iknb9c"><h1 class="svelte-1iknb9c">Estadísticas</h1> <button type="button" class="svelte-1iknb9c">Volver al mapa</button></div> `);
 		$$renderer.push("<!--[0-->");
 		$$renderer.push(`<p>Cargando datos...</p>`);

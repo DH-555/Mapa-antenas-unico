@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["data/antenas.json","data/antenasMoviles.json","icons.svg","markers/movistar-icon.png","markers/orange-icon.png","markers/vodafone-icon.png"]),
+	assets: new Set(["data/antenas.json","data/antenasMoviles.json","data/history.json","icons.svg","markers/movistar-icon.png","markers/orange-icon.png","markers/vodafone-icon.png"]),
 	mimeTypes: {".json":"application/json",".svg":"image/svg+xml",".png":"image/png"},
 	_: {
-		client: {start:"_app/immutable/entry/start.3JIwv7pp.js",app:"_app/immutable/entry/app.ipuS7c0K.js",imports:["_app/immutable/entry/start.3JIwv7pp.js","_app/immutable/chunks/DO0kpAsB.js","_app/immutable/chunks/C5jIMMia.js","_app/immutable/entry/app.ipuS7c0K.js","_app/immutable/chunks/C5jIMMia.js","_app/immutable/chunks/BcgnSMxp.js","_app/immutable/chunks/DXLwiZ0H.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.ZLBfcrO2.js",app:"_app/immutable/entry/app.D7e3fRKd.js",imports:["_app/immutable/entry/start.ZLBfcrO2.js","_app/immutable/chunks/BJcnulLA.js","_app/immutable/chunks/C5jIMMia.js","_app/immutable/entry/app.D7e3fRKd.js","_app/immutable/chunks/C5jIMMia.js","_app/immutable/chunks/BcgnSMxp.js","_app/immutable/chunks/DXLwiZ0H.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),

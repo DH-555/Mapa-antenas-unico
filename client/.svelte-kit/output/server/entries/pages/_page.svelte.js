@@ -13,6 +13,7 @@ function _page($$renderer, $$props) {
 		let idQuery = "";
 		let addressQuery = "";
 		let showDeclaredStatus = false;
+		let declaredDataLoading = false;
 		let isFilterPanelOpen = false;
 		$: filteredAntenas.length;
 		$$renderer.push(`<main class="svelte-1uha8ag"><div class="map-container svelte-1uha8ag"></div> <section class="panel"><h1>Mapa de antenas plan único</h1> `);
@@ -30,8 +31,12 @@ function _page($$renderer, $$props) {
 			let operator = each_array_1[$$index_1];
 			$$renderer.push(`<label class="svelte-1uha8ag"><input type="checkbox"${attr("value", operator)}${attr("checked", selectedOperators.includes(operator), true)}/> <span>${escape_html(operator)}</span></label>`);
 		}
-		$$renderer.push(`<!--]--></div></section> <section class="svelte-1uha8ag"><h3 class="svelte-1uha8ag">Declaradas (AntenasMoviles)</h3> <label class="svelte-1uha8ag"><input type="checkbox"${attr("checked", showDeclaredStatus, true)}/> <span>Resaltar declaradas</span></label> <p class="filter-help svelte-1uha8ag">Desactivado por defecto. Al activarlo, las no declaradas se ven
-                tenues.</p></section> <section class="filters-credits svelte-1uha8ag"><h3 class="svelte-1uha8ag">Aplicar filtros</h3> <p class="svelte-1uha8ag">Los filtros se aplican automaticamente al seleccionar opciones.</p> <p class="svelte-1uha8ag">Creditos: Datos del <a href="https://digital.gob.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Ministerio para la Transformacion Digital y de la Funcion
+		$$renderer.push(`<!--]--></div></section> <section class="svelte-1uha8ag"><h3 class="svelte-1uha8ag">Declaradas (AntenasMoviles)</h3> <label class="svelte-1uha8ag"><input type="checkbox"${attr("checked", showDeclaredStatus, true)}${attr("disabled", declaredDataLoading, true)}/> <span>Resaltar declaradas</span></label> <p class="filter-help svelte-1uha8ag">Desactivado por defecto. Al activarlo, las no declaradas se ven
+                tenues.</p> `);
+		$$renderer.push("<!--[-1-->");
+		$$renderer.push(`<!--]--> `);
+		$$renderer.push("<!--[-1-->");
+		$$renderer.push(`<!--]--></section> <section class="filters-credits svelte-1uha8ag"><h3 class="svelte-1uha8ag">Aplicar filtros</h3> <p class="svelte-1uha8ag">Los filtros se aplican automaticamente al seleccionar opciones.</p> <p class="svelte-1uha8ag">Creditos: Datos del <a href="https://digital.gob.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Ministerio para la Transformacion Digital y de la Funcion
                     Publica</a> y de la <a href="https://www.red.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Fundacion publica</a>. Elaboracion de iconos: <a href="https://antenasmoviles.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Antenasmoviles.es</a></p> <a class="follow-link-button svelte-1uha8ag" href="https://antenasmoviles.es/" target="_blank" rel="noopener noreferrer">Ver todas las antenas</a></section> <section class="svelte-1uha8ag"><button class="stats-link-button svelte-1uha8ag" type="button">Ir a estadísticas</button></section></aside></main> <button${attr_class("btn-filtros svelte-1uha8ag", void 0, { "hidden": isFilterPanelOpen })}>Filtros</button>`);
 	});
 }
