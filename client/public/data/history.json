@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21T16:13:54.738Z",
+  "updatedAt": "2026-04-24T08:13:58.231Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,127 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-04-24T08:13:58.231Z",
+      "previousSnapshotAt": "2026-04-21T16:13:54.738Z",
+      "summary": {
+        "totalChanges": 4,
+        "gained": 4,
+        "lost": 0
+      },
+      "changes": [
+        {
+          "id": 1495,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Miajadas",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "G09"
+          ],
+          "previousCodes": [
+            "EXTR6567A"
+          ],
+          "currentCodes": [
+            "EXTR6567A"
+          ]
+        },
+        {
+          "id": 2723,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Albuñuelas",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B1",
+            "B3",
+            "B20",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [
+            "ANDR6315A"
+          ],
+          "currentCodes": [
+            "ANDR6315A"
+          ]
+        },
+        {
+          "id": 4222,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Chapinería",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B20",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B20",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [
+            "2805132"
+          ],
+          "currentCodes": [
+            "2805132"
+          ]
+        },
+        {
+          "id": 4348,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Málaga",
+          "direccion": "Fuente de Piedra",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "G09"
+          ],
+          "previousCodes": [
+            "ANDR3219A"
+          ],
+          "currentCodes": [
+            "ANDR3219A"
+          ]
+        }
+      ]
+    },
     {
       "generatedAt": "2026-04-21T16:13:54.738Z",
       "previousSnapshotAt": "2026-04-21T15:26:45.934Z",
