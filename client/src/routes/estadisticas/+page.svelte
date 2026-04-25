@@ -265,14 +265,20 @@
         return {
           ...antena,
           declared: false,
+          declaredBands: [],
         };
       }
 
       const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+      const normalizedBands = matchedBands.map((b) =>
+        String(b ?? "")
+          .trim()
+          .toUpperCase(),
+      );
       return {
         ...antena,
         declared: hasRequired5GBand(matchedBands),
-        declaredBands: matchedBands,
+        declaredBands: normalizedBands,
       };
     });
   }
@@ -356,11 +362,8 @@
     const bandCounts = new Map();
     declaredAntenas.forEach((antena) => {
       (antena.declaredBands ?? []).forEach((band) => {
-        const normalized = String(band ?? "")
-          .trim()
-          .toUpperCase();
-        if (!normalized) return;
-        bandCounts.set(normalized, (bandCounts.get(normalized) ?? 0) + 1);
+        if (!band) return;
+        bandCounts.set(band, (bandCounts.get(band) ?? 0) + 1);
       });
     });
 

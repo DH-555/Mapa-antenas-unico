@@ -303,12 +303,15 @@
             }
 
             const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+            const normalizedBands = matchedBands.map((b) =>
+                String(b ?? "").trim().toUpperCase(),
+            );
 
             return {
                 ...antena,
                 declared: hasRequired5GBand(matchedBands),
                 declaredMatched: true,
-                declaredBands: matchedBands,
+                declaredBands: normalizedBands,
                 declaredCodes: Array.isArray(match.codes) ? match.codes : [],
                 declaredLat: match.lat,
                 declaredLon: match.lon,
@@ -375,9 +378,8 @@
                 const allBands = new Set();
                 allAntenas.forEach((antena) => {
                     (antena.declaredBands ?? []).forEach((band) => {
-                        const b = String(band ?? "").trim().toUpperCase();
-                        if (b) {
-                            allBands.add(b);
+                        if (band) {
+                            allBands.add(band);
                         }
                     });
                 });
@@ -504,6 +506,8 @@
         const selectedRegions = getSelectedRegions();
         const hasAddressSearch = addressText.length > 0;
 
+        const selectedBandsSet = new Set(selectedBands);
+
         filteredAntenas = allAntenas.filter(
             (antena) =>
                 selectedPhases.includes(antena.fase) &&
@@ -513,12 +517,9 @@
                     selectedRegions.includes(antena.provincia)) &&
                 (idText.length === 0 || String(antena.id).includes(idText)) &&
                 matchesAddressQuery(antena.direccion, addressText) &&
-                (selectedBands.length === 0 ||
-                    selectedBands.some((band) =>
-                        (antena.declaredBands ?? []).some(
-                            (ab) =>
-                                String(ab ?? "").trim().toUpperCase() === band,
-                        ),
+                (selectedBandsSet.size === 0 ||
+                    (antena.declaredBands ?? []).some((band) =>
+                        selectedBandsSet.has(band),
                     )),
         );
 

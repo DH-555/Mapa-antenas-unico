@@ -138,9 +138,8 @@ function _page($$renderer, $$props) {
 			const bandCounts = /* @__PURE__ */ new Map();
 			declaredAntenas.forEach((antena) => {
 				(antena.declaredBands ?? []).forEach((band) => {
-					const normalized = String(band ?? "").trim().toUpperCase();
-					if (!normalized) return;
-					bandCounts.set(normalized, (bandCounts.get(normalized) ?? 0) + 1);
+					if (!band) return;
+					bandCounts.set(band, (bandCounts.get(band) ?? 0) + 1);
 				});
 			});
 			return [...bandCounts.entries()].map(([band, count]) => ({
