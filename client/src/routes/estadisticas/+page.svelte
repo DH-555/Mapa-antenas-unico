@@ -265,13 +265,20 @@
         return {
           ...antena,
           declared: false,
+          declaredBands: [],
         };
       }
 
       const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+      const normalizedBands = matchedBands.map((b) =>
+        String(b ?? "")
+          .trim()
+          .toUpperCase(),
+      );
       return {
         ...antena,
         declared: hasRequired5GBand(matchedBands),
+        declaredBands: normalizedBands,
       };
     });
   }
@@ -346,6 +353,28 @@
     declaredTotals.total > 0
       ? (declaredTotals.declared / declaredTotals.total) * 100
       : 0;
+
+  $: bandStatsSeries = (() => {
+    const declaredAntenas = filteredAntenasByRegion.filter((a) => a.declared);
+    const totalDeclared = declaredAntenas.length;
+    if (totalDeclared === 0) return [];
+
+    const bandCounts = new Map();
+    declaredAntenas.forEach((antena) => {
+      (antena.declaredBands ?? []).forEach((band) => {
+        if (!band) return;
+        bandCounts.set(band, (bandCounts.get(band) ?? 0) + 1);
+      });
+    });
+
+    return [...bandCounts.entries()]
+      .map(([band, count]) => ({
+        band,
+        count,
+        percent: (count / totalDeclared) * 100,
+      }))
+      .sort((a, b) => b.count - a.count);
+  })();
 
   $: latestHistoryRun = Array.isArray(declarationHistory?.runs)
     ? (declarationHistory.runs[0] ?? null)
@@ -709,6 +738,37 @@
         {/if}
       </div>
 
+      <div class="band-chart-container">
+        <h2>
+          Porcentaje de bandas declaradas
+          {declaredTotals.declared > 0 &&
+            `(sobre ${declaredTotals.declared} antenas declaradas)`}
+        </h2>
+
+        {#if bandStatsSeries.length === 0}
+          <p>No hay datos de bandas para los filtros seleccionados.</p>
+        {:else}
+          <div class="band-progress-list">
+            {#each bandStatsSeries as item}
+              <div class="band-progress-item">
+                <div class="band-progress-head">
+                  <span class="band-progress-label">{item.band}</span>
+                  <span class="band-progress-value">
+                    {item.count} ({item.percent.toFixed(1)}%)
+                  </span>
+                </div>
+                <div class="band-progress-track">
+                  <div
+                    class="band-progress-fill"
+                    style={`width: ${item.percent.toFixed(2)}%`}
+                  ></div>
+                </div>
+              </div>
+            {/each}
+          </div>
+        {/if}
+      </div>
+
       <div class="history-container">
         <h2>Historial de cambios de declaración</h2>
         {#if !latestHistoryRun}
@@ -989,6 +1049,65 @@
   .declared-progress-fill {
     height: 100%;
     border-radius: 999px;
+    transition: width 0.25s ease;
+  }
+
+  .band-chart-container {
+    margin-top: 24px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .band-chart-container h2 {
+    margin: 0 0 16px;
+    font-size: 1rem;
+    color: #0f172a;
+  }
+
+  .band-progress-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+  }
+
+  .band-progress-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .band-progress-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .band-progress-label {
+    font-size: 0.9rem;
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  .band-progress-value {
+    font-size: 0.82rem;
+    color: #475569;
+    white-space: nowrap;
+  }
+
+  .band-progress-track {
+    height: 10px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    overflow: hidden;
+  }
+
+  .band-progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: #22c55e;
     transition: width 0.25s ease;
   }
 

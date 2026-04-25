@@ -131,6 +131,23 @@ function _page($$renderer, $$props) {
 			declared: 0
 		});
 		$: declaredTotals.total > 0 && declaredTotals.declared / declaredTotals.total * 100;
+		$: (() => {
+			const declaredAntenas = filteredAntenasByRegion.filter((a) => a.declared);
+			const totalDeclared = declaredAntenas.length;
+			if (totalDeclared === 0) return [];
+			const bandCounts = /* @__PURE__ */ new Map();
+			declaredAntenas.forEach((antena) => {
+				(antena.declaredBands ?? []).forEach((band) => {
+					if (!band) return;
+					bandCounts.set(band, (bandCounts.get(band) ?? 0) + 1);
+				});
+			});
+			return [...bandCounts.entries()].map(([band, count]) => ({
+				band,
+				count,
+				percent: count / totalDeclared * 100
+			})).sort((a, b) => b.count - a.count);
+		})();
 		$: latestHistoryRun = Array.isArray(declarationHistory?.runs) ? declarationHistory.runs[0] ?? null : null;
 		$: Array.isArray(latestHistoryRun?.changes) && latestHistoryRun.changes;
 		$: new Map(allAntenas.map((antena) => [Number(antena.id), antena]));

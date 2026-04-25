@@ -36,7 +36,9 @@ function _page($$renderer, $$props) {
 		$$renderer.push("<!--[-1-->");
 		$$renderer.push(`<!--]--> `);
 		$$renderer.push("<!--[-1-->");
-		$$renderer.push(`<!--]--></section> <section class="filters-credits svelte-1uha8ag"><h3 class="svelte-1uha8ag">Aplicar filtros</h3> <p class="svelte-1uha8ag">Los filtros se aplican automaticamente al seleccionar opciones.</p> <p class="svelte-1uha8ag">Creditos: Datos del <a href="https://digital.gob.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Ministerio para la Transformacion Digital y de la Funcion
+		$$renderer.push(`<!--]--></section> `);
+		$$renderer.push("<!--[-1-->");
+		$$renderer.push(`<!--]--> <section class="filters-credits svelte-1uha8ag"><h3 class="svelte-1uha8ag">Aplicar filtros</h3> <p class="svelte-1uha8ag">Los filtros se aplican automaticamente al seleccionar opciones.</p> <p class="svelte-1uha8ag">Creditos: Datos del <a href="https://digital.gob.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Ministerio para la Transformacion Digital y de la Funcion
                     Publica</a> y de la <a href="https://www.red.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Fundacion publica</a>. Elaboracion de iconos: <a href="https://antenasmoviles.es/" target="_blank" rel="noopener noreferrer" class="svelte-1uha8ag">Antenasmoviles.es</a></p> <a class="follow-link-button svelte-1uha8ag" href="https://antenasmoviles.es/" target="_blank" rel="noopener noreferrer">Ver todas las antenas</a></section> <section class="svelte-1uha8ag"><button class="stats-link-button svelte-1uha8ag" type="button">Ir a estadísticas</button></section></aside></main> <button${attr_class("btn-filtros svelte-1uha8ag", void 0, { "hidden": isFilterPanelOpen })}>Filtros</button>`);
 	});
 }

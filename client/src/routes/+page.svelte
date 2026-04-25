@@ -21,6 +21,8 @@
     let selectedOperators = [];
     let selectedProvinces = [];
     let selectedCommunities = [];
+    let selectedBands = [];
+    let bandOptions = [];
     let idQuery = "";
     let addressQuery = "";
     let showDeclaredStatus = false;
@@ -301,12 +303,15 @@
             }
 
             const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+            const normalizedBands = matchedBands.map((b) =>
+                String(b ?? "").trim().toUpperCase(),
+            );
 
             return {
                 ...antena,
                 declared: hasRequired5GBand(matchedBands),
                 declaredMatched: true,
-                declaredBands: matchedBands,
+                declaredBands: normalizedBands,
                 declaredCodes: Array.isArray(match.codes) ? match.codes : [],
                 declaredLat: match.lat,
                 declaredLon: match.lon,
@@ -369,6 +374,17 @@
                     : [];
 
                 allAntenas = mergeDeclaredStatus(allAntenas, declaredAntenas);
+
+                const allBands = new Set();
+                allAntenas.forEach((antena) => {
+                    (antena.declaredBands ?? []).forEach((band) => {
+                        if (band) {
+                            allBands.add(band);
+                        }
+                    });
+                });
+                bandOptions = [...allBands].sort();
+
                 declaredDataLoaded = true;
                 applyFilters();
                 updateDeclaredVisibility();
@@ -490,6 +506,8 @@
         const selectedRegions = getSelectedRegions();
         const hasAddressSearch = addressText.length > 0;
 
+        const selectedBandsSet = new Set(selectedBands);
+
         filteredAntenas = allAntenas.filter(
             (antena) =>
                 selectedPhases.includes(antena.fase) &&
@@ -498,7 +516,11 @@
                     selectedRegions.length === 0 ||
                     selectedRegions.includes(antena.provincia)) &&
                 (idText.length === 0 || String(antena.id).includes(idText)) &&
-                matchesAddressQuery(antena.direccion, addressText),
+                matchesAddressQuery(antena.direccion, addressText) &&
+                (selectedBandsSet.size === 0 ||
+                    (antena.declaredBands ?? []).some((band) =>
+                        selectedBandsSet.has(band),
+                    )),
         );
 
         if (!sourceReady) {
@@ -544,6 +566,7 @@
         selectedOperators = [...operatorOptions];
         selectedProvinces = [];
         selectedCommunities = [];
+        selectedBands = [];
         idQuery = "";
         addressQuery = "";
         applyFilters({ fit: true });
@@ -985,6 +1008,36 @@
             {/if}
         </section>
 
+        {#if declaredDataLoaded && bandOptions.length > 0}
+            <section>
+                <h3>Banda declarada</h3>
+                <label>
+                    <input
+                        type="checkbox"
+                        checked={selectedBands.length === 0}
+                        on:change={() => {
+                            selectedBands = [];
+                            applyFilters();
+                        }}
+                    />
+                    <span>Todas las bandas</span>
+                </label>
+                <div class="bands-list">
+                    {#each bandOptions as band}
+                        <label>
+                            <input
+                                type="checkbox"
+                                value={band}
+                                bind:group={selectedBands}
+                                on:change={() => applyFilters()}
+                            />
+                            <span>{band}</span>
+                        </label>
+                    {/each}
+                </div>
+            </section>
+        {/if}
+
         <section class="filters-credits">
             <h3>Aplicar filtros</h3>
             <p>
@@ -1188,6 +1241,15 @@
 
     .operators-list {
         max-height: 48vh;
+        overflow-y: auto;
+        padding-right: 6px;
+    }
+
+    .bands-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px 8px;
+        max-height: 36vh;
         overflow-y: auto;
         padding-right: 6px;
     }
