@@ -11,6 +11,8 @@ const outputPath = path.resolve(
     "../public/data/antenasMoviles.json",
 );
 const historyPath = path.resolve(__dirname, "../public/data/history.json");
+const buildOutputPath = path.resolve(__dirname, "../build/data/antenasMoviles.json");
+const buildHistoryPath = path.resolve(__dirname, "../build/data/history.json");
 const planAntenasPath = path.resolve(__dirname, "../public/data/antenas.json");
 const DECLARED_MATCH_DISTANCE_METERS = 900;
 const REQUIRED_5G_BANDS = new Set(["N78", "N78+", "N28", "N28+"]);
@@ -199,6 +201,8 @@ function computeDeclaredStatusByPlanId(
             matched: Boolean(match),
             bands,
             codes,
+            matchLat: Number.isFinite(Number(match?.lat)) ? Number(match.lat) : null,
+            matchLon: Number.isFinite(Number(match?.lon)) ? Number(match.lon) : null,
         });
     });
 
@@ -212,6 +216,103 @@ async function readJsonIfExists(filePath) {
     } catch {
         return null;
     }
+}
+
+async function writeJson(filePath, value) {
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
+    await fs.writeFile(filePath, JSON.stringify(value, null, 2), "utf8");
+}
+
+function normalizeBandList(bands) {
+    if (!Array.isArray(bands)) {
+        return [];
+    }
+
+    return [...new Set(bands.map(sanitizeBand).filter(Boolean))].sort();
+}
+
+function getBandDiff(previousBands, currentBands) {
+    const previous = normalizeBandList(previousBands);
+    const current = normalizeBandList(currentBands);
+    const previousSet = new Set(previous);
+    const currentSet = new Set(current);
+
+    const added = current.filter((band) => !previousSet.has(band));
+    const removed = previous.filter((band) => !currentSet.has(band));
+
+    return {
+        previous,
+        current,
+        added,
+        removed,
+        changed: added.length > 0 || removed.length > 0,
+    };
+}
+
+function isBandChangeRelevantForUnico(previousBands, currentBands) {
+    return hasRequired5GBand(previousBands) || hasRequired5GBand(currentBands);
+}
+
+function buildBandChangesFromRuns(runs) {
+    if (!Array.isArray(runs)) {
+        return [];
+    }
+
+    return runs.flatMap((run) => {
+        const generatedAt = run?.generatedAt ?? null;
+        const changes = Array.isArray(run?.changes) ? run.changes : [];
+
+        return changes
+            .map((item) => {
+                const diff = getBandDiff(item?.previousBands, item?.currentBands);
+                if (!diff.changed) {
+                    return null;
+                }
+
+                if (!isBandChangeRelevantForUnico(diff.previous, diff.current)) {
+                    return null;
+                }
+
+                return {
+                    generatedAt,
+                    id: Number(item?.id),
+                    operador: item?.operador,
+                    provincia: item?.provincia,
+                    direccion: item?.direccion,
+                    fromDeclared: Boolean(item?.fromDeclared),
+                    toDeclared: Boolean(item?.toDeclared),
+                    fromMatched: Array.isArray(item?.previousBands)
+                        ? item.previousBands.length > 0
+                        : false,
+                    toMatched: Array.isArray(item?.currentBands)
+                        ? item.currentBands.length > 0
+                        : false,
+                    previousBands: diff.previous,
+                    currentBands: diff.current,
+                    addedBands: diff.added,
+                    removedBands: diff.removed,
+                    previousCodes: Array.isArray(item?.previousCodes)
+                        ? item.previousCodes
+                        : [],
+                    currentCodes: Array.isArray(item?.currentCodes)
+                        ? item.currentCodes
+                        : [],
+                    previousLat: Number.isFinite(Number(item?.previousLat))
+                        ? Number(item.previousLat)
+                        : null,
+                    previousLon: Number.isFinite(Number(item?.previousLon))
+                        ? Number(item.previousLon)
+                        : null,
+                    currentLat: Number.isFinite(Number(item?.currentLat))
+                        ? Number(item.currentLat)
+                        : null,
+                    currentLon: Number.isFinite(Number(item?.currentLon))
+                        ? Number(item.currentLon)
+                        : null,
+                };
+            })
+            .filter(Boolean);
+    });
 }
 
 async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
@@ -280,13 +381,76 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
             currentBands: current.bands,
             previousCodes: previous.codes,
             currentCodes: current.codes,
+            previousLat: previous.matchLat,
+            previousLon: previous.matchLon,
+            currentLat: current.matchLat,
+            currentLon: current.matchLon,
         });
     });
 
     const gained = changes.filter((item) => item.change === "declara_ahora").length;
     const lost = changes.filter((item) => item.change === "deja_de_declarar").length;
 
+    const bandChanges = [];
+    planAntenas.forEach((planAntena) => {
+        const id = Number(planAntena.id);
+        const previous = previousStates.get(id) ?? {
+            declared: false,
+            matched: false,
+            bands: [],
+            codes: [],
+        };
+        const current = currentStates.get(id) ?? {
+            declared: false,
+            matched: false,
+            bands: [],
+            codes: [],
+        };
+
+        const diff = getBandDiff(previous.bands, current.bands);
+        if (!diff.changed) {
+            return;
+        }
+
+        if (!isBandChangeRelevantForUnico(diff.previous, diff.current)) {
+            return;
+        }
+
+        bandChanges.push({
+            id,
+            operador: planAntena.operador,
+            provincia: planAntena.provincia,
+            direccion: planAntena.direccion,
+            fromDeclared: previous.declared,
+            toDeclared: current.declared,
+            fromMatched: previous.matched,
+            toMatched: current.matched,
+            previousBands: diff.previous,
+            currentBands: diff.current,
+            addedBands: diff.added,
+            removedBands: diff.removed,
+            previousCodes: previous.codes,
+            currentCodes: current.codes,
+            previousLat: previous.matchLat,
+            previousLon: previous.matchLon,
+            currentLat: current.matchLat,
+            currentLon: current.matchLon,
+        });
+    });
+
+    const bandChangesGained = bandChanges.reduce(
+        (total, item) => total + item.addedBands.length,
+        0,
+    );
+    const bandChangesLost = bandChanges.reduce(
+        (total, item) => total + item.removedBands.length,
+        0,
+    );
+
     const previousRuns = Array.isArray(existingHistory?.runs) ? existingHistory.runs : [];
+    const previousBandChangeLog = Array.isArray(existingHistory?.bandChangesLog)
+        ? existingHistory.bandChangesLog
+        : buildBandChangesFromRuns(previousRuns);
 
     const run = {
         generatedAt: currentSnapshot.generatedAt,
@@ -295,17 +459,31 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
             totalChanges: changes.length,
             gained,
             lost,
+            totalBandChangeSites: bandChanges.length,
+            totalBandsAdded: bandChangesGained,
+            totalBandsRemoved: bandChangesLost,
         },
         changes,
+        bandChanges,
     };
 
     const history = {
         updatedAt: currentSnapshot.generatedAt,
         rules: CURRENT_RULES,
-        runs: [run, ...previousRuns].slice(0, 30),
+        runs: [run, ...previousRuns],
+        bandChangesLog: [
+            ...bandChanges.map((item) => ({
+                generatedAt: currentSnapshot.generatedAt,
+                ...item,
+            })),
+            ...previousBandChangeLog,
+        ],
     };
 
-    await fs.writeFile(historyPath, JSON.stringify(history, null, 2), "utf8");
+    await Promise.all([
+        writeJson(historyPath, history),
+        writeJson(buildHistoryPath, history),
+    ]);
     return run;
 }
 
@@ -370,7 +548,10 @@ async function main() {
         antenas: records,
     };
 
-    await fs.writeFile(outputPath, JSON.stringify(output, null, 2), "utf8");
+    await Promise.all([
+        writeJson(outputPath, output),
+        writeJson(buildOutputPath, output),
+    ]);
 
     const planSnapshot = await readJsonIfExists(planAntenasPath);
     if (Array.isArray(planSnapshot?.antenas)) {

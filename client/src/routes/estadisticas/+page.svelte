@@ -376,6 +376,40 @@
       .sort((a, b) => b.count - a.count);
   })();
 
+  $: declaredByOperatorSeries = (() => {
+    const counts = new Map();
+    filteredAntenasByRegion.forEach((antena) => {
+      if (!antena.declared) return;
+      const key =
+        String(antena.operador ?? "Sin operador").trim() || "Sin operador";
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    });
+    return [...counts.entries()]
+      .map(([label, value]) => ({ label, value }))
+      .sort((a, b) => b.value - a.value);
+  })();
+
+  $: totalDeclaredOperatorCount = declaredByOperatorSeries.reduce(
+    (sum, item) => sum + item.value,
+    0,
+  );
+
+  function calculateDeclaredPieSlice(index, data, total) {
+    const slices = [];
+    let currentAngle = 0;
+    data.forEach((item, i) => {
+      const sliceAngle = (item.value / total) * 360;
+      if (i === index) {
+        slices.push({
+          startAngle: currentAngle,
+          endAngle: currentAngle + sliceAngle,
+        });
+      }
+      currentAngle += sliceAngle;
+    });
+    return slices[0];
+  }
+
   $: latestHistoryRun = Array.isArray(declarationHistory?.runs)
     ? (declarationHistory.runs[0] ?? null)
     : null;
@@ -383,6 +417,70 @@
   $: latestHistoryChanges = Array.isArray(latestHistoryRun?.changes)
     ? latestHistoryRun.changes
     : [];
+
+  $: latestBandChanges = Array.isArray(latestHistoryRun?.bandChanges)
+    ? latestHistoryRun.bandChanges
+    : [];
+
+  $: allHistoryRuns = Array.isArray(declarationHistory?.runs)
+    ? declarationHistory.runs
+    : [];
+
+  $: allDeclarationChanges = allHistoryRuns.flatMap((run) =>
+    (Array.isArray(run?.changes) ? run.changes : []).map((item) => ({
+      generatedAt: run.generatedAt,
+      ...item,
+    })),
+  );
+
+  $: allBandChanges = Array.isArray(declarationHistory?.bandChangesLog)
+    ? declarationHistory.bandChangesLog
+    : allHistoryRuns.flatMap((run) =>
+        [
+          ...(Array.isArray(run?.bandChanges)
+            ? run.bandChanges
+            : Array.isArray(run?.changes)
+              ? run.changes
+              : []),
+        ].map((item) => ({
+          generatedAt: run.generatedAt,
+          ...item,
+        })),
+      );
+
+  function hasRequiredBandInList(bands) {
+    return (Array.isArray(bands) ? bands : []).some((band) =>
+      REQUIRED_5G_BANDS.has(String(band).toUpperCase()),
+    );
+  }
+
+  function isRelevantBandChange(item) {
+    return (
+      hasRequiredBandInList(item?.previousBands) ||
+      hasRequiredBandInList(item?.currentBands)
+    );
+  }
+
+  $: latestBandChangesVisible = latestBandChanges.filter(isRelevantBandChange);
+
+  $: allBandChangesVisible = allBandChanges.filter(isRelevantBandChange);
+
+  $: allDeclarationChangesVisible = allDeclarationChanges.filter((item) => {
+    const current = antenaById.get(Number(item?.id));
+    if (!current) {
+      return true;
+    }
+
+    if (item?.change === "deja_de_declarar" && current.declared) {
+      return false;
+    }
+
+    if (item?.change === "declara_ahora" && !current.declared) {
+      return false;
+    }
+
+    return true;
+  });
 
   $: antenaById = new Map(
     allAntenas.map((antena) => [Number(antena.id), antena]),
@@ -461,6 +559,12 @@
     const code = getHistoryPrimaryCode(item);
     if (!code) {
       return "";
+    }
+
+    const declaredLat = Number(item?.currentLat ?? item?.previousLat);
+    const declaredLon = Number(item?.currentLon ?? item?.previousLon);
+    if (Number.isFinite(declaredLon) && Number.isFinite(declaredLat)) {
+      return `https://antenasmoviles.es/?b&${encodeURIComponent(code)}#19/${declaredLat.toFixed(6)}/${declaredLon.toFixed(6)}/osm`;
     }
 
     const sourceAntena = antenaById.get(Number(item?.id));
@@ -739,38 +843,68 @@
       </div>
 
       <div class="band-chart-container">
-        <h2>
-          Porcentaje de bandas declaradas
-          {declaredTotals.declared > 0 &&
-            `(sobre ${declaredTotals.declared} antenas declaradas)`}
-        </h2>
-
-        {#if bandStatsSeries.length === 0}
-          <p>No hay datos de bandas para los filtros seleccionados.</p>
-        {:else}
-          <div class="band-progress-list">
-            {#each bandStatsSeries as item}
-              <div class="band-progress-item">
-                <div class="band-progress-head">
-                  <span class="band-progress-label">{item.band}</span>
-                  <span class="band-progress-value">
-                    {item.count} ({item.percent.toFixed(1)}%)
-                  </span>
-                </div>
-                <div class="band-progress-track">
-                  <div
-                    class="band-progress-fill"
-                    style={`width: ${item.percent.toFixed(2)}%`}
-                  ></div>
-                </div>
-              </div>
+        <div class="pie-chart">
+          <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
+            {#each declaredByOperatorSeries as item, index}
+              {@const slice = calculateDeclaredPieSlice(index, declaredByOperatorSeries, totalDeclaredOperatorCount)}
+              {#if slice.endAngle - slice.startAngle >= 359.999}
+                <circle
+                  cx="150"
+                  cy="150"
+                  r="120"
+                  fill={getColor(item.label)}
+                  stroke="white"
+                  stroke-width="2"
+                />
+              {:else}
+                <path
+                  d={describeArc(
+                    150,
+                    150,
+                    120,
+                    slice.startAngle,
+                    slice.endAngle,
+                  )}
+                  fill={getColor(item.label)}
+                  stroke="white"
+                  stroke-width="2"
+                />
+              {/if}
             {/each}
-          </div>
-        {/if}
+          </svg>
+        </div>
+
+        <div class="chart-legend">
+          <h2>
+            Porcentaje de bandas declaradas
+            {totalDeclaredOperatorCount > 0 &&
+              `(${totalDeclaredOperatorCount} declaradas)`}
+          </h2>
+          {#if declaredByOperatorSeries.length === 0}
+            <p>No hay datos de bandas para los filtros seleccionados.</p>
+          {:else}
+            <div class="legend-items">
+              {#each declaredByOperatorSeries as item}
+                <div class="legend-item">
+                  <div
+                    class="legend-color"
+                    style={`background: ${getColor(item.label)}`}
+                  ></div>
+                  <div class="legend-text">
+                    <span class="legend-label">{item.label}</span>
+                    <span class="legend-value">
+                      {item.value} ({((item.value / totalDeclaredOperatorCount) * 100).toFixed(1)}%)
+                    </span>
+                  </div>
+                </div>
+              {/each}
+            </div>
+          {/if}
+        </div>
       </div>
 
       <div class="history-container">
-        <h2>Historial de cambios de declaración</h2>
+        <h2>Historial de cambios (declaración y bandas)</h2>
         {#if !latestHistoryRun}
           <p>No hay historial disponible todavía.</p>
         {:else}
@@ -778,13 +912,32 @@
             Última actualización: {new Date(
               latestHistoryRun.generatedAt,
             ).toLocaleString("es-ES")}
-            · Cambios: {latestHistoryRun.summary?.totalChanges ?? 0}
+            · Cambios de declaración: {latestHistoryRun.summary?.totalChanges ??
+              0}
             · Declaran ahora: {latestHistoryRun.summary?.gained ?? 0}
             · Dejan de declarar: {latestHistoryRun.summary?.lost ?? 0}
+            · Antenas con cambios de bandas: {latestBandChangesVisible.length}
+            · Bandas añadidas: {latestBandChangesVisible.reduce(
+              (total, item) =>
+                total +
+                (Array.isArray(item?.addedBands) ? item.addedBands.length : 0),
+              0,
+            )}
+            · Bandas eliminadas: {latestBandChangesVisible.reduce(
+              (total, item) =>
+                total +
+                (Array.isArray(item?.removedBands)
+                  ? item.removedBands.length
+                  : 0),
+              0,
+            )}
           </p>
 
           {#if latestHistoryChanges.length === 0}
-            <p>No hubo cambios respecto a la actualización anterior.</p>
+            <p>
+              No hubo cambios de declaración respecto a la actualización
+              anterior.
+            </p>
           {:else}
             <div class="history-list">
               {#each latestHistoryChanges as item}
@@ -800,6 +953,158 @@
                         : "Deja de declarar"}
                     </span>
                     <span class="history-id">ID {item.id}</span>
+                  </div>
+                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-address">
+                    {item.provincia} · {item.direccion}
+                  </p>
+                  <p class="history-bands">
+                    Bandas:
+                    {#if getHistoryBandDiff(item).length === 0}
+                      Sin bandas
+                    {:else}
+                      {#each getHistoryBandDiff(item) as bandPart, index}
+                        <span class={`history-band ${bandPart.kind}`}
+                          >{bandPart.value}</span
+                        >{index < getHistoryBandDiff(item).length - 1
+                          ? ", "
+                          : ""}
+                      {/each}
+                    {/if}
+                  </p>
+                  {#if getAntenasMovilesHistoryUrl(item)}
+                    <a
+                      class="history-link"
+                      href={getAntenasMovilesHistoryUrl(item)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                </article>
+              {/each}
+            </div>
+          {/if}
+
+          <h3 class="history-subtitle">
+            Cambios de bandas en la última actualización
+          </h3>
+          {#if latestBandChangesVisible.length === 0}
+            <p>No hubo cambios de bandas en esta actualización.</p>
+          {:else}
+            <div class="history-list">
+              {#each latestBandChangesVisible as item}
+                <article class="history-item history-item-band">
+                  <div class="history-item-head">
+                    <span class="history-badge neutral">Cambio de bandas</span>
+                    <span class="history-id">ID {item.id}</span>
+                  </div>
+                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-address">
+                    {item.provincia} · {item.direccion}
+                  </p>
+                  <p class="history-bands">
+                    Bandas:
+                    {#if getHistoryBandDiff(item).length === 0}
+                      Sin bandas
+                    {:else}
+                      {#each getHistoryBandDiff(item) as bandPart, index}
+                        <span class={`history-band ${bandPart.kind}`}
+                          >{bandPart.value}</span
+                        >{index < getHistoryBandDiff(item).length - 1
+                          ? ", "
+                          : ""}
+                      {/each}
+                    {/if}
+                  </p>
+                  {#if getAntenasMovilesHistoryUrl(item)}
+                    <a
+                      class="history-link"
+                      href={getAntenasMovilesHistoryUrl(item)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                </article>
+              {/each}
+            </div>
+          {/if}
+
+          <h3 class="history-subtitle">
+            Cambios de declaración acumulados ({allDeclarationChangesVisible.length})
+          </h3>
+          {#if allDeclarationChangesVisible.length === 0}
+            <p>No hay cambios de declaración acumulados todavía.</p>
+          {:else}
+            <div class="history-list history-list-compact">
+              {#each allDeclarationChangesVisible as item}
+                <article
+                  class={`history-item ${item.change === "declara_ahora" ? "history-item-up" : "history-item-down"}`}
+                >
+                  <div class="history-item-head">
+                    <span
+                      class={`history-badge ${item.change === "declara_ahora" ? "up" : "down"}`}
+                    >
+                      {item.change === "declara_ahora"
+                        ? "Declara ahora"
+                        : "Deja de declarar"}
+                    </span>
+                    <span class="history-id">
+                      {new Date(item.generatedAt).toLocaleDateString("es-ES")} ·
+                      ID {item.id}
+                    </span>
+                  </div>
+                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-address">
+                    {item.provincia} · {item.direccion}
+                  </p>
+                  <p class="history-bands">
+                    Bandas:
+                    {#if getHistoryBandDiff(item).length === 0}
+                      Sin bandas
+                    {:else}
+                      {#each getHistoryBandDiff(item) as bandPart, index}
+                        <span class={`history-band ${bandPart.kind}`}
+                          >{bandPart.value}</span
+                        >{index < getHistoryBandDiff(item).length - 1
+                          ? ", "
+                          : ""}
+                      {/each}
+                    {/if}
+                  </p>
+                  {#if getAntenasMovilesHistoryUrl(item)}
+                    <a
+                      class="history-link"
+                      href={getAntenasMovilesHistoryUrl(item)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                </article>
+              {/each}
+            </div>
+          {/if}
+
+          <h3 class="history-subtitle">
+            Cambios de bandas acumulados ({allBandChangesVisible.length})
+          </h3>
+          {#if allBandChangesVisible.length === 0}
+            <p>No hay cambios acumulados de bandas todavía.</p>
+          {:else}
+            <div class="history-list history-list-compact">
+              {#each allBandChangesVisible as item}
+                <article class="history-item history-item-band">
+                  <div class="history-item-head">
+                    <span class="history-badge neutral">Cambio de bandas</span>
+                    <span class="history-id">
+                      {new Date(item.generatedAt).toLocaleDateString("es-ES")} ·
+                      ID {item.id}
+                    </span>
                   </div>
                   <p class="history-operator">{item.operador}</p>
                   <p class="history-address">
@@ -1054,6 +1359,10 @@
 
   .band-chart-container {
     margin-top: 24px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 32px;
+    align-items: start;
     background: rgba(255, 255, 255, 0.92);
     border: 1px solid rgba(15, 23, 42, 0.1);
     border-radius: 12px;
@@ -1064,51 +1373,6 @@
     margin: 0 0 16px;
     font-size: 1rem;
     color: #0f172a;
-  }
-
-  .band-progress-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 14px;
-  }
-
-  .band-progress-item {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .band-progress-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 10px;
-  }
-
-  .band-progress-label {
-    font-size: 0.9rem;
-    color: #0f172a;
-    font-weight: 600;
-  }
-
-  .band-progress-value {
-    font-size: 0.82rem;
-    color: #475569;
-    white-space: nowrap;
-  }
-
-  .band-progress-track {
-    height: 10px;
-    border-radius: 999px;
-    background: #e2e8f0;
-    overflow: hidden;
-  }
-
-  .band-progress-fill {
-    height: 100%;
-    border-radius: 999px;
-    background: #22c55e;
-    transition: width 0.25s ease;
   }
 
   .history-container {
@@ -1125,6 +1389,12 @@
     color: #0f172a;
   }
 
+  .history-subtitle {
+    margin: 16px 0 10px;
+    font-size: 0.92rem;
+    color: #0f172a;
+  }
+
   .history-summary {
     margin: 0 0 12px;
     font-size: 0.85rem;
@@ -1136,6 +1406,10 @@
     gap: 10px;
     max-height: 420px;
     overflow-y: auto;
+  }
+
+  .history-list-compact {
+    max-height: 520px;
   }
 
   .history-item {
@@ -1153,6 +1427,11 @@
   .history-item-down {
     border-color: #fecaca;
     background: #fef2f2;
+  }
+
+  .history-item-band {
+    border-color: #bfdbfe;
+    background: #eff6ff;
   }
 
   .history-item-head {
@@ -1178,6 +1457,11 @@
   .history-badge.down {
     background: #fee2e2;
     color: #991b1b;
+  }
+
+  .history-badge.neutral {
+    background: #dbeafe;
+    color: #1e3a8a;
   }
 
   .history-id {
@@ -1228,7 +1512,8 @@
   }
 
   @media (max-width: 900px) {
-    .chart-container {
+    .chart-container,
+    .band-chart-container {
       grid-template-columns: 1fr;
       gap: 24px;
     }
