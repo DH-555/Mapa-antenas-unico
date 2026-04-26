@@ -201,6 +201,8 @@ function computeDeclaredStatusByPlanId(
             matched: Boolean(match),
             bands,
             codes,
+            matchLat: Number.isFinite(Number(match?.lat)) ? Number(match.lat) : null,
+            matchLon: Number.isFinite(Number(match?.lon)) ? Number(match.lon) : null,
         });
     });
 
@@ -245,6 +247,72 @@ function getBandDiff(previousBands, currentBands) {
         removed,
         changed: added.length > 0 || removed.length > 0,
     };
+}
+
+function isBandChangeRelevantForUnico(previousBands, currentBands) {
+    return hasRequired5GBand(previousBands) || hasRequired5GBand(currentBands);
+}
+
+function buildBandChangesFromRuns(runs) {
+    if (!Array.isArray(runs)) {
+        return [];
+    }
+
+    return runs.flatMap((run) => {
+        const generatedAt = run?.generatedAt ?? null;
+        const changes = Array.isArray(run?.changes) ? run.changes : [];
+
+        return changes
+            .map((item) => {
+                const diff = getBandDiff(item?.previousBands, item?.currentBands);
+                if (!diff.changed) {
+                    return null;
+                }
+
+                if (!isBandChangeRelevantForUnico(diff.previous, diff.current)) {
+                    return null;
+                }
+
+                return {
+                    generatedAt,
+                    id: Number(item?.id),
+                    operador: item?.operador,
+                    provincia: item?.provincia,
+                    direccion: item?.direccion,
+                    fromDeclared: Boolean(item?.fromDeclared),
+                    toDeclared: Boolean(item?.toDeclared),
+                    fromMatched: Array.isArray(item?.previousBands)
+                        ? item.previousBands.length > 0
+                        : false,
+                    toMatched: Array.isArray(item?.currentBands)
+                        ? item.currentBands.length > 0
+                        : false,
+                    previousBands: diff.previous,
+                    currentBands: diff.current,
+                    addedBands: diff.added,
+                    removedBands: diff.removed,
+                    previousCodes: Array.isArray(item?.previousCodes)
+                        ? item.previousCodes
+                        : [],
+                    currentCodes: Array.isArray(item?.currentCodes)
+                        ? item.currentCodes
+                        : [],
+                    previousLat: Number.isFinite(Number(item?.previousLat))
+                        ? Number(item.previousLat)
+                        : null,
+                    previousLon: Number.isFinite(Number(item?.previousLon))
+                        ? Number(item.previousLon)
+                        : null,
+                    currentLat: Number.isFinite(Number(item?.currentLat))
+                        ? Number(item.currentLat)
+                        : null,
+                    currentLon: Number.isFinite(Number(item?.currentLon))
+                        ? Number(item.currentLon)
+                        : null,
+                };
+            })
+            .filter(Boolean);
+    });
 }
 
 async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
@@ -313,6 +381,10 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
             currentBands: current.bands,
             previousCodes: previous.codes,
             currentCodes: current.codes,
+            previousLat: previous.matchLat,
+            previousLon: previous.matchLon,
+            currentLat: current.matchLat,
+            currentLon: current.matchLon,
         });
     });
 
@@ -340,6 +412,10 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
             return;
         }
 
+        if (!isBandChangeRelevantForUnico(diff.previous, diff.current)) {
+            return;
+        }
+
         bandChanges.push({
             id,
             operador: planAntena.operador,
@@ -355,6 +431,10 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
             removedBands: diff.removed,
             previousCodes: previous.codes,
             currentCodes: current.codes,
+            previousLat: previous.matchLat,
+            previousLon: previous.matchLon,
+            currentLat: current.matchLat,
+            currentLon: current.matchLon,
         });
     });
 
@@ -370,7 +450,7 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
     const previousRuns = Array.isArray(existingHistory?.runs) ? existingHistory.runs : [];
     const previousBandChangeLog = Array.isArray(existingHistory?.bandChangesLog)
         ? existingHistory.bandChangesLog
-        : [];
+        : buildBandChangesFromRuns(previousRuns);
 
     const run = {
         generatedAt: currentSnapshot.generatedAt,

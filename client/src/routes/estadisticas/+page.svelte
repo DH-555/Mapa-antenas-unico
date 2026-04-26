@@ -355,6 +355,70 @@
     ? latestHistoryRun.changes
     : [];
 
+  $: latestBandChanges = Array.isArray(latestHistoryRun?.bandChanges)
+    ? latestHistoryRun.bandChanges
+    : [];
+
+  $: allHistoryRuns = Array.isArray(declarationHistory?.runs)
+    ? declarationHistory.runs
+    : [];
+
+  $: allDeclarationChanges = allHistoryRuns.flatMap((run) =>
+    (Array.isArray(run?.changes) ? run.changes : []).map((item) => ({
+      generatedAt: run.generatedAt,
+      ...item,
+    })),
+  );
+
+  $: allBandChanges = Array.isArray(declarationHistory?.bandChangesLog)
+    ? declarationHistory.bandChangesLog
+    : allHistoryRuns.flatMap((run) =>
+        [
+          ...(Array.isArray(run?.bandChanges)
+            ? run.bandChanges
+            : Array.isArray(run?.changes)
+              ? run.changes
+              : []),
+        ].map((item) => ({
+          generatedAt: run.generatedAt,
+          ...item,
+        })),
+      );
+
+  function hasRequiredBandInList(bands) {
+    return (Array.isArray(bands) ? bands : []).some((band) =>
+      REQUIRED_5G_BANDS.has(String(band).toUpperCase()),
+    );
+  }
+
+  function isRelevantBandChange(item) {
+    return (
+      hasRequiredBandInList(item?.previousBands) ||
+      hasRequiredBandInList(item?.currentBands)
+    );
+  }
+
+  $: latestBandChangesVisible = latestBandChanges.filter(isRelevantBandChange);
+
+  $: allBandChangesVisible = allBandChanges.filter(isRelevantBandChange);
+
+  $: allDeclarationChangesVisible = allDeclarationChanges.filter((item) => {
+    const current = antenaById.get(Number(item?.id));
+    if (!current) {
+      return true;
+    }
+
+    if (item?.change === "deja_de_declarar" && current.declared) {
+      return false;
+    }
+
+    if (item?.change === "declara_ahora" && !current.declared) {
+      return false;
+    }
+
+    return true;
+  });
+
   $: antenaById = new Map(
     allAntenas.map((antena) => [Number(antena.id), antena]),
   );
@@ -432,6 +496,12 @@
     const code = getHistoryPrimaryCode(item);
     if (!code) {
       return "";
+    }
+
+    const declaredLat = Number(item?.currentLat ?? item?.previousLat);
+    const declaredLon = Number(item?.currentLon ?? item?.previousLon);
+    if (Number.isFinite(declaredLon) && Number.isFinite(declaredLat)) {
+      return `https://antenasmoviles.es/?b&${encodeURIComponent(code)}#19/${declaredLat.toFixed(6)}/${declaredLon.toFixed(6)}/osm`;
     }
 
     const sourceAntena = antenaById.get(Number(item?.id));
@@ -710,7 +780,7 @@
       </div>
 
       <div class="history-container">
-        <h2>Historial de cambios de declaración</h2>
+        <h2>Historial de cambios (declaración y bandas)</h2>
         {#if !latestHistoryRun}
           <p>No hay historial disponible todavía.</p>
         {:else}
@@ -718,13 +788,32 @@
             Última actualización: {new Date(
               latestHistoryRun.generatedAt,
             ).toLocaleString("es-ES")}
-            · Cambios: {latestHistoryRun.summary?.totalChanges ?? 0}
+            · Cambios de declaración: {latestHistoryRun.summary?.totalChanges ??
+              0}
             · Declaran ahora: {latestHistoryRun.summary?.gained ?? 0}
             · Dejan de declarar: {latestHistoryRun.summary?.lost ?? 0}
+            · Antenas con cambios de bandas: {latestBandChangesVisible.length}
+            · Bandas añadidas: {latestBandChangesVisible.reduce(
+              (total, item) =>
+                total +
+                (Array.isArray(item?.addedBands) ? item.addedBands.length : 0),
+              0,
+            )}
+            · Bandas eliminadas: {latestBandChangesVisible.reduce(
+              (total, item) =>
+                total +
+                (Array.isArray(item?.removedBands)
+                  ? item.removedBands.length
+                  : 0),
+              0,
+            )}
           </p>
 
           {#if latestHistoryChanges.length === 0}
-            <p>No hubo cambios respecto a la actualización anterior.</p>
+            <p>
+              No hubo cambios de declaración respecto a la actualización
+              anterior.
+            </p>
           {:else}
             <div class="history-list">
               {#each latestHistoryChanges as item}
@@ -740,6 +829,158 @@
                         : "Deja de declarar"}
                     </span>
                     <span class="history-id">ID {item.id}</span>
+                  </div>
+                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-address">
+                    {item.provincia} · {item.direccion}
+                  </p>
+                  <p class="history-bands">
+                    Bandas:
+                    {#if getHistoryBandDiff(item).length === 0}
+                      Sin bandas
+                    {:else}
+                      {#each getHistoryBandDiff(item) as bandPart, index}
+                        <span class={`history-band ${bandPart.kind}`}
+                          >{bandPart.value}</span
+                        >{index < getHistoryBandDiff(item).length - 1
+                          ? ", "
+                          : ""}
+                      {/each}
+                    {/if}
+                  </p>
+                  {#if getAntenasMovilesHistoryUrl(item)}
+                    <a
+                      class="history-link"
+                      href={getAntenasMovilesHistoryUrl(item)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                </article>
+              {/each}
+            </div>
+          {/if}
+
+          <h3 class="history-subtitle">
+            Cambios de bandas en la última actualización
+          </h3>
+          {#if latestBandChangesVisible.length === 0}
+            <p>No hubo cambios de bandas en esta actualización.</p>
+          {:else}
+            <div class="history-list">
+              {#each latestBandChangesVisible as item}
+                <article class="history-item history-item-band">
+                  <div class="history-item-head">
+                    <span class="history-badge neutral">Cambio de bandas</span>
+                    <span class="history-id">ID {item.id}</span>
+                  </div>
+                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-address">
+                    {item.provincia} · {item.direccion}
+                  </p>
+                  <p class="history-bands">
+                    Bandas:
+                    {#if getHistoryBandDiff(item).length === 0}
+                      Sin bandas
+                    {:else}
+                      {#each getHistoryBandDiff(item) as bandPart, index}
+                        <span class={`history-band ${bandPart.kind}`}
+                          >{bandPart.value}</span
+                        >{index < getHistoryBandDiff(item).length - 1
+                          ? ", "
+                          : ""}
+                      {/each}
+                    {/if}
+                  </p>
+                  {#if getAntenasMovilesHistoryUrl(item)}
+                    <a
+                      class="history-link"
+                      href={getAntenasMovilesHistoryUrl(item)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                </article>
+              {/each}
+            </div>
+          {/if}
+
+          <h3 class="history-subtitle">
+            Cambios de declaración acumulados ({allDeclarationChangesVisible.length})
+          </h3>
+          {#if allDeclarationChangesVisible.length === 0}
+            <p>No hay cambios de declaración acumulados todavía.</p>
+          {:else}
+            <div class="history-list history-list-compact">
+              {#each allDeclarationChangesVisible as item}
+                <article
+                  class={`history-item ${item.change === "declara_ahora" ? "history-item-up" : "history-item-down"}`}
+                >
+                  <div class="history-item-head">
+                    <span
+                      class={`history-badge ${item.change === "declara_ahora" ? "up" : "down"}`}
+                    >
+                      {item.change === "declara_ahora"
+                        ? "Declara ahora"
+                        : "Deja de declarar"}
+                    </span>
+                    <span class="history-id">
+                      {new Date(item.generatedAt).toLocaleDateString("es-ES")} ·
+                      ID {item.id}
+                    </span>
+                  </div>
+                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-address">
+                    {item.provincia} · {item.direccion}
+                  </p>
+                  <p class="history-bands">
+                    Bandas:
+                    {#if getHistoryBandDiff(item).length === 0}
+                      Sin bandas
+                    {:else}
+                      {#each getHistoryBandDiff(item) as bandPart, index}
+                        <span class={`history-band ${bandPart.kind}`}
+                          >{bandPart.value}</span
+                        >{index < getHistoryBandDiff(item).length - 1
+                          ? ", "
+                          : ""}
+                      {/each}
+                    {/if}
+                  </p>
+                  {#if getAntenasMovilesHistoryUrl(item)}
+                    <a
+                      class="history-link"
+                      href={getAntenasMovilesHistoryUrl(item)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                </article>
+              {/each}
+            </div>
+          {/if}
+
+          <h3 class="history-subtitle">
+            Cambios de bandas acumulados ({allBandChangesVisible.length})
+          </h3>
+          {#if allBandChangesVisible.length === 0}
+            <p>No hay cambios acumulados de bandas todavía.</p>
+          {:else}
+            <div class="history-list history-list-compact">
+              {#each allBandChangesVisible as item}
+                <article class="history-item history-item-band">
+                  <div class="history-item-head">
+                    <span class="history-badge neutral">Cambio de bandas</span>
+                    <span class="history-id">
+                      {new Date(item.generatedAt).toLocaleDateString("es-ES")} ·
+                      ID {item.id}
+                    </span>
                   </div>
                   <p class="history-operator">{item.operador}</p>
                   <p class="history-address">
@@ -1006,6 +1247,12 @@
     color: #0f172a;
   }
 
+  .history-subtitle {
+    margin: 16px 0 10px;
+    font-size: 0.92rem;
+    color: #0f172a;
+  }
+
   .history-summary {
     margin: 0 0 12px;
     font-size: 0.85rem;
@@ -1017,6 +1264,10 @@
     gap: 10px;
     max-height: 420px;
     overflow-y: auto;
+  }
+
+  .history-list-compact {
+    max-height: 520px;
   }
 
   .history-item {
@@ -1034,6 +1285,11 @@
   .history-item-down {
     border-color: #fecaca;
     background: #fef2f2;
+  }
+
+  .history-item-band {
+    border-color: #bfdbfe;
+    background: #eff6ff;
   }
 
   .history-item-head {
@@ -1059,6 +1315,11 @@
   .history-badge.down {
     background: #fee2e2;
     color: #991b1b;
+  }
+
+  .history-badge.neutral {
+    background: #dbeafe;
+    color: #1e3a8a;
   }
 
   .history-id {
