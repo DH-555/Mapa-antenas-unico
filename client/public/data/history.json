@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-28T07:11:10.105Z",
+  "updatedAt": "2026-04-29T06:41:00.571Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,106 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-04-29T06:41:00.571Z",
+      "previousSnapshotAt": "2026-04-28T07:11:10.105Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 1,
+        "totalBandsRemoved": 2
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 6962,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Zamora",
+          "direccion": "Morales del Vino",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CYLR6919A"
+          ],
+          "currentCodes": [
+            "CYLR6919A"
+          ],
+          "previousLat": 41.44425,
+          "previousLon": -5.725681,
+          "currentLat": 41.44425,
+          "currentLon": -5.725681
+        },
+        {
+          "id": 6985,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Zamora",
+          "direccion": "Corrales del Vino",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CYLR6927F"
+          ],
+          "currentCodes": [
+            "CYLR6927F"
+          ],
+          "previousLat": 41.357417,
+          "previousLon": -5.736944,
+          "currentLat": 41.357417,
+          "currentLon": -5.736944
+        }
+      ]
+    },
     {
       "generatedAt": "2026-04-28T07:11:10.105Z",
       "previousSnapshotAt": "2026-04-27T06:44:05.225Z",
@@ -284,6 +384,93 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-04-29T06:41:00.571Z",
+      "id": 6962,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Zamora",
+      "direccion": "Morales del Vino",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CYLR6919A"
+      ],
+      "currentCodes": [
+        "CYLR6919A"
+      ],
+      "previousLat": 41.44425,
+      "previousLon": -5.725681,
+      "currentLat": 41.44425,
+      "currentLon": -5.725681
+    },
+    {
+      "generatedAt": "2026-04-29T06:41:00.571Z",
+      "id": 6985,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Zamora",
+      "direccion": "Corrales del Vino",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CYLR6927F"
+      ],
+      "currentCodes": [
+        "CYLR6927F"
+      ],
+      "previousLat": 41.357417,
+      "previousLon": -5.736944,
+      "currentLat": 41.357417,
+      "currentLon": -5.736944
+    },
     {
       "generatedAt": "2026-04-26T19:56:12.492Z",
       "id": 8615,
