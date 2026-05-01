@@ -891,7 +891,7 @@
           {/if}
         </h2>
         <p class="subsidized-description">
-          Porcentaje de antenas del plan subvencionado (antenas.json) respecto al total de antenas declaradas en antenasmoviles.es por operadora.
+          Porcentaje de antenas del plan subvencionado respecto al total de antenas declaradas en antenasmoviles.es por operadora.
         </p>
 
         {#if subsidizedStatsSeries.length === 0}
