@@ -5,6 +5,7 @@
   let loading = true;
   let error = "";
   let allAntenas = [];
+  let allDeclaredAntenas = [];
   let declarationHistory = null;
 
   let provinceOptions = [];
@@ -368,6 +369,58 @@
       ? (declaredTotals.declared / declaredTotals.total) * 100
       : 0;
 
+  $: subsidizedStatsSeries = (() => {
+    const totalByCode = new Map();
+    allDeclaredAntenas.forEach((declared) => {
+      const code = normalizeDeclaredApiOperatorCode(declared.operator);
+      if (!code) return;
+      totalByCode.set(code, (totalByCode.get(code) ?? 0) + 1);
+    });
+
+    const counts = new Map();
+    filteredAntenasByRegion.forEach((antena) => {
+      const key =
+        String(antena.operador ?? "Sin operador").trim() || "Sin operador";
+      if (!counts.has(key)) {
+        const code = resolveDeclaredOperatorCode(antena.operador);
+        counts.set(key, { operator: key, subsidized: 0, total: 0, percent: 0, code });
+      }
+      counts.get(key).subsidized += 1;
+    });
+
+    return [...counts.values()]
+      .map((item) => {
+        const total = item.code ? (totalByCode.get(item.code) ?? 0) : 0;
+        return {
+          ...item,
+          total,
+          percent: total > 0 ? (item.subsidized / total) * 100 : 0,
+        };
+      })
+      .sort((a, b) => b.percent - a.percent || b.subsidized - a.subsidized);
+  })();
+
+  $: subsidizedTotals = (() => {
+    const subsidized = subsidizedStatsSeries.reduce(
+      (sum, item) => sum + item.subsidized,
+      0,
+    );
+    const seenCodes = new Set();
+    let total = 0;
+    subsidizedStatsSeries.forEach((item) => {
+      if (item.code && !seenCodes.has(item.code)) {
+        seenCodes.add(item.code);
+        total += item.total;
+      }
+    });
+    return { subsidized, total };
+  })();
+
+  $: subsidizedOverallPercent =
+    subsidizedTotals.total > 0
+      ? (subsidizedTotals.subsidized / subsidizedTotals.total) * 100
+      : 0;
+
   $: latestHistoryRun = Array.isArray(declarationHistory?.runs)
     ? (declarationHistory.runs[0] ?? null)
     : null;
@@ -591,6 +644,7 @@
         Array.isArray(declaredData.antenas) ? declaredData.antenas : [],
       );
       allAntenas = mergedAntenas;
+      allDeclaredAntenas = Array.isArray(declaredData.antenas) ? declaredData.antenas : [];
 
       provinceOptions = [
         ...new Set(allAntenas.map((antena) => antena.provincia)),
@@ -814,6 +868,40 @@
                   <span class="declared-progress-label">{item.operator}</span>
                   <span class="declared-progress-value">
                     {item.declared}/{item.total} ({item.percent.toFixed(1)}%)
+                  </span>
+                </div>
+                <div class="declared-progress-track">
+                  <div
+                    class="declared-progress-fill"
+                    style={`width: ${item.percent.toFixed(2)}%; background: ${getColor(item.operator)}`}
+                  ></div>
+                </div>
+              </div>
+            {/each}
+          </div>
+        {/if}
+      </div>
+
+      <div class="declared-chart-container">
+        <h2>
+          % Red subvencionada vs red total por operadora
+          {subsidizedTotals.subsidized > 0 &&
+            `(${subsidizedTotals.subsidized}/${subsidizedTotals.total}, ${subsidizedOverallPercent.toFixed(1)}%)`}
+        </h2>
+        <p class="subsidized-description">
+          Porcentaje de antenas del plan subvencionado (antenas.json) respecto al total de antenas declaradas en antenasmoviles.es por operadora.
+        </p>
+
+        {#if subsidizedStatsSeries.length === 0}
+          <p>No hay datos para los filtros seleccionados.</p>
+        {:else}
+          <div class="declared-progress-list">
+            {#each subsidizedStatsSeries as item}
+              <div class="declared-progress-item">
+                <div class="declared-progress-head">
+                  <span class="declared-progress-label">{item.operator}</span>
+                  <span class="declared-progress-value">
+                    {item.subsidized}/{item.total} ({item.percent.toFixed(1)}%)
                   </span>
                 </div>
                 <div class="declared-progress-track">
@@ -1243,6 +1331,12 @@
     margin: 0 0 12px;
     font-size: 1rem;
     color: #0f172a;
+  }
+
+  .subsidized-description {
+    margin: 0 0 16px;
+    font-size: 0.85rem;
+    color: #475569;
   }
 
   .band-filter-toggle {
