@@ -28,6 +28,8 @@
     let declaredDataLoaded = false;
     let declaredDataError = "";
     let declaredDataPromise = null;
+    let filterN78 = false;
+    let filterN28Plus = false;
 
     let isFilterPanelOpen = false;
     let filterMode = "province"; // 'province' o 'community'
@@ -320,7 +322,22 @@
         }
 
         let opacityExpression;
-        if (declaredMode === "declared") {
+        const isBandFilterActive = filterN78 || filterN28Plus;
+
+        if (isBandFilterActive) {
+            const conditions = [];
+            if (filterN78) {
+                conditions.push(["in", "N78", ["get", "declaredBands"]]);
+            }
+            if (filterN28Plus) {
+                conditions.push(["in", "N28+", ["get", "declaredBands"]]);
+            }
+            const matchCondition =
+                conditions.length === 1
+                    ? conditions[0]
+                    : ["any", ...conditions];
+            opacityExpression = ["case", matchCondition, 1, 0.25];
+        } else if (declaredMode === "declared") {
             opacityExpression = [
                 "case",
                 ["boolean", ["get", "declared"], false],
@@ -410,6 +427,18 @@
             const loadedOk = await ensureDeclaredDataLoaded();
             if (!loadedOk) {
                 declaredMode = "neutral";
+            }
+        }
+
+        updateDeclaredVisibility();
+    }
+
+    async function handleBandFilterChange() {
+        if (filterN78 || filterN28Plus) {
+            const loadedOk = await ensureDeclaredDataLoaded();
+            if (!loadedOk) {
+                filterN78 = false;
+                filterN28Plus = false;
             }
         }
 
@@ -561,6 +590,8 @@
         idQuery = "";
         addressQuery = "";
         declaredMode = "neutral";
+        filterN78 = false;
+        filterN28Plus = false;
         updateDeclaredVisibility();
         applyFilters({ fit: true });
     }
@@ -1018,6 +1049,26 @@
                 Neutro por defecto. "Declaradas" resalta las declaradas (las demás
                 se ven tenues). "No declaradas" hace lo contrario.
             </p>
+            <div class="band-filters">
+                <label>
+                    <input
+                        type="checkbox"
+                        bind:checked={filterN78}
+                        disabled={declaredDataLoading}
+                        on:change={handleBandFilterChange}
+                    />
+                    <span>Resaltar N78 / N78+</span>
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        bind:checked={filterN28Plus}
+                        disabled={declaredDataLoading}
+                        on:change={handleBandFilterChange}
+                    />
+                    <span>Resaltar N28+</span>
+                </label>
+            </div>
             {#if declaredDataLoading}
                 <p class="filter-loader">Cargando antenas declaradas...</p>
             {/if}
@@ -1298,6 +1349,26 @@
         font-size: 0.78rem;
         color: #bfdbfe;
         line-height: 1.35;
+    }
+
+    .band-filters {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 10px;
+    }
+
+    .band-filters label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.84rem;
+        cursor: pointer;
+    }
+
+    .band-filters label:has(input:disabled) {
+        cursor: not-allowed;
+        opacity: 0.5;
     }
 
     .filter-error {
