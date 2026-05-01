@@ -13,8 +13,11 @@
   let selectedProvinces = [];
   let selectedCommunities = [];
   let filterMode = "province"; // 'province' o 'community'
+  let bandFilter = "all"; // 'all' | 'n78' | 'n28plus'
   const DECLARED_MATCH_DISTANCE_METERS = 900;
   const REQUIRED_5G_BANDS = new Set(["N78", "N78+", "N28", "N28+"]);
+  const N78_BANDS = new Set(["N78", "N78+"]);
+  const N28PLUS_BANDS = new Set(["N28+"]);
 
   // Mapeo de provincias a comunidades autónomas (normalizado para absorber variantes de nombres)
   const provinciaToCommunity = {
@@ -259,12 +262,20 @@
     const hasRequired5GBand = (bands) =>
       bands.some((band) => REQUIRED_5G_BANDS.has(String(band).toUpperCase()));
 
+    const hasN78Band = (bands) =>
+      bands.some((band) => N78_BANDS.has(String(band).toUpperCase()));
+
+    const hasN28PlusBand = (bands) =>
+      bands.some((band) => N28PLUS_BANDS.has(String(band).toUpperCase()));
+
     return antenas.map((antena) => {
       const match = findDeclaredMatch(antena, declaredIndex, cellSizeDegrees);
       if (!match) {
         return {
           ...antena,
           declared: false,
+          declaredN78: false,
+          declaredN28Plus: false,
         };
       }
 
@@ -272,6 +283,8 @@
       return {
         ...antena,
         declared: hasRequired5GBand(matchedBands),
+        declaredN78: hasN78Band(matchedBands),
+        declaredN28Plus: hasN28PlusBand(matchedBands),
       };
     });
   }
@@ -321,7 +334,15 @@
 
       const item = counts.get(key);
       item.total += 1;
-      if (antena.declared) {
+
+      const isDeclared =
+        bandFilter === "n78"
+          ? antena.declaredN78
+          : bandFilter === "n28plus"
+            ? antena.declaredN28Plus
+            : antena.declared;
+
+      if (isDeclared) {
         item.declared += 1;
       }
     });
@@ -750,10 +771,38 @@
 
       <div class="declared-chart-container">
         <h2>
-          Declaradas por operadora
+          {bandFilter === "n78"
+            ? "Con N78/N78+"
+            : bandFilter === "n28plus"
+              ? "Con N28+"
+              : "Declaradas"} por operadora
           {declaredTotals.total > 0 &&
             `(${declaredTotals.declared}/${declaredTotals.total}, ${declaredOverallPercent.toFixed(1)}%)`}
         </h2>
+
+        <div class="band-filter-toggle">
+          <button
+            type="button"
+            class:active={bandFilter === "all"}
+            on:click={() => (bandFilter = "all")}
+          >
+            N78/N28+
+          </button>
+          <button
+            type="button"
+            class:active={bandFilter === "n78"}
+            on:click={() => (bandFilter = "n78")}
+          >
+            N78/N78+
+          </button>
+          <button
+            type="button"
+            class:active={bandFilter === "n28plus"}
+            on:click={() => (bandFilter = "n28plus")}
+          >
+            N28+
+          </button>
+        </div>
 
         {#if declaredStatsSeries.length === 0}
           <p>No hay datos para los filtros seleccionados.</p>
@@ -1191,9 +1240,34 @@
   }
 
   .declared-chart-container h2 {
-    margin: 0 0 16px;
+    margin: 0 0 12px;
     font-size: 1rem;
     color: #0f172a;
+  }
+
+  .band-filter-toggle {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 12px;
+  }
+
+  .band-filter-toggle button {
+    border: 0;
+    padding: 6px 12px;
+    background: transparent;
+    color: #64748b;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    font-size: 0.85rem;
+  }
+
+  .band-filter-toggle button.active {
+    color: #0f172a;
+    border-bottom-color: #22c55e;
   }
 
   .declared-progress-list {
