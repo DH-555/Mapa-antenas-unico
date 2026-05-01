@@ -23,7 +23,7 @@
     let selectedCommunities = [];
     let idQuery = "";
     let addressQuery = "";
-    let showDeclaredStatus = false;
+    let declaredMode = "neutral"; // 'declared' | 'neutral' | 'undeclared'
     let declaredDataLoading = false;
     let declaredDataLoaded = false;
     let declaredDataError = "";
@@ -319,9 +319,24 @@
             return;
         }
 
-        const opacityExpression = showDeclaredStatus
-            ? ["case", ["boolean", ["get", "declared"], false], 1, 0.25]
-            : 1;
+        let opacityExpression;
+        if (declaredMode === "declared") {
+            opacityExpression = [
+                "case",
+                ["boolean", ["get", "declared"], false],
+                1,
+                0.25,
+            ];
+        } else if (declaredMode === "undeclared") {
+            opacityExpression = [
+                "case",
+                ["boolean", ["get", "declared"], false],
+                0.25,
+                1,
+            ];
+        } else {
+            opacityExpression = 1;
+        }
 
         if (map.getLayer("antenas-dots")) {
             map.setPaintProperty(
@@ -388,14 +403,13 @@
         return declaredDataPromise;
     }
 
-    async function handleDeclaredToggle(event) {
-        const checked = event.currentTarget.checked;
-        showDeclaredStatus = checked;
+    async function handleDeclaredModeChange(event) {
+        declaredMode = event.currentTarget.value;
 
-        if (checked) {
+        if (declaredMode !== "neutral") {
             const loadedOk = await ensureDeclaredDataLoaded();
             if (!loadedOk) {
-                showDeclaredStatus = false;
+                declaredMode = "neutral";
             }
         }
 
@@ -546,6 +560,8 @@
         selectedCommunities = [];
         idQuery = "";
         addressQuery = "";
+        declaredMode = "neutral";
+        updateDeclaredVisibility();
         applyFilters({ fit: true });
     }
 
@@ -964,18 +980,43 @@
 
         <section>
             <h3>Declaradas (AntenasMoviles)</h3>
-            <label>
-                <input
-                    type="checkbox"
-                    bind:checked={showDeclaredStatus}
-                    disabled={declaredDataLoading}
-                    on:change={handleDeclaredToggle}
-                />
-                <span>Resaltar declaradas</span>
-            </label>
+            <div class="declared-switch">
+                <label class:active={declaredMode === "declared"}>
+                    <input
+                        type="radio"
+                        name="declaredMode"
+                        value="declared"
+                        bind:group={declaredMode}
+                        disabled={declaredDataLoading}
+                        on:change={handleDeclaredModeChange}
+                    />
+                    <span>Declaradas</span>
+                </label>
+                <label class:active={declaredMode === "neutral"}>
+                    <input
+                        type="radio"
+                        name="declaredMode"
+                        value="neutral"
+                        bind:group={declaredMode}
+                        on:change={handleDeclaredModeChange}
+                    />
+                    <span>Neutro</span>
+                </label>
+                <label class:active={declaredMode === "undeclared"}>
+                    <input
+                        type="radio"
+                        name="declaredMode"
+                        value="undeclared"
+                        bind:group={declaredMode}
+                        disabled={declaredDataLoading}
+                        on:change={handleDeclaredModeChange}
+                    />
+                    <span>No declaradas</span>
+                </label>
+            </div>
             <p class="filter-help">
-                Desactivado por defecto. Al activarlo, las no declaradas se ven
-                tenues.
+                Neutro por defecto. "Declaradas" resalta las declaradas (las demás
+                se ven tenues). "No declaradas" hace lo contrario.
             </p>
             {#if declaredDataLoading}
                 <p class="filter-loader">Cargando antenas declaradas...</p>
@@ -1204,6 +1245,52 @@
         font-size: 0.78rem;
         color: #cbd5e1;
         line-height: 1.35;
+    }
+
+    .declared-switch {
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #334155;
+    }
+
+    .declared-switch label {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 7px 4px;
+        font-size: 0.78rem;
+        text-align: center;
+        cursor: pointer;
+        background: #0f172a;
+        color: #94a3b8;
+        transition: background 0.15s, color 0.15s;
+        line-height: 1.2;
+    }
+
+    .declared-switch label:not(:last-child) {
+        border-right: 1px solid #334155;
+    }
+
+    .declared-switch label.active {
+        background: #14532d;
+        color: #dcfce7;
+    }
+
+    .declared-switch label:hover:not(.active) {
+        background: #1e293b;
+        color: #e2e8f0;
+    }
+
+    .declared-switch input[type="radio"] {
+        display: none;
+    }
+
+    .declared-switch label:has(input:disabled) {
+        cursor: not-allowed;
+        opacity: 0.5;
     }
 
     .filter-loader {
