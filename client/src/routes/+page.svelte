@@ -336,7 +336,7 @@
                 conditions.length === 1
                     ? conditions[0]
                     : ["any", ...conditions];
-            opacityExpression = ["case", matchCondition, 1, 0.25];
+            opacityExpression = ["case", matchCondition, 1, 0];
         } else if (declaredMode === "declared") {
             opacityExpression = [
                 "case",
