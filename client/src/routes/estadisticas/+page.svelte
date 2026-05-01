@@ -786,7 +786,7 @@
             class:active={bandFilter === "all"}
             on:click={() => (bandFilter = "all")}
           >
-            N78/N28+
+            Todo
           </button>
           <button
             type="button"
