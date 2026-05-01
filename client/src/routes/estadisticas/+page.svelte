@@ -885,8 +885,9 @@
       <div class="declared-chart-container">
         <h2>
           % Red subvencionada vs red total por operadora
-          {subsidizedTotals.subsidized > 0 &&
-            `(${subsidizedTotals.subsidized}/${subsidizedTotals.total}, ${subsidizedOverallPercent.toFixed(1)}%)`}
+          {#if subsidizedTotals.subsidized > 0}
+            ({subsidizedTotals.subsidized}/{subsidizedTotals.total}, {subsidizedOverallPercent.toFixed(1)}%)
+          {/if}
         </h2>
         <p class="subsidized-description">
           Porcentaje de antenas del plan subvencionado (antenas.json) respecto al total de antenas declaradas en antenasmoviles.es por operadora.
