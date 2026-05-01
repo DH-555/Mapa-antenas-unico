@@ -639,12 +639,13 @@
         declarationHistory = await historyResponse.json();
       }
 
+      const declaredAntenas = Array.isArray(declaredData.antenas) ? declaredData.antenas : [];
       const mergedAntenas = mergeDeclaredStatus(
         data.antenas ?? [],
-        Array.isArray(declaredData.antenas) ? declaredData.antenas : [],
+        declaredAntenas,
       );
       allAntenas = mergedAntenas;
-      allDeclaredAntenas = Array.isArray(declaredData.antenas) ? declaredData.antenas : [];
+      allDeclaredAntenas = declaredAntenas;
 
       provinceOptions = [
         ...new Set(allAntenas.map((antena) => antena.provincia)),
