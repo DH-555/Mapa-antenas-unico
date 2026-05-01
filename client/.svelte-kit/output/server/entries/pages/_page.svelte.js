@@ -12,7 +12,7 @@ function _page($$renderer, $$props) {
 		let selectedOperators = [];
 		let idQuery = "";
 		let addressQuery = "";
-		let showDeclaredStatus = false;
+		let declaredMode = "neutral";
 		let declaredDataLoading = false;
 		let isFilterPanelOpen = false;
 		$: filteredAntenas.length;
@@ -23,16 +23,16 @@ function _page($$renderer, $$props) {
 		const each_array = ensure_array_like(phaseOptions);
 		for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
 			let phase = each_array[$$index];
-			$$renderer.push(`<label class="svelte-1uha8ag"><input type="checkbox"${attr("value", phase)}${attr("checked", selectedPhases.includes(phase), true)}/> <span>${escape_html(phase)}</span></label>`);
+			$$renderer.push(`<label class="svelte-1uha8ag"><input type="checkbox"${attr("value", phase)}${attr("checked", selectedPhases.includes(phase), true)} class="svelte-1uha8ag"/> <span>${escape_html(phase)}</span></label>`);
 		}
 		$$renderer.push(`<!--]--></section> <section class="svelte-1uha8ag"><h3 class="svelte-1uha8ag">Operador</h3> <div class="operators-list svelte-1uha8ag"><!--[-->`);
 		const each_array_1 = ensure_array_like(operatorOptions);
 		for (let $$index_1 = 0, $$length = each_array_1.length; $$index_1 < $$length; $$index_1++) {
 			let operator = each_array_1[$$index_1];
-			$$renderer.push(`<label class="svelte-1uha8ag"><input type="checkbox"${attr("value", operator)}${attr("checked", selectedOperators.includes(operator), true)}/> <span>${escape_html(operator)}</span></label>`);
+			$$renderer.push(`<label class="svelte-1uha8ag"><input type="checkbox"${attr("value", operator)}${attr("checked", selectedOperators.includes(operator), true)} class="svelte-1uha8ag"/> <span>${escape_html(operator)}</span></label>`);
 		}
-		$$renderer.push(`<!--]--></div></section> <section class="svelte-1uha8ag"><h3 class="svelte-1uha8ag">Declaradas (AntenasMoviles)</h3> <label class="svelte-1uha8ag"><input type="checkbox"${attr("checked", showDeclaredStatus, true)}${attr("disabled", declaredDataLoading, true)}/> <span>Resaltar declaradas</span></label> <p class="filter-help svelte-1uha8ag">Desactivado por defecto. Al activarlo, las no declaradas se ven
-                tenues.</p> `);
+		$$renderer.push(`<!--]--></div></section> <section class="svelte-1uha8ag"><h3 class="svelte-1uha8ag">Declaradas (AntenasMoviles)</h3> <div class="declared-switch svelte-1uha8ag"><label${attr_class("svelte-1uha8ag", void 0, { "active": declaredMode === "declared" })}><input type="radio" name="declaredMode" value="declared"${attr("checked", declaredMode === "declared", true)}${attr("disabled", declaredDataLoading, true)} class="svelte-1uha8ag"/> <span>Declaradas</span></label> <label${attr_class("svelte-1uha8ag", void 0, { "active": declaredMode === "neutral" })}><input type="radio" name="declaredMode" value="neutral"${attr("checked", declaredMode === "neutral", true)} class="svelte-1uha8ag"/> <span>Neutro</span></label> <label${attr_class("svelte-1uha8ag", void 0, { "active": declaredMode === "undeclared" })}><input type="radio" name="declaredMode" value="undeclared"${attr("checked", declaredMode === "undeclared", true)}${attr("disabled", declaredDataLoading, true)} class="svelte-1uha8ag"/> <span>No declaradas</span></label></div> <p class="filter-help svelte-1uha8ag">Neutro por defecto. "Declaradas" resalta las declaradas (las demás
+                se ven tenues). "No declaradas" hace lo contrario.</p> `);
 		$$renderer.push("<!--[-1-->");
 		$$renderer.push(`<!--]--> `);
 		$$renderer.push("<!--[-1-->");

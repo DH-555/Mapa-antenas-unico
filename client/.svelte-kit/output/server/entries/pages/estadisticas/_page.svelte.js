@@ -4,13 +4,19 @@ import "../../../chunks/navigation.js";
 //#region src/routes/estadisticas/+page.svelte
 function _page($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
-		let getSelectedRegions, filteredAntenasByRegion, statsSeries, declaredStatsSeries, declaredTotals, latestHistoryRun;
+		let getSelectedRegions, filteredAntenasByRegion, statsSeries, declaredStatsSeries, declaredTotals, latestHistoryRun, latestBandChanges, allHistoryRuns, allDeclarationChanges, allBandChanges, antenaById;
 		let allAntenas = [];
 		let declarationHistory = null;
 		let provinceOptions = [];
 		let selectedProvinces = [];
 		let selectedCommunities = [];
 		let filterMode = "province";
+		const REQUIRED_5G_BANDS = new Set([
+			"N78",
+			"N78+",
+			"N28",
+			"N28+"
+		]);
 		const provinciaToCommunity = {
 			alava: "País Vasco",
 			"araba alava": "País Vasco",
@@ -82,6 +88,12 @@ function _page($$renderer, $$props) {
 		function getCommunityForProvince(province) {
 			return provinciaToCommunity[normalizeProvinceName(province)] || province;
 		}
+		function hasRequiredBandInList(bands) {
+			return (Array.isArray(bands) ? bands : []).some((band) => REQUIRED_5G_BANDS.has(String(band).toUpperCase()));
+		}
+		function isRelevantBandChange(item) {
+			return hasRequiredBandInList(item?.previousBands) || hasRequiredBandInList(item?.currentBands);
+		}
 		$: getSelectedRegions = () => {
 			if (filterMode === "province") return selectedProvinces;
 			return selectedCommunities.length > 0 ? provinceOptions.filter((p) => {
@@ -133,7 +145,26 @@ function _page($$renderer, $$props) {
 		$: declaredTotals.total > 0 && declaredTotals.declared / declaredTotals.total * 100;
 		$: latestHistoryRun = Array.isArray(declarationHistory?.runs) ? declarationHistory.runs[0] ?? null : null;
 		$: Array.isArray(latestHistoryRun?.changes) && latestHistoryRun.changes;
-		$: new Map(allAntenas.map((antena) => [Number(antena.id), antena]));
+		$: latestBandChanges = Array.isArray(latestHistoryRun?.bandChanges) ? latestHistoryRun.bandChanges : [];
+		$: allHistoryRuns = Array.isArray(declarationHistory?.runs) ? declarationHistory.runs : [];
+		$: allDeclarationChanges = allHistoryRuns.flatMap((run) => (Array.isArray(run?.changes) ? run.changes : []).map((item) => ({
+			generatedAt: run.generatedAt,
+			...item
+		})));
+		$: allBandChanges = Array.isArray(declarationHistory?.bandChangesLog) ? declarationHistory.bandChangesLog : allHistoryRuns.flatMap((run) => [...Array.isArray(run?.bandChanges) ? run.bandChanges : Array.isArray(run?.changes) ? run.changes : []].map((item) => ({
+			generatedAt: run.generatedAt,
+			...item
+		})));
+		$: latestBandChanges.filter(isRelevantBandChange);
+		$: allBandChanges.filter(isRelevantBandChange);
+		$: antenaById = new Map(allAntenas.map((antena) => [Number(antena.id), antena]));
+		$: allDeclarationChanges.filter((item) => {
+			const current = antenaById.get(Number(item?.id));
+			if (!current) return true;
+			if (item?.change === "deja_de_declarar" && current.declared) return false;
+			if (item?.change === "declara_ahora" && !current.declared) return false;
+			return true;
+		});
 		$$renderer.push(`<main class="svelte-1iknb9c"><div class="stats-page svelte-1iknb9c"><div class="stats-header svelte-1iknb9c"><h1 class="svelte-1iknb9c">Estadísticas</h1> <button type="button" class="svelte-1iknb9c">Volver al mapa</button></div> `);
 		$$renderer.push("<!--[0-->");
 		$$renderer.push(`<p>Cargando datos...</p>`);
