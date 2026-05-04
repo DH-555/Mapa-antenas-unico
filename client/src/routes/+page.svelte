@@ -23,11 +23,13 @@
     let selectedCommunities = [];
     let idQuery = "";
     let addressQuery = "";
-    let showDeclaredStatus = false;
+    let declaredMode = "neutral"; // 'declared' | 'neutral' | 'undeclared'
     let declaredDataLoading = false;
     let declaredDataLoaded = false;
     let declaredDataError = "";
     let declaredDataPromise = null;
+    let filterN78 = false;
+    let filterN28Plus = false;
 
     let isFilterPanelOpen = false;
     let filterMode = "province"; // 'province' o 'community'
@@ -319,9 +321,39 @@
             return;
         }
 
-        const opacityExpression = showDeclaredStatus
-            ? ["case", ["boolean", ["get", "declared"], false], 1, 0.25]
-            : 1;
+        let opacityExpression;
+        const isBandFilterActive = filterN78 || filterN28Plus;
+
+        if (isBandFilterActive) {
+            const conditions = [];
+            if (filterN78) {
+                conditions.push(["in", "N78", ["get", "declaredBands"]]);
+            }
+            if (filterN28Plus) {
+                conditions.push(["in", "N28+", ["get", "declaredBands"]]);
+            }
+            const matchCondition =
+                conditions.length === 1
+                    ? conditions[0]
+                    : ["any", ...conditions];
+            opacityExpression = ["case", matchCondition, 1, 0];
+        } else if (declaredMode === "declared") {
+            opacityExpression = [
+                "case",
+                ["boolean", ["get", "declared"], false],
+                1,
+                0.25,
+            ];
+        } else if (declaredMode === "undeclared") {
+            opacityExpression = [
+                "case",
+                ["boolean", ["get", "declared"], false],
+                0.25,
+                1,
+            ];
+        } else {
+            opacityExpression = 1;
+        }
 
         if (map.getLayer("antenas-dots")) {
             map.setPaintProperty(
@@ -388,14 +420,25 @@
         return declaredDataPromise;
     }
 
-    async function handleDeclaredToggle(event) {
-        const checked = event.currentTarget.checked;
-        showDeclaredStatus = checked;
+    async function handleDeclaredModeChange(event) {
+        declaredMode = event.currentTarget.value;
 
-        if (checked) {
+        if (declaredMode !== "neutral") {
             const loadedOk = await ensureDeclaredDataLoaded();
             if (!loadedOk) {
-                showDeclaredStatus = false;
+                declaredMode = "neutral";
+            }
+        }
+
+        updateDeclaredVisibility();
+    }
+
+    async function handleBandFilterChange() {
+        if (filterN78 || filterN28Plus) {
+            const loadedOk = await ensureDeclaredDataLoaded();
+            if (!loadedOk) {
+                filterN78 = false;
+                filterN28Plus = false;
             }
         }
 
@@ -546,6 +589,10 @@
         selectedCommunities = [];
         idQuery = "";
         addressQuery = "";
+        declaredMode = "neutral";
+        filterN78 = false;
+        filterN28Plus = false;
+        updateDeclaredVisibility();
         applyFilters({ fit: true });
     }
 
@@ -964,19 +1011,64 @@
 
         <section>
             <h3>Declaradas (AntenasMoviles)</h3>
-            <label>
-                <input
-                    type="checkbox"
-                    bind:checked={showDeclaredStatus}
-                    disabled={declaredDataLoading}
-                    on:change={handleDeclaredToggle}
-                />
-                <span>Resaltar declaradas</span>
-            </label>
+            <div class="declared-switch">
+                <label class:active={declaredMode === "declared"}>
+                    <input
+                        type="radio"
+                        name="declaredMode"
+                        value="declared"
+                        bind:group={declaredMode}
+                        disabled={declaredDataLoading}
+                        on:change={handleDeclaredModeChange}
+                    />
+                    <span>Declaradas</span>
+                </label>
+                <label class:active={declaredMode === "neutral"}>
+                    <input
+                        type="radio"
+                        name="declaredMode"
+                        value="neutral"
+                        bind:group={declaredMode}
+                        on:change={handleDeclaredModeChange}
+                    />
+                    <span>Neutro</span>
+                </label>
+                <label class:active={declaredMode === "undeclared"}>
+                    <input
+                        type="radio"
+                        name="declaredMode"
+                        value="undeclared"
+                        bind:group={declaredMode}
+                        disabled={declaredDataLoading}
+                        on:change={handleDeclaredModeChange}
+                    />
+                    <span>No declaradas</span>
+                </label>
+            </div>
             <p class="filter-help">
-                Desactivado por defecto. Al activarlo, las no declaradas se ven
-                tenues.
+                Neutro por defecto. "Declaradas" resalta las declaradas (las demás
+                se ven tenues). "No declaradas" hace lo contrario.
             </p>
+            <div class="band-filters">
+                <label>
+                    <input
+                        type="checkbox"
+                        bind:checked={filterN78}
+                        disabled={declaredDataLoading}
+                        on:change={handleBandFilterChange}
+                    />
+                    <span>Resaltar N78 / N78+</span>
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        bind:checked={filterN28Plus}
+                        disabled={declaredDataLoading}
+                        on:change={handleBandFilterChange}
+                    />
+                    <span>Resaltar N28+</span>
+                </label>
+            </div>
             {#if declaredDataLoading}
                 <p class="filter-loader">Cargando antenas declaradas...</p>
             {/if}
@@ -1206,11 +1298,77 @@
         line-height: 1.35;
     }
 
+    .declared-switch {
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #334155;
+    }
+
+    .declared-switch label {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 7px 4px;
+        font-size: 0.78rem;
+        text-align: center;
+        cursor: pointer;
+        background: #0f172a;
+        color: #94a3b8;
+        transition: background 0.15s, color 0.15s;
+        line-height: 1.2;
+    }
+
+    .declared-switch label:not(:last-child) {
+        border-right: 1px solid #334155;
+    }
+
+    .declared-switch label.active {
+        background: #14532d;
+        color: #dcfce7;
+    }
+
+    .declared-switch label:hover:not(.active) {
+        background: #1e293b;
+        color: #e2e8f0;
+    }
+
+    .declared-switch input[type="radio"] {
+        display: none;
+    }
+
+    .declared-switch label:has(input:disabled) {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
     .filter-loader {
         margin: 8px 0 0;
         font-size: 0.78rem;
         color: #bfdbfe;
         line-height: 1.35;
+    }
+
+    .band-filters {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 10px;
+    }
+
+    .band-filters label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.84rem;
+        cursor: pointer;
+    }
+
+    .band-filters label:has(input:disabled) {
+        cursor: not-allowed;
+        opacity: 0.5;
     }
 
     .filter-error {
