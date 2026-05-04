@@ -37,7 +37,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add client/public/data/antenasMoviles.json client/public/data/history.json
-          git add client/build/data/antenasMoviles.json client/build/data/history.json
 
           if git diff --cached --quiet; then
             echo "Sin cambios para commit"
