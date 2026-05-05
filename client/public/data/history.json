@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-04T15:19:37.226Z",
+  "updatedAt": "2026-05-05T06:31:50.296Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,563 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "previousSnapshotAt": "2026-05-04T15:19:37.226Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 13,
+        "totalBandsAdded": 9,
+        "totalBandsRemoved": 9
+      },
+      "changes": [
+        {
+          "id": 5918,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Soria",
+          "direccion": "Fuentelmonge",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78",
+            "B20",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "211658"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.42125,
+          "currentLon": -2.184861
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 687,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Haba, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "EXTR0518M"
+          ],
+          "currentCodes": [
+            "EXTR0518M"
+          ],
+          "previousLat": 38.917569,
+          "previousLon": -5.789083,
+          "currentLat": 38.917569,
+          "currentLon": -5.789083
+        },
+        {
+          "id": 2073,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Coruña, A",
+          "direccion": "Oza-Cesuras",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "GALR1535B"
+          ],
+          "currentCodes": [
+            "GALR1535B"
+          ],
+          "previousLat": 43.225056,
+          "previousLon": -8.19,
+          "currentLat": 43.225056,
+          "currentLon": -8.19
+        },
+        {
+          "id": 2103,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Coruña, A",
+          "direccion": "Zas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "GALR0424B"
+          ],
+          "currentCodes": [
+            "GALR0424B"
+          ],
+          "previousLat": 42.846472,
+          "previousLon": -8.911111,
+          "currentLat": 42.846472,
+          "currentLon": -8.911111
+        },
+        {
+          "id": 2587,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Granada",
+          "direccion": "Villa de Otura",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [
+            "N78"
+          ],
+          "previousCodes": [
+            "1800095"
+          ],
+          "currentCodes": [
+            "1800095"
+          ],
+          "previousLat": 37.073056,
+          "previousLon": -3.651361,
+          "currentLat": 37.073056,
+          "currentLon": -3.651361
+        },
+        {
+          "id": 3691,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Lleida",
+          "direccion": "Albesa",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "G09"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "054077",
+            "54077"
+          ],
+          "currentCodes": [
+            "054077",
+            "54077"
+          ],
+          "previousLat": 41.7541,
+          "previousLon": 0.660403,
+          "currentLat": 41.7541,
+          "currentLon": 0.660403
+        },
+        {
+          "id": 4900,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Cabrales",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR1462B"
+          ],
+          "currentCodes": [
+            "ASTR1462B"
+          ],
+          "previousLat": 43.230633,
+          "previousLon": -4.748403,
+          "currentLat": 43.230633,
+          "currentLon": -4.748403
+        },
+        {
+          "id": 4918,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Ribadedeva",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR6206A"
+          ],
+          "currentCodes": [
+            "ASTR6206A"
+          ],
+          "previousLat": 43.377592,
+          "previousLon": -4.552497,
+          "currentLat": 43.377592,
+          "currentLon": -4.552497
+        },
+        {
+          "id": 5379,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Santa Cruz de Tenerife",
+          "direccion": "Matanza de Acentejo, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B3"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "069401",
+            "69401"
+          ],
+          "currentCodes": [
+            "069401",
+            "69401"
+          ],
+          "previousLat": 28.455139,
+          "previousLon": -16.452472,
+          "currentLat": 28.455139,
+          "currentLon": -16.452472
+        },
+        {
+          "id": 5484,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Cantabria",
+          "direccion": "Santa María de Cayón",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CTBR1401A"
+          ],
+          "currentCodes": [
+            "CTBR1401A"
+          ],
+          "previousLat": 43.298758,
+          "previousLon": -3.863286,
+          "currentLat": 43.298758,
+          "currentLon": -3.863286
+        },
+        {
+          "id": 5512,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Cantabria",
+          "direccion": "Marina de Cudeyo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CTBR1801E"
+          ],
+          "currentCodes": [
+            "CTBR1801E"
+          ],
+          "previousLat": 43.441997,
+          "previousLon": -3.768772,
+          "currentLat": 43.441997,
+          "currentLon": -3.768772
+        },
+        {
+          "id": 5532,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Cantabria",
+          "direccion": "Campoo de Enmedio",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CTBR2601C"
+          ],
+          "currentCodes": [
+            "CTBR2601C"
+          ],
+          "previousLat": 43.371336,
+          "previousLon": -3.869264,
+          "currentLat": 43.371336,
+          "currentLon": -3.869264
+        },
+        {
+          "id": 5918,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Soria",
+          "direccion": "Fuentelmonge",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N78"
+          ],
+          "addedBands": [
+            "B20",
+            "G09",
+            "N78"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "211658"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.42125,
+          "currentLon": -2.184861
+        },
+        {
+          "id": 6742,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Valladolid",
+          "direccion": "Tordesillas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1",
+            "N78"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "192485"
+          ],
+          "currentCodes": [
+            "192485"
+          ],
+          "previousLat": 41.505667,
+          "previousLon": -4.989011,
+          "currentLat": 41.505667,
+          "currentLon": -4.989011
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-04T15:19:37.226Z",
       "previousSnapshotAt": "2026-05-01T07:10:37.137Z",
@@ -1957,6 +2514,537 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 687,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Haba, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "EXTR0518M"
+      ],
+      "currentCodes": [
+        "EXTR0518M"
+      ],
+      "previousLat": 38.917569,
+      "previousLon": -5.789083,
+      "currentLat": 38.917569,
+      "currentLon": -5.789083
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 2073,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Coruña, A",
+      "direccion": "Oza-Cesuras",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "GALR1535B"
+      ],
+      "currentCodes": [
+        "GALR1535B"
+      ],
+      "previousLat": 43.225056,
+      "previousLon": -8.19,
+      "currentLat": 43.225056,
+      "currentLon": -8.19
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 2103,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Coruña, A",
+      "direccion": "Zas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "GALR0424B"
+      ],
+      "currentCodes": [
+        "GALR0424B"
+      ],
+      "previousLat": 42.846472,
+      "previousLon": -8.911111,
+      "currentLat": 42.846472,
+      "currentLon": -8.911111
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 2587,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Granada",
+      "direccion": "Villa de Otura",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [
+        "N78"
+      ],
+      "previousCodes": [
+        "1800095"
+      ],
+      "currentCodes": [
+        "1800095"
+      ],
+      "previousLat": 37.073056,
+      "previousLon": -3.651361,
+      "currentLat": 37.073056,
+      "currentLon": -3.651361
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 3691,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Lleida",
+      "direccion": "Albesa",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "G09"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "054077",
+        "54077"
+      ],
+      "currentCodes": [
+        "054077",
+        "54077"
+      ],
+      "previousLat": 41.7541,
+      "previousLon": 0.660403,
+      "currentLat": 41.7541,
+      "currentLon": 0.660403
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 4900,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Cabrales",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR1462B"
+      ],
+      "currentCodes": [
+        "ASTR1462B"
+      ],
+      "previousLat": 43.230633,
+      "previousLon": -4.748403,
+      "currentLat": 43.230633,
+      "currentLon": -4.748403
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 4918,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Ribadedeva",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR6206A"
+      ],
+      "currentCodes": [
+        "ASTR6206A"
+      ],
+      "previousLat": 43.377592,
+      "previousLon": -4.552497,
+      "currentLat": 43.377592,
+      "currentLon": -4.552497
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 5379,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Santa Cruz de Tenerife",
+      "direccion": "Matanza de Acentejo, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B3"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "069401",
+        "69401"
+      ],
+      "currentCodes": [
+        "069401",
+        "69401"
+      ],
+      "previousLat": 28.455139,
+      "previousLon": -16.452472,
+      "currentLat": 28.455139,
+      "currentLon": -16.452472
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 5484,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Cantabria",
+      "direccion": "Santa María de Cayón",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CTBR1401A"
+      ],
+      "currentCodes": [
+        "CTBR1401A"
+      ],
+      "previousLat": 43.298758,
+      "previousLon": -3.863286,
+      "currentLat": 43.298758,
+      "currentLon": -3.863286
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 5512,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Cantabria",
+      "direccion": "Marina de Cudeyo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CTBR1801E"
+      ],
+      "currentCodes": [
+        "CTBR1801E"
+      ],
+      "previousLat": 43.441997,
+      "previousLon": -3.768772,
+      "currentLat": 43.441997,
+      "currentLon": -3.768772
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 5532,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Cantabria",
+      "direccion": "Campoo de Enmedio",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CTBR2601C"
+      ],
+      "currentCodes": [
+        "CTBR2601C"
+      ],
+      "previousLat": 43.371336,
+      "previousLon": -3.869264,
+      "currentLat": 43.371336,
+      "currentLon": -3.869264
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 5918,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Soria",
+      "direccion": "Fuentelmonge",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N78"
+      ],
+      "addedBands": [
+        "B20",
+        "G09",
+        "N78"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "211658"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 41.42125,
+      "currentLon": -2.184861
+    },
+    {
+      "generatedAt": "2026-05-05T06:31:50.296Z",
+      "id": 6742,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Valladolid",
+      "direccion": "Tordesillas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1",
+        "N78"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "192485"
+      ],
+      "currentCodes": [
+        "192485"
+      ],
+      "previousLat": 41.505667,
+      "previousLon": -4.989011,
+      "currentLat": 41.505667,
+      "currentLon": -4.989011
+    },
     {
       "generatedAt": "2026-05-04T15:19:37.226Z",
       "id": 2109,
