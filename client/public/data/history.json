@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-08T06:12:57.410Z",
+  "updatedAt": "2026-05-09T06:30:39.700Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,166 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-09T06:30:39.700Z",
+      "previousSnapshotAt": "2026-05-08T06:12:57.410Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 3,
+        "totalBandsAdded": 6,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 1658,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Castellón/Castelló",
+          "direccion": "Cabanes",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "B1",
+            "B3",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "1200106"
+          ],
+          "currentCodes": [
+            "1200106"
+          ],
+          "previousLat": 40.134961,
+          "previousLon": 0.152017,
+          "currentLat": 40.134961,
+          "currentLon": 0.152017
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1658,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Castellón/Castelló",
+          "direccion": "Cabanes",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28"
+          ],
+          "addedBands": [
+            "B1",
+            "B20",
+            "B3",
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1200106"
+          ],
+          "currentCodes": [
+            "1200106"
+          ],
+          "previousLat": 40.134961,
+          "previousLon": 0.152017,
+          "currentLat": 40.134961,
+          "currentLon": 0.152017
+        },
+        {
+          "id": 3044,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huelva",
+          "direccion": "Lucena del Puerto",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B7"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2100665"
+          ],
+          "currentCodes": [
+            "2100665"
+          ],
+          "previousLat": 37.23005,
+          "previousLon": -6.745742,
+          "currentLat": 37.23005,
+          "currentLon": -6.745742
+        },
+        {
+          "id": 8877,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Santa Cruz de Tenerife",
+          "direccion": "38_38012_000993",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28",
+            "U21"
+          ],
+          "currentBands": [
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3800133"
+          ],
+          "currentCodes": [
+            "3800133"
+          ],
+          "previousLat": 28.237703,
+          "previousLon": -16.442467,
+          "currentLat": 28.237703,
+          "currentLon": -16.442467
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-08T06:12:57.410Z",
       "previousSnapshotAt": "2026-05-07T07:22:18.126Z",
@@ -3289,6 +3449,124 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-09T06:30:39.700Z",
+      "id": 1658,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Castellón/Castelló",
+      "direccion": "Cabanes",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28"
+      ],
+      "addedBands": [
+        "B1",
+        "B20",
+        "B3",
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1200106"
+      ],
+      "currentCodes": [
+        "1200106"
+      ],
+      "previousLat": 40.134961,
+      "previousLon": 0.152017,
+      "currentLat": 40.134961,
+      "currentLon": 0.152017
+    },
+    {
+      "generatedAt": "2026-05-09T06:30:39.700Z",
+      "id": 3044,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huelva",
+      "direccion": "Lucena del Puerto",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B7"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2100665"
+      ],
+      "currentCodes": [
+        "2100665"
+      ],
+      "previousLat": 37.23005,
+      "previousLon": -6.745742,
+      "currentLat": 37.23005,
+      "currentLon": -6.745742
+    },
+    {
+      "generatedAt": "2026-05-09T06:30:39.700Z",
+      "id": 8877,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Santa Cruz de Tenerife",
+      "direccion": "38_38012_000993",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28",
+        "U21"
+      ],
+      "currentBands": [
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3800133"
+      ],
+      "currentCodes": [
+        "3800133"
+      ],
+      "previousLat": 28.237703,
+      "previousLon": -16.442467,
+      "currentLat": 28.237703,
+      "currentLon": -16.442467
+    },
     {
       "generatedAt": "2026-05-08T06:12:57.410Z",
       "id": 2373,
