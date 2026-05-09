@@ -14,7 +14,7 @@ const historyPath = path.resolve(__dirname, "../public/data/history.json");
 const buildOutputPath = path.resolve(__dirname, "../build/data/antenasMoviles.json");
 const buildHistoryPath = path.resolve(__dirname, "../build/data/history.json");
 const planAntenasPath = path.resolve(__dirname, "../public/data/antenas.json");
-const DECLARED_MATCH_DISTANCE_METERS = 900;
+const DECLARED_MATCH_DISTANCE_METERS = 350;
 const REQUIRED_5G_BANDS = new Set(["N78", "N78+", "N28", "N28+"]);
 const CURRENT_RULES = {
     requiredBands: [...REQUIRED_5G_BANDS],
