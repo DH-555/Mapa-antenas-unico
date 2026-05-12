@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T07:57:27.935Z",
+  "updatedAt": "2026-05-12T07:21:02.639Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,269 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-12T07:21:02.639Z",
+      "previousSnapshotAt": "2026-05-11T07:57:27.935Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 2,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 17,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "EXTR6206F"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 39.456222,
+          "currentLon": -5.884056
+        },
+        {
+          "id": 1441,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "EXTR6206F"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 39.456222,
+          "currentLon": -5.884056
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "EXTR6206F"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 39.456222,
+          "currentLon": -5.884056
+        },
+        {
+          "id": 1441,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "EXTR6206F"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 39.456222,
+          "currentLon": -5.884056
+        },
+        {
+          "id": 2283,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cuenca",
+          "direccion": "Beteta",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "N28+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28+",
+            "U21"
+          ],
+          "addedBands": [
+            "G09"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1600112"
+          ],
+          "currentCodes": [
+            "1600112"
+          ],
+          "previousLat": 40.509494,
+          "previousLon": -2.128261,
+          "currentLat": 40.509494,
+          "currentLon": -2.128261
+        },
+        {
+          "id": 3278,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Jaén",
+          "direccion": "Santo Tomé",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2300120"
+          ],
+          "currentCodes": [
+            "2300120"
+          ],
+          "previousLat": 38.015072,
+          "previousLon": -3.113561,
+          "currentLat": 38.015072,
+          "currentLon": -3.113561
+        },
+        {
+          "id": 8907,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Cantabria",
+          "direccion": "39_39021_000708",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "CTBR7605B"
+          ],
+          "currentCodes": [
+            "CTBR7605B"
+          ],
+          "previousLat": 43.237881,
+          "previousLon": -4.071839,
+          "currentLat": 43.237881,
+          "currentLon": -4.071839
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-11T07:57:27.935Z",
       "previousSnapshotAt": "2026-05-09T12:30:07.955Z",
@@ -3477,6 +3740,204 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-12T07:21:02.639Z",
+      "id": 1321,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "EXTR6206F"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 39.456222,
+      "currentLon": -5.884056
+    },
+    {
+      "generatedAt": "2026-05-12T07:21:02.639Z",
+      "id": 1441,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "EXTR6206F"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 39.456222,
+      "currentLon": -5.884056
+    },
+    {
+      "generatedAt": "2026-05-12T07:21:02.639Z",
+      "id": 2283,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Cuenca",
+      "direccion": "Beteta",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "N28+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28+",
+        "U21"
+      ],
+      "addedBands": [
+        "G09"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1600112"
+      ],
+      "currentCodes": [
+        "1600112"
+      ],
+      "previousLat": 40.509494,
+      "previousLon": -2.128261,
+      "currentLat": 40.509494,
+      "currentLon": -2.128261
+    },
+    {
+      "generatedAt": "2026-05-12T07:21:02.639Z",
+      "id": 3278,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Jaén",
+      "direccion": "Santo Tomé",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2300120"
+      ],
+      "currentCodes": [
+        "2300120"
+      ],
+      "previousLat": 38.015072,
+      "previousLon": -3.113561,
+      "currentLat": 38.015072,
+      "currentLon": -3.113561
+    },
+    {
+      "generatedAt": "2026-05-12T07:21:02.639Z",
+      "id": 8907,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Cantabria",
+      "direccion": "39_39021_000708",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "CTBR7605B"
+      ],
+      "currentCodes": [
+        "CTBR7605B"
+      ],
+      "previousLat": 43.237881,
+      "previousLon": -4.071839,
+      "currentLat": 43.237881,
+      "currentLon": -4.071839
+    },
     {
       "generatedAt": "2026-05-09T06:30:39.700Z",
       "id": 1658,
