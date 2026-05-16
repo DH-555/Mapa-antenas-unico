@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T07:39:16.973Z",
+  "updatedAt": "2026-05-16T06:38:39.853Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,195 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-16T06:38:39.853Z",
+      "previousSnapshotAt": "2026-05-15T07:39:16.973Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 2,
+        "lost": 0,
+        "totalBandChangeSites": 3,
+        "totalBandsAdded": 8,
+        "totalBandsRemoved": 1
+      },
+      "changes": [
+        {
+          "id": 5769,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Cañada Rosal",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B1"
+          ],
+          "currentBands": [
+            "N78+",
+            "B1",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "4101499"
+          ],
+          "currentCodes": [
+            "4101499"
+          ],
+          "previousLat": 37.599219,
+          "previousLon": -5.209525,
+          "currentLat": 37.599219,
+          "currentLon": -5.209525
+        },
+        {
+          "id": 7617,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Burgos",
+          "direccion": "09_09325_000706",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "0900108"
+          ],
+          "currentCodes": [
+            "900108"
+          ],
+          "previousLat": 41.995472,
+          "previousLon": -3.952694,
+          "currentLat": 41.995472,
+          "currentLon": -3.952694
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 5207,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Salamanca",
+          "direccion": "Carbajosa de la Sagrada",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CYLR5610C"
+          ],
+          "currentCodes": [
+            "CYLR5610C"
+          ],
+          "previousLat": 40.933422,
+          "previousLon": -5.648258,
+          "currentLat": 40.933422,
+          "currentLon": -5.648258
+        },
+        {
+          "id": 5769,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Cañada Rosal",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4101499"
+          ],
+          "currentCodes": [
+            "4101499"
+          ],
+          "previousLat": 37.599219,
+          "previousLon": -5.209525,
+          "currentLat": 37.599219,
+          "currentLon": -5.209525
+        },
+        {
+          "id": 7617,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Burgos",
+          "direccion": "09_09325_000706",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0900108"
+          ],
+          "currentCodes": [
+            "900108"
+          ],
+          "previousLat": 41.995472,
+          "previousLon": -3.952694,
+          "currentLat": 41.995472,
+          "currentLon": -3.952694
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-15T07:39:16.973Z",
       "previousSnapshotAt": "2026-05-14T07:26:36.986Z",
@@ -5213,6 +5402,124 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-16T06:38:39.853Z",
+      "id": 5207,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Salamanca",
+      "direccion": "Carbajosa de la Sagrada",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CYLR5610C"
+      ],
+      "currentCodes": [
+        "CYLR5610C"
+      ],
+      "previousLat": 40.933422,
+      "previousLon": -5.648258,
+      "currentLat": 40.933422,
+      "currentLon": -5.648258
+    },
+    {
+      "generatedAt": "2026-05-16T06:38:39.853Z",
+      "id": 5769,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Sevilla",
+      "direccion": "Cañada Rosal",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4101499"
+      ],
+      "currentCodes": [
+        "4101499"
+      ],
+      "previousLat": 37.599219,
+      "previousLon": -5.209525,
+      "currentLat": 37.599219,
+      "currentLon": -5.209525
+    },
+    {
+      "generatedAt": "2026-05-16T06:38:39.853Z",
+      "id": 7617,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Burgos",
+      "direccion": "09_09325_000706",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0900108"
+      ],
+      "currentCodes": [
+        "900108"
+      ],
+      "previousLat": 41.995472,
+      "previousLon": -3.952694,
+      "currentLat": 41.995472,
+      "currentLon": -3.952694
+    },
     {
       "generatedAt": "2026-05-15T07:39:16.973Z",
       "id": 43,
