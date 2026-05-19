@@ -136,29 +136,22 @@ function buildDeclaredIndex(declaredAntenas, cellSizeDegrees, rules = CURRENT_RU
     return index;
 }
 
-function findDeclaredMatch(
-    planAntena,
-    declaredIndex,
-    cellSizeDegrees,
-    usedDeclaredMatchKeys = new Set(),
-) {
+function collectDeclaredCandidates(planAntena, declaredIndex, cellSizeDegrees) {
     const operatorCode = resolveDeclaredOperatorCode(
         planAntena.compania || planAntena.operador,
     );
     if (!operatorCode) {
-        return null;
+        return [];
     }
 
     const [lon, lat] = planAntena.coordenadas ?? [];
     if (!Number.isFinite(lon) || !Number.isFinite(lat)) {
-        return null;
+        return [];
     }
 
     const latCell = Math.floor(lat / cellSizeDegrees);
     const lonCell = Math.floor(lon / cellSizeDegrees);
-
-    let bestMatch = null;
-    let bestDistance = Number.POSITIVE_INFINITY;
+    const candidatesWithDistance = [];
 
     for (let dLat = -1; dLat <= 1; dLat += 1) {
         for (let dLon = -1; dLon <= 1; dLon += 1) {
@@ -173,19 +166,51 @@ function findDeclaredMatch(
                     candidate.lon,
                 );
 
-                if (
-                    distance <= DECLARED_MATCH_DISTANCE_METERS &&
-                    distance < bestDistance &&
-                    !usedDeclaredMatchKeys.has(candidate.matchKey)
-                ) {
-                    bestMatch = candidate;
-                    bestDistance = distance;
+                if (distance <= DECLARED_MATCH_DISTANCE_METERS) {
+                    candidatesWithDistance.push({ candidate, distance });
                 }
             });
         }
     }
 
-    return bestMatch;
+    return candidatesWithDistance;
+}
+
+function computeBestDeclaredMatches(planAntenas, declaredIndex, cellSizeDegrees) {
+    const allCandidates = [];
+
+    planAntenas.forEach((planAntena, planIndex) => {
+        const candidates = collectDeclaredCandidates(
+            planAntena,
+            declaredIndex,
+            cellSizeDegrees,
+        );
+
+        candidates.forEach(({ candidate, distance }) => {
+            allCandidates.push({ planIndex, candidate, distance });
+        });
+    });
+
+    allCandidates.sort((a, b) => a.distance - b.distance);
+
+    const assignedPlanIndexes = new Set();
+    const assignedDeclaredMatchKeys = new Set();
+    const matchesByPlanIndex = new Map();
+
+    allCandidates.forEach(({ planIndex, candidate }) => {
+        if (
+            assignedPlanIndexes.has(planIndex) ||
+            assignedDeclaredMatchKeys.has(candidate.matchKey)
+        ) {
+            return;
+        }
+
+        assignedPlanIndexes.add(planIndex);
+        assignedDeclaredMatchKeys.add(candidate.matchKey);
+        matchesByPlanIndex.set(planIndex, candidate);
+    });
+
+    return matchesByPlanIndex;
 }
 
 function computeDeclaredStatusByPlanId(
@@ -200,18 +225,14 @@ function computeDeclaredStatusByPlanId(
         rules,
     );
     const states = new Map();
-    const usedDeclaredMatchKeys = new Set();
+    const matchesByPlanIndex = computeBestDeclaredMatches(
+        planAntenas,
+        declaredIndex,
+        cellSizeDegrees,
+    );
 
-    planAntenas.forEach((planAntena) => {
-        const match = findDeclaredMatch(
-            planAntena,
-            declaredIndex,
-            cellSizeDegrees,
-            usedDeclaredMatchKeys,
-        );
-        if (match?.matchKey !== undefined) {
-            usedDeclaredMatchKeys.add(match.matchKey);
-        }
+    planAntenas.forEach((planAntena, index) => {
+        const match = matchesByPlanIndex.get(index) ?? null;
         const bands = Array.isArray(match?.bands) ? match.bands : [];
         const codes = Array.isArray(match?.codes) ? match.codes : [];
 
