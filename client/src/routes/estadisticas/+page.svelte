@@ -183,7 +183,7 @@
   function buildDeclaredIndex(declaredAntenas, cellSizeDegrees) {
     const index = new Map();
 
-    declaredAntenas.forEach((declared) => {
+    declaredAntenas.forEach((declared, indexPosition) => {
       const operatorCode = normalizeDeclaredApiOperatorCode(declared.operator);
       if (!operatorCode) {
         return;
@@ -203,13 +203,21 @@
         index.set(key, []);
       }
 
-      index.get(key).push({ ...declared, lat, lon });
+      const matchKey = Number.isFinite(Number(declared.id))
+        ? Number(declared.id)
+        : `${operatorCode}:${lat}:${lon}:${indexPosition}`;
+      index.get(key).push({ ...declared, lat, lon, matchKey });
     });
 
     return index;
   }
 
-  function findDeclaredMatch(antena, declaredIndex, cellSizeDegrees) {
+  function findDeclaredMatch(
+    antena,
+    declaredIndex,
+    cellSizeDegrees,
+    usedDeclaredMatchKeys = new Set(),
+  ) {
     const operatorCode = resolveDeclaredOperatorCode(
       antena.compania || antena.operador,
     );
@@ -243,7 +251,8 @@
 
           if (
             distance <= DECLARED_MATCH_DISTANCE_METERS &&
-            distance < bestDistance
+            distance < bestDistance &&
+            !usedDeclaredMatchKeys.has(candidate.matchKey)
           ) {
             bestMatch = candidate;
             bestDistance = distance;
@@ -258,6 +267,7 @@
   function mergeDeclaredStatus(antenas, declaredAntenas) {
     const cellSizeDegrees = DECLARED_MATCH_DISTANCE_METERS / 111320;
     const declaredIndex = buildDeclaredIndex(declaredAntenas, cellSizeDegrees);
+    const usedDeclaredMatchKeys = new Set();
 
     const hasRequired5GBand = (bands) =>
       bands.some((band) => REQUIRED_5G_BANDS.has(String(band).toUpperCase()));
@@ -269,7 +279,15 @@
       bands.some((band) => N28PLUS_BANDS.has(String(band).toUpperCase()));
 
     return antenas.map((antena) => {
-      const match = findDeclaredMatch(antena, declaredIndex, cellSizeDegrees);
+      const match = findDeclaredMatch(
+        antena,
+        declaredIndex,
+        cellSizeDegrees,
+        usedDeclaredMatchKeys,
+      );
+      if (match?.matchKey !== undefined) {
+        usedDeclaredMatchKeys.add(match.matchKey);
+      }
       if (!match) {
         return {
           ...antena,

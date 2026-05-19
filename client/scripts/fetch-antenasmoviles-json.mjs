@@ -103,7 +103,7 @@ function hasRequired5GBand(bands) {
 function buildDeclaredIndex(declaredAntenas, cellSizeDegrees, rules = CURRENT_RULES) {
     const index = new Map();
 
-    declaredAntenas.forEach((declared) => {
+    declaredAntenas.forEach((declared, indexPosition) => {
         const operatorCode = normalizeDeclaredApiOperatorCode(
             declared.operator,
             rules,
@@ -126,13 +126,21 @@ function buildDeclaredIndex(declaredAntenas, cellSizeDegrees, rules = CURRENT_RU
             index.set(key, []);
         }
 
-        index.get(key).push({ ...declared, lat, lon });
+        const matchKey = Number.isFinite(Number(declared.id))
+            ? Number(declared.id)
+            : `${operatorCode}:${lat}:${lon}:${indexPosition}`;
+        index.get(key).push({ ...declared, lat, lon, matchKey });
     });
 
     return index;
 }
 
-function findDeclaredMatch(planAntena, declaredIndex, cellSizeDegrees) {
+function findDeclaredMatch(
+    planAntena,
+    declaredIndex,
+    cellSizeDegrees,
+    usedDeclaredMatchKeys = new Set(),
+) {
     const operatorCode = resolveDeclaredOperatorCode(
         planAntena.compania || planAntena.operador,
     );
@@ -166,7 +174,8 @@ function findDeclaredMatch(planAntena, declaredIndex, cellSizeDegrees) {
 
                 if (
                     distance <= DECLARED_MATCH_DISTANCE_METERS &&
-                    distance < bestDistance
+                    distance < bestDistance &&
+                    !usedDeclaredMatchKeys.has(candidate.matchKey)
                 ) {
                     bestMatch = candidate;
                     bestDistance = distance;
@@ -190,9 +199,18 @@ function computeDeclaredStatusByPlanId(
         rules,
     );
     const states = new Map();
+    const usedDeclaredMatchKeys = new Set();
 
     planAntenas.forEach((planAntena) => {
-        const match = findDeclaredMatch(planAntena, declaredIndex, cellSizeDegrees);
+        const match = findDeclaredMatch(
+            planAntena,
+            declaredIndex,
+            cellSizeDegrees,
+            usedDeclaredMatchKeys,
+        );
+        if (match?.matchKey !== undefined) {
+            usedDeclaredMatchKeys.add(match.matchKey);
+        }
         const bands = Array.isArray(match?.bands) ? match.bands : [];
         const codes = Array.isArray(match?.codes) ? match.codes : [];
 
