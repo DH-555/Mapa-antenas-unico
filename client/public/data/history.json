@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T08:29:09.282Z",
+  "updatedAt": "2026-05-19T08:00:54.721Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,253 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-19T08:00:54.721Z",
+      "previousSnapshotAt": "2026-05-18T08:29:09.282Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 2,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 14,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 4406,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Baztan",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "3100893"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 43.202075,
+          "currentLon": -1.446203
+        },
+        {
+          "id": 5393,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Santa Cruz de Tenerife",
+          "direccion": "Paso, El",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "N78",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "053934",
+            "53934"
+          ],
+          "currentCodes": [
+            "053934",
+            "53934"
+          ],
+          "previousLat": 28.761217,
+          "previousLon": -17.878133,
+          "currentLat": 28.761217,
+          "currentLon": -17.878133
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 3642,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Lleida",
+          "direccion": "Alpicat",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28"
+          ],
+          "currentBands": [
+            "B1",
+            "B3",
+            "N28"
+          ],
+          "addedBands": [
+            "B1",
+            "B3"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "196058"
+          ],
+          "currentCodes": [
+            "196058"
+          ],
+          "previousLat": 41.66625,
+          "previousLon": 0.5575,
+          "currentLat": 41.66625,
+          "currentLon": 0.5575
+        },
+        {
+          "id": 3643,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Lleida",
+          "direccion": "Alpicat",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28"
+          ],
+          "currentBands": [
+            "B1",
+            "B3",
+            "N28"
+          ],
+          "addedBands": [
+            "B1",
+            "B3"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "196058"
+          ],
+          "currentCodes": [
+            "196058"
+          ],
+          "previousLat": 41.66625,
+          "previousLon": 0.5575,
+          "currentLat": 41.66625,
+          "currentLon": 0.5575
+        },
+        {
+          "id": 3826,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Lleida",
+          "direccion": "Tornabous",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B20",
+            "G09"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "211596"
+          ],
+          "currentCodes": [
+            "211596"
+          ],
+          "previousLat": 41.724128,
+          "previousLon": 1.055133,
+          "currentLat": 41.724128,
+          "currentLon": 1.055133
+        },
+        {
+          "id": 4406,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Baztan",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "3100893"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 43.202075,
+          "currentLon": -1.446203
+        },
+        {
+          "id": 5393,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Santa Cruz de Tenerife",
+          "direccion": "Paso, El",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N28",
+            "N78"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "053934",
+            "53934"
+          ],
+          "currentCodes": [
+            "053934",
+            "53934"
+          ],
+          "previousLat": 28.761217,
+          "previousLon": -17.878133,
+          "currentLat": 28.761217,
+          "currentLon": -17.878133
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-18T08:29:09.282Z",
       "previousSnapshotAt": "2026-05-17T07:19:01.635Z",
@@ -5430,6 +5677,185 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-19T08:00:54.721Z",
+      "id": 3642,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Lleida",
+      "direccion": "Alpicat",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28"
+      ],
+      "currentBands": [
+        "B1",
+        "B3",
+        "N28"
+      ],
+      "addedBands": [
+        "B1",
+        "B3"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "196058"
+      ],
+      "currentCodes": [
+        "196058"
+      ],
+      "previousLat": 41.66625,
+      "previousLon": 0.5575,
+      "currentLat": 41.66625,
+      "currentLon": 0.5575
+    },
+    {
+      "generatedAt": "2026-05-19T08:00:54.721Z",
+      "id": 3643,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Lleida",
+      "direccion": "Alpicat",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28"
+      ],
+      "currentBands": [
+        "B1",
+        "B3",
+        "N28"
+      ],
+      "addedBands": [
+        "B1",
+        "B3"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "196058"
+      ],
+      "currentCodes": [
+        "196058"
+      ],
+      "previousLat": 41.66625,
+      "previousLon": 0.5575,
+      "currentLat": 41.66625,
+      "currentLon": 0.5575
+    },
+    {
+      "generatedAt": "2026-05-19T08:00:54.721Z",
+      "id": 3826,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Lleida",
+      "direccion": "Tornabous",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B20",
+        "G09"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "211596"
+      ],
+      "currentCodes": [
+        "211596"
+      ],
+      "previousLat": 41.724128,
+      "previousLon": 1.055133,
+      "currentLat": 41.724128,
+      "currentLon": 1.055133
+    },
+    {
+      "generatedAt": "2026-05-19T08:00:54.721Z",
+      "id": 4406,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Baztan",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "3100893"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 43.202075,
+      "currentLon": -1.446203
+    },
+    {
+      "generatedAt": "2026-05-19T08:00:54.721Z",
+      "id": 5393,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Santa Cruz de Tenerife",
+      "direccion": "Paso, El",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N28",
+        "N78"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "053934",
+        "53934"
+      ],
+      "currentCodes": [
+        "053934",
+        "53934"
+      ],
+      "previousLat": 28.761217,
+      "previousLon": -17.878133,
+      "currentLat": 28.761217,
+      "currentLon": -17.878133
+    },
     {
       "generatedAt": "2026-05-16T06:38:39.853Z",
       "id": 5207,
