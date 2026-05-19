@@ -126,8 +126,9 @@ function buildDeclaredIndex(declaredAntenas, cellSizeDegrees, rules = CURRENT_RU
             index.set(key, []);
         }
 
-        const matchKey = Number.isFinite(Number(declared.id))
-            ? Number(declared.id)
+        const declaredId = Number(declared.id);
+        const matchKey = Number.isFinite(declaredId)
+            ? declaredId
             : `${operatorCode}:${lat}:${lon}:${indexPosition}`;
         index.get(key).push({ ...declared, lat, lon, matchKey });
     });
