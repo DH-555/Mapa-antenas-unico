@@ -213,29 +213,22 @@
     return index;
   }
 
-  function findDeclaredMatch(
-    antena,
-    declaredIndex,
-    cellSizeDegrees,
-    usedDeclaredMatchKeys = new Set(),
-  ) {
+  function collectDeclaredCandidates(antena, declaredIndex, cellSizeDegrees) {
     const operatorCode = resolveDeclaredOperatorCode(
       antena.compania || antena.operador,
     );
     if (!operatorCode) {
-      return null;
+      return [];
     }
 
     const [lon, lat] = antena.coordenadas ?? [];
     if (!Number.isFinite(lon) || !Number.isFinite(lat)) {
-      return null;
+      return [];
     }
 
     const latCell = Math.floor(lat / cellSizeDegrees);
     const lonCell = Math.floor(lon / cellSizeDegrees);
-
-    let bestMatch = null;
-    let bestDistance = Number.POSITIVE_INFINITY;
+    const candidatesWithDistance = [];
 
     for (let dLat = -1; dLat <= 1; dLat += 1) {
       for (let dLon = -1; dLon <= 1; dLon += 1) {
@@ -250,25 +243,61 @@
             candidate.lon,
           );
 
-          if (
-            distance <= DECLARED_MATCH_DISTANCE_METERS &&
-            distance < bestDistance &&
-            !usedDeclaredMatchKeys.has(candidate.matchKey)
-          ) {
-            bestMatch = candidate;
-            bestDistance = distance;
+          if (distance <= DECLARED_MATCH_DISTANCE_METERS) {
+            candidatesWithDistance.push({ candidate, distance });
           }
         });
       }
     }
 
-    return bestMatch;
+    return candidatesWithDistance;
+  }
+
+  function computeBestDeclaredMatches(antenas, declaredIndex, cellSizeDegrees) {
+    const allCandidates = [];
+
+    antenas.forEach((antena, antennaIndex) => {
+      const candidates = collectDeclaredCandidates(
+        antena,
+        declaredIndex,
+        cellSizeDegrees,
+      );
+
+      candidates.forEach(({ candidate, distance }) => {
+        allCandidates.push({ antennaIndex, candidate, distance });
+      });
+    });
+
+    allCandidates.sort((a, b) => a.distance - b.distance);
+
+    const assignedAntennaIndexes = new Set();
+    const assignedDeclaredMatchKeys = new Set();
+    const matchesByAntennaIndex = new Map();
+
+    allCandidates.forEach(({ antennaIndex, candidate }) => {
+      if (
+        assignedAntennaIndexes.has(antennaIndex) ||
+        assignedDeclaredMatchKeys.has(candidate.matchKey)
+      ) {
+        return;
+      }
+
+      assignedAntennaIndexes.add(antennaIndex);
+      assignedDeclaredMatchKeys.add(candidate.matchKey);
+      matchesByAntennaIndex.set(antennaIndex, candidate);
+    });
+
+    return matchesByAntennaIndex;
   }
 
   function mergeDeclaredStatus(antenas, declaredAntenas) {
     const cellSizeDegrees = DECLARED_MATCH_DISTANCE_METERS / 111320;
     const declaredIndex = buildDeclaredIndex(declaredAntenas, cellSizeDegrees);
-    const usedDeclaredMatchKeys = new Set();
+    const matchesByAntennaIndex = computeBestDeclaredMatches(
+      antenas,
+      declaredIndex,
+      cellSizeDegrees,
+    );
 
     const hasRequired5GBand = (bands) =>
       bands.some((band) => REQUIRED_5G_BANDS.has(String(band).toUpperCase()));
@@ -279,16 +308,8 @@
     const hasN28PlusBand = (bands) =>
       bands.some((band) => N28PLUS_BANDS.has(String(band).toUpperCase()));
 
-    return antenas.map((antena) => {
-      const match = findDeclaredMatch(
-        antena,
-        declaredIndex,
-        cellSizeDegrees,
-        usedDeclaredMatchKeys,
-      );
-      if (match?.matchKey !== undefined) {
-        usedDeclaredMatchKeys.add(match.matchKey);
-      }
+    return antenas.map((antena, index) => {
+      const match = matchesByAntennaIndex.get(index) ?? null;
       if (!match) {
         return {
           ...antena,
