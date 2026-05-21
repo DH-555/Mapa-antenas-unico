@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T07:59:12.185Z",
+  "updatedAt": "2026-05-21T08:06:40.587Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,683 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "previousSnapshotAt": "2026-05-20T07:59:12.185Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 16,
+        "totalBandsAdded": 10,
+        "totalBandsRemoved": 14
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 421,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Almería",
+          "direccion": "Viator",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9396A"
+          ],
+          "currentCodes": [
+            "ANDR9396A"
+          ],
+          "previousLat": 36.876506,
+          "previousLon": -2.409653,
+          "currentLat": 36.876506,
+          "currentLon": -2.409653
+        },
+        {
+          "id": 2001,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Coruña, A",
+          "direccion": "Valdoviño",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "GALR1530A"
+          ],
+          "currentCodes": [
+            "GALR1530A"
+          ],
+          "previousLat": 43.584306,
+          "previousLon": -8.20125,
+          "currentLat": 43.584306,
+          "currentLon": -8.20125
+        },
+        {
+          "id": 2078,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Coruña, A",
+          "direccion": "Neda",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "GALR1045A"
+          ],
+          "currentCodes": [
+            "GALR1045A"
+          ],
+          "previousLat": 43.509,
+          "previousLon": -8.144833,
+          "currentLat": 43.509,
+          "currentLon": -8.144833
+        },
+        {
+          "id": 2723,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Albuñuelas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "ANDR6315A"
+          ],
+          "currentCodes": [
+            "ANDR6315A"
+          ],
+          "previousLat": 36.931228,
+          "previousLon": -3.620914,
+          "currentLat": 36.931228,
+          "currentLon": -3.620914
+        },
+        {
+          "id": 3502,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "Igüeña",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CYLR0452A"
+          ],
+          "currentCodes": [
+            "CYLR0452A"
+          ],
+          "previousLat": 42.729833,
+          "previousLon": -6.274194,
+          "currentLat": 42.729833,
+          "currentLon": -6.274194
+        },
+        {
+          "id": 3505,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "Laguna de Negrillos",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "CYLR0591A"
+          ],
+          "currentCodes": [
+            "CYLR0591A"
+          ],
+          "previousLat": 42.237194,
+          "previousLon": -5.66725,
+          "currentLat": 42.237194,
+          "currentLon": -5.66725
+        },
+        {
+          "id": 3913,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Lugo",
+          "direccion": "Muras",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28+",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "GALR7950A"
+          ],
+          "currentCodes": [
+            "GALR7950A"
+          ],
+          "previousLat": 43.461,
+          "previousLon": -7.722444,
+          "currentLat": 43.461,
+          "currentLon": -7.722444
+        },
+        {
+          "id": 4348,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Málaga",
+          "direccion": "Fuente de Piedra",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N78"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "ANDR3219A"
+          ],
+          "currentCodes": [
+            "ANDR3219A"
+          ],
+          "previousLat": 37.103258,
+          "previousLon": -4.7242,
+          "currentLat": 37.103258,
+          "currentLon": -4.7242
+        },
+        {
+          "id": 4623,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Ourense",
+          "direccion": "Pereiro de Aguiar, O",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "GALR9951A"
+          ],
+          "currentCodes": [
+            "GALR9951A"
+          ],
+          "previousLat": 42.321647,
+          "previousLon": -7.81,
+          "currentLat": 42.321647,
+          "currentLon": -7.81
+        },
+        {
+          "id": 4687,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Ourense",
+          "direccion": "Vilardevós",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "GALR9965A"
+          ],
+          "currentCodes": [
+            "GALR9965A"
+          ],
+          "previousLat": 41.854686,
+          "previousLon": -7.358708,
+          "currentLat": 41.854686,
+          "currentLon": -7.358708
+        },
+        {
+          "id": 4819,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Navia",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR1243B"
+          ],
+          "currentCodes": [
+            "ASTR1243B"
+          ],
+          "previousLat": 43.512781,
+          "previousLon": -6.694944,
+          "currentLat": 43.512781,
+          "currentLon": -6.694944
+        },
+        {
+          "id": 4834,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Piloña",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR3017A"
+          ],
+          "currentCodes": [
+            "ASTR3017A"
+          ],
+          "previousLat": 43.352022,
+          "previousLon": -5.236683,
+          "currentLat": 43.352022,
+          "currentLon": -5.236683
+        },
+        {
+          "id": 4852,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Nava",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR1291E"
+          ],
+          "currentCodes": [
+            "ASTR1291E"
+          ],
+          "previousLat": 43.354575,
+          "previousLon": -5.521911,
+          "currentLat": 43.354575,
+          "currentLon": -5.521911
+        },
+        {
+          "id": 4856,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Cudillero",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR6604A"
+          ],
+          "currentCodes": [
+            "ASTR6604A"
+          ],
+          "previousLat": 43.567011,
+          "previousLon": -6.214478,
+          "currentLat": 43.567011,
+          "currentLon": -6.214478
+        },
+        {
+          "id": 4872,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Soto del Barco",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR1441D"
+          ],
+          "currentCodes": [
+            "ASTR1441D"
+          ],
+          "previousLat": 43.550153,
+          "previousLon": -6.069514,
+          "currentLat": 43.550153,
+          "currentLon": -6.069514
+        },
+        {
+          "id": 4873,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Asturias",
+          "direccion": "Franco, El",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "U21"
+          ],
+          "previousCodes": [
+            "ASTR1372A"
+          ],
+          "currentCodes": [
+            "ASTR1372A"
+          ],
+          "previousLat": 43.540242,
+          "previousLon": -6.829658,
+          "currentLat": 43.540242,
+          "currentLon": -6.829658
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-20T07:59:12.185Z",
       "previousSnapshotAt": "2026-05-19T15:01:22.997Z",
@@ -5911,6 +6588,684 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 421,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Almería",
+      "direccion": "Viator",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9396A"
+      ],
+      "currentCodes": [
+        "ANDR9396A"
+      ],
+      "previousLat": 36.876506,
+      "previousLon": -2.409653,
+      "currentLat": 36.876506,
+      "currentLon": -2.409653
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 2001,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Coruña, A",
+      "direccion": "Valdoviño",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "GALR1530A"
+      ],
+      "currentCodes": [
+        "GALR1530A"
+      ],
+      "previousLat": 43.584306,
+      "previousLon": -8.20125,
+      "currentLat": 43.584306,
+      "currentLon": -8.20125
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 2078,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Coruña, A",
+      "direccion": "Neda",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "GALR1045A"
+      ],
+      "currentCodes": [
+        "GALR1045A"
+      ],
+      "previousLat": 43.509,
+      "previousLon": -8.144833,
+      "currentLat": 43.509,
+      "currentLon": -8.144833
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 2723,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Albuñuelas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "ANDR6315A"
+      ],
+      "currentCodes": [
+        "ANDR6315A"
+      ],
+      "previousLat": 36.931228,
+      "previousLon": -3.620914,
+      "currentLat": 36.931228,
+      "currentLon": -3.620914
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 3502,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "León",
+      "direccion": "Igüeña",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CYLR0452A"
+      ],
+      "currentCodes": [
+        "CYLR0452A"
+      ],
+      "previousLat": 42.729833,
+      "previousLon": -6.274194,
+      "currentLat": 42.729833,
+      "currentLon": -6.274194
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 3505,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "León",
+      "direccion": "Laguna de Negrillos",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "CYLR0591A"
+      ],
+      "currentCodes": [
+        "CYLR0591A"
+      ],
+      "previousLat": 42.237194,
+      "previousLon": -5.66725,
+      "currentLat": 42.237194,
+      "currentLon": -5.66725
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 3913,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Lugo",
+      "direccion": "Muras",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28+",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "GALR7950A"
+      ],
+      "currentCodes": [
+        "GALR7950A"
+      ],
+      "previousLat": 43.461,
+      "previousLon": -7.722444,
+      "currentLat": 43.461,
+      "currentLon": -7.722444
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4348,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Málaga",
+      "direccion": "Fuente de Piedra",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N78"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "ANDR3219A"
+      ],
+      "currentCodes": [
+        "ANDR3219A"
+      ],
+      "previousLat": 37.103258,
+      "previousLon": -4.7242,
+      "currentLat": 37.103258,
+      "currentLon": -4.7242
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4623,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Ourense",
+      "direccion": "Pereiro de Aguiar, O",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "GALR9951A"
+      ],
+      "currentCodes": [
+        "GALR9951A"
+      ],
+      "previousLat": 42.321647,
+      "previousLon": -7.81,
+      "currentLat": 42.321647,
+      "currentLon": -7.81
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4687,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Ourense",
+      "direccion": "Vilardevós",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "GALR9965A"
+      ],
+      "currentCodes": [
+        "GALR9965A"
+      ],
+      "previousLat": 41.854686,
+      "previousLon": -7.358708,
+      "currentLat": 41.854686,
+      "currentLon": -7.358708
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4819,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Navia",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR1243B"
+      ],
+      "currentCodes": [
+        "ASTR1243B"
+      ],
+      "previousLat": 43.512781,
+      "previousLon": -6.694944,
+      "currentLat": 43.512781,
+      "currentLon": -6.694944
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4834,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Piloña",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR3017A"
+      ],
+      "currentCodes": [
+        "ASTR3017A"
+      ],
+      "previousLat": 43.352022,
+      "previousLon": -5.236683,
+      "currentLat": 43.352022,
+      "currentLon": -5.236683
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4852,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Nava",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR1291E"
+      ],
+      "currentCodes": [
+        "ASTR1291E"
+      ],
+      "previousLat": 43.354575,
+      "previousLon": -5.521911,
+      "currentLat": 43.354575,
+      "currentLon": -5.521911
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4856,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Cudillero",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR6604A"
+      ],
+      "currentCodes": [
+        "ASTR6604A"
+      ],
+      "previousLat": 43.567011,
+      "previousLon": -6.214478,
+      "currentLat": 43.567011,
+      "currentLon": -6.214478
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4872,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Soto del Barco",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR1441D"
+      ],
+      "currentCodes": [
+        "ASTR1441D"
+      ],
+      "previousLat": 43.550153,
+      "previousLon": -6.069514,
+      "currentLat": 43.550153,
+      "currentLon": -6.069514
+    },
+    {
+      "generatedAt": "2026-05-21T08:06:40.587Z",
+      "id": 4873,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Asturias",
+      "direccion": "Franco, El",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "U21"
+      ],
+      "previousCodes": [
+        "ASTR1372A"
+      ],
+      "currentCodes": [
+        "ASTR1372A"
+      ],
+      "previousLat": 43.540242,
+      "previousLon": -6.829658,
+      "currentLat": 43.540242,
+      "currentLon": -6.829658
+    },
     {
       "generatedAt": "2026-05-20T07:59:12.185Z",
       "id": 1019,
