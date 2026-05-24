@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-23T07:11:05.430Z",
+  "updatedAt": "2026-05-24T07:33:49.457Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,155 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-24T07:33:49.457Z",
+      "previousSnapshotAt": "2026-05-23T07:11:05.430Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 1,
+        "lost": 1,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 4,
+        "totalBandsRemoved": 7
+      },
+      "changes": [
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [],
+          "previousCodes": [
+            "EXTR6206F"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.456222,
+          "previousLon": -5.884056,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 6012,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Tarragona",
+          "direccion": "Vandellòs i l'Hospitalet de l'Infant",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B20"
+          ],
+          "currentBands": [
+            "N78",
+            "B3",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "024151"
+          ],
+          "currentCodes": [
+            "024151",
+            "24151"
+          ],
+          "previousLat": 41.008119,
+          "previousLon": 0.831711,
+          "currentLat": 41.008119,
+          "currentLon": 0.831711
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": false,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [],
+          "addedBands": [],
+          "removedBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "previousCodes": [
+            "EXTR6206F"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.456222,
+          "previousLon": -5.884056,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 6012,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Tarragona",
+          "direccion": "Vandellòs i l'Hospitalet de l'Infant",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "024151"
+          ],
+          "currentCodes": [
+            "024151",
+            "24151"
+          ],
+          "previousLat": 41.008119,
+          "previousLon": 0.831711,
+          "currentLat": 41.008119,
+          "currentLon": 0.831711
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-23T07:11:05.430Z",
       "previousSnapshotAt": "2026-05-22T07:56:47.087Z",
@@ -7439,6 +7588,84 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-24T07:33:49.457Z",
+      "id": 1321,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": false,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [],
+      "addedBands": [],
+      "removedBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "previousCodes": [
+        "EXTR6206F"
+      ],
+      "currentCodes": [],
+      "previousLat": 39.456222,
+      "previousLon": -5.884056,
+      "currentLat": null,
+      "currentLon": null
+    },
+    {
+      "generatedAt": "2026-05-24T07:33:49.457Z",
+      "id": 6012,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Tarragona",
+      "direccion": "Vandellòs i l'Hospitalet de l'Infant",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "024151"
+      ],
+      "currentCodes": [
+        "024151",
+        "24151"
+      ],
+      "previousLat": 41.008119,
+      "previousLon": 0.831711,
+      "currentLat": 41.008119,
+      "currentLon": 0.831711
+    },
     {
       "generatedAt": "2026-05-23T07:11:05.430Z",
       "id": 316,
