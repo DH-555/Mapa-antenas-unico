@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-27T08:14:35.551Z",
+  "updatedAt": "2026-05-28T08:14:38.842Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,189 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-05-28T08:14:38.842Z",
+      "previousSnapshotAt": "2026-05-27T08:14:35.551Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 0,
+        "lost": 2,
+        "totalBandChangeSites": 3,
+        "totalBandsAdded": 0,
+        "totalBandsRemoved": 15
+      },
+      "changes": [
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78",
+            "B1",
+            "B3",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [],
+          "previousCodes": [
+            "EXTR6206F"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.456222,
+          "previousLon": -5.884056,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 1506,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cádiz",
+          "direccion": "Jimena de la Frontera",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78+",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [],
+          "previousCodes": [
+            "1100191"
+          ],
+          "currentCodes": [],
+          "previousLat": 36.466833,
+          "previousLon": -5.419583,
+          "currentLat": null,
+          "currentLon": null
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": false,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [],
+          "addedBands": [],
+          "removedBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "previousCodes": [
+            "EXTR6206F"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.456222,
+          "previousLon": -5.884056,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 1506,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cádiz",
+          "direccion": "Jimena de la Frontera",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": false,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [],
+          "addedBands": [],
+          "removedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "previousCodes": [
+            "1100191"
+          ],
+          "currentCodes": [],
+          "previousLat": 36.466833,
+          "previousLon": -5.419583,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 2672,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Granada",
+          "direccion": "Rubite",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "B8"
+          ],
+          "previousCodes": [
+            "1800677"
+          ],
+          "currentCodes": [
+            "1800677"
+          ],
+          "previousLat": 36.759597,
+          "previousLon": -3.333808,
+          "currentLat": 36.759597,
+          "currentLon": -3.333808
+        }
+      ]
+    },
     {
       "generatedAt": "2026-05-27T08:14:35.551Z",
       "previousSnapshotAt": "2026-05-26T08:04:31.215Z",
@@ -14461,6 +14644,122 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-05-28T08:14:38.842Z",
+      "id": 1321,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": false,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [],
+      "addedBands": [],
+      "removedBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "previousCodes": [
+        "EXTR6206F"
+      ],
+      "currentCodes": [],
+      "previousLat": 39.456222,
+      "previousLon": -5.884056,
+      "currentLat": null,
+      "currentLon": null
+    },
+    {
+      "generatedAt": "2026-05-28T08:14:38.842Z",
+      "id": 1506,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Cádiz",
+      "direccion": "Jimena de la Frontera",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": false,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [],
+      "addedBands": [],
+      "removedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "previousCodes": [
+        "1100191"
+      ],
+      "currentCodes": [],
+      "previousLat": 36.466833,
+      "previousLon": -5.419583,
+      "currentLat": null,
+      "currentLon": null
+    },
+    {
+      "generatedAt": "2026-05-28T08:14:38.842Z",
+      "id": 2672,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Granada",
+      "direccion": "Rubite",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "B8"
+      ],
+      "previousCodes": [
+        "1800677"
+      ],
+      "currentCodes": [
+        "1800677"
+      ],
+      "previousLat": 36.759597,
+      "previousLon": -3.333808,
+      "currentLat": 36.759597,
+      "currentLon": -3.333808
+    },
     {
       "generatedAt": "2026-05-27T08:14:35.551Z",
       "id": 997,
