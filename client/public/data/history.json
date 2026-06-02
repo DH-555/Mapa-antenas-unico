@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01T09:38:10.825Z",
+  "updatedAt": "2026-06-02T08:50:00.540Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,566 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "previousSnapshotAt": "2026-06-01T09:38:10.825Z",
+      "summary": {
+        "totalChanges": 4,
+        "gained": 3,
+        "lost": 1,
+        "totalBandChangeSites": 11,
+        "totalBandsAdded": 23,
+        "totalBandsRemoved": 13
+      },
+      "changes": [
+        {
+          "id": 306,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Alicante/Alacant",
+          "direccion": "Benillup",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "0302894"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 38.750028,
+          "currentLon": -0.376944
+        },
+        {
+          "id": 670,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Montemolín",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "0600440"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 38.112658,
+          "currentLon": -6.152664
+        },
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78",
+            "N1",
+            "B3",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [],
+          "previousCodes": [
+            "EXTR6206F"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.456222,
+          "previousLon": -5.884056,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 2983,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Antzuola",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "2000115"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 43.087708,
+          "currentLon": -2.350136
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 306,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Alicante/Alacant",
+          "direccion": "Benillup",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "0302894"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 38.750028,
+          "currentLon": -0.376944
+        },
+        {
+          "id": 670,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Montemolín",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "0600440"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 38.112658,
+          "currentLon": -6.152664
+        },
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": false,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [],
+          "addedBands": [],
+          "removedBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "previousCodes": [
+            "EXTR6206F"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.456222,
+          "previousLon": -5.884056,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 1362,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Pinofranqueado",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6500A"
+          ],
+          "currentCodes": [
+            "EXTR6500A"
+          ],
+          "previousLat": 40.383222,
+          "previousLon": -6.391917,
+          "currentLat": 40.383222,
+          "currentLon": -6.391917
+        },
+        {
+          "id": 1418,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Torrecillas de la Tiesa",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "N1"
+          ],
+          "previousCodes": [
+            "EXTR6205A"
+          ],
+          "currentCodes": [
+            "EXTR6205A"
+          ],
+          "previousLat": 39.566333,
+          "previousLon": -5.736364,
+          "currentLat": 39.566333,
+          "currentLon": -5.736364
+        },
+        {
+          "id": 1425,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "N1"
+          ],
+          "previousCodes": [
+            "EXTR6287A"
+          ],
+          "currentCodes": [
+            "EXTR6287A"
+          ],
+          "previousLat": 39.457186,
+          "previousLon": -5.881781,
+          "currentLat": 39.457186,
+          "currentLon": -5.881781
+        },
+        {
+          "id": 2676,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Moclín",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "N1"
+          ],
+          "previousCodes": [
+            "ANDR6366A"
+          ],
+          "currentCodes": [
+            "ANDR6366A"
+          ],
+          "previousLat": 37.433083,
+          "previousLon": -3.808667,
+          "currentLat": 37.433083,
+          "currentLon": -3.808667
+        },
+        {
+          "id": 2983,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Antzuola",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "2000115"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 43.087708,
+          "currentLon": -2.350136
+        },
+        {
+          "id": 7113,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Pedrola",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "5000134"
+          ],
+          "currentCodes": [
+            "5000134"
+          ],
+          "previousLat": 41.790056,
+          "previousLon": -1.219208,
+          "currentLat": 41.790058,
+          "currentLon": -1.219214
+        },
+        {
+          "id": 7144,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Nuez de Ebro",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "B8",
+            "N1"
+          ],
+          "previousCodes": [
+            "5000058"
+          ],
+          "currentCodes": [
+            "5000058"
+          ],
+          "previousLat": 41.595458,
+          "previousLon": -0.679469,
+          "currentLat": 41.595458,
+          "currentLon": -0.679469
+        },
+        {
+          "id": 9082,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "43_43119_000333",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B20",
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4300675"
+          ],
+          "currentCodes": [
+            "4300675"
+          ],
+          "previousLat": 41.283011,
+          "previousLon": 1.292694,
+          "currentLat": 41.283011,
+          "currentLon": 1.292694
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-01T09:38:10.825Z",
       "previousSnapshotAt": "2026-06-01T09:27:48.132Z",
@@ -113595,6 +114155,459 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 306,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Alicante/Alacant",
+      "direccion": "Benillup",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "0302894"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 38.750028,
+      "currentLon": -0.376944
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 670,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Montemolín",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "0600440"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 38.112658,
+      "currentLon": -6.152664
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 1321,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": false,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [],
+      "addedBands": [],
+      "removedBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "previousCodes": [
+        "EXTR6206F"
+      ],
+      "currentCodes": [],
+      "previousLat": 39.456222,
+      "previousLon": -5.884056,
+      "currentLat": null,
+      "currentLon": null
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 1362,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Pinofranqueado",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6500A"
+      ],
+      "currentCodes": [
+        "EXTR6500A"
+      ],
+      "previousLat": 40.383222,
+      "previousLon": -6.391917,
+      "currentLat": 40.383222,
+      "currentLon": -6.391917
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 1418,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Torrecillas de la Tiesa",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "N1"
+      ],
+      "previousCodes": [
+        "EXTR6205A"
+      ],
+      "currentCodes": [
+        "EXTR6205A"
+      ],
+      "previousLat": 39.566333,
+      "previousLon": -5.736364,
+      "currentLat": 39.566333,
+      "currentLon": -5.736364
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 1425,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "N1"
+      ],
+      "previousCodes": [
+        "EXTR6287A"
+      ],
+      "currentCodes": [
+        "EXTR6287A"
+      ],
+      "previousLat": 39.457186,
+      "previousLon": -5.881781,
+      "currentLat": 39.457186,
+      "currentLon": -5.881781
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 2676,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Moclín",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "N1"
+      ],
+      "previousCodes": [
+        "ANDR6366A"
+      ],
+      "currentCodes": [
+        "ANDR6366A"
+      ],
+      "previousLat": 37.433083,
+      "previousLon": -3.808667,
+      "currentLat": 37.433083,
+      "currentLon": -3.808667
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 2983,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Gipuzkoa",
+      "direccion": "Antzuola",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "2000115"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 43.087708,
+      "currentLon": -2.350136
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 7113,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Pedrola",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "5000134"
+      ],
+      "currentCodes": [
+        "5000134"
+      ],
+      "previousLat": 41.790056,
+      "previousLon": -1.219208,
+      "currentLat": 41.790058,
+      "currentLon": -1.219214
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 7144,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Nuez de Ebro",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "B8",
+        "N1"
+      ],
+      "previousCodes": [
+        "5000058"
+      ],
+      "currentCodes": [
+        "5000058"
+      ],
+      "previousLat": 41.595458,
+      "previousLon": -0.679469,
+      "currentLat": 41.595458,
+      "currentLon": -0.679469
+    },
+    {
+      "generatedAt": "2026-06-02T08:50:00.540Z",
+      "id": 9082,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Tarragona",
+      "direccion": "43_43119_000333",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B20",
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4300675"
+      ],
+      "currentCodes": [
+        "4300675"
+      ],
+      "previousLat": 41.283011,
+      "previousLon": 1.292694,
+      "currentLat": 41.283011,
+      "currentLon": 1.292694
+    },
     {
       "generatedAt": "2026-06-01T09:27:48.132Z",
       "id": 37,
