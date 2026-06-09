@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const API_URL = "https://antenasmoviles.es/api/show";
+const API_URL = "https://signalcrow.com/fastapi/towers/active-bands";
 const outputPath = path.resolve(
     __dirname,
     "../public/data/antenasMoviles.json",
@@ -528,26 +528,42 @@ async function writeHistory(planAntenas, previousSnapshot, currentSnapshot) {
 }
 
 function normalizeRecord(entry, index) {
-    if (!Array.isArray(entry) || entry.length < 5) {
+    if (entry == null || typeof entry !== "object") {
         return null;
     }
 
-    const lat = toNumber(entry[0]);
-    const lon = toNumber(entry[1]);
-    const codes = Array.isArray(entry[2])
-        ? entry[2].map((item) => String(item).trim()).filter(Boolean)
-        : [];
-    const operator = String(entry[3] ?? "").trim();
-    const bands = Array.isArray(entry[4])
-        ? [...new Set(entry[4].map(sanitizeBand).filter(Boolean))]
-        : [];
+    const lat = toNumber(entry.a ?? entry.lat ?? (Array.isArray(entry) ? entry[0] : null));
+    const lon = toNumber(entry.o ?? entry.lon ?? (Array.isArray(entry) ? entry[1] : null));
+    const operator = String(entry.p ?? entry.operator ?? (Array.isArray(entry) ? entry[3] : "")).trim();
+
+    const rawBands = Array.isArray(entry.b) ? entry.b : Array.isArray(entry[4]) ? entry[4] : [];
+    const bands = [...new Set(rawBands
+        .map((item) => {
+            if (typeof item === "string") {
+                return sanitizeBand(item);
+            }
+            return sanitizeBand(item?.b);
+        })
+        .filter(Boolean))];
+
+    const rawCodes = Array.isArray(entry.b)
+        ? entry.b.map((item) => (typeof item === "object" ? item?.r : item))
+        : Array.isArray(entry[2])
+            ? entry[2]
+            : [];
+    const codes = [...new Set(rawCodes
+        .map((item) => String(item ?? "").trim())
+        .filter(Boolean))];
 
     if (lat === null || lon === null || operator.length === 0) {
         return null;
     }
 
+    const rawId = entry.i ?? entry.id ?? (index + 1);
+    const id = Number.isFinite(Number(rawId)) ? Number(rawId) : index + 1;
+
     return {
-        id: index + 1,
+        id,
         lat,
         lon,
         operator,
@@ -572,18 +588,24 @@ async function main() {
     }
 
     const payload = await response.json();
-    if (!Array.isArray(payload)) {
-        throw new Error("La API no devolvio un array JSON.");
+    const recordsSource = Array.isArray(payload)
+        ? payload
+        : Array.isArray(payload?.data)
+            ? payload.data
+            : null;
+
+    if (!Array.isArray(recordsSource)) {
+        throw new Error("La API no devolvio un array JSON valido.");
     }
 
-    const records = payload
+    const records = recordsSource
         .map((entry, index) => normalizeRecord(entry, index))
         .filter(Boolean);
 
     const output = {
         generatedAt: new Date().toISOString(),
         source: API_URL,
-        totalRaw: payload.length,
+        totalRaw: recordsSource.length,
         total: records.length,
         antenas: records,
     };
