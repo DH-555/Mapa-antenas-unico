@@ -27,6 +27,8 @@ jobs:
 
       - name: Actualizar datos desde AntenasMoviles
         working-directory: client
+        env:
+          BYPASS_TOKEN: ${{ secrets.SIGNALCROW_BYPASS_TOKEN }}
         run: bun run generate:antenasmoviles
 
       - name: Commit y push si hay cambios
