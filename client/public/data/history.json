@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "updatedAt": "2026-06-02T08:50:00.540Z",
-=======
   "updatedAt": "2026-06-07T08:04:22.888Z",
->>>>>>> parent of fb4fdd4 (Update antenas)
   "rules": {
     "requiredBands": [
       "N78",
@@ -16,8 +12,6 @@
   },
   "runs": [
     {
-<<<<<<< HEAD
-=======
       "generatedAt": "2026-06-07T08:04:22.888Z",
       "previousSnapshotAt": "2026-06-06T07:28:41.057Z",
       "summary": {
@@ -2350,7 +2344,6 @@
       ]
     },
     {
->>>>>>> parent of fb4fdd4 (Update antenas)
       "generatedAt": "2026-06-02T08:50:00.540Z",
       "previousSnapshotAt": "2026-06-01T09:38:10.825Z",
       "summary": {
@@ -116495,8 +116488,6 @@
   ],
   "bandChangesLog": [
     {
-<<<<<<< HEAD
-=======
       "generatedAt": "2026-06-07T08:04:22.888Z",
       "id": 1269,
       "operador": "AVATEL TELECOM S.A.",
@@ -118565,7 +118556,6 @@
       "currentLon": 2.394753
     },
     {
->>>>>>> parent of fb4fdd4 (Update antenas)
       "generatedAt": "2026-06-02T08:50:00.540Z",
       "id": 306,
       "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
