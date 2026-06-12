@@ -578,8 +578,7 @@ async function main() {
 
     const response = await fetch(API_URL, {
         headers: {
-            "user-agent": "mapa-antenas-unico-bot",
-            "X-GitHub-Action-Token": process.env.BYPASS_TOKEN ?? "",
+            "user-agent": "Mapa-antenas-unico/1.0",
             accept: "application/json, text/plain, */*",
         },
     });
