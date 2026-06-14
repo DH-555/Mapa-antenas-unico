@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const API_URL = "https://antenasmoviles.es/v1/showf";
+const API_URL = "https://antenasmoviles.es/v1/show";
 const outputPath = path.resolve(
     __dirname,
     "../public/data/antenasMoviles.json",

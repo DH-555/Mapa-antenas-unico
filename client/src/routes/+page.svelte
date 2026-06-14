@@ -132,6 +132,10 @@
                     direccion: antena.direccion,
                     declared: Boolean(antena.declared),
                     declaredMatched: Boolean(antena.declaredMatched),
+                    declaredHasBands: Boolean(
+                        Array.isArray(antena.declaredBands) &&
+                            antena.declaredBands.length > 0,
+                    ),
                     declaredBands: (antena.declaredBands ?? []).join(", "),
                     declaredCodes: (antena.declaredCodes ?? []).join(", "),
                     declaredLat: antena.declaredLat ?? null,
@@ -331,6 +335,7 @@
                     ...antena,
                     declared: false,
                     declaredMatched: false,
+                    declaredHasBands: false,
                     declaredBands: [],
                     declaredCodes: [],
                     declaredLat: null,
@@ -342,8 +347,9 @@
 
             return {
                 ...antena,
-                declared: hasRequired5GBand(matchedBands),
+                declared: true,
                 declaredMatched: true,
+                declaredHasBands: matchedBands.length > 0,
                 declaredBands: matchedBands,
                 declaredCodes: Array.isArray(match.codes) ? match.codes : [],
                 declaredLat: match.lat,
@@ -361,6 +367,7 @@
         const isBandFilterActive = filterN78 || filterN28Plus;
 
         if (isBandFilterActive) {
+            const hasBandData = allAntenas.some((antena) => antena.declaredHasBands);
             const conditions = [];
             if (filterN78) {
                 conditions.push(["in", "N78", ["get", "declaredBands"]]);
@@ -372,7 +379,9 @@
                 conditions.length === 1
                     ? conditions[0]
                     : ["any", ...conditions];
-            opacityExpression = ["case", matchCondition, 1, 0];
+            opacityExpression = hasBandData
+                ? ["case", matchCondition, 1, 0]
+                : ["case", ["boolean", ["get", "declared"], false], 1, 0];
         } else if (declaredMode === "declared") {
             opacityExpression = [
                 "case",

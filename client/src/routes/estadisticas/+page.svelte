@@ -320,11 +320,12 @@
       }
 
       const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+      const hasBands = matchedBands.length > 0;
       return {
         ...antena,
-        declared: hasRequired5GBand(matchedBands),
-        declaredN78: hasN78Band(matchedBands),
-        declaredN28Plus: hasN28PlusBand(matchedBands),
+        declared: true,
+        declaredN78: hasBands ? hasN78Band(matchedBands) : true,
+        declaredN28Plus: hasBands ? hasN28PlusBand(matchedBands) : true,
       };
     });
   }
