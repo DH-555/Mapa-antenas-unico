@@ -653,6 +653,11 @@
     return `border-color: ${color}; background: ${color}; color: #fff;`;
   }
 
+  function getHistoryCardStyle(operator) {
+    const color = getColor(operator);
+    return `border-color: ${color}2a; background: ${color}12;`;
+  }
+
   function calculatePieSlice(index, data) {
     const slices = [];
     let currentAngle = 0;
@@ -1141,7 +1146,7 @@
               {#each latestDeclarationHistoryVisible as item}
                 <article
                   class="history-item"
-                  style={`border-color: ${getColor(item.operador)}1f; background: ${getColor(item.operador)}10;`}
+                  style={getHistoryCardStyle(item.operador)}
                 >
                   <div class="history-item-head">
                     <span
@@ -1197,7 +1202,10 @@
           {:else}
             <div class="history-list">
               {#each latestBandChangesFiltered as item}
-                <article class="history-item history-item-band">
+                <article
+                  class="history-item history-item-band"
+                  style={getHistoryCardStyle(item.operador)}
+                >
                   <div class="history-item-head">
                     <span
                       class="history-badge neutral"
@@ -1252,9 +1260,7 @@
               {#each accumulatedHistoryVisible as item}
                 <article
                   class={`history-item ${item.historyType === "band" ? "history-item-band" : ""}`}
-                  style={item.historyType === "band"
-                    ? undefined
-                    : `border-color: ${getColor(item.operador)}1f; background: ${getColor(item.operador)}10;`}
+                  style={getHistoryCardStyle(item.operador)}
                 >
                   <div class="history-item-head">
                     <span
