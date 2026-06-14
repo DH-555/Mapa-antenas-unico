@@ -333,11 +333,12 @@
 
       const matchedBands = Array.isArray(match.bands) ? match.bands : [];
       const hasBands = matchedBands.length > 0;
+      const hasRequiredBand = hasRequired5GBand(matchedBands);
       return {
         ...antena,
-        declared: true,
-        declaredN78: hasBands ? hasN78Band(matchedBands) : true,
-        declaredN28Plus: hasBands ? hasN28PlusBand(matchedBands) : true,
+        declared: hasRequiredBand,
+        declaredN78: hasBands ? hasN78Band(matchedBands) : false,
+        declaredN28Plus: hasBands ? hasN28PlusBand(matchedBands) : false,
       };
     });
   }

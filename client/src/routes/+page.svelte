@@ -344,10 +344,11 @@
             }
 
             const matchedBands = Array.isArray(match.bands) ? match.bands : [];
+            const hasRequiredBand = hasRequired5GBand(matchedBands);
 
             return {
                 ...antena,
-                declared: true,
+                declared: hasRequiredBand,
                 declaredMatched: true,
                 declaredHasBands: matchedBands.length > 0,
                 declaredBands: matchedBands,
