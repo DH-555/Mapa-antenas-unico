@@ -12,6 +12,7 @@
 
   let selectedProvinces = [];
   let selectedCommunities = [];
+  let excludedHistoryOperators = [];
   let filterMode = "province"; // 'province' o 'community'
   let bandFilter = "all"; // 'all' | 'n78' | 'n28plus'
   const DECLARED_MATCH_DISTANCE_METERS = 900;
@@ -126,6 +127,17 @@
       .replace(/\s+/g, " ")
       .trim()
       .toLowerCase();
+  }
+
+  function formatOperatorLabel(operator) {
+    const label = String(operator ?? "").trim();
+    const normalized = normalizeText(label);
+
+    if (normalized.includes("avatel")) {
+      return `${label} (Xfera/MasOrange)`;
+    }
+
+    return label;
   }
 
   function resolveDeclaredOperatorCode(operador) {
@@ -356,7 +368,7 @@
     });
 
     return [...counts.entries()]
-      .map(([label, value]) => ({ label, value }))
+      .map(([label, value]) => ({ label: formatOperatorLabel(label), value }))
       .sort((a, b) => b.value - a.value);
   })();
 
@@ -370,7 +382,12 @@
         String(antena.operador ?? "Sin operador").trim() || "Sin operador";
 
       if (!counts.has(key)) {
-        counts.set(key, { operator: key, total: 0, declared: 0, percent: 0 });
+        counts.set(key, {
+          operator: formatOperatorLabel(key),
+          total: 0,
+          declared: 0,
+          percent: 0,
+        });
       }
 
       const item = counts.get(key);
@@ -460,9 +477,53 @@
     );
   }
 
-  $: latestBandChangesVisible = latestBandChanges.filter(isRelevantBandChange);
+  function buildDeclaredNowIdSet(changes) {
+    return new Set(
+      (Array.isArray(changes) ? changes : [])
+        .filter((item) => item?.change === "declara_ahora")
+        .map((item) => Number(item?.id))
+        .filter((id) => Number.isFinite(id)),
+    );
+  }
 
-  $: allBandChangesVisible = allBandChanges.filter(isRelevantBandChange);
+  function buildDeclaredNowIdSetByRun(runs) {
+    const map = new Map();
+
+    (Array.isArray(runs) ? runs : []).forEach((run) => {
+      const generatedAt = run?.generatedAt;
+      if (!generatedAt) {
+        return;
+      }
+
+      map.set(generatedAt, buildDeclaredNowIdSet(run?.changes));
+    });
+
+    return map;
+  }
+
+  function filterBandChangesWithoutDeclaredNow(bandChanges, declaredNowIds) {
+    return (Array.isArray(bandChanges) ? bandChanges : []).filter((item) => {
+      const id = Number(item?.id);
+      return !Number.isFinite(id) || !declaredNowIds.has(id);
+    });
+  }
+
+  $: latestBandChangesVisible = filterBandChangesWithoutDeclaredNow(
+    latestBandChanges.filter(isRelevantBandChange),
+    buildDeclaredNowIdSet(latestHistoryRun?.changes),
+  );
+
+  $: declaredNowIdsByRun = buildDeclaredNowIdSetByRun(allHistoryRuns);
+
+  $: allBandChangesVisible = allBandChanges
+    .filter(isRelevantBandChange)
+    .filter((item) => {
+      const declaredNowIds =
+        declaredNowIdsByRun.get(item?.generatedAt) ?? new Set();
+      return (
+        filterBandChangesWithoutDeclaredNow([item], declaredNowIds).length > 0
+      );
+    });
 
   $: allDeclarationChangesVisible = allDeclarationChanges.filter((item) => {
     const current = antenaById.get(Number(item?.id));
@@ -481,6 +542,74 @@
     return true;
   });
 
+  function sortHistoryItems(items) {
+    return [...items].sort((a, b) => {
+      const dateA = new Date(a.generatedAt ?? 0).getTime();
+      const dateB = new Date(b.generatedAt ?? 0).getTime();
+      if (dateA !== dateB) {
+        return dateB - dateA;
+      }
+
+      return Number(b.id ?? 0) - Number(a.id ?? 0);
+    });
+  }
+
+  $: historyOperatorOptions = [
+    ...new Set(
+      [
+        ...latestHistoryChanges.map((item) => item.operador),
+        ...latestBandChangesVisible.map((item) => item.operador),
+        ...allDeclarationChangesVisible.map((item) => item.operador),
+        ...allBandChangesVisible.map((item) => item.operador),
+      ].filter(Boolean),
+    ),
+  ].sort(sortEs);
+
+  $: latestDeclarationHistoryVisible = latestHistoryChanges.filter(
+    (item) => !excludedHistoryOperators.includes(item.operador),
+  );
+
+  $: latestBandChangesFiltered = latestBandChangesVisible.filter(
+    (item) => !excludedHistoryOperators.includes(item.operador),
+  );
+
+  $: latestDeclarationSummary = latestDeclarationHistoryVisible.reduce(
+    (acc, item) => {
+      if (item.change === "declara_ahora") {
+        acc.gained += 1;
+      } else if (item.change === "deja_de_declarar") {
+        acc.lost += 1;
+      }
+
+      return acc;
+    },
+    { gained: 0, lost: 0 },
+  );
+
+  $: accumulatedDeclarationChanges = allDeclarationChangesVisible.filter(
+    (item) =>
+      item.generatedAt !== latestHistoryRun?.generatedAt &&
+      !excludedHistoryOperators.includes(item.operador),
+  );
+
+  $: accumulatedBandChanges = allBandChangesVisible.filter(
+    (item) =>
+      item.generatedAt !== latestHistoryRun?.generatedAt &&
+      !excludedHistoryOperators.includes(item.operador),
+  );
+
+  $: accumulatedHistoryVisible = sortHistoryItems([
+    ...accumulatedDeclarationChanges.map((item) => ({
+      ...item,
+      historyType: "declaration",
+    })),
+    ...accumulatedBandChanges.map((item) => ({
+      ...item,
+      historyType: "band",
+      change: "cambio_bandas",
+    })),
+  ]);
+
   $: antenaById = new Map(
     allAntenas.map((antena) => [Number(antena.id), antena]),
   );
@@ -493,7 +622,35 @@
   };
 
   function getColor(label) {
+    const normalized = normalizeText(label);
+
+    if (normalized.includes("avatel")) {
+      return "#8b5cf6";
+    }
+
     return colorMap[label] || "#10b981"; // Verde por defecto
+  }
+
+  function getHistoryStatusBadgeStyle(change) {
+    if (change === "declara_ahora") {
+      return "background: #dcfce7; border-color: #bbf7d0; color: #166534;";
+    }
+
+    if (change === "cambio_bandas") {
+      return "background: #dbeafe; border-color: #bfdbfe; color: #1d4ed8;";
+    }
+
+    return "background: #fee2e2; border-color: #fecaca; color: #991b1b;";
+  }
+
+  function getHistoryOperatorButtonStyle(operator) {
+    const color = getColor(operator);
+
+    if (excludedHistoryOperators.includes(operator)) {
+      return `border-color: ${color}; background: #fff; color: ${color};`;
+    }
+
+    return `border-color: ${color}; background: ${color}; color: #fff;`;
   }
 
   function calculatePieSlice(index, data) {
@@ -878,41 +1035,118 @@
             Última actualización: {new Date(
               latestHistoryRun.generatedAt,
             ).toLocaleString("es-ES")}
-            · Cambios de declaración: {latestHistoryRun.summary?.totalChanges ??
-              0}
-            · Declaran ahora: {latestHistoryRun.summary?.gained ?? 0}
-            · Dejan de declarar: {latestHistoryRun.summary?.lost ?? 0}
-            · Antenas con cambios de bandas: {latestBandChangesVisible.length}
-            · Bandas añadidas: {latestBandChangesVisible.reduce(
-              (total, item) =>
-                total +
-                (Array.isArray(item?.addedBands) ? item.addedBands.length : 0),
-              0,
-            )}
-            · Bandas eliminadas: {latestBandChangesVisible.reduce(
-              (total, item) =>
-                total +
-                (Array.isArray(item?.removedBands)
-                  ? item.removedBands.length
-                  : 0),
-              0,
-            )}
           </p>
 
-          {#if latestHistoryChanges.length === 0}
+          <div class="history-operator-filter">
+            <div class="history-operator-buttons">
+              {#each historyOperatorOptions as operator}
+                <button
+                  type="button"
+                  class:excluded={excludedHistoryOperators.includes(operator)}
+                  style={getHistoryOperatorButtonStyle(operator)}
+                  on:click={() => {
+                    if (excludedHistoryOperators.includes(operator)) {
+                      excludedHistoryOperators =
+                        excludedHistoryOperators.filter(
+                          (item) => item !== operator,
+                        );
+                    } else {
+                      excludedHistoryOperators = [
+                        ...excludedHistoryOperators,
+                        operator,
+                      ];
+                    }
+                  }}
+                >
+                  {formatOperatorLabel(operator)}
+                </button>
+              {/each}
+            </div>
+          </div>
+
+          <div class="history-summary-list">
+            <div class="history-summary-item">
+              <span class="history-summary-icon up">+</span>
+              <div>
+                <div class="history-summary-label">Declaran ahora</div>
+                <div class="history-summary-value">
+                  {latestDeclarationSummary.gained}
+                </div>
+              </div>
+            </div>
+            <div class="history-summary-item">
+              <span class="history-summary-icon down">-</span>
+              <div>
+                <div class="history-summary-label">Dejan de declarar</div>
+                <div class="history-summary-value">
+                  {latestDeclarationSummary.lost}
+                </div>
+              </div>
+            </div>
+            <div class="history-summary-item">
+              <span class="history-summary-icon band">B</span>
+              <div>
+                <div class="history-summary-label">
+                  Antenas con cambios de bandas
+                </div>
+                <div class="history-summary-value">
+                  {latestBandChangesFiltered.length}
+                </div>
+              </div>
+            </div>
+            <div class="history-summary-item">
+              <span class="history-summary-icon up">+</span>
+              <div>
+                <div class="history-summary-label">Bandas añadidas</div>
+                <div class="history-summary-value">
+                  {latestBandChangesFiltered.reduce(
+                    (total, item) =>
+                      total +
+                      (Array.isArray(item?.addedBands)
+                        ? item.addedBands.length
+                        : 0),
+                    0,
+                  )}
+                </div>
+              </div>
+            </div>
+            <div class="history-summary-item">
+              <span class="history-summary-icon down">-</span>
+              <div>
+                <div class="history-summary-label">Bandas eliminadas</div>
+                <div class="history-summary-value">
+                  {latestBandChangesFiltered.reduce(
+                    (total, item) =>
+                      total +
+                      (Array.isArray(item?.removedBands)
+                        ? item.removedBands.length
+                        : 0),
+                    0,
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="history-subtitle">
+            Nuevas declaraciones o eliminaciones en la última actualización
+          </h3>
+          {#if latestDeclarationHistoryVisible.length === 0}
             <p>
               No hubo cambios de declaración respecto a la actualización
               anterior.
             </p>
           {:else}
             <div class="history-list">
-              {#each latestHistoryChanges as item}
+              {#each latestDeclarationHistoryVisible as item}
                 <article
-                  class={`history-item ${item.change === "declara_ahora" ? "history-item-up" : "history-item-down"}`}
+                  class="history-item"
+                  style={`border-color: ${getColor(item.operador)}1f; background: ${getColor(item.operador)}10;`}
                 >
                   <div class="history-item-head">
                     <span
-                      class={`history-badge ${item.change === "declara_ahora" ? "up" : "down"}`}
+                      class="history-badge"
+                      style={getHistoryStatusBadgeStyle(item.change)}
                     >
                       {item.change === "declara_ahora"
                         ? "Declara ahora"
@@ -920,7 +1154,9 @@
                     </span>
                     <span class="history-id">ID {item.id}</span>
                   </div>
-                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-operator">
+                    {formatOperatorLabel(item.operador)}
+                  </p>
                   <p class="history-address">
                     {item.provincia} · {item.direccion}
                   </p>
@@ -956,17 +1192,24 @@
           <h3 class="history-subtitle">
             Cambios de bandas en la última actualización
           </h3>
-          {#if latestBandChangesVisible.length === 0}
+          {#if latestBandChangesFiltered.length === 0}
             <p>No hubo cambios de bandas en esta actualización.</p>
           {:else}
             <div class="history-list">
-              {#each latestBandChangesVisible as item}
+              {#each latestBandChangesFiltered as item}
                 <article class="history-item history-item-band">
                   <div class="history-item-head">
-                    <span class="history-badge neutral">Cambio de bandas</span>
+                    <span
+                      class="history-badge neutral"
+                      style={getHistoryStatusBadgeStyle("cambio_bandas")}
+                    >
+                      Cambio de bandas
+                    </span>
                     <span class="history-id">ID {item.id}</span>
                   </div>
-                  <p class="history-operator">{item.operador}</p>
+                  <p class="history-operator">
+                    {formatOperatorLabel(item.operador)}
+                  </p>
                   <p class="history-address">
                     {item.provincia} · {item.direccion}
                   </p>
@@ -1000,79 +1243,38 @@
           {/if}
 
           <h3 class="history-subtitle">
-            Cambios de declaración acumulados ({allDeclarationChangesVisible.length})
+            Cambios acumulados ({accumulatedHistoryVisible.length})
           </h3>
-          {#if allDeclarationChangesVisible.length === 0}
-            <p>No hay cambios de declaración acumulados todavía.</p>
+          {#if accumulatedHistoryVisible.length === 0}
+            <p>No hay cambios acumulados todavía.</p>
           {:else}
             <div class="history-list history-list-compact">
-              {#each allDeclarationChangesVisible as item}
+              {#each accumulatedHistoryVisible as item}
                 <article
-                  class={`history-item ${item.change === "declara_ahora" ? "history-item-up" : "history-item-down"}`}
+                  class={`history-item ${item.historyType === "band" ? "history-item-band" : ""}`}
+                  style={item.historyType === "band"
+                    ? undefined
+                    : `border-color: ${getColor(item.operador)}1f; background: ${getColor(item.operador)}10;`}
                 >
                   <div class="history-item-head">
                     <span
-                      class={`history-badge ${item.change === "declara_ahora" ? "up" : "down"}`}
+                      class={`history-badge ${item.historyType === "band" ? "neutral" : ""}`}
+                      style={getHistoryStatusBadgeStyle(item.change)}
                     >
-                      {item.change === "declara_ahora"
-                        ? "Declara ahora"
-                        : "Deja de declarar"}
+                      {item.historyType === "band"
+                        ? "Cambio de bandas"
+                        : item.change === "declara_ahora"
+                          ? "Declara ahora"
+                          : "Deja de declarar"}
                     </span>
                     <span class="history-id">
                       {new Date(item.generatedAt).toLocaleDateString("es-ES")} ·
                       ID {item.id}
                     </span>
                   </div>
-                  <p class="history-operator">{item.operador}</p>
-                  <p class="history-address">
-                    {item.provincia} · {item.direccion}
+                  <p class="history-operator">
+                    {formatOperatorLabel(item.operador)}
                   </p>
-                  <p class="history-bands">
-                    Bandas:
-                    {#if getHistoryBandDiff(item).length === 0}
-                      Sin bandas
-                    {:else}
-                      {#each getHistoryBandDiff(item) as bandPart, index}
-                        <span class={`history-band ${bandPart.kind}`}
-                          >{bandPart.value}</span
-                        >{index < getHistoryBandDiff(item).length - 1
-                          ? ", "
-                          : ""}
-                      {/each}
-                    {/if}
-                  </p>
-                  {#if getAntenasMovilesHistoryUrl(item)}
-                    <a
-                      class="history-link"
-                      href={getAntenasMovilesHistoryUrl(item)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Ver antena en AntenasMoviles
-                    </a>
-                  {/if}
-                </article>
-              {/each}
-            </div>
-          {/if}
-
-          <h3 class="history-subtitle">
-            Cambios de bandas acumulados ({allBandChangesVisible.length})
-          </h3>
-          {#if allBandChangesVisible.length === 0}
-            <p>No hay cambios acumulados de bandas todavía.</p>
-          {:else}
-            <div class="history-list history-list-compact">
-              {#each allBandChangesVisible as item}
-                <article class="history-item history-item-band">
-                  <div class="history-item-head">
-                    <span class="history-badge neutral">Cambio de bandas</span>
-                    <span class="history-id">
-                      {new Date(item.generatedAt).toLocaleDateString("es-ES")} ·
-                      ID {item.id}
-                    </span>
-                  </div>
-                  <p class="history-operator">{item.operador}</p>
                   <p class="history-address">
                     {item.provincia} · {item.direccion}
                   </p>
@@ -1155,10 +1357,11 @@
 
   .stats-filters {
     background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(15, 23, 42, 0.1);
+    border: none;
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 24px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
   }
 
   .filter-mode-toggle {
@@ -1210,13 +1413,17 @@
 
   .chart-container {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 32px;
-    align-items: start;
+    grid-template-columns: minmax(280px, 340px) minmax(420px, 540px);
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
     background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(15, 23, 42, 0.1);
     border-radius: 12px;
     padding: 24px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .pie-chart {
@@ -1275,9 +1482,9 @@
   .declared-chart-container {
     margin-top: 24px;
     background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(15, 23, 42, 0.1);
     border-radius: 12px;
     padding: 24px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
   }
 
   .declared-chart-container h2 {
@@ -1351,15 +1558,50 @@
   .history-container {
     margin-top: 24px;
     background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(15, 23, 42, 0.1);
     border-radius: 12px;
     padding: 24px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
   }
 
   .history-container h2 {
     margin: 0 0 12px;
     font-size: 1rem;
     color: #0f172a;
+  }
+
+  .history-operator-filter {
+    margin: 0 0 12px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .history-operator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .history-operator-buttons button {
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+      transform 0.15s ease,
+      background 0.15s ease,
+      color 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .history-operator-buttons button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.14);
+  }
+
+  .history-operator-buttons button.excluded {
+    opacity: 0.75;
   }
 
   .history-subtitle {
@@ -1374,6 +1616,73 @@
     color: #475569;
   }
 
+  .history-summary-list {
+    display: grid;
+    gap: 10px;
+    margin: 0 0 16px;
+  }
+
+  .history-summary-item {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 10px;
+    align-items: start;
+    padding: 10px 12px;
+    border: 1px solid #edf2f7;
+    border-radius: 10px;
+    background: #f8fafc;
+  }
+
+  .history-summary-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    border: 1px solid transparent;
+  }
+
+  .history-summary-icon.up {
+    background: #dcfce7;
+    border-color: #bbf7d0;
+    color: #166534;
+  }
+
+  .history-summary-icon.down {
+    background: #fee2e2;
+    border-color: #fecaca;
+    color: #991b1b;
+  }
+
+  .history-summary-icon.band {
+    background: #dbeafe;
+    border-color: #bfdbfe;
+    color: #1d4ed8;
+  }
+
+  .history-summary-icon.neutral {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+    color: #334155;
+  }
+
+  .history-summary-label {
+    font-size: 0.78rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .history-summary-value {
+    margin-top: 2px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
   .history-list {
     display: grid;
     gap: 10px;
@@ -1386,24 +1695,24 @@
   }
 
   .history-item {
-    border: 1px solid #e2e8f0;
+    border: 1px solid #eef3f8;
     border-radius: 10px;
     padding: 10px 12px;
     background: #f8fafc;
   }
 
   .history-item-up {
-    border-color: #bbf7d0;
+    border-color: #d9f7e3;
     background: #f0fdf4;
   }
 
   .history-item-down {
-    border-color: #fecaca;
+    border-color: #fde2e2;
     background: #fef2f2;
   }
 
   .history-item-band {
-    border-color: #bfdbfe;
+    border-color: #dbeafe;
     background: #eff6ff;
   }
 
@@ -1434,7 +1743,7 @@
 
   .history-badge.neutral {
     background: #dbeafe;
-    color: #1e3a8a;
+    color: #1d4ed8;
   }
 
   .history-id {

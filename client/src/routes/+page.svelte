@@ -500,6 +500,17 @@
             .toLowerCase();
     }
 
+    function formatOperatorLabel(operator) {
+        const label = String(operator ?? "").trim();
+        const normalized = normalizeText(label);
+
+        if (normalized.includes("avatel")) {
+            return `${label} (Xfera/MasOrange)`;
+        }
+
+        return label;
+    }
+
     function matchesAddressQuery(direccion, query) {
         if (query.length === 0) {
             return true;
@@ -922,7 +933,7 @@
                             new maplibregl.Popup({ offset: 12 })
                                 .setLngLat([lon, lat])
                                 .setHTML(
-                                    `<strong>ID:</strong> ${id}<br/><strong>Fase:</strong> ${fase}<br/><strong>Operador:</strong> ${operador}<br/><strong>Provincia:</strong> ${provincia}<br/><strong>Dirección:</strong> ${direccion}${declaredInfo}`,
+                                    `<strong>ID:</strong> ${id}<br/><strong>Fase:</strong> ${fase}<br/><strong>Operador:</strong> ${formatOperatorLabel(operador)}<br/><strong>Provincia:</strong> ${provincia}<br/><strong>Dirección:</strong> ${direccion}${declaredInfo}`,
                                 )
                                 .addTo(map);
                         };
@@ -1048,7 +1059,7 @@
                             bind:group={selectedOperators}
                             on:change={() => applyFilters()}
                         />
-                        <span>{operator}</span>
+                        <span>{formatOperatorLabel(operator)}</span>
                     </label>
                 {/each}
             </div>
