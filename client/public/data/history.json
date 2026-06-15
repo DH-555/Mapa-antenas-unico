@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-14T12:16:10.146Z",
+  "updatedAt": "2026-06-15T10:40:48.956Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,197 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-15T10:40:48.956Z",
+      "previousSnapshotAt": "2026-06-14T22:38:13.483Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 5,
+        "totalBandsRemoved": 6
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1269,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Membrío",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6186A"
+          ],
+          "currentCodes": [
+            "EXTR6186A"
+          ],
+          "previousLat": 39.524972,
+          "previousLon": -7.048278,
+          "currentLat": 39.524972,
+          "currentLon": -7.048278
+        },
+        {
+          "id": 1477,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Casas de Miravete",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N1",
+            "N28",
+            "N3",
+            "N78"
+          ],
+          "addedBands": [
+            "N1",
+            "N3"
+          ],
+          "removedBands": [
+            "B1",
+            "B3"
+          ],
+          "previousCodes": [
+            "EXTR6223A"
+          ],
+          "currentCodes": [
+            "EXTR6223A"
+          ],
+          "previousLat": 39.713564,
+          "previousLon": -5.747153,
+          "currentLat": 39.713564,
+          "currentLon": -5.747153
+        },
+        {
+          "id": 1496,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Mesas de Ibor",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6560A"
+          ],
+          "currentCodes": [
+            "EXTR6560A"
+          ],
+          "previousLat": 39.754297,
+          "previousLon": -5.542514,
+          "currentLat": 39.754297,
+          "currentLon": -5.542514
+        },
+        {
+          "id": 2571,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Granada",
+          "direccion": "Benalúa",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "B8",
+            "N1"
+          ],
+          "previousCodes": [
+            "1800308"
+          ],
+          "currentCodes": [
+            "1800308"
+          ],
+          "previousLat": 37.349678,
+          "previousLon": -3.158917,
+          "currentLat": 37.349678,
+          "currentLon": -3.158917
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-14T12:16:10.146Z",
       "previousSnapshotAt": "2026-06-07T08:04:22.888Z",
@@ -117750,6 +117941,186 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-15T10:40:48.956Z",
+      "id": 1269,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Membrío",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6186A"
+      ],
+      "currentCodes": [
+        "EXTR6186A"
+      ],
+      "previousLat": 39.524972,
+      "previousLon": -7.048278,
+      "currentLat": 39.524972,
+      "currentLon": -7.048278
+    },
+    {
+      "generatedAt": "2026-06-15T10:40:48.956Z",
+      "id": 1477,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Casas de Miravete",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N1",
+        "N28",
+        "N3",
+        "N78"
+      ],
+      "addedBands": [
+        "N1",
+        "N3"
+      ],
+      "removedBands": [
+        "B1",
+        "B3"
+      ],
+      "previousCodes": [
+        "EXTR6223A"
+      ],
+      "currentCodes": [
+        "EXTR6223A"
+      ],
+      "previousLat": 39.713564,
+      "previousLon": -5.747153,
+      "currentLat": 39.713564,
+      "currentLon": -5.747153
+    },
+    {
+      "generatedAt": "2026-06-15T10:40:48.956Z",
+      "id": 1496,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Mesas de Ibor",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6560A"
+      ],
+      "currentCodes": [
+        "EXTR6560A"
+      ],
+      "previousLat": 39.754297,
+      "previousLon": -5.542514,
+      "currentLat": 39.754297,
+      "currentLon": -5.542514
+    },
+    {
+      "generatedAt": "2026-06-15T10:40:48.956Z",
+      "id": 2571,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Granada",
+      "direccion": "Benalúa",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "B8",
+        "N1"
+      ],
+      "previousCodes": [
+        "1800308"
+      ],
+      "currentCodes": [
+        "1800308"
+      ],
+      "previousLat": 37.349678,
+      "previousLon": -3.158917,
+      "currentLat": 37.349678,
+      "currentLon": -3.158917
+    },
     {
       "generatedAt": "2026-06-14T12:16:10.146Z",
       "id": 48,
