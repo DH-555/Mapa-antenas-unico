@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T10:40:48.956Z",
+  "updatedAt": "2026-06-16T09:37:52.512Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,387 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "previousSnapshotAt": "2026-06-15T10:40:48.956Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 0,
+        "lost": 2,
+        "totalBandChangeSites": 8,
+        "totalBandsAdded": 10,
+        "totalBandsRemoved": 13
+      },
+      "changes": [
+        {
+          "id": 4162,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Tielmes",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78+",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [],
+          "previousCodes": [
+            "2800682"
+          ],
+          "currentCodes": [],
+          "previousLat": 40.246825,
+          "previousLon": -3.316425,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 6465,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Camuñas",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78+",
+            "N28"
+          ],
+          "currentBands": [],
+          "previousCodes": [
+            "4501044"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.426381,
+          "previousLon": -3.450669,
+          "currentLat": null,
+          "currentLon": null
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1024,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Malla",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "N78+"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0805738"
+          ],
+          "currentCodes": [
+            "0805738"
+          ],
+          "previousLat": 41.88245,
+          "previousLon": 2.242939,
+          "currentLat": 41.88245,
+          "currentLon": 2.242939
+        },
+        {
+          "id": 1381,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Castañar de Ibor",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6234A"
+          ],
+          "currentCodes": [
+            "EXTR6234A"
+          ],
+          "previousLat": 39.629675,
+          "previousLon": -5.424953,
+          "currentLat": 39.629675,
+          "currentLon": -5.424953
+        },
+        {
+          "id": 1415,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Cabañas del Castillo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6258A"
+          ],
+          "currentCodes": [
+            "EXTR6258A"
+          ],
+          "previousLat": 39.571478,
+          "previousLon": -5.5384,
+          "currentLat": 39.571478,
+          "currentLon": -5.5384
+        },
+        {
+          "id": 1424,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Berrocalejo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6537A"
+          ],
+          "currentCodes": [
+            "EXTR6537A"
+          ],
+          "previousLat": 39.823206,
+          "previousLon": -5.345739,
+          "currentLat": 39.823206,
+          "currentLon": -5.345739
+        },
+        {
+          "id": 1445,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Madroñera",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6207A"
+          ],
+          "currentCodes": [
+            "EXTR6207A"
+          ],
+          "previousLat": 39.430739,
+          "previousLon": -5.758539,
+          "currentLat": 39.430739,
+          "currentLon": -5.758539
+        },
+        {
+          "id": 4162,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Tielmes",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": false,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [],
+          "addedBands": [],
+          "removedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "previousCodes": [
+            "2800682"
+          ],
+          "currentCodes": [],
+          "previousLat": 40.246825,
+          "previousLon": -3.316425,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 6465,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Camuñas",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": false,
+          "previousBands": [
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [],
+          "addedBands": [],
+          "removedBands": [
+            "N28",
+            "N78+"
+          ],
+          "previousCodes": [
+            "4501044"
+          ],
+          "currentCodes": [],
+          "previousLat": 39.426381,
+          "previousLon": -3.450669,
+          "currentLat": null,
+          "currentLon": null
+        },
+        {
+          "id": 8996,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Segovia",
+          "direccion": "40_40010_000329",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4000177"
+          ],
+          "currentCodes": [
+            "4000177"
+          ],
+          "previousLat": 41.084253,
+          "previousLon": -4.545422,
+          "currentLat": 41.084253,
+          "currentLon": -4.545422
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-15T10:40:48.956Z",
       "previousSnapshotAt": "2026-06-14T22:38:13.483Z",
@@ -117941,6 +118322,330 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 1024,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Malla",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "N78+"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0805738"
+      ],
+      "currentCodes": [
+        "0805738"
+      ],
+      "previousLat": 41.88245,
+      "previousLon": 2.242939,
+      "currentLat": 41.88245,
+      "currentLon": 2.242939
+    },
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 1381,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Castañar de Ibor",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6234A"
+      ],
+      "currentCodes": [
+        "EXTR6234A"
+      ],
+      "previousLat": 39.629675,
+      "previousLon": -5.424953,
+      "currentLat": 39.629675,
+      "currentLon": -5.424953
+    },
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 1415,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Cabañas del Castillo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6258A"
+      ],
+      "currentCodes": [
+        "EXTR6258A"
+      ],
+      "previousLat": 39.571478,
+      "previousLon": -5.5384,
+      "currentLat": 39.571478,
+      "currentLon": -5.5384
+    },
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 1424,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Berrocalejo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6537A"
+      ],
+      "currentCodes": [
+        "EXTR6537A"
+      ],
+      "previousLat": 39.823206,
+      "previousLon": -5.345739,
+      "currentLat": 39.823206,
+      "currentLon": -5.345739
+    },
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 1445,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Madroñera",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6207A"
+      ],
+      "currentCodes": [
+        "EXTR6207A"
+      ],
+      "previousLat": 39.430739,
+      "previousLon": -5.758539,
+      "currentLat": 39.430739,
+      "currentLon": -5.758539
+    },
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 4162,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Madrid",
+      "direccion": "Tielmes",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": false,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [],
+      "addedBands": [],
+      "removedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "previousCodes": [
+        "2800682"
+      ],
+      "currentCodes": [],
+      "previousLat": 40.246825,
+      "previousLon": -3.316425,
+      "currentLat": null,
+      "currentLon": null
+    },
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 6465,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Camuñas",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": false,
+      "previousBands": [
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [],
+      "addedBands": [],
+      "removedBands": [
+        "N28",
+        "N78+"
+      ],
+      "previousCodes": [
+        "4501044"
+      ],
+      "currentCodes": [],
+      "previousLat": 39.426381,
+      "previousLon": -3.450669,
+      "currentLat": null,
+      "currentLon": null
+    },
+    {
+      "generatedAt": "2026-06-16T09:37:52.512Z",
+      "id": 8996,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Segovia",
+      "direccion": "40_40010_000329",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4000177"
+      ],
+      "currentCodes": [
+        "4000177"
+      ],
+      "previousLat": 41.084253,
+      "previousLon": -4.545422,
+      "currentLat": 41.084253,
+      "currentLon": -4.545422
+    },
     {
       "generatedAt": "2026-06-15T10:40:48.956Z",
       "id": 1269,
