@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T08:00:37.787Z",
+  "updatedAt": "2026-06-21T08:46:10.422Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,3338 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "previousSnapshotAt": "2026-06-20T08:00:37.787Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 77,
+        "totalBandsAdded": 79,
+        "totalBandsRemoved": 78
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 167,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Albacete",
+          "direccion": "Lezuza",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0200013"
+          ],
+          "currentCodes": [
+            "0200013"
+          ],
+          "previousLat": 38.911178,
+          "previousLon": -2.343197,
+          "currentLat": 38.911178,
+          "currentLon": -2.343197
+        },
+        {
+          "id": 406,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Almería",
+          "direccion": "Alcolea",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9085A"
+          ],
+          "currentCodes": [
+            "ANDR9085A"
+          ],
+          "previousLat": 36.972167,
+          "previousLon": -2.955278,
+          "currentLat": 36.972167,
+          "currentLon": -2.955278
+        },
+        {
+          "id": 407,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Almería",
+          "direccion": "Tabernas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR8931E"
+          ],
+          "currentCodes": [
+            "ANDR8931E"
+          ],
+          "previousLat": 37.020417,
+          "previousLon": -2.43515,
+          "currentLat": 37.020417,
+          "currentLon": -2.43515
+        },
+        {
+          "id": 415,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Almería",
+          "direccion": "Lubrín",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR8740A"
+          ],
+          "currentCodes": [
+            "ANDR8740A"
+          ],
+          "previousLat": 37.215722,
+          "previousLon": -2.062472,
+          "currentLat": 37.215722,
+          "currentLon": -2.062472
+        },
+        {
+          "id": 692,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Calzadilla de los Barros",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR0427A"
+          ],
+          "currentCodes": [
+            "EXTR0427A"
+          ],
+          "previousLat": 38.354083,
+          "previousLon": -6.325278,
+          "currentLat": 38.354083,
+          "currentLon": -6.325278
+        },
+        {
+          "id": 697,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Lobón",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR0311A"
+          ],
+          "currentCodes": [
+            "EXTR0311A"
+          ],
+          "previousLat": 38.852872,
+          "previousLon": -6.60785,
+          "currentLat": 38.852872,
+          "currentLon": -6.60785
+        },
+        {
+          "id": 699,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Higuera de Vargas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR0378A"
+          ],
+          "currentCodes": [
+            "EXTR0378A"
+          ],
+          "previousLat": 38.444083,
+          "previousLon": -6.971472,
+          "currentLat": 38.444083,
+          "currentLon": -6.971472
+        },
+        {
+          "id": 708,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Torremayor",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR0545A"
+          ],
+          "currentCodes": [
+            "EXTR0545A"
+          ],
+          "previousLat": 38.904558,
+          "previousLon": -6.528125,
+          "currentLat": 38.904558,
+          "currentLon": -6.528125
+        },
+        {
+          "id": 1263,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Hernán-Pérez",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6162A"
+          ],
+          "currentCodes": [
+            "EXTR6162A"
+          ],
+          "previousLat": 40.219481,
+          "previousLon": -6.464728,
+          "currentLat": 40.219481,
+          "currentLon": -6.464728
+        },
+        {
+          "id": 1264,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Herreruela",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6150B"
+          ],
+          "currentCodes": [
+            "EXTR6150B"
+          ],
+          "previousLat": 39.429353,
+          "previousLon": -6.814606,
+          "currentLat": 39.429353,
+          "currentLon": -6.814606
+        },
+        {
+          "id": 1268,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Aldeacentenera",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6235A"
+          ],
+          "currentCodes": [
+            "EXTR6235A"
+          ],
+          "previousLat": 39.524806,
+          "previousLon": -5.613222,
+          "currentLat": 39.524806,
+          "currentLon": -5.613222
+        },
+        {
+          "id": 1269,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Membrío",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6186A"
+          ],
+          "currentCodes": [
+            "EXTR6186A"
+          ],
+          "previousLat": 39.524972,
+          "previousLon": -7.048278,
+          "currentLat": 39.524972,
+          "currentLon": -7.048278
+        },
+        {
+          "id": 1272,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Zarza la Mayor",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6119D"
+          ],
+          "currentCodes": [
+            "EXTR6119D"
+          ],
+          "previousLat": 39.871239,
+          "previousLon": -6.856544,
+          "currentLat": 39.871239,
+          "currentLon": -6.856544
+        },
+        {
+          "id": 1276,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Montánchez",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6216A"
+          ],
+          "currentCodes": [
+            "EXTR6216A"
+          ],
+          "previousLat": 39.215167,
+          "previousLon": -6.123417,
+          "currentLat": 39.215167,
+          "currentLon": -6.123417
+        },
+        {
+          "id": 1277,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Carcaboso",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6132A"
+          ],
+          "currentCodes": [
+            "EXTR6132A"
+          ],
+          "previousLat": 40.045822,
+          "previousLon": -6.217992,
+          "currentLat": 40.045822,
+          "currentLon": -6.217992
+        },
+        {
+          "id": 1278,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Holguera",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6477A"
+          ],
+          "currentCodes": [
+            "EXTR6477A"
+          ],
+          "previousLat": 39.902819,
+          "previousLon": -6.343831,
+          "currentLat": 39.902819,
+          "currentLon": -6.343831
+        },
+        {
+          "id": 1281,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Madrigalejo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6212A"
+          ],
+          "currentCodes": [
+            "EXTR6212A"
+          ],
+          "previousLat": 39.133381,
+          "previousLon": -5.62715,
+          "currentLat": 39.133381,
+          "currentLon": -5.62715
+        },
+        {
+          "id": 1285,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Morcillo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6483A"
+          ],
+          "currentCodes": [
+            "EXTR6483A"
+          ],
+          "previousLat": 40.018014,
+          "previousLon": -6.400647,
+          "currentLat": 40.018014,
+          "currentLon": -6.400647
+        },
+        {
+          "id": 1289,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Casas del Monte",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6170A"
+          ],
+          "currentCodes": [
+            "EXTR6170A"
+          ],
+          "previousLat": 40.198944,
+          "previousLon": -5.958686,
+          "currentLat": 40.198944,
+          "currentLon": -5.958686
+        },
+        {
+          "id": 1290,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Gata",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6391A"
+          ],
+          "currentCodes": [
+            "EXTR6391A"
+          ],
+          "previousLat": 40.098311,
+          "previousLon": -6.626683,
+          "currentLat": 40.098311,
+          "currentLon": -6.626683
+        },
+        {
+          "id": 1294,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Albalá",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6351A"
+          ],
+          "currentCodes": [
+            "EXTR6351A"
+          ],
+          "previousLat": 39.254458,
+          "previousLon": -6.191856,
+          "currentLat": 39.254458,
+          "currentLon": -6.191856
+        },
+        {
+          "id": 1303,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Montehermoso",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N1",
+            "N28",
+            "N3",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1",
+            "N3"
+          ],
+          "removedBands": [
+            "B1",
+            "B3"
+          ],
+          "previousCodes": [
+            "EXTR6126D"
+          ],
+          "currentCodes": [
+            "EXTR6126D"
+          ],
+          "previousLat": 40.083708,
+          "previousLon": -6.345064,
+          "currentLat": 40.083708,
+          "currentLon": -6.345064
+        },
+        {
+          "id": 1321,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6206F"
+          ],
+          "currentCodes": [
+            "EXTR6206F"
+          ],
+          "previousLat": 39.456222,
+          "previousLon": -5.884056,
+          "currentLat": 39.456222,
+          "currentLon": -5.884056
+        },
+        {
+          "id": 1323,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Aceituna",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6144G"
+          ],
+          "currentCodes": [
+            "EXTR6144G"
+          ],
+          "previousLat": 40.152028,
+          "previousLon": -6.335972,
+          "currentLat": 40.152028,
+          "currentLon": -6.335972
+        },
+        {
+          "id": 1325,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Zorita",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6208A"
+          ],
+          "currentCodes": [
+            "EXTR6208A"
+          ],
+          "previousLat": 39.290144,
+          "previousLon": -5.699292,
+          "currentLat": 39.290144,
+          "currentLon": -5.699292
+        },
+        {
+          "id": 1336,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Eljas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6175A"
+          ],
+          "currentCodes": [
+            "EXTR6175A"
+          ],
+          "previousLat": 40.218067,
+          "previousLon": -6.841431,
+          "currentLat": 40.218067,
+          "currentLon": -6.841431
+        },
+        {
+          "id": 1346,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Caminomorisco",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6181A"
+          ],
+          "currentCodes": [
+            "EXTR6181A"
+          ],
+          "previousLat": 40.334089,
+          "previousLon": -6.280175,
+          "currentLat": 40.334089,
+          "currentLon": -6.280175
+        },
+        {
+          "id": 1358,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Ahigal",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6326C"
+          ],
+          "currentCodes": [
+            "EXTR6326C"
+          ],
+          "previousLat": 40.191714,
+          "previousLon": -6.174003,
+          "currentLat": 40.191714,
+          "currentLon": -6.174003
+        },
+        {
+          "id": 1361,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Zarza de Granadilla",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6325B"
+          ],
+          "currentCodes": [
+            "EXTR6325B"
+          ],
+          "previousLat": 40.240464,
+          "previousLon": -6.047444,
+          "currentLat": 40.240464,
+          "currentLon": -6.047444
+        },
+        {
+          "id": 1362,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Pinofranqueado",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6500A"
+          ],
+          "currentCodes": [
+            "EXTR6500A"
+          ],
+          "previousLat": 40.383222,
+          "previousLon": -6.391917,
+          "currentLat": 40.383222,
+          "currentLon": -6.391917
+        },
+        {
+          "id": 1363,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Hinojal",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6106A"
+          ],
+          "currentCodes": [
+            "EXTR6106A"
+          ],
+          "previousLat": 39.71065,
+          "previousLon": -6.359411,
+          "currentLat": 39.71065,
+          "currentLon": -6.359411
+        },
+        {
+          "id": 1375,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Riolobos",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6321B"
+          ],
+          "currentCodes": [
+            "EXTR6321B"
+          ],
+          "previousLat": 39.925697,
+          "previousLon": -6.303222,
+          "currentLat": 39.925697,
+          "currentLon": -6.303222
+        },
+        {
+          "id": 1377,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Garrovillas de Alconétar",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6117A"
+          ],
+          "currentCodes": [
+            "EXTR6117A"
+          ],
+          "previousLat": 39.704617,
+          "previousLon": -6.553419,
+          "currentLat": 39.704617,
+          "currentLon": -6.553419
+        },
+        {
+          "id": 1381,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Castañar de Ibor",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6234A"
+          ],
+          "currentCodes": [
+            "EXTR6234A"
+          ],
+          "previousLat": 39.629675,
+          "previousLon": -5.424953,
+          "currentLat": 39.629675,
+          "currentLon": -5.424953
+        },
+        {
+          "id": 1383,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Logrosán",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6209A"
+          ],
+          "currentCodes": [
+            "EXTR6209A"
+          ],
+          "previousLat": 39.333456,
+          "previousLon": -5.486619,
+          "currentLat": 39.333456,
+          "currentLon": -5.486619
+        },
+        {
+          "id": 1384,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Jaraíz de la Vera",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6400B"
+          ],
+          "currentCodes": [
+            "EXTR6400B"
+          ],
+          "previousLat": 40.060272,
+          "previousLon": -5.753117,
+          "currentLat": 40.060272,
+          "currentLon": -5.753117
+        },
+        {
+          "id": 1392,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Torreorgaz",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6219A"
+          ],
+          "currentCodes": [
+            "EXTR6219A"
+          ],
+          "previousLat": 39.383133,
+          "previousLon": -6.243344,
+          "currentLat": 39.383133,
+          "currentLon": -6.243344
+        },
+        {
+          "id": 1401,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Guadalupe",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6211B"
+          ],
+          "currentCodes": [
+            "EXTR6211B"
+          ],
+          "previousLat": 39.440544,
+          "previousLon": -5.334481,
+          "currentLat": 39.440544,
+          "currentLon": -5.334481
+        },
+        {
+          "id": 1406,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Majadas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6333B"
+          ],
+          "currentCodes": [
+            "EXTR6333B"
+          ],
+          "previousLat": 39.917447,
+          "previousLon": -5.758658,
+          "currentLat": 39.917447,
+          "currentLon": -5.758658
+        },
+        {
+          "id": 1409,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Bohonal de Ibor",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6164A"
+          ],
+          "currentCodes": [
+            "EXTR6164A"
+          ],
+          "previousLat": 39.780933,
+          "previousLon": -5.485094,
+          "currentLat": 39.780933,
+          "currentLon": -5.485094
+        },
+        {
+          "id": 1410,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Cabrero",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6154A"
+          ],
+          "currentCodes": [
+            "EXTR6154A"
+          ],
+          "previousLat": 40.117747,
+          "previousLon": -5.890081,
+          "currentLat": 40.117747,
+          "currentLon": -5.890081
+        },
+        {
+          "id": 1425,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Trujillo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6287A"
+          ],
+          "currentCodes": [
+            "EXTR6287A"
+          ],
+          "previousLat": 39.457186,
+          "previousLon": -5.881781,
+          "currentLat": 39.457186,
+          "currentLon": -5.881781
+        },
+        {
+          "id": 1426,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Vegaviana",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6161A"
+          ],
+          "currentCodes": [
+            "EXTR6161A"
+          ],
+          "previousLat": 40.037408,
+          "previousLon": -6.718919,
+          "currentLat": 40.037408,
+          "currentLon": -6.718919
+        },
+        {
+          "id": 1485,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Alcántara",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "EXTR6371A"
+          ],
+          "currentCodes": [
+            "EXTR6371A"
+          ],
+          "previousLat": 39.713003,
+          "previousLon": -6.882403,
+          "currentLat": 39.713003,
+          "currentLon": -6.882403
+        },
+        {
+          "id": 1534,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cádiz",
+          "direccion": "Torre Alháquime",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR4193A"
+          ],
+          "currentCodes": [
+            "ANDR4193A"
+          ],
+          "previousLat": 36.917606,
+          "previousLon": -5.227783,
+          "currentLat": 36.917606,
+          "currentLon": -5.227783
+        },
+        {
+          "id": 1535,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cádiz",
+          "direccion": "Algodonales",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR5131B"
+          ],
+          "currentCodes": [
+            "ANDR5131B"
+          ],
+          "previousLat": 36.882931,
+          "previousLon": -5.521078,
+          "currentLat": 36.882931,
+          "currentLon": -5.521078
+        },
+        {
+          "id": 1925,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Montoro",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR7383A"
+          ],
+          "currentCodes": [
+            "ANDR7383A"
+          ],
+          "previousLat": 38.096444,
+          "previousLon": -4.415639,
+          "currentLat": 38.096444,
+          "currentLon": -4.415639
+        },
+        {
+          "id": 1927,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Monturque",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR7240B"
+          ],
+          "currentCodes": [
+            "ANDR7240B"
+          ],
+          "previousLat": 37.468106,
+          "previousLon": -4.575081,
+          "currentLat": 37.468106,
+          "currentLon": -4.575081
+        },
+        {
+          "id": 1929,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Villanueva de Córdoba",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR6741A"
+          ],
+          "currentCodes": [
+            "ANDR6741A"
+          ],
+          "previousLat": 38.240906,
+          "previousLon": -4.56685,
+          "currentLat": 38.240906,
+          "currentLon": -4.56685
+        },
+        {
+          "id": 1934,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Moriles",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR6854A"
+          ],
+          "currentCodes": [
+            "ANDR6854A"
+          ],
+          "previousLat": 37.41025,
+          "previousLon": -4.642242,
+          "currentLat": 37.41025,
+          "currentLon": -4.642242
+        },
+        {
+          "id": 1935,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Villanueva de Córdoba",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "G18",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "G18",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR6743A"
+          ],
+          "currentCodes": [
+            "ANDR6743A"
+          ],
+          "previousLat": 38.31215,
+          "previousLon": -4.566942,
+          "currentLat": 38.31215,
+          "currentLon": -4.566942
+        },
+        {
+          "id": 1937,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Rambla, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR6855A"
+          ],
+          "currentCodes": [
+            "ANDR6855A"
+          ],
+          "previousLat": 37.734639,
+          "previousLon": -4.747597,
+          "currentLat": 37.734639,
+          "currentLon": -4.747597
+        },
+        {
+          "id": 2685,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Cortes de Baza",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR5728B"
+          ],
+          "currentCodes": [
+            "ANDR5728B"
+          ],
+          "previousLat": 37.656289,
+          "previousLon": -2.764369,
+          "currentLat": 37.656289,
+          "currentLon": -2.764369
+        },
+        {
+          "id": 2687,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Lobras",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR5808A"
+          ],
+          "currentCodes": [
+            "ANDR5808A"
+          ],
+          "previousLat": 36.927667,
+          "previousLon": -3.211833,
+          "currentLat": 36.927667,
+          "currentLon": -3.211833
+        },
+        {
+          "id": 2691,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Algarinejo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR5675V"
+          ],
+          "currentCodes": [
+            "ANDR5675V"
+          ],
+          "previousLat": 37.289356,
+          "previousLon": -4.153997,
+          "currentLat": 37.289356,
+          "currentLon": -4.153997
+        },
+        {
+          "id": 2695,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Villa de Otura",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR6116C"
+          ],
+          "currentCodes": [
+            "ANDR6116C"
+          ],
+          "previousLat": 37.095306,
+          "previousLon": -3.644889,
+          "currentLat": 37.095306,
+          "currentLon": -3.644889
+        },
+        {
+          "id": 2696,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Cúllar",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR6280A"
+          ],
+          "currentCodes": [
+            "ANDR6280A"
+          ],
+          "previousLat": 37.625636,
+          "previousLon": -2.560497,
+          "currentLat": 37.625636,
+          "currentLon": -2.560497
+        },
+        {
+          "id": 2697,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Iznalloz",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N1",
+            "N28",
+            "N3",
+            "N78"
+          ],
+          "addedBands": [
+            "N1",
+            "N3"
+          ],
+          "removedBands": [
+            "B1",
+            "B3"
+          ],
+          "previousCodes": [
+            "ANDR6040A"
+          ],
+          "currentCodes": [
+            "ANDR6040A"
+          ],
+          "previousLat": 37.497806,
+          "previousLon": -3.635044,
+          "currentLat": 37.497806,
+          "currentLon": -3.635044
+        },
+        {
+          "id": 2701,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Pedro Martínez",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR5710A"
+          ],
+          "currentCodes": [
+            "ANDR5710A"
+          ],
+          "previousLat": 37.504014,
+          "previousLon": -3.2354,
+          "currentLat": 37.504014,
+          "currentLon": -3.2354
+        },
+        {
+          "id": 2702,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Montefrío",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR6072A"
+          ],
+          "currentCodes": [
+            "ANDR6072A"
+          ],
+          "previousLat": 37.353544,
+          "previousLon": -4.027664,
+          "currentLat": 37.353544,
+          "currentLon": -4.027664
+        },
+        {
+          "id": 2708,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Cúllar",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR5959A"
+          ],
+          "currentCodes": [
+            "ANDR5959A"
+          ],
+          "previousLat": 37.592611,
+          "previousLon": -2.3945,
+          "currentLat": 37.592611,
+          "currentLon": -2.3945
+        },
+        {
+          "id": 2728,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Cogollos de Guadix",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR5879A"
+          ],
+          "currentCodes": [
+            "ANDR5879A"
+          ],
+          "previousLat": 37.222806,
+          "previousLon": -3.171636,
+          "currentLat": 37.222806,
+          "currentLon": -3.171636
+        },
+        {
+          "id": 3062,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Huelva",
+          "direccion": "Rosal de la Frontera",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9450B"
+          ],
+          "currentCodes": [
+            "ANDR9450B"
+          ],
+          "previousLat": 37.979261,
+          "previousLon": -7.15065,
+          "currentLat": 37.979261,
+          "currentLon": -7.15065
+        },
+        {
+          "id": 3067,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Huelva",
+          "direccion": "Villanueva de los Castillejos",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9531A"
+          ],
+          "currentCodes": [
+            "ANDR9531A"
+          ],
+          "previousLat": 37.410014,
+          "previousLon": -7.187175,
+          "currentLat": 37.410014,
+          "currentLon": -7.187175
+        },
+        {
+          "id": 3068,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Huelva",
+          "direccion": "Zalamea la Real",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9472A"
+          ],
+          "currentCodes": [
+            "ANDR9472A"
+          ],
+          "previousLat": 37.614869,
+          "previousLon": -6.683689,
+          "currentLat": 37.614869,
+          "currentLon": -6.683689
+        },
+        {
+          "id": 3071,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Huelva",
+          "direccion": "Cala",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9675A"
+          ],
+          "currentCodes": [
+            "ANDR9675A"
+          ],
+          "previousLat": 37.972556,
+          "previousLon": -6.323478,
+          "currentLat": 37.972556,
+          "currentLon": -6.323478
+        },
+        {
+          "id": 3073,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Huelva",
+          "direccion": "Hinojos",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9527A"
+          ],
+          "currentCodes": [
+            "ANDR9527A"
+          ],
+          "previousLat": 37.155403,
+          "previousLon": -6.346794,
+          "currentLat": 37.155403,
+          "currentLon": -6.346794
+        },
+        {
+          "id": 3079,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Huelva",
+          "direccion": "Cumbres Mayores",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR9863A"
+          ],
+          "currentCodes": [
+            "ANDR9863A"
+          ],
+          "previousLat": 38.061964,
+          "previousLon": -6.649025,
+          "currentLat": 38.061964,
+          "currentLon": -6.649025
+        },
+        {
+          "id": 3347,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Jaén",
+          "direccion": "Carboneros",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR7807A"
+          ],
+          "currentCodes": [
+            "ANDR7807A"
+          ],
+          "previousLat": 38.226375,
+          "previousLon": -3.633014,
+          "currentLat": 38.226375,
+          "currentLon": -3.633014
+        },
+        {
+          "id": 3367,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Jaén",
+          "direccion": "Peal de Becerro",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR8143A"
+          ],
+          "currentCodes": [
+            "ANDR8143A"
+          ],
+          "previousLat": 37.907764,
+          "previousLon": -3.113506,
+          "currentLat": 37.907764,
+          "currentLon": -3.113506
+        },
+        {
+          "id": 3377,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Jaén",
+          "direccion": "Torreperogil",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR8127B"
+          ],
+          "currentCodes": [
+            "ANDR8127B"
+          ],
+          "previousLat": 38.039861,
+          "previousLon": -3.286772,
+          "currentLat": 38.039861,
+          "currentLon": -3.286772
+        },
+        {
+          "id": 4345,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Málaga",
+          "direccion": "Casares",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR3201H"
+          ],
+          "currentCodes": [
+            "ANDR3201H"
+          ],
+          "previousLat": 36.413642,
+          "previousLon": -5.220614,
+          "currentLat": 36.413642,
+          "currentLon": -5.220614
+        },
+        {
+          "id": 5801,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Guadalcanal",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR0428A"
+          ],
+          "currentCodes": [
+            "ANDR0428A"
+          ],
+          "previousLat": 38.055083,
+          "previousLon": -5.774889,
+          "currentLat": 38.055083,
+          "currentLon": -5.774889
+        },
+        {
+          "id": 5802,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Castillo de las Guardas, El",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR1532A"
+          ],
+          "currentCodes": [
+            "ANDR1532A"
+          ],
+          "previousLat": 37.668597,
+          "previousLon": -6.240492,
+          "currentLat": 37.668597,
+          "currentLon": -6.240492
+        },
+        {
+          "id": 5806,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Ronquillo, El",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR2217A"
+          ],
+          "currentCodes": [
+            "ANDR2217A"
+          ],
+          "previousLat": 37.791769,
+          "previousLon": -6.204469,
+          "currentLat": 37.791769,
+          "currentLon": -6.204469
+        },
+        {
+          "id": 5807,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Luisiana, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR1324A"
+          ],
+          "currentCodes": [
+            "ANDR1324A"
+          ],
+          "previousLat": 37.522925,
+          "previousLon": -5.251219,
+          "currentLat": 37.522925,
+          "currentLon": -5.251219
+        },
+        {
+          "id": 7665,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Cádiz",
+          "direccion": "11_11010_000150",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B7+",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7+",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [
+            "B1"
+          ],
+          "previousCodes": [
+            "ANDR4401A"
+          ],
+          "currentCodes": [
+            "ANDR4401A"
+          ],
+          "previousLat": 36.818989,
+          "previousLon": -5.753322,
+          "currentLat": 36.818989,
+          "currentLon": -5.753322
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-20T08:00:37.787Z",
       "previousSnapshotAt": "2026-06-19T09:17:04.497Z",
@@ -124516,6 +127848,3400 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 167,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Albacete",
+      "direccion": "Lezuza",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0200013"
+      ],
+      "currentCodes": [
+        "0200013"
+      ],
+      "previousLat": 38.911178,
+      "previousLon": -2.343197,
+      "currentLat": 38.911178,
+      "currentLon": -2.343197
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 406,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Almería",
+      "direccion": "Alcolea",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9085A"
+      ],
+      "currentCodes": [
+        "ANDR9085A"
+      ],
+      "previousLat": 36.972167,
+      "previousLon": -2.955278,
+      "currentLat": 36.972167,
+      "currentLon": -2.955278
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 407,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Almería",
+      "direccion": "Tabernas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR8931E"
+      ],
+      "currentCodes": [
+        "ANDR8931E"
+      ],
+      "previousLat": 37.020417,
+      "previousLon": -2.43515,
+      "currentLat": 37.020417,
+      "currentLon": -2.43515
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 415,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Almería",
+      "direccion": "Lubrín",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR8740A"
+      ],
+      "currentCodes": [
+        "ANDR8740A"
+      ],
+      "previousLat": 37.215722,
+      "previousLon": -2.062472,
+      "currentLat": 37.215722,
+      "currentLon": -2.062472
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 692,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Calzadilla de los Barros",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR0427A"
+      ],
+      "currentCodes": [
+        "EXTR0427A"
+      ],
+      "previousLat": 38.354083,
+      "previousLon": -6.325278,
+      "currentLat": 38.354083,
+      "currentLon": -6.325278
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 697,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Lobón",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR0311A"
+      ],
+      "currentCodes": [
+        "EXTR0311A"
+      ],
+      "previousLat": 38.852872,
+      "previousLon": -6.60785,
+      "currentLat": 38.852872,
+      "currentLon": -6.60785
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 699,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Higuera de Vargas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR0378A"
+      ],
+      "currentCodes": [
+        "EXTR0378A"
+      ],
+      "previousLat": 38.444083,
+      "previousLon": -6.971472,
+      "currentLat": 38.444083,
+      "currentLon": -6.971472
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 708,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Torremayor",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR0545A"
+      ],
+      "currentCodes": [
+        "EXTR0545A"
+      ],
+      "previousLat": 38.904558,
+      "previousLon": -6.528125,
+      "currentLat": 38.904558,
+      "currentLon": -6.528125
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1263,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Hernán-Pérez",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6162A"
+      ],
+      "currentCodes": [
+        "EXTR6162A"
+      ],
+      "previousLat": 40.219481,
+      "previousLon": -6.464728,
+      "currentLat": 40.219481,
+      "currentLon": -6.464728
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1264,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Herreruela",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6150B"
+      ],
+      "currentCodes": [
+        "EXTR6150B"
+      ],
+      "previousLat": 39.429353,
+      "previousLon": -6.814606,
+      "currentLat": 39.429353,
+      "currentLon": -6.814606
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1268,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Aldeacentenera",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6235A"
+      ],
+      "currentCodes": [
+        "EXTR6235A"
+      ],
+      "previousLat": 39.524806,
+      "previousLon": -5.613222,
+      "currentLat": 39.524806,
+      "currentLon": -5.613222
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1269,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Membrío",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6186A"
+      ],
+      "currentCodes": [
+        "EXTR6186A"
+      ],
+      "previousLat": 39.524972,
+      "previousLon": -7.048278,
+      "currentLat": 39.524972,
+      "currentLon": -7.048278
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1272,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Zarza la Mayor",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6119D"
+      ],
+      "currentCodes": [
+        "EXTR6119D"
+      ],
+      "previousLat": 39.871239,
+      "previousLon": -6.856544,
+      "currentLat": 39.871239,
+      "currentLon": -6.856544
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1276,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Montánchez",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6216A"
+      ],
+      "currentCodes": [
+        "EXTR6216A"
+      ],
+      "previousLat": 39.215167,
+      "previousLon": -6.123417,
+      "currentLat": 39.215167,
+      "currentLon": -6.123417
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1277,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Carcaboso",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6132A"
+      ],
+      "currentCodes": [
+        "EXTR6132A"
+      ],
+      "previousLat": 40.045822,
+      "previousLon": -6.217992,
+      "currentLat": 40.045822,
+      "currentLon": -6.217992
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1278,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Holguera",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6477A"
+      ],
+      "currentCodes": [
+        "EXTR6477A"
+      ],
+      "previousLat": 39.902819,
+      "previousLon": -6.343831,
+      "currentLat": 39.902819,
+      "currentLon": -6.343831
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1281,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Madrigalejo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6212A"
+      ],
+      "currentCodes": [
+        "EXTR6212A"
+      ],
+      "previousLat": 39.133381,
+      "previousLon": -5.62715,
+      "currentLat": 39.133381,
+      "currentLon": -5.62715
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1285,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Morcillo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6483A"
+      ],
+      "currentCodes": [
+        "EXTR6483A"
+      ],
+      "previousLat": 40.018014,
+      "previousLon": -6.400647,
+      "currentLat": 40.018014,
+      "currentLon": -6.400647
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1289,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Casas del Monte",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6170A"
+      ],
+      "currentCodes": [
+        "EXTR6170A"
+      ],
+      "previousLat": 40.198944,
+      "previousLon": -5.958686,
+      "currentLat": 40.198944,
+      "currentLon": -5.958686
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1290,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Gata",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6391A"
+      ],
+      "currentCodes": [
+        "EXTR6391A"
+      ],
+      "previousLat": 40.098311,
+      "previousLon": -6.626683,
+      "currentLat": 40.098311,
+      "currentLon": -6.626683
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1294,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Albalá",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6351A"
+      ],
+      "currentCodes": [
+        "EXTR6351A"
+      ],
+      "previousLat": 39.254458,
+      "previousLon": -6.191856,
+      "currentLat": 39.254458,
+      "currentLon": -6.191856
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1303,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Montehermoso",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N1",
+        "N28",
+        "N3",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1",
+        "N3"
+      ],
+      "removedBands": [
+        "B1",
+        "B3"
+      ],
+      "previousCodes": [
+        "EXTR6126D"
+      ],
+      "currentCodes": [
+        "EXTR6126D"
+      ],
+      "previousLat": 40.083708,
+      "previousLon": -6.345064,
+      "currentLat": 40.083708,
+      "currentLon": -6.345064
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1321,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6206F"
+      ],
+      "currentCodes": [
+        "EXTR6206F"
+      ],
+      "previousLat": 39.456222,
+      "previousLon": -5.884056,
+      "currentLat": 39.456222,
+      "currentLon": -5.884056
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1323,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Aceituna",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6144G"
+      ],
+      "currentCodes": [
+        "EXTR6144G"
+      ],
+      "previousLat": 40.152028,
+      "previousLon": -6.335972,
+      "currentLat": 40.152028,
+      "currentLon": -6.335972
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1325,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Zorita",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6208A"
+      ],
+      "currentCodes": [
+        "EXTR6208A"
+      ],
+      "previousLat": 39.290144,
+      "previousLon": -5.699292,
+      "currentLat": 39.290144,
+      "currentLon": -5.699292
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1336,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Eljas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6175A"
+      ],
+      "currentCodes": [
+        "EXTR6175A"
+      ],
+      "previousLat": 40.218067,
+      "previousLon": -6.841431,
+      "currentLat": 40.218067,
+      "currentLon": -6.841431
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1346,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Caminomorisco",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6181A"
+      ],
+      "currentCodes": [
+        "EXTR6181A"
+      ],
+      "previousLat": 40.334089,
+      "previousLon": -6.280175,
+      "currentLat": 40.334089,
+      "currentLon": -6.280175
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1358,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Ahigal",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6326C"
+      ],
+      "currentCodes": [
+        "EXTR6326C"
+      ],
+      "previousLat": 40.191714,
+      "previousLon": -6.174003,
+      "currentLat": 40.191714,
+      "currentLon": -6.174003
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1361,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Zarza de Granadilla",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6325B"
+      ],
+      "currentCodes": [
+        "EXTR6325B"
+      ],
+      "previousLat": 40.240464,
+      "previousLon": -6.047444,
+      "currentLat": 40.240464,
+      "currentLon": -6.047444
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1362,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Pinofranqueado",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6500A"
+      ],
+      "currentCodes": [
+        "EXTR6500A"
+      ],
+      "previousLat": 40.383222,
+      "previousLon": -6.391917,
+      "currentLat": 40.383222,
+      "currentLon": -6.391917
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1363,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Hinojal",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6106A"
+      ],
+      "currentCodes": [
+        "EXTR6106A"
+      ],
+      "previousLat": 39.71065,
+      "previousLon": -6.359411,
+      "currentLat": 39.71065,
+      "currentLon": -6.359411
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1375,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Riolobos",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6321B"
+      ],
+      "currentCodes": [
+        "EXTR6321B"
+      ],
+      "previousLat": 39.925697,
+      "previousLon": -6.303222,
+      "currentLat": 39.925697,
+      "currentLon": -6.303222
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1377,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Garrovillas de Alconétar",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6117A"
+      ],
+      "currentCodes": [
+        "EXTR6117A"
+      ],
+      "previousLat": 39.704617,
+      "previousLon": -6.553419,
+      "currentLat": 39.704617,
+      "currentLon": -6.553419
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1381,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Castañar de Ibor",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6234A"
+      ],
+      "currentCodes": [
+        "EXTR6234A"
+      ],
+      "previousLat": 39.629675,
+      "previousLon": -5.424953,
+      "currentLat": 39.629675,
+      "currentLon": -5.424953
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1383,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Logrosán",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6209A"
+      ],
+      "currentCodes": [
+        "EXTR6209A"
+      ],
+      "previousLat": 39.333456,
+      "previousLon": -5.486619,
+      "currentLat": 39.333456,
+      "currentLon": -5.486619
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1384,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Jaraíz de la Vera",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6400B"
+      ],
+      "currentCodes": [
+        "EXTR6400B"
+      ],
+      "previousLat": 40.060272,
+      "previousLon": -5.753117,
+      "currentLat": 40.060272,
+      "currentLon": -5.753117
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1392,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Torreorgaz",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6219A"
+      ],
+      "currentCodes": [
+        "EXTR6219A"
+      ],
+      "previousLat": 39.383133,
+      "previousLon": -6.243344,
+      "currentLat": 39.383133,
+      "currentLon": -6.243344
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1401,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Guadalupe",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6211B"
+      ],
+      "currentCodes": [
+        "EXTR6211B"
+      ],
+      "previousLat": 39.440544,
+      "previousLon": -5.334481,
+      "currentLat": 39.440544,
+      "currentLon": -5.334481
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1406,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Majadas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6333B"
+      ],
+      "currentCodes": [
+        "EXTR6333B"
+      ],
+      "previousLat": 39.917447,
+      "previousLon": -5.758658,
+      "currentLat": 39.917447,
+      "currentLon": -5.758658
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1409,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Bohonal de Ibor",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6164A"
+      ],
+      "currentCodes": [
+        "EXTR6164A"
+      ],
+      "previousLat": 39.780933,
+      "previousLon": -5.485094,
+      "currentLat": 39.780933,
+      "currentLon": -5.485094
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1410,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Cabrero",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6154A"
+      ],
+      "currentCodes": [
+        "EXTR6154A"
+      ],
+      "previousLat": 40.117747,
+      "previousLon": -5.890081,
+      "currentLat": 40.117747,
+      "currentLon": -5.890081
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1425,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Trujillo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6287A"
+      ],
+      "currentCodes": [
+        "EXTR6287A"
+      ],
+      "previousLat": 39.457186,
+      "previousLon": -5.881781,
+      "currentLat": 39.457186,
+      "currentLon": -5.881781
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1426,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Vegaviana",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6161A"
+      ],
+      "currentCodes": [
+        "EXTR6161A"
+      ],
+      "previousLat": 40.037408,
+      "previousLon": -6.718919,
+      "currentLat": 40.037408,
+      "currentLon": -6.718919
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1485,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Alcántara",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "EXTR6371A"
+      ],
+      "currentCodes": [
+        "EXTR6371A"
+      ],
+      "previousLat": 39.713003,
+      "previousLon": -6.882403,
+      "currentLat": 39.713003,
+      "currentLon": -6.882403
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1534,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cádiz",
+      "direccion": "Torre Alháquime",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR4193A"
+      ],
+      "currentCodes": [
+        "ANDR4193A"
+      ],
+      "previousLat": 36.917606,
+      "previousLon": -5.227783,
+      "currentLat": 36.917606,
+      "currentLon": -5.227783
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1535,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cádiz",
+      "direccion": "Algodonales",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR5131B"
+      ],
+      "currentCodes": [
+        "ANDR5131B"
+      ],
+      "previousLat": 36.882931,
+      "previousLon": -5.521078,
+      "currentLat": 36.882931,
+      "currentLon": -5.521078
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1925,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Montoro",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR7383A"
+      ],
+      "currentCodes": [
+        "ANDR7383A"
+      ],
+      "previousLat": 38.096444,
+      "previousLon": -4.415639,
+      "currentLat": 38.096444,
+      "currentLon": -4.415639
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1927,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Monturque",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR7240B"
+      ],
+      "currentCodes": [
+        "ANDR7240B"
+      ],
+      "previousLat": 37.468106,
+      "previousLon": -4.575081,
+      "currentLat": 37.468106,
+      "currentLon": -4.575081
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1929,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Villanueva de Córdoba",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR6741A"
+      ],
+      "currentCodes": [
+        "ANDR6741A"
+      ],
+      "previousLat": 38.240906,
+      "previousLon": -4.56685,
+      "currentLat": 38.240906,
+      "currentLon": -4.56685
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1934,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Moriles",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR6854A"
+      ],
+      "currentCodes": [
+        "ANDR6854A"
+      ],
+      "previousLat": 37.41025,
+      "previousLon": -4.642242,
+      "currentLat": 37.41025,
+      "currentLon": -4.642242
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1935,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Villanueva de Córdoba",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "G18",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "G18",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR6743A"
+      ],
+      "currentCodes": [
+        "ANDR6743A"
+      ],
+      "previousLat": 38.31215,
+      "previousLon": -4.566942,
+      "currentLat": 38.31215,
+      "currentLon": -4.566942
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 1937,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Rambla, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR6855A"
+      ],
+      "currentCodes": [
+        "ANDR6855A"
+      ],
+      "previousLat": 37.734639,
+      "previousLon": -4.747597,
+      "currentLat": 37.734639,
+      "currentLon": -4.747597
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2685,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Cortes de Baza",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR5728B"
+      ],
+      "currentCodes": [
+        "ANDR5728B"
+      ],
+      "previousLat": 37.656289,
+      "previousLon": -2.764369,
+      "currentLat": 37.656289,
+      "currentLon": -2.764369
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2687,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Lobras",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR5808A"
+      ],
+      "currentCodes": [
+        "ANDR5808A"
+      ],
+      "previousLat": 36.927667,
+      "previousLon": -3.211833,
+      "currentLat": 36.927667,
+      "currentLon": -3.211833
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2691,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Algarinejo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR5675V"
+      ],
+      "currentCodes": [
+        "ANDR5675V"
+      ],
+      "previousLat": 37.289356,
+      "previousLon": -4.153997,
+      "currentLat": 37.289356,
+      "currentLon": -4.153997
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2695,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Villa de Otura",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR6116C"
+      ],
+      "currentCodes": [
+        "ANDR6116C"
+      ],
+      "previousLat": 37.095306,
+      "previousLon": -3.644889,
+      "currentLat": 37.095306,
+      "currentLon": -3.644889
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2696,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Cúllar",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR6280A"
+      ],
+      "currentCodes": [
+        "ANDR6280A"
+      ],
+      "previousLat": 37.625636,
+      "previousLon": -2.560497,
+      "currentLat": 37.625636,
+      "currentLon": -2.560497
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2697,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Iznalloz",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N1",
+        "N28",
+        "N3",
+        "N78"
+      ],
+      "addedBands": [
+        "N1",
+        "N3"
+      ],
+      "removedBands": [
+        "B1",
+        "B3"
+      ],
+      "previousCodes": [
+        "ANDR6040A"
+      ],
+      "currentCodes": [
+        "ANDR6040A"
+      ],
+      "previousLat": 37.497806,
+      "previousLon": -3.635044,
+      "currentLat": 37.497806,
+      "currentLon": -3.635044
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2701,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Pedro Martínez",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR5710A"
+      ],
+      "currentCodes": [
+        "ANDR5710A"
+      ],
+      "previousLat": 37.504014,
+      "previousLon": -3.2354,
+      "currentLat": 37.504014,
+      "currentLon": -3.2354
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2702,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Montefrío",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR6072A"
+      ],
+      "currentCodes": [
+        "ANDR6072A"
+      ],
+      "previousLat": 37.353544,
+      "previousLon": -4.027664,
+      "currentLat": 37.353544,
+      "currentLon": -4.027664
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2708,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Cúllar",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR5959A"
+      ],
+      "currentCodes": [
+        "ANDR5959A"
+      ],
+      "previousLat": 37.592611,
+      "previousLon": -2.3945,
+      "currentLat": 37.592611,
+      "currentLon": -2.3945
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 2728,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Cogollos de Guadix",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR5879A"
+      ],
+      "currentCodes": [
+        "ANDR5879A"
+      ],
+      "previousLat": 37.222806,
+      "previousLon": -3.171636,
+      "currentLat": 37.222806,
+      "currentLon": -3.171636
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3062,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Huelva",
+      "direccion": "Rosal de la Frontera",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9450B"
+      ],
+      "currentCodes": [
+        "ANDR9450B"
+      ],
+      "previousLat": 37.979261,
+      "previousLon": -7.15065,
+      "currentLat": 37.979261,
+      "currentLon": -7.15065
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3067,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Huelva",
+      "direccion": "Villanueva de los Castillejos",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9531A"
+      ],
+      "currentCodes": [
+        "ANDR9531A"
+      ],
+      "previousLat": 37.410014,
+      "previousLon": -7.187175,
+      "currentLat": 37.410014,
+      "currentLon": -7.187175
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3068,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Huelva",
+      "direccion": "Zalamea la Real",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9472A"
+      ],
+      "currentCodes": [
+        "ANDR9472A"
+      ],
+      "previousLat": 37.614869,
+      "previousLon": -6.683689,
+      "currentLat": 37.614869,
+      "currentLon": -6.683689
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3071,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Huelva",
+      "direccion": "Cala",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9675A"
+      ],
+      "currentCodes": [
+        "ANDR9675A"
+      ],
+      "previousLat": 37.972556,
+      "previousLon": -6.323478,
+      "currentLat": 37.972556,
+      "currentLon": -6.323478
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3073,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Huelva",
+      "direccion": "Hinojos",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9527A"
+      ],
+      "currentCodes": [
+        "ANDR9527A"
+      ],
+      "previousLat": 37.155403,
+      "previousLon": -6.346794,
+      "currentLat": 37.155403,
+      "currentLon": -6.346794
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3079,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Huelva",
+      "direccion": "Cumbres Mayores",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR9863A"
+      ],
+      "currentCodes": [
+        "ANDR9863A"
+      ],
+      "previousLat": 38.061964,
+      "previousLon": -6.649025,
+      "currentLat": 38.061964,
+      "currentLon": -6.649025
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3347,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Jaén",
+      "direccion": "Carboneros",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR7807A"
+      ],
+      "currentCodes": [
+        "ANDR7807A"
+      ],
+      "previousLat": 38.226375,
+      "previousLon": -3.633014,
+      "currentLat": 38.226375,
+      "currentLon": -3.633014
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3367,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Jaén",
+      "direccion": "Peal de Becerro",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR8143A"
+      ],
+      "currentCodes": [
+        "ANDR8143A"
+      ],
+      "previousLat": 37.907764,
+      "previousLon": -3.113506,
+      "currentLat": 37.907764,
+      "currentLon": -3.113506
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 3377,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Jaén",
+      "direccion": "Torreperogil",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR8127B"
+      ],
+      "currentCodes": [
+        "ANDR8127B"
+      ],
+      "previousLat": 38.039861,
+      "previousLon": -3.286772,
+      "currentLat": 38.039861,
+      "currentLon": -3.286772
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 4345,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Málaga",
+      "direccion": "Casares",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR3201H"
+      ],
+      "currentCodes": [
+        "ANDR3201H"
+      ],
+      "previousLat": 36.413642,
+      "previousLon": -5.220614,
+      "currentLat": 36.413642,
+      "currentLon": -5.220614
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 5801,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Sevilla",
+      "direccion": "Guadalcanal",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR0428A"
+      ],
+      "currentCodes": [
+        "ANDR0428A"
+      ],
+      "previousLat": 38.055083,
+      "previousLon": -5.774889,
+      "currentLat": 38.055083,
+      "currentLon": -5.774889
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 5802,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Sevilla",
+      "direccion": "Castillo de las Guardas, El",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR1532A"
+      ],
+      "currentCodes": [
+        "ANDR1532A"
+      ],
+      "previousLat": 37.668597,
+      "previousLon": -6.240492,
+      "currentLat": 37.668597,
+      "currentLon": -6.240492
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 5806,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Sevilla",
+      "direccion": "Ronquillo, El",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR2217A"
+      ],
+      "currentCodes": [
+        "ANDR2217A"
+      ],
+      "previousLat": 37.791769,
+      "previousLon": -6.204469,
+      "currentLat": 37.791769,
+      "currentLon": -6.204469
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 5807,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Sevilla",
+      "direccion": "Luisiana, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR1324A"
+      ],
+      "currentCodes": [
+        "ANDR1324A"
+      ],
+      "previousLat": 37.522925,
+      "previousLon": -5.251219,
+      "currentLat": 37.522925,
+      "currentLon": -5.251219
+    },
+    {
+      "generatedAt": "2026-06-21T08:46:10.422Z",
+      "id": 7665,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Cádiz",
+      "direccion": "11_11010_000150",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B7+",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7+",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [
+        "B1"
+      ],
+      "previousCodes": [
+        "ANDR4401A"
+      ],
+      "currentCodes": [
+        "ANDR4401A"
+      ],
+      "previousLat": 36.818989,
+      "previousLon": -5.753322,
+      "currentLat": 36.818989,
+      "currentLon": -5.753322
+    },
     {
       "generatedAt": "2026-06-20T08:00:37.787Z",
       "id": 195,
