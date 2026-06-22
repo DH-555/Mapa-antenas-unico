@@ -562,7 +562,7 @@ async function main() {
 
     const response = await fetch(API_URL, {
         headers: {
-            "user-agent": "Mapa-antenas-unico/1.0",
+            "user-agent": "mapa-antenas-unico/1.0",
             accept: "application/json, text/plain, */*",
         },
     });
