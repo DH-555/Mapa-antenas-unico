@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T08:00:50.933Z",
+  "updatedAt": "2026-06-24T07:56:49.660Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,171 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-24T07:56:49.660Z",
+      "previousSnapshotAt": "2026-06-23T08:00:50.933Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 3,
+        "totalBandsAdded": 8,
+        "totalBandsRemoved": 1
+      },
+      "changes": [
+        {
+          "id": 1859,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Bujalance",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "1401258"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 37.892011,
+          "currentLon": -4.370814
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 827,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Fogars de Montclús",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "B8"
+          ],
+          "previousCodes": [
+            "0800055"
+          ],
+          "currentCodes": [
+            "0800055"
+          ],
+          "previousLat": 41.755247,
+          "previousLon": 2.465417,
+          "currentLat": 41.755247,
+          "currentLon": 2.465417
+        },
+        {
+          "id": 918,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Guardiola de Berguedà",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0800029"
+          ],
+          "currentCodes": [
+            "0800029"
+          ],
+          "previousLat": 42.230992,
+          "previousLon": 1.856672,
+          "currentLat": 42.231,
+          "currentLon": 1.856611
+        },
+        {
+          "id": 1859,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Bujalance",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "1401258"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 37.892011,
+          "currentLon": -4.370814
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-23T08:00:50.933Z",
       "previousSnapshotAt": "2026-06-22T17:29:00.885Z",
@@ -127876,6 +128041,132 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-24T07:56:49.660Z",
+      "id": 827,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Fogars de Montclús",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "B8"
+      ],
+      "previousCodes": [
+        "0800055"
+      ],
+      "currentCodes": [
+        "0800055"
+      ],
+      "previousLat": 41.755247,
+      "previousLon": 2.465417,
+      "currentLat": 41.755247,
+      "currentLon": 2.465417
+    },
+    {
+      "generatedAt": "2026-06-24T07:56:49.660Z",
+      "id": 918,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Guardiola de Berguedà",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0800029"
+      ],
+      "currentCodes": [
+        "0800029"
+      ],
+      "previousLat": 42.230992,
+      "previousLon": 1.856672,
+      "currentLat": 42.231,
+      "currentLon": 1.856611
+    },
+    {
+      "generatedAt": "2026-06-24T07:56:49.660Z",
+      "id": 1859,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Bujalance",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "1401258"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 37.892011,
+      "currentLon": -4.370814
+    },
     {
       "generatedAt": "2026-06-21T08:46:10.422Z",
       "id": 167,
