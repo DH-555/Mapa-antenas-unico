@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T07:56:49.660Z",
+  "updatedAt": "2026-06-25T07:57:33.646Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,157 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-25T07:57:33.646Z",
+      "previousSnapshotAt": "2026-06-24T07:56:49.660Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 3,
+        "totalBandsAdded": 7,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 9022,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Soria",
+          "direccion": "42_42095_000110",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "4200247"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.752,
+          "currentLon": -2.5685
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 4495,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Baztan",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100143"
+          ],
+          "currentCodes": [
+            "3100143"
+          ],
+          "previousLat": 43.134933,
+          "previousLon": -1.600172,
+          "currentLat": 43.134933,
+          "currentLon": -1.600172
+        },
+        {
+          "id": 8003,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Guadalajara",
+          "direccion": "19_19245_000488",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1900152"
+          ],
+          "currentCodes": [
+            "1900152"
+          ],
+          "previousLat": 40.480247,
+          "previousLon": -2.744544,
+          "currentLat": 40.480278,
+          "currentLon": -2.744531
+        },
+        {
+          "id": 9022,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Soria",
+          "direccion": "42_42095_000110",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "4200247"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.752,
+          "currentLon": -2.5685
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-24T07:56:49.660Z",
       "previousSnapshotAt": "2026-06-23T08:00:50.933Z",
@@ -128041,6 +128192,119 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-25T07:57:33.646Z",
+      "id": 4495,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Baztan",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100143"
+      ],
+      "currentCodes": [
+        "3100143"
+      ],
+      "previousLat": 43.134933,
+      "previousLon": -1.600172,
+      "currentLat": 43.134933,
+      "currentLon": -1.600172
+    },
+    {
+      "generatedAt": "2026-06-25T07:57:33.646Z",
+      "id": 8003,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Guadalajara",
+      "direccion": "19_19245_000488",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1900152"
+      ],
+      "currentCodes": [
+        "1900152"
+      ],
+      "previousLat": 40.480247,
+      "previousLon": -2.744544,
+      "currentLat": 40.480278,
+      "currentLon": -2.744531
+    },
+    {
+      "generatedAt": "2026-06-25T07:57:33.646Z",
+      "id": 9022,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Soria",
+      "direccion": "42_42095_000110",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "4200247"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 41.752,
+      "currentLon": -2.5685
+    },
     {
       "generatedAt": "2026-06-24T07:56:49.660Z",
       "id": 827,
