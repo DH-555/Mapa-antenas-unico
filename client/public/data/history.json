@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T08:05:22.810Z",
+  "updatedAt": "2026-06-27T07:30:43.950Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,105 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-27T07:30:43.950Z",
+      "previousSnapshotAt": "2026-06-26T08:05:22.810Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 2,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 2762,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Guadalajara",
+          "direccion": "Pozo de Guadalajara",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1900416"
+          ],
+          "currentCodes": [
+            "1900416"
+          ],
+          "previousLat": 40.498631,
+          "previousLon": -3.180083,
+          "currentLat": 40.498631,
+          "currentLon": -3.180083
+        },
+        {
+          "id": 9091,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "43_43176_000716",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4300042"
+          ],
+          "currentCodes": [
+            "4300042"
+          ],
+          "previousLat": 41.379639,
+          "previousLon": 1.093389,
+          "currentLat": 41.379639,
+          "currentLon": 1.093389
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-26T08:05:22.810Z",
       "previousSnapshotAt": "2026-06-25T07:57:33.646Z",
@@ -128626,6 +128725,92 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-27T07:30:43.950Z",
+      "id": 2762,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Guadalajara",
+      "direccion": "Pozo de Guadalajara",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1900416"
+      ],
+      "currentCodes": [
+        "1900416"
+      ],
+      "previousLat": 40.498631,
+      "previousLon": -3.180083,
+      "currentLat": 40.498631,
+      "currentLon": -3.180083
+    },
+    {
+      "generatedAt": "2026-06-27T07:30:43.950Z",
+      "id": 9091,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Tarragona",
+      "direccion": "43_43176_000716",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4300042"
+      ],
+      "currentCodes": [
+        "4300042"
+      ],
+      "previousLat": 41.379639,
+      "previousLon": 1.093389,
+      "currentLat": 41.379639,
+      "currentLon": 1.093389
+    },
     {
       "generatedAt": "2026-06-26T08:05:22.810Z",
       "id": 1686,
