@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T08:01:05.466Z",
+  "updatedAt": "2026-06-29T09:12:53.047Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,78 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-06-29T09:12:53.047Z",
+      "previousSnapshotAt": "2026-06-28T08:01:05.466Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 4,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 3445,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "Benavides",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "CYLR1529A"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 42.524417,
+          "currentLon": -5.961972
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 3445,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "Benavides",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "CYLR1529A"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 42.524417,
+          "currentLon": -5.961972
+        }
+      ]
+    },
     {
       "generatedAt": "2026-06-28T08:01:05.466Z",
       "previousSnapshotAt": "2026-06-27T07:30:43.950Z",
@@ -128739,6 +128811,39 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-06-29T09:12:53.047Z",
+      "id": 3445,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "León",
+      "direccion": "Benavides",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "CYLR1529A"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 42.524417,
+      "currentLon": -5.961972
+    },
     {
       "generatedAt": "2026-06-27T07:30:43.950Z",
       "id": 2762,
