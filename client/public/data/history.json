@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T07:41:24.729Z",
+  "updatedAt": "2026-07-06T08:45:50.635Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,63 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-07-06T08:45:50.635Z",
+      "previousSnapshotAt": "2026-07-05T07:41:24.729Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 1,
+        "totalBandsRemoved": 1
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 3345,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Jaén",
+          "direccion": "Campillo de Arenas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N1",
+            "N28",
+            "N3",
+            "N78"
+          ],
+          "addedBands": [
+            "N3"
+          ],
+          "removedBands": [
+            "B3"
+          ],
+          "previousCodes": [
+            "ANDR8024A"
+          ],
+          "currentCodes": [
+            "ANDR8024A"
+          ],
+          "previousLat": 37.588575,
+          "previousLon": -3.598833,
+          "currentLat": 37.588575,
+          "currentLon": -3.598833
+        }
+      ]
+    },
     {
       "generatedAt": "2026-07-05T07:41:24.729Z",
       "previousSnapshotAt": "2026-07-04T07:19:05.660Z",
@@ -130490,6 +130547,49 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-07-06T08:45:50.635Z",
+      "id": 3345,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Jaén",
+      "direccion": "Campillo de Arenas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N1",
+        "N28",
+        "N3",
+        "N78"
+      ],
+      "addedBands": [
+        "N3"
+      ],
+      "removedBands": [
+        "B3"
+      ],
+      "previousCodes": [
+        "ANDR8024A"
+      ],
+      "currentCodes": [
+        "ANDR8024A"
+      ],
+      "previousLat": 37.588575,
+      "previousLon": -3.598833,
+      "currentLat": 37.588575,
+      "currentLon": -3.598833
+    },
     {
       "generatedAt": "2026-07-04T07:19:05.660Z",
       "id": 55,
