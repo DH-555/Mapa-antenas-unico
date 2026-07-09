@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T06:42:10.790Z",
+  "updatedAt": "2026-07-09T08:01:50.283Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,314 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "previousSnapshotAt": "2026-07-08T06:42:10.790Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 7,
+        "totalBandsAdded": 12,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 6628,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valencia/València",
+          "direccion": "Alcúdia de Crespins, l'",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "4604555"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 38.974153,
+          "currentLon": -0.592717
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 2917,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Guadalajara",
+          "direccion": "Irueste",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1900591"
+          ],
+          "currentCodes": [
+            "1900591"
+          ],
+          "previousLat": 40.611317,
+          "previousLon": -2.884944,
+          "currentLat": 40.611317,
+          "currentLon": -2.884944
+        },
+        {
+          "id": 4449,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Obanos",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100226"
+          ],
+          "currentCodes": [
+            "3100226"
+          ],
+          "previousLat": 42.679586,
+          "previousLon": -1.785669,
+          "currentLat": 42.679586,
+          "currentLon": -1.785669
+        },
+        {
+          "id": 4457,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Beintza-Labaien",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100289"
+          ],
+          "currentCodes": [
+            "3100289"
+          ],
+          "previousLat": 43.082533,
+          "previousLon": -1.7666,
+          "currentLat": 43.082533,
+          "currentLon": -1.7666
+        },
+        {
+          "id": 4550,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Cabanillas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100279"
+          ],
+          "currentCodes": [
+            "3100279"
+          ],
+          "previousLat": 42.031742,
+          "previousLon": -1.521597,
+          "currentLat": 42.031742,
+          "currentLon": -1.521597
+        },
+        {
+          "id": 4580,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Cabredo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100412"
+          ],
+          "currentCodes": [
+            "3100412"
+          ],
+          "previousLat": 42.627847,
+          "previousLon": -2.414769,
+          "currentLat": 42.627847,
+          "currentLon": -2.414769
+        },
+        {
+          "id": 6388,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Puebla de Montalbán, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4500228"
+          ],
+          "currentCodes": [
+            "4500228"
+          ],
+          "previousLat": 39.867658,
+          "previousLon": -4.368844,
+          "currentLat": 39.867658,
+          "currentLon": -4.368844
+        },
+        {
+          "id": 6628,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valencia/València",
+          "direccion": "Alcúdia de Crespins, l'",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "4604555"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 38.974153,
+          "currentLon": -0.592717
+        }
+      ]
+    },
     {
       "generatedAt": "2026-07-08T06:42:10.790Z",
       "previousSnapshotAt": "2026-07-07T07:56:04.304Z",
@@ -131066,6 +131374,279 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "id": 2917,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Guadalajara",
+      "direccion": "Irueste",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1900591"
+      ],
+      "currentCodes": [
+        "1900591"
+      ],
+      "previousLat": 40.611317,
+      "previousLon": -2.884944,
+      "currentLat": 40.611317,
+      "currentLon": -2.884944
+    },
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "id": 4449,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Obanos",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100226"
+      ],
+      "currentCodes": [
+        "3100226"
+      ],
+      "previousLat": 42.679586,
+      "previousLon": -1.785669,
+      "currentLat": 42.679586,
+      "currentLon": -1.785669
+    },
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "id": 4457,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Beintza-Labaien",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100289"
+      ],
+      "currentCodes": [
+        "3100289"
+      ],
+      "previousLat": 43.082533,
+      "previousLon": -1.7666,
+      "currentLat": 43.082533,
+      "currentLon": -1.7666
+    },
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "id": 4550,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Cabanillas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100279"
+      ],
+      "currentCodes": [
+        "3100279"
+      ],
+      "previousLat": 42.031742,
+      "previousLon": -1.521597,
+      "currentLat": 42.031742,
+      "currentLon": -1.521597
+    },
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "id": 4580,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Cabredo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100412"
+      ],
+      "currentCodes": [
+        "3100412"
+      ],
+      "previousLat": 42.627847,
+      "previousLon": -2.414769,
+      "currentLat": 42.627847,
+      "currentLon": -2.414769
+    },
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "id": 6388,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Puebla de Montalbán, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4500228"
+      ],
+      "currentCodes": [
+        "4500228"
+      ],
+      "previousLat": 39.867658,
+      "previousLon": -4.368844,
+      "currentLat": 39.867658,
+      "currentLon": -4.368844
+    },
+    {
+      "generatedAt": "2026-07-09T08:01:50.283Z",
+      "id": 6628,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Valencia/València",
+      "direccion": "Alcúdia de Crespins, l'",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "4604555"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 38.974153,
+      "currentLon": -0.592717
+    },
     {
       "generatedAt": "2026-07-08T06:42:10.790Z",
       "id": 827,
