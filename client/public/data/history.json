@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T07:56:32.721Z",
+  "updatedAt": "2026-07-11T06:32:23.968Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,152 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-07-11T06:32:23.968Z",
+      "previousSnapshotAt": "2026-07-10T07:56:32.721Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 2,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 14,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 3057,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huelva",
+          "direccion": "San Juan del Puerto",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "N1",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "2101132"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 37.383475,
+          "currentLon": -6.846108
+        },
+        {
+          "id": 9124,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "43_43001_000751",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "N1",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "4301569"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.366947,
+          "currentLon": 1.404944
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 3057,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huelva",
+          "direccion": "San Juan del Puerto",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "2101132"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 37.383475,
+          "currentLon": -6.846108
+        },
+        {
+          "id": 9124,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "43_43001_000751",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "4301569"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.366947,
+          "currentLon": 1.404944
+        }
+      ]
+    },
     {
       "generatedAt": "2026-07-10T07:56:32.721Z",
       "previousSnapshotAt": "2026-07-09T08:01:50.283Z",
@@ -131783,6 +131929,84 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-07-11T06:32:23.968Z",
+      "id": 3057,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huelva",
+      "direccion": "San Juan del Puerto",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "2101132"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 37.383475,
+      "currentLon": -6.846108
+    },
+    {
+      "generatedAt": "2026-07-11T06:32:23.968Z",
+      "id": 9124,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Tarragona",
+      "direccion": "43_43001_000751",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "4301569"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 41.366947,
+      "currentLon": 1.404944
+    },
     {
       "generatedAt": "2026-07-10T07:56:32.721Z",
       "id": 121,
