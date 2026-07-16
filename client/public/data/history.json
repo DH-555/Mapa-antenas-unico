@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T06:32:56.939Z",
+  "updatedAt": "2026-07-16T06:37:21.669Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,228 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-07-16T06:37:21.669Z",
+      "previousSnapshotAt": "2026-07-15T06:32:56.939Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 3,
+        "totalBandsRemoved": 2
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1219,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Burgos",
+          "direccion": "Medina de Pomar",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N1",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B8",
+            "G09",
+            "N1",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0900694"
+          ],
+          "currentCodes": [
+            "0900694"
+          ],
+          "previousLat": 42.930806,
+          "previousLon": -3.484556,
+          "currentLat": 42.930806,
+          "currentLon": -3.484556
+        },
+        {
+          "id": 4088,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Lugo",
+          "direccion": "Páramo, O",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "GALR7860A"
+          ],
+          "currentCodes": [
+            "GALR7860A"
+          ],
+          "previousLat": 42.807639,
+          "previousLon": -7.498417,
+          "currentLat": 42.807639,
+          "currentLon": -7.498417
+        },
+        {
+          "id": 4624,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Ourense",
+          "direccion": "Pereiro de Aguiar, O",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "GALR9350D"
+          ],
+          "currentCodes": [
+            "GALR9350D"
+          ],
+          "previousLat": 42.306483,
+          "previousLon": -7.777381,
+          "currentLat": 42.306483,
+          "currentLon": -7.777381
+        },
+        {
+          "id": 6761,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Valladolid",
+          "direccion": "Santovenia de Pisuerga",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N28+",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "B8"
+          ],
+          "previousCodes": [
+            "052538",
+            "52538"
+          ],
+          "currentCodes": [
+            "052538",
+            "52538"
+          ],
+          "previousLat": 41.69145,
+          "previousLon": -4.678736,
+          "currentLat": 41.69145,
+          "currentLon": -4.678736
+        },
+        {
+          "id": 6777,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Valladolid",
+          "direccion": "Fuensaldaña",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "G09"
+          ],
+          "previousCodes": [
+            "000435",
+            "00435",
+            "435"
+          ],
+          "currentCodes": [
+            "000435",
+            "00435",
+            "435"
+          ],
+          "previousLat": 41.703144,
+          "previousLon": -4.763783,
+          "currentLat": 41.703144,
+          "currentLon": -4.763783
+        }
+      ]
+    },
     {
       "generatedAt": "2026-07-15T06:32:56.939Z",
       "previousSnapshotAt": "2026-07-14T06:30:30.975Z",
@@ -132437,6 +132659,218 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-07-16T06:37:21.669Z",
+      "id": 1219,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Burgos",
+      "direccion": "Medina de Pomar",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N1",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B8",
+        "G09",
+        "N1",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0900694"
+      ],
+      "currentCodes": [
+        "0900694"
+      ],
+      "previousLat": 42.930806,
+      "previousLon": -3.484556,
+      "currentLat": 42.930806,
+      "currentLon": -3.484556
+    },
+    {
+      "generatedAt": "2026-07-16T06:37:21.669Z",
+      "id": 4088,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Lugo",
+      "direccion": "Páramo, O",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "GALR7860A"
+      ],
+      "currentCodes": [
+        "GALR7860A"
+      ],
+      "previousLat": 42.807639,
+      "previousLon": -7.498417,
+      "currentLat": 42.807639,
+      "currentLon": -7.498417
+    },
+    {
+      "generatedAt": "2026-07-16T06:37:21.669Z",
+      "id": 4624,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Ourense",
+      "direccion": "Pereiro de Aguiar, O",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "GALR9350D"
+      ],
+      "currentCodes": [
+        "GALR9350D"
+      ],
+      "previousLat": 42.306483,
+      "previousLon": -7.777381,
+      "currentLat": 42.306483,
+      "currentLon": -7.777381
+    },
+    {
+      "generatedAt": "2026-07-16T06:37:21.669Z",
+      "id": 6761,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Valladolid",
+      "direccion": "Santovenia de Pisuerga",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N28+",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "B8"
+      ],
+      "previousCodes": [
+        "052538",
+        "52538"
+      ],
+      "currentCodes": [
+        "052538",
+        "52538"
+      ],
+      "previousLat": 41.69145,
+      "previousLon": -4.678736,
+      "currentLat": 41.69145,
+      "currentLon": -4.678736
+    },
+    {
+      "generatedAt": "2026-07-16T06:37:21.669Z",
+      "id": 6777,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Valladolid",
+      "direccion": "Fuensaldaña",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "G09"
+      ],
+      "previousCodes": [
+        "000435",
+        "00435",
+        "435"
+      ],
+      "currentCodes": [
+        "000435",
+        "00435",
+        "435"
+      ],
+      "previousLat": 41.703144,
+      "previousLon": -4.763783,
+      "currentLat": 41.703144,
+      "currentLon": -4.763783
+    },
     {
       "generatedAt": "2026-07-15T06:32:56.939Z",
       "id": 852,
