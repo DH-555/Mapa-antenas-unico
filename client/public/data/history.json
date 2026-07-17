@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T06:37:21.669Z",
+  "updatedAt": "2026-07-17T06:32:03.108Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,178 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-07-17T06:32:03.108Z",
+      "previousSnapshotAt": "2026-07-16T06:37:21.669Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 6,
+        "totalBandsRemoved": 1
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1909,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Cardeña",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N1",
+            "N28",
+            "N3",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1",
+            "N3"
+          ],
+          "removedBands": [
+            "B3"
+          ],
+          "previousCodes": [
+            "ANDR7408A"
+          ],
+          "currentCodes": [
+            "ANDR7408A"
+          ],
+          "previousLat": 38.314769,
+          "previousLon": -4.325153,
+          "currentLat": 38.314769,
+          "currentLon": -4.325153
+        },
+        {
+          "id": 3643,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Lleida",
+          "direccion": "Alpicat",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "B3",
+            "N28"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28"
+          ],
+          "addedBands": [
+            "B20",
+            "G09"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "196058"
+          ],
+          "currentCodes": [
+            "196058"
+          ],
+          "previousLat": 41.66625,
+          "previousLon": 0.5575,
+          "currentLat": 41.66625,
+          "currentLon": 0.5575
+        },
+        {
+          "id": 6236,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "Villarluengo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400024"
+          ],
+          "currentCodes": [
+            "4400024"
+          ],
+          "previousLat": 40.648375,
+          "previousLon": -0.531333,
+          "currentLat": 40.648375,
+          "currentLon": -0.531333
+        },
+        {
+          "id": 9160,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "45_45002_000003",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4500146"
+          ],
+          "currentCodes": [
+            "4500146"
+          ],
+          "previousLat": 40.014567,
+          "previousLon": -3.795522,
+          "currentLat": 40.014567,
+          "currentLon": -3.795522
+        }
+      ]
+    },
     {
       "generatedAt": "2026-07-16T06:37:21.669Z",
       "previousSnapshotAt": "2026-07-15T06:32:56.939Z",
@@ -132659,6 +132831,167 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-07-17T06:32:03.108Z",
+      "id": 1909,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Cardeña",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N1",
+        "N28",
+        "N3",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1",
+        "N3"
+      ],
+      "removedBands": [
+        "B3"
+      ],
+      "previousCodes": [
+        "ANDR7408A"
+      ],
+      "currentCodes": [
+        "ANDR7408A"
+      ],
+      "previousLat": 38.314769,
+      "previousLon": -4.325153,
+      "currentLat": 38.314769,
+      "currentLon": -4.325153
+    },
+    {
+      "generatedAt": "2026-07-17T06:32:03.108Z",
+      "id": 3643,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Lleida",
+      "direccion": "Alpicat",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "B3",
+        "N28"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28"
+      ],
+      "addedBands": [
+        "B20",
+        "G09"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "196058"
+      ],
+      "currentCodes": [
+        "196058"
+      ],
+      "previousLat": 41.66625,
+      "previousLon": 0.5575,
+      "currentLat": 41.66625,
+      "currentLon": 0.5575
+    },
+    {
+      "generatedAt": "2026-07-17T06:32:03.108Z",
+      "id": 6236,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "Villarluengo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400024"
+      ],
+      "currentCodes": [
+        "4400024"
+      ],
+      "previousLat": 40.648375,
+      "previousLon": -0.531333,
+      "currentLat": 40.648375,
+      "currentLon": -0.531333
+    },
+    {
+      "generatedAt": "2026-07-17T06:32:03.108Z",
+      "id": 9160,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "45_45002_000003",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4500146"
+      ],
+      "currentCodes": [
+        "4500146"
+      ],
+      "previousLat": 40.014567,
+      "previousLon": -3.795522,
+      "currentLat": 40.014567,
+      "currentLon": -3.795522
+    },
     {
       "generatedAt": "2026-07-16T06:37:21.669Z",
       "id": 1219,
