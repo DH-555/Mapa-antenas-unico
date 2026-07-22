@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T06:44:59.481Z",
+  "updatedAt": "2026-07-22T07:04:21.877Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,218 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-07-22T07:04:21.877Z",
+      "previousSnapshotAt": "2026-07-21T06:44:59.481Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 5,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1003,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Sant Llorenç Savall",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0800776"
+          ],
+          "currentCodes": [
+            "0800776"
+          ],
+          "previousLat": 41.687103,
+          "previousLon": 2.054356,
+          "currentLat": 41.687103,
+          "currentLon": 2.054356
+        },
+        {
+          "id": 4453,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Ultzama",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100021"
+          ],
+          "currentCodes": [
+            "3100021"
+          ],
+          "previousLat": 42.975778,
+          "previousLon": -1.702919,
+          "currentLat": 42.975778,
+          "currentLon": -1.702919
+        },
+        {
+          "id": 5680,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Segovia",
+          "direccion": "Real Sitio de San Ildefonso",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "000424",
+            "00424",
+            "424"
+          ],
+          "currentCodes": [
+            "000424",
+            "00424",
+            "424"
+          ],
+          "previousLat": 40.902569,
+          "previousLon": -4.003275,
+          "currentLat": 40.902569,
+          "currentLon": -4.003275
+        },
+        {
+          "id": 7578,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Burgos",
+          "direccion": "09_09904_000549",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "N78+"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0900606"
+          ],
+          "currentCodes": [
+            "0900606"
+          ],
+          "previousLat": 42.445583,
+          "previousLon": -3.635694,
+          "currentLat": 42.445583,
+          "currentLon": -3.635694
+        },
+        {
+          "id": 8272,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Rioja, La",
+          "direccion": "26_26021_000056",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2600362"
+          ],
+          "currentCodes": [
+            "2600362"
+          ],
+          "previousLat": 42.226025,
+          "previousLon": -2.004814,
+          "currentLat": 42.226025,
+          "currentLon": -2.004814
+        }
+      ]
+    },
     {
       "generatedAt": "2026-07-21T06:44:59.481Z",
       "previousSnapshotAt": "2026-07-20T07:37:51.985Z",
@@ -133233,6 +133445,208 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-07-22T07:04:21.877Z",
+      "id": 1003,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Sant Llorenç Savall",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0800776"
+      ],
+      "currentCodes": [
+        "0800776"
+      ],
+      "previousLat": 41.687103,
+      "previousLon": 2.054356,
+      "currentLat": 41.687103,
+      "currentLon": 2.054356
+    },
+    {
+      "generatedAt": "2026-07-22T07:04:21.877Z",
+      "id": 4453,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Ultzama",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100021"
+      ],
+      "currentCodes": [
+        "3100021"
+      ],
+      "previousLat": 42.975778,
+      "previousLon": -1.702919,
+      "currentLat": 42.975778,
+      "currentLon": -1.702919
+    },
+    {
+      "generatedAt": "2026-07-22T07:04:21.877Z",
+      "id": 5680,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Segovia",
+      "direccion": "Real Sitio de San Ildefonso",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "000424",
+        "00424",
+        "424"
+      ],
+      "currentCodes": [
+        "000424",
+        "00424",
+        "424"
+      ],
+      "previousLat": 40.902569,
+      "previousLon": -4.003275,
+      "currentLat": 40.902569,
+      "currentLon": -4.003275
+    },
+    {
+      "generatedAt": "2026-07-22T07:04:21.877Z",
+      "id": 7578,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Burgos",
+      "direccion": "09_09904_000549",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "N78+"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0900606"
+      ],
+      "currentCodes": [
+        "0900606"
+      ],
+      "previousLat": 42.445583,
+      "previousLon": -3.635694,
+      "currentLat": 42.445583,
+      "currentLon": -3.635694
+    },
+    {
+      "generatedAt": "2026-07-22T07:04:21.877Z",
+      "id": 8272,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Rioja, La",
+      "direccion": "26_26021_000056",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2600362"
+      ],
+      "currentCodes": [
+        "2600362"
+      ],
+      "previousLat": 42.226025,
+      "previousLon": -2.004814,
+      "currentLat": 42.226025,
+      "currentLon": -2.004814
+    },
     {
       "generatedAt": "2026-07-18T06:25:09.521Z",
       "id": 665,
