@@ -1197,7 +1197,7 @@
                   {/if}
                   {#if getOwnMapHistoryUrl(item)}
                     <a class="history-link" href={getOwnMapHistoryUrl(item)}>
-                      Ver antena en mi mapa
+                      Ver en el mapa
                     </a>
                   {/if}
                 </article>
@@ -1258,7 +1258,7 @@
                   {/if}
                   {#if getOwnMapHistoryUrl(item)}
                     <a class="history-link" href={getOwnMapHistoryUrl(item)}>
-                      Ver antena en mi mapa
+                      Ver en el mapa
                     </a>
                   {/if}
                 </article>
@@ -1326,7 +1326,7 @@
                   {/if}
                   {#if getOwnMapHistoryUrl(item)}
                     <a class="history-link" href={getOwnMapHistoryUrl(item)}>
-                      Ver antena en mi mapa
+                      Ver en el mapa
                     </a>
                   {/if}
                 </article>
