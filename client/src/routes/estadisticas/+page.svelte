@@ -738,6 +738,11 @@
     return `https://antenasmoviles.es/?b&${encodeURIComponent(code)}#19/${Number(lat).toFixed(6)}/${Number(lon).toFixed(6)}/osm`;
   }
 
+  function getOwnMapHistoryUrl(item) {
+    const id = Number(item?.id);
+    return Number.isFinite(id) ? `/?id=${encodeURIComponent(id)}` : "";
+  }
+
   function getHistoryBandDiff(item) {
     const previousBands = Array.isArray(item?.previousBands)
       ? item.previousBands.map((band) => String(band).trim()).filter(Boolean)
@@ -1190,6 +1195,11 @@
                       Ver antena en AntenasMoviles
                     </a>
                   {/if}
+                  {#if getOwnMapHistoryUrl(item)}
+                    <a class="history-link" href={getOwnMapHistoryUrl(item)}>
+                      Ver antena en mi mapa
+                    </a>
+                  {/if}
                 </article>
               {/each}
             </div>
@@ -1244,6 +1254,11 @@
                       rel="noopener noreferrer"
                     >
                       Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                  {#if getOwnMapHistoryUrl(item)}
+                    <a class="history-link" href={getOwnMapHistoryUrl(item)}>
+                      Ver antena en mi mapa
                     </a>
                   {/if}
                 </article>
@@ -1307,6 +1322,11 @@
                       rel="noopener noreferrer"
                     >
                       Ver antena en AntenasMoviles
+                    </a>
+                  {/if}
+                  {#if getOwnMapHistoryUrl(item)}
+                    <a class="history-link" href={getOwnMapHistoryUrl(item)}>
+                      Ver antena en mi mapa
                     </a>
                   {/if}
                 </article>

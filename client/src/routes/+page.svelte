@@ -684,6 +684,11 @@
                 selectedPhases = [...phaseOptions];
                 selectedOperators = [...operatorOptions];
 
+                const requestedId = new URLSearchParams(window.location.search).get("id");
+                if (requestedId) {
+                    idQuery = requestedId;
+                }
+
                 filteredAntenas = [...allAntenas];
                 await ensureDeclaredDataLoaded();
 
@@ -954,6 +959,9 @@
                         });
 
                         updateDeclaredVisibility();
+                        if (idQuery) {
+                            applyFilters({ fit: true });
+                        }
                     } catch (layerError) {
                         error =
                             layerError instanceof Error
