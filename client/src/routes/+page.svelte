@@ -685,9 +685,6 @@
                 selectedOperators = [...operatorOptions];
 
                 const requestedId = new URLSearchParams(window.location.search).get("id");
-                if (requestedId) {
-                    idQuery = requestedId;
-                }
 
                 filteredAntenas = [...allAntenas];
                 await ensureDeclaredDataLoaded();
@@ -959,8 +956,17 @@
                         });
 
                         updateDeclaredVisibility();
-                        if (idQuery) {
-                            applyFilters({ fit: true });
+                        if (requestedId) {
+                            const requestedAntena = allAntenas.find(
+                                (antena) => String(antena.id) === requestedId,
+                            );
+                            if (requestedAntena) {
+                                map.easeTo({
+                                    center: requestedAntena.coordenadas,
+                                    zoom: 14,
+                                    duration: 500,
+                                });
+                            }
                         }
                     } catch (layerError) {
                         error =
