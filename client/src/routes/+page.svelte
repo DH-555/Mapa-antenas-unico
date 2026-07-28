@@ -964,7 +964,7 @@
                                 map.easeTo({
                                     center: requestedAntena.coordenadas,
                                     zoom: 14,
-                                    duration: 500,
+                                    duration: 750,
                                 });
                             }
                         }
