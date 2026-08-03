@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T07:04:27.854Z",
+  "updatedAt": "2026-08-03T07:52:54.456Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,64 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-03T07:52:54.456Z",
+      "previousSnapshotAt": "2026-08-02T07:04:27.854Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 1,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 4619,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Ourense",
+          "direccion": "Xinzo de Limia",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "GALR8760F"
+          ],
+          "currentCodes": [
+            "GALR8760F"
+          ],
+          "previousLat": 42.064797,
+          "previousLon": -7.726583,
+          "currentLat": 42.064797,
+          "currentLon": -7.726583
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-02T07:04:27.854Z",
       "previousSnapshotAt": "2026-08-01T06:46:17.569Z",
@@ -138459,6 +138517,50 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-03T07:52:54.456Z",
+      "id": 4619,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Ourense",
+      "direccion": "Xinzo de Limia",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "GALR8760F"
+      ],
+      "currentCodes": [
+        "GALR8760F"
+      ],
+      "previousLat": 42.064797,
+      "previousLon": -7.726583,
+      "currentLat": 42.064797,
+      "currentLon": -7.726583
+    },
     {
       "generatedAt": "2026-08-01T06:46:17.569Z",
       "id": 4436,
