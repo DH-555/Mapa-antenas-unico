@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T07:04:35.582Z",
+  "updatedAt": "2026-08-05T07:06:46.334Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,250 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-05T07:06:46.334Z",
+      "previousSnapshotAt": "2026-08-04T07:04:35.582Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 9,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 9042,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Soria",
+          "direccion": "42_42017_000297",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "4200265"
+          ],
+          "currentCodes": [
+            "4200265"
+          ],
+          "previousLat": 41.851222,
+          "previousLon": -2.336,
+          "currentLat": 41.851244,
+          "currentLon": -2.3361
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1638,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Castellón/Castelló",
+          "direccion": "Oropesa del Mar/Orpesa",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B7"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1200878"
+          ],
+          "currentCodes": [
+            "1200878"
+          ],
+          "previousLat": 40.080678,
+          "previousLon": 0.127253,
+          "currentLat": 40.080678,
+          "currentLon": 0.127253
+        },
+        {
+          "id": 4228,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Valdeolmos-Alalpardo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8",
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2803444"
+          ],
+          "currentCodes": [
+            "2803444"
+          ],
+          "previousLat": 40.609753,
+          "previousLon": -3.468814,
+          "currentLat": 40.609722,
+          "currentLon": -3.468811
+        },
+        {
+          "id": 6877,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Bizkaia",
+          "direccion": "Derio",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4800231"
+          ],
+          "currentCodes": [
+            "4800231"
+          ],
+          "previousLat": 43.287644,
+          "previousLon": -2.884439,
+          "currentLat": 43.287644,
+          "currentLon": -2.884439
+        },
+        {
+          "id": 7693,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "13_13075_000396",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1300285"
+          ],
+          "currentCodes": [
+            "1300285"
+          ],
+          "previousLat": 38.477933,
+          "previousLon": -3.822111,
+          "currentLat": 38.477933,
+          "currentLon": -3.822111
+        },
+        {
+          "id": 9042,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Soria",
+          "direccion": "42_42017_000297",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4200265"
+          ],
+          "currentCodes": [
+            "4200265"
+          ],
+          "previousLat": 41.851222,
+          "previousLon": -2.336,
+          "currentLat": 41.851244,
+          "currentLon": -2.3361
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-04T07:04:35.582Z",
       "previousSnapshotAt": "2026-08-03T07:52:54.456Z",
@@ -138531,6 +138775,210 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-05T07:06:46.334Z",
+      "id": 1638,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Castellón/Castelló",
+      "direccion": "Oropesa del Mar/Orpesa",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B7"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1200878"
+      ],
+      "currentCodes": [
+        "1200878"
+      ],
+      "previousLat": 40.080678,
+      "previousLon": 0.127253,
+      "currentLat": 40.080678,
+      "currentLon": 0.127253
+    },
+    {
+      "generatedAt": "2026-08-05T07:06:46.334Z",
+      "id": 4228,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Madrid",
+      "direccion": "Valdeolmos-Alalpardo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8",
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2803444"
+      ],
+      "currentCodes": [
+        "2803444"
+      ],
+      "previousLat": 40.609753,
+      "previousLon": -3.468814,
+      "currentLat": 40.609722,
+      "currentLon": -3.468811
+    },
+    {
+      "generatedAt": "2026-08-05T07:06:46.334Z",
+      "id": 6877,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Bizkaia",
+      "direccion": "Derio",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4800231"
+      ],
+      "currentCodes": [
+        "4800231"
+      ],
+      "previousLat": 43.287644,
+      "previousLon": -2.884439,
+      "currentLat": 43.287644,
+      "currentLon": -2.884439
+    },
+    {
+      "generatedAt": "2026-08-05T07:06:46.334Z",
+      "id": 7693,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ciudad Real",
+      "direccion": "13_13075_000396",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1300285"
+      ],
+      "currentCodes": [
+        "1300285"
+      ],
+      "previousLat": 38.477933,
+      "previousLon": -3.822111,
+      "currentLat": 38.477933,
+      "currentLon": -3.822111
+    },
+    {
+      "generatedAt": "2026-08-05T07:06:46.334Z",
+      "id": 9042,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Soria",
+      "direccion": "42_42017_000297",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4200265"
+      ],
+      "currentCodes": [
+        "4200265"
+      ],
+      "previousLat": 41.851222,
+      "previousLon": -2.336,
+      "currentLat": 41.851244,
+      "currentLon": -2.3361
+    },
     {
       "generatedAt": "2026-08-03T07:52:54.456Z",
       "id": 4619,
