@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T07:06:46.334Z",
+  "updatedAt": "2026-08-06T07:08:28.014Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,101 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-06T07:08:28.014Z",
+      "previousSnapshotAt": "2026-08-05T07:06:46.334Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 2,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 6043,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Tarragona",
+          "direccion": "Santa Bàrbara",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "048697",
+            "48697"
+          ],
+          "currentCodes": [
+            "048697",
+            "48697"
+          ],
+          "previousLat": 40.706114,
+          "previousLon": 0.497394,
+          "currentLat": 40.706114,
+          "currentLon": 0.497394
+        },
+        {
+          "id": 9220,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valladolid",
+          "direccion": "47_47113_000183",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "N78+"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4700044"
+          ],
+          "currentCodes": [
+            "4700044"
+          ],
+          "previousLat": 41.511181,
+          "previousLon": -5.208311,
+          "currentLat": 41.511181,
+          "currentLon": -5.208311
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-05T07:06:46.334Z",
       "previousSnapshotAt": "2026-08-04T07:04:35.582Z",
@@ -138775,6 +138870,88 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-06T07:08:28.014Z",
+      "id": 6043,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Tarragona",
+      "direccion": "Santa Bàrbara",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "048697",
+        "48697"
+      ],
+      "currentCodes": [
+        "048697",
+        "48697"
+      ],
+      "previousLat": 40.706114,
+      "previousLon": 0.497394,
+      "currentLat": 40.706114,
+      "currentLon": 0.497394
+    },
+    {
+      "generatedAt": "2026-08-06T07:08:28.014Z",
+      "id": 9220,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Valladolid",
+      "direccion": "47_47113_000183",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "N78+"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4700044"
+      ],
+      "currentCodes": [
+        "4700044"
+      ],
+      "previousLat": 41.511181,
+      "previousLon": -5.208311,
+      "currentLat": 41.511181,
+      "currentLon": -5.208311
+    },
     {
       "generatedAt": "2026-08-05T07:06:46.334Z",
       "id": 1638,
