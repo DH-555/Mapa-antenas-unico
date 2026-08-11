@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T05:50:28.971Z",
+  "updatedAt": "2026-08-11T05:32:11.958Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,66 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-11T05:32:11.958Z",
+      "previousSnapshotAt": "2026-08-10T05:50:28.971Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 2,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 4374,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Murcia",
+          "direccion": "Blanca",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B7",
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3000062"
+          ],
+          "currentCodes": [
+            "3000062"
+          ],
+          "previousLat": 38.176183,
+          "previousLon": -1.378428,
+          "currentLat": 38.176183,
+          "currentLon": -1.378428
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-10T05:50:28.971Z",
       "previousSnapshotAt": "2026-08-09T05:26:21.194Z",
@@ -139119,6 +139179,52 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-11T05:32:11.958Z",
+      "id": 4374,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Murcia",
+      "direccion": "Blanca",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B7",
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3000062"
+      ],
+      "currentCodes": [
+        "3000062"
+      ],
+      "previousLat": 38.176183,
+      "previousLon": -1.378428,
+      "currentLat": 38.176183,
+      "currentLon": -1.378428
+    },
     {
       "generatedAt": "2026-08-08T05:11:53.670Z",
       "id": 2835,
