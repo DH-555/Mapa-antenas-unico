@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T04:56:53.625Z",
+  "updatedAt": "2026-08-20T04:58:22.609Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,225 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-20T04:58:22.609Z",
+      "previousSnapshotAt": "2026-08-19T04:56:53.625Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 2,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 9,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 6876,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Bizkaia",
+          "direccion": "Abanto y Ciérvana-Abanto Zierbena",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B3",
+            "B20",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B3",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [
+            "4800155"
+          ],
+          "currentCodes": [
+            "4800155"
+          ],
+          "previousLat": 43.316139,
+          "previousLon": -3.074472,
+          "currentLat": 43.316139,
+          "currentLon": -3.074472
+        },
+        {
+          "id": 7906,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Girona",
+          "direccion": "17_12033_000087",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "1700655"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 42.316661,
+          "currentLon": 2.962217
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 3170,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huesca",
+          "direccion": "Panticosa",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2200146"
+          ],
+          "currentCodes": [
+            "2200146"
+          ],
+          "previousLat": 42.763233,
+          "previousLon": -0.234353,
+          "currentLat": 42.763233,
+          "currentLon": -0.234353
+        },
+        {
+          "id": 6876,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Bizkaia",
+          "direccion": "Abanto y Ciérvana-Abanto Zierbena",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4800155"
+          ],
+          "currentCodes": [
+            "4800155"
+          ],
+          "previousLat": 43.316139,
+          "previousLon": -3.074472,
+          "currentLat": 43.316139,
+          "currentLon": -3.074472
+        },
+        {
+          "id": 7283,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Pintanos, Los",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N78+"
+          ],
+          "currentBands": [
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "5002004"
+          ],
+          "currentCodes": [
+            "5002004"
+          ],
+          "previousLat": 42.544431,
+          "previousLon": -0.966675,
+          "currentLat": 42.544431,
+          "currentLon": -0.966675
+        },
+        {
+          "id": 7906,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Girona",
+          "direccion": "17_12033_000087",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "1700655"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 42.316661,
+          "currentLon": 2.962217
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-19T04:56:53.625Z",
       "previousSnapshotAt": "2026-08-18T04:57:13.410Z",
@@ -140164,6 +140383,155 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-20T04:58:22.609Z",
+      "id": 3170,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huesca",
+      "direccion": "Panticosa",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2200146"
+      ],
+      "currentCodes": [
+        "2200146"
+      ],
+      "previousLat": 42.763233,
+      "previousLon": -0.234353,
+      "currentLat": 42.763233,
+      "currentLon": -0.234353
+    },
+    {
+      "generatedAt": "2026-08-20T04:58:22.609Z",
+      "id": 6876,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Bizkaia",
+      "direccion": "Abanto y Ciérvana-Abanto Zierbena",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4800155"
+      ],
+      "currentCodes": [
+        "4800155"
+      ],
+      "previousLat": 43.316139,
+      "previousLon": -3.074472,
+      "currentLat": 43.316139,
+      "currentLon": -3.074472
+    },
+    {
+      "generatedAt": "2026-08-20T04:58:22.609Z",
+      "id": 7283,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Pintanos, Los",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N78+"
+      ],
+      "currentBands": [
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "5002004"
+      ],
+      "currentCodes": [
+        "5002004"
+      ],
+      "previousLat": 42.544431,
+      "previousLon": -0.966675,
+      "currentLat": 42.544431,
+      "currentLon": -0.966675
+    },
+    {
+      "generatedAt": "2026-08-20T04:58:22.609Z",
+      "id": 7906,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Girona",
+      "direccion": "17_12033_000087",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "1700655"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 42.316661,
+      "currentLon": 2.962217
+    },
     {
       "generatedAt": "2026-08-19T04:56:53.625Z",
       "id": 7283,
