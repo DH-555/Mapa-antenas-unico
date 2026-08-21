@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T04:58:22.609Z",
+  "updatedAt": "2026-08-21T04:59:16.167Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,229 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-21T04:59:16.167Z",
+      "previousSnapshotAt": "2026-08-20T04:58:22.609Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 1,
+        "lost": 1,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 6,
+        "totalBandsRemoved": 2
+      },
+      "changes": [
+        {
+          "id": 2973,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Larraul",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B20",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [
+            "2000226"
+          ],
+          "currentCodes": [
+            "2000226"
+          ],
+          "previousLat": 43.190789,
+          "previousLon": -2.099742,
+          "currentLat": 43.190789,
+          "currentLon": -2.099742
+        },
+        {
+          "id": 7283,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Pintanos, Los",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78+",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "G09"
+          ],
+          "previousCodes": [
+            "5002004"
+          ],
+          "currentCodes": [
+            "3100300"
+          ],
+          "previousLat": 42.544431,
+          "previousLon": -0.966675,
+          "currentLat": 42.544444,
+          "currentLon": -0.966667
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 534,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ávila",
+          "direccion": "Collado del Mirón",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0500072"
+          ],
+          "currentCodes": [
+            "0500072"
+          ],
+          "previousLat": 40.555258,
+          "previousLon": -5.356147,
+          "currentLat": 40.555275,
+          "currentLon": -5.356231
+        },
+        {
+          "id": 2973,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Larraul",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2000226"
+          ],
+          "currentCodes": [
+            "2000226"
+          ],
+          "previousLat": 43.190789,
+          "previousLon": -2.099742,
+          "currentLat": 43.190789,
+          "currentLon": -2.099742
+        },
+        {
+          "id": 7283,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Pintanos, Los",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "G09"
+          ],
+          "addedBands": [
+            "B20",
+            "G09"
+          ],
+          "removedBands": [
+            "N28",
+            "N78+"
+          ],
+          "previousCodes": [
+            "5002004"
+          ],
+          "currentCodes": [
+            "3100300"
+          ],
+          "previousLat": 42.544431,
+          "previousLon": -0.966675,
+          "currentLat": 42.544444,
+          "currentLon": -0.966667
+        },
+        {
+          "id": 9217,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valladolid",
+          "direccion": "47_47015_000035",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "N78+"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4700077"
+          ],
+          "currentCodes": [
+            "4700077"
+          ],
+          "previousLat": 42.100875,
+          "previousLon": -5.215128,
+          "currentLat": 42.100875,
+          "currentLon": -5.215128
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-20T04:58:22.609Z",
       "previousSnapshotAt": "2026-08-19T04:56:53.625Z",
@@ -140383,6 +140606,159 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-21T04:59:16.167Z",
+      "id": 534,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ávila",
+      "direccion": "Collado del Mirón",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0500072"
+      ],
+      "currentCodes": [
+        "0500072"
+      ],
+      "previousLat": 40.555258,
+      "previousLon": -5.356147,
+      "currentLat": 40.555275,
+      "currentLon": -5.356231
+    },
+    {
+      "generatedAt": "2026-08-21T04:59:16.167Z",
+      "id": 2973,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Gipuzkoa",
+      "direccion": "Larraul",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2000226"
+      ],
+      "currentCodes": [
+        "2000226"
+      ],
+      "previousLat": 43.190789,
+      "previousLon": -2.099742,
+      "currentLat": 43.190789,
+      "currentLon": -2.099742
+    },
+    {
+      "generatedAt": "2026-08-21T04:59:16.167Z",
+      "id": 7283,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Pintanos, Los",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "G09"
+      ],
+      "addedBands": [
+        "B20",
+        "G09"
+      ],
+      "removedBands": [
+        "N28",
+        "N78+"
+      ],
+      "previousCodes": [
+        "5002004"
+      ],
+      "currentCodes": [
+        "3100300"
+      ],
+      "previousLat": 42.544431,
+      "previousLon": -0.966675,
+      "currentLat": 42.544444,
+      "currentLon": -0.966667
+    },
+    {
+      "generatedAt": "2026-08-21T04:59:16.167Z",
+      "id": 9217,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Valladolid",
+      "direccion": "47_47015_000035",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "N78+"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4700077"
+      ],
+      "currentCodes": [
+        "4700077"
+      ],
+      "previousLat": 42.100875,
+      "previousLon": -5.215128,
+      "currentLat": 42.100875,
+      "currentLon": -5.215128
+    },
     {
       "generatedAt": "2026-08-20T04:58:22.609Z",
       "id": 3170,
