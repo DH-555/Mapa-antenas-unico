@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T04:59:12.423Z",
+  "updatedAt": "2026-08-26T05:00:24.577Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,286 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-26T05:00:24.577Z",
+      "previousSnapshotAt": "2026-08-25T04:59:12.423Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 2,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 12,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 6488,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Miguel Esteban",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B3",
+            "B20",
+            "U21",
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B3",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [
+            "4500114"
+          ],
+          "currentCodes": [
+            "4500114"
+          ],
+          "previousLat": 39.520022,
+          "previousLon": -3.070367,
+          "currentLat": 39.520022,
+          "currentLon": -3.070367
+        },
+        {
+          "id": 9221,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valladolid",
+          "direccion": "47_47116_000189",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "N1",
+            "B3",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "4700009"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.652422,
+          "currentLon": -4.223217
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1813,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Córdoba",
+          "direccion": "Fuente Palmera",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1400037"
+          ],
+          "currentCodes": [
+            "1400037"
+          ],
+          "previousLat": 37.704278,
+          "previousLon": -5.100611,
+          "currentLat": 37.704278,
+          "currentLon": -5.100611
+        },
+        {
+          "id": 2531,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Granada",
+          "direccion": "Cúllar",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1800096"
+          ],
+          "currentCodes": [
+            "1800096"
+          ],
+          "previousLat": 37.585739,
+          "previousLon": -2.571283,
+          "currentLat": 37.585739,
+          "currentLon": -2.571283
+        },
+        {
+          "id": 6488,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Miguel Esteban",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4500114"
+          ],
+          "currentCodes": [
+            "4500114"
+          ],
+          "previousLat": 39.520022,
+          "previousLon": -3.070367,
+          "currentLat": 39.520022,
+          "currentLon": -3.070367
+        },
+        {
+          "id": 7894,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Girona",
+          "direccion": "17_17205_000626",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1700367"
+          ],
+          "currentCodes": [
+            "1700367"
+          ],
+          "previousLat": 41.994081,
+          "previousLon": 3.071022,
+          "currentLat": 41.994081,
+          "currentLon": 3.071022
+        },
+        {
+          "id": 9221,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valladolid",
+          "direccion": "47_47116_000189",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "4700009"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.652422,
+          "currentLon": -4.223217
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-25T04:59:12.423Z",
       "previousSnapshotAt": "2026-08-24T05:06:36.791Z",
@@ -140662,6 +140942,215 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-26T05:00:24.577Z",
+      "id": 1813,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Córdoba",
+      "direccion": "Fuente Palmera",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1400037"
+      ],
+      "currentCodes": [
+        "1400037"
+      ],
+      "previousLat": 37.704278,
+      "previousLon": -5.100611,
+      "currentLat": 37.704278,
+      "currentLon": -5.100611
+    },
+    {
+      "generatedAt": "2026-08-26T05:00:24.577Z",
+      "id": 2531,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Granada",
+      "direccion": "Cúllar",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1800096"
+      ],
+      "currentCodes": [
+        "1800096"
+      ],
+      "previousLat": 37.585739,
+      "previousLon": -2.571283,
+      "currentLat": 37.585739,
+      "currentLon": -2.571283
+    },
+    {
+      "generatedAt": "2026-08-26T05:00:24.577Z",
+      "id": 6488,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Miguel Esteban",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4500114"
+      ],
+      "currentCodes": [
+        "4500114"
+      ],
+      "previousLat": 39.520022,
+      "previousLon": -3.070367,
+      "currentLat": 39.520022,
+      "currentLon": -3.070367
+    },
+    {
+      "generatedAt": "2026-08-26T05:00:24.577Z",
+      "id": 7894,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Girona",
+      "direccion": "17_17205_000626",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1700367"
+      ],
+      "currentCodes": [
+        "1700367"
+      ],
+      "previousLat": 41.994081,
+      "previousLon": 3.071022,
+      "currentLat": 41.994081,
+      "currentLon": 3.071022
+    },
+    {
+      "generatedAt": "2026-08-26T05:00:24.577Z",
+      "id": 9221,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Valladolid",
+      "direccion": "47_47116_000189",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "4700009"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 41.652422,
+      "currentLon": -4.223217
+    },
     {
       "generatedAt": "2026-08-21T04:59:16.167Z",
       "id": 534,
