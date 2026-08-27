@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T05:00:24.577Z",
+  "updatedAt": "2026-08-27T15:20:43.289Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,58 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-27T15:20:43.289Z",
+      "previousSnapshotAt": "2026-08-26T05:00:24.577Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 1,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1236,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Burgos",
+          "direccion": "Castildelgado",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0900082"
+          ],
+          "currentCodes": [
+            "0900082"
+          ],
+          "previousLat": 42.433778,
+          "previousLon": -3.08725,
+          "currentLat": 42.433778,
+          "currentLon": -3.08725
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-26T05:00:24.577Z",
       "previousSnapshotAt": "2026-08-25T04:59:12.423Z",
@@ -140942,6 +140994,44 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-27T15:20:43.289Z",
+      "id": 1236,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Burgos",
+      "direccion": "Castildelgado",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0900082"
+      ],
+      "currentCodes": [
+        "0900082"
+      ],
+      "previousLat": 42.433778,
+      "previousLon": -3.08725,
+      "currentLat": 42.433778,
+      "currentLon": -3.08725
+    },
     {
       "generatedAt": "2026-08-26T05:00:24.577Z",
       "id": 1813,
