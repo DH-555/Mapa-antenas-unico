@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T15:20:43.289Z",
+  "updatedAt": "2026-08-28T16:44:24.587Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,212 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-28T16:44:24.587Z",
+      "previousSnapshotAt": "2026-08-27T15:20:43.289Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 8,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 4392,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Murcia",
+          "direccion": "Pliego",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "3002281"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 37.990111,
+          "currentLon": -1.494386
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 4392,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Murcia",
+          "direccion": "Pliego",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "3002281"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 37.990111,
+          "currentLon": -1.494386
+        },
+        {
+          "id": 6777,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Valladolid",
+          "direccion": "Fuensaldaña",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "G09"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "000435",
+            "00435",
+            "435"
+          ],
+          "currentCodes": [
+            "000435",
+            "435",
+            "00435"
+          ],
+          "previousLat": 41.703144,
+          "previousLon": -4.763783,
+          "currentLat": 41.703144,
+          "currentLon": -4.763783
+        },
+        {
+          "id": 9199,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valladolid",
+          "direccion": "47_47052_000542",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4700128"
+          ],
+          "currentCodes": [
+            "4700128"
+          ],
+          "previousLat": 41.602767,
+          "previousLon": -4.670417,
+          "currentLat": 41.602767,
+          "currentLon": -4.670417
+        },
+        {
+          "id": 9203,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Valladolid",
+          "direccion": "47_47027_000056",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4700043"
+          ],
+          "currentCodes": [
+            "4700043"
+          ],
+          "previousLat": 41.744558,
+          "previousLon": -4.661589,
+          "currentLat": 41.744558,
+          "currentLon": -4.661589
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-27T15:20:43.289Z",
       "previousSnapshotAt": "2026-08-26T05:00:24.577Z",
@@ -140994,6 +141200,175 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-28T16:44:24.587Z",
+      "id": 4392,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Murcia",
+      "direccion": "Pliego",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "3002281"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 37.990111,
+      "currentLon": -1.494386
+    },
+    {
+      "generatedAt": "2026-08-28T16:44:24.587Z",
+      "id": 6777,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Valladolid",
+      "direccion": "Fuensaldaña",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "G09"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "000435",
+        "00435",
+        "435"
+      ],
+      "currentCodes": [
+        "000435",
+        "435",
+        "00435"
+      ],
+      "previousLat": 41.703144,
+      "previousLon": -4.763783,
+      "currentLat": 41.703144,
+      "currentLon": -4.763783
+    },
+    {
+      "generatedAt": "2026-08-28T16:44:24.587Z",
+      "id": 9199,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Valladolid",
+      "direccion": "47_47052_000542",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4700128"
+      ],
+      "currentCodes": [
+        "4700128"
+      ],
+      "previousLat": 41.602767,
+      "previousLon": -4.670417,
+      "currentLat": 41.602767,
+      "currentLon": -4.670417
+    },
+    {
+      "generatedAt": "2026-08-28T16:44:24.587Z",
+      "id": 9203,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Valladolid",
+      "direccion": "47_47027_000056",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4700043"
+      ],
+      "currentCodes": [
+        "4700043"
+      ],
+      "previousLat": 41.744558,
+      "previousLon": -4.661589,
+      "currentLat": 41.744558,
+      "currentLon": -4.661589
+    },
     {
       "generatedAt": "2026-08-27T15:20:43.289Z",
       "id": 1236,
