@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T10:00:04.342Z",
+  "updatedAt": "2026-08-31T10:58:21.637Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,103 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-08-31T10:58:21.637Z",
+      "previousSnapshotAt": "2026-08-30T10:00:04.342Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 2,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 828,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Palafolls",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0804015"
+          ],
+          "currentCodes": [
+            "0804015"
+          ],
+          "previousLat": 41.659611,
+          "previousLon": 2.749306,
+          "currentLat": 41.659611,
+          "currentLon": 2.749306
+        },
+        {
+          "id": 8226,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Lleida",
+          "direccion": "25_25207_000507",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2500651"
+          ],
+          "currentCodes": [
+            "2500651"
+          ],
+          "previousLat": 41.989972,
+          "previousLon": 1.54375,
+          "currentLat": 41.989972,
+          "currentLon": 1.54375
+        }
+      ]
+    },
     {
       "generatedAt": "2026-08-30T10:00:04.342Z",
       "previousSnapshotAt": "2026-08-29T11:11:57.607Z",
@@ -141305,6 +141402,90 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-08-31T10:58:21.637Z",
+      "id": 828,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Palafolls",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0804015"
+      ],
+      "currentCodes": [
+        "0804015"
+      ],
+      "previousLat": 41.659611,
+      "previousLon": 2.749306,
+      "currentLat": 41.659611,
+      "currentLon": 2.749306
+    },
+    {
+      "generatedAt": "2026-08-31T10:58:21.637Z",
+      "id": 8226,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Lleida",
+      "direccion": "25_25207_000507",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2500651"
+      ],
+      "currentCodes": [
+        "2500651"
+      ],
+      "previousLat": 41.989972,
+      "previousLon": 1.54375,
+      "currentLat": 41.989972,
+      "currentLon": 1.54375
+    },
     {
       "generatedAt": "2026-08-29T11:11:57.607Z",
       "id": 7057,
