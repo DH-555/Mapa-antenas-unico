@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T09:29:09.509Z",
+  "updatedAt": "2026-09-02T08:51:47.564Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,350 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "previousSnapshotAt": "2026-09-01T09:29:09.509Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 8,
+        "totalBandsAdded": 12,
+        "totalBandsRemoved": 1
+      },
+      "changes": [
+        {
+          "id": 7238,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Aldehuela de Liestos",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "5001064"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.05945,
+          "currentLon": -1.701114
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 196,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Alicante/Alacant",
+          "direccion": "Ondara",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0300148"
+          ],
+          "currentCodes": [
+            "0300148"
+          ],
+          "previousLat": 38.825986,
+          "previousLon": 0.018686,
+          "currentLat": 38.825986,
+          "currentLon": 0.018686
+        },
+        {
+          "id": 1448,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Santa Marta de Magasca",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N1",
+            "N28",
+            "N3",
+            "N78"
+          ],
+          "addedBands": [
+            "N3"
+          ],
+          "removedBands": [
+            "B3"
+          ],
+          "previousCodes": [
+            "EXTR6562A"
+          ],
+          "currentCodes": [
+            "EXTR6562A"
+          ],
+          "previousLat": 39.513028,
+          "previousLon": -6.103444,
+          "currentLat": 39.513028,
+          "currentLon": -6.103444
+        },
+        {
+          "id": 6120,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "Utrillas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400071"
+          ],
+          "currentCodes": [
+            "4400071"
+          ],
+          "previousLat": 40.813228,
+          "previousLon": -0.846183,
+          "currentLat": 40.813228,
+          "currentLon": -0.846183
+        },
+        {
+          "id": 6227,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "Ejulve",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400266"
+          ],
+          "currentCodes": [
+            "4400266"
+          ],
+          "previousLat": 40.758036,
+          "previousLon": -0.61275,
+          "currentLat": 40.758036,
+          "currentLon": -0.61275
+        },
+        {
+          "id": 6274,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "Perales del Alfambra",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400294"
+          ],
+          "currentCodes": [
+            "4400294"
+          ],
+          "previousLat": 40.612431,
+          "previousLon": -0.979439,
+          "currentLat": 40.612431,
+          "currentLon": -0.979439
+        },
+        {
+          "id": 7238,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Aldehuela de Liestos",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "5001064"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 41.05945,
+          "currentLon": -1.701114
+        },
+        {
+          "id": 7271,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Figueruelas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B1",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B1",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8",
+            "G09"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "5001753"
+          ],
+          "currentCodes": [
+            "5001753"
+          ],
+          "previousLat": 41.759836,
+          "previousLon": -1.153811,
+          "currentLat": 41.759836,
+          "currentLon": -1.153811
+        },
+        {
+          "id": 9134,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "44_44023_000055",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400018"
+          ],
+          "currentCodes": [
+            "4400018"
+          ],
+          "previousLat": 40.991489,
+          "previousLon": -1.030467,
+          "currentLat": 40.991489,
+          "currentLon": -1.030467
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-01T09:29:09.509Z",
       "previousSnapshotAt": "2026-08-31T10:58:21.637Z",
@@ -141738,6 +142082,318 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 196,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Alicante/Alacant",
+      "direccion": "Ondara",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0300148"
+      ],
+      "currentCodes": [
+        "0300148"
+      ],
+      "previousLat": 38.825986,
+      "previousLon": 0.018686,
+      "currentLat": 38.825986,
+      "currentLon": 0.018686
+    },
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 1448,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Santa Marta de Magasca",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N1",
+        "N28",
+        "N3",
+        "N78"
+      ],
+      "addedBands": [
+        "N3"
+      ],
+      "removedBands": [
+        "B3"
+      ],
+      "previousCodes": [
+        "EXTR6562A"
+      ],
+      "currentCodes": [
+        "EXTR6562A"
+      ],
+      "previousLat": 39.513028,
+      "previousLon": -6.103444,
+      "currentLat": 39.513028,
+      "currentLon": -6.103444
+    },
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 6120,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "Utrillas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400071"
+      ],
+      "currentCodes": [
+        "4400071"
+      ],
+      "previousLat": 40.813228,
+      "previousLon": -0.846183,
+      "currentLat": 40.813228,
+      "currentLon": -0.846183
+    },
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 6227,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "Ejulve",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400266"
+      ],
+      "currentCodes": [
+        "4400266"
+      ],
+      "previousLat": 40.758036,
+      "previousLon": -0.61275,
+      "currentLat": 40.758036,
+      "currentLon": -0.61275
+    },
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 6274,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "Perales del Alfambra",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400294"
+      ],
+      "currentCodes": [
+        "4400294"
+      ],
+      "previousLat": 40.612431,
+      "previousLon": -0.979439,
+      "currentLat": 40.612431,
+      "currentLon": -0.979439
+    },
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 7238,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Aldehuela de Liestos",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "5001064"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 41.05945,
+      "currentLon": -1.701114
+    },
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 7271,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Figueruelas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B1",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B1",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8",
+        "G09"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "5001753"
+      ],
+      "currentCodes": [
+        "5001753"
+      ],
+      "previousLat": 41.759836,
+      "previousLon": -1.153811,
+      "currentLat": 41.759836,
+      "currentLon": -1.153811
+    },
+    {
+      "generatedAt": "2026-09-02T08:51:47.564Z",
+      "id": 9134,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "44_44023_000055",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400018"
+      ],
+      "currentCodes": [
+        "4400018"
+      ],
+      "previousLat": 40.991489,
+      "previousLon": -1.030467,
+      "currentLat": 40.991489,
+      "currentLon": -1.030467
+    },
     {
       "generatedAt": "2026-09-01T09:29:09.509Z",
       "id": 958,
