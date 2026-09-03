@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T08:51:47.564Z",
+  "updatedAt": "2026-09-03T09:00:41.256Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,209 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-03T09:00:41.256Z",
+      "previousSnapshotAt": "2026-09-02T08:51:47.564Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 5,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 1677,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "Almagro",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "1300460"
+          ],
+          "currentCodes": [
+            "1300460"
+          ],
+          "previousLat": 38.949778,
+          "previousLon": -3.742719,
+          "currentLat": 38.949778,
+          "currentLon": -3.742719
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1677,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "Almagro",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1300460"
+          ],
+          "currentCodes": [
+            "1300460"
+          ],
+          "previousLat": 38.949778,
+          "previousLon": -3.742719,
+          "currentLat": 38.949778,
+          "currentLon": -3.742719
+        },
+        {
+          "id": 6395,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Pueblonuevo de Miramontes",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1000221"
+          ],
+          "currentCodes": [
+            "1000221"
+          ],
+          "previousLat": 40.059631,
+          "previousLon": -5.379342,
+          "currentLat": 40.059631,
+          "currentLon": -5.379342
+        },
+        {
+          "id": 6402,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Miguel Esteban",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4500229"
+          ],
+          "currentCodes": [
+            "4500229"
+          ],
+          "previousLat": 39.529292,
+          "previousLon": -3.08015,
+          "currentLat": 39.529292,
+          "currentLon": -3.08015
+        },
+        {
+          "id": 6468,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Noblejas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4500067"
+          ],
+          "currentCodes": [
+            "4500067"
+          ],
+          "previousLat": 39.978583,
+          "previousLon": -3.424472,
+          "currentLat": 39.978583,
+          "currentLon": -3.424472
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-02T08:51:47.564Z",
       "previousSnapshotAt": "2026-09-01T09:29:09.509Z",
@@ -142082,6 +142285,168 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-03T09:00:41.256Z",
+      "id": 1677,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ciudad Real",
+      "direccion": "Almagro",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1300460"
+      ],
+      "currentCodes": [
+        "1300460"
+      ],
+      "previousLat": 38.949778,
+      "previousLon": -3.742719,
+      "currentLat": 38.949778,
+      "currentLon": -3.742719
+    },
+    {
+      "generatedAt": "2026-09-03T09:00:41.256Z",
+      "id": 6395,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Pueblonuevo de Miramontes",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1000221"
+      ],
+      "currentCodes": [
+        "1000221"
+      ],
+      "previousLat": 40.059631,
+      "previousLon": -5.379342,
+      "currentLat": 40.059631,
+      "currentLon": -5.379342
+    },
+    {
+      "generatedAt": "2026-09-03T09:00:41.256Z",
+      "id": 6402,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Miguel Esteban",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4500229"
+      ],
+      "currentCodes": [
+        "4500229"
+      ],
+      "previousLat": 39.529292,
+      "previousLon": -3.08015,
+      "currentLat": 39.529292,
+      "currentLon": -3.08015
+    },
+    {
+      "generatedAt": "2026-09-03T09:00:41.256Z",
+      "id": 6468,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Noblejas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4500067"
+      ],
+      "currentCodes": [
+        "4500067"
+      ],
+      "previousLat": 39.978583,
+      "previousLon": -3.424472,
+      "currentLat": 39.978583,
+      "currentLon": -3.424472
+    },
     {
       "generatedAt": "2026-09-02T08:51:47.564Z",
       "id": 196,
