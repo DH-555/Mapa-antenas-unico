@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T08:55:10.284Z",
+  "updatedAt": "2026-09-05T08:25:57.914Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,56 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-05T08:25:57.914Z",
+      "previousSnapshotAt": "2026-09-04T08:55:10.284Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 0,
+        "totalBandsRemoved": 1
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 5579,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Segovia",
+          "direccion": "Muñopedro",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "B8"
+          ],
+          "previousCodes": [
+            "143514"
+          ],
+          "currentCodes": [
+            "143514"
+          ],
+          "previousLat": 40.827278,
+          "previousLon": -4.454342,
+          "currentLat": 40.827278,
+          "currentLon": -4.454342
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-04T08:55:10.284Z",
       "previousSnapshotAt": "2026-09-03T09:00:41.256Z",
@@ -142339,6 +142389,42 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-05T08:25:57.914Z",
+      "id": 5579,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Segovia",
+      "direccion": "Muñopedro",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "B8"
+      ],
+      "previousCodes": [
+        "143514"
+      ],
+      "currentCodes": [
+        "143514"
+      ],
+      "previousLat": 40.827278,
+      "previousLon": -4.454342,
+      "currentLat": 40.827278,
+      "currentLon": -4.454342
+    },
     {
       "generatedAt": "2026-09-04T08:55:10.284Z",
       "id": 55,
