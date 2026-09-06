@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T08:25:57.914Z",
+  "generatedAt": "2026-09-06T08:44:06.114Z",
   "source": "https://antenasmoviles.es/v1/show",
   "totalRaw": 59321,
   "total": 59321,
@@ -146387,8 +146387,7 @@
       ],
       "bands": [
         "B1",
-        "B3",
-        "U21"
+        "B3"
       ]
     },
     {
