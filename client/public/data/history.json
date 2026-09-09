@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T08:56:08.344Z",
+  "updatedAt": "2026-09-09T09:01:52.194Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,177 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-09T09:01:52.194Z",
+      "previousSnapshotAt": "2026-09-08T08:56:08.344Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 8,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 267,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Alicante/Alacant",
+          "direccion": "Montesinos, Los",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0302905"
+          ],
+          "currentCodes": [
+            "0302905"
+          ],
+          "previousLat": 38.043408,
+          "previousLon": -0.738922,
+          "currentLat": 38.043408,
+          "currentLon": -0.738922
+        },
+        {
+          "id": 791,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Balears, Illes",
+          "direccion": "Escorca",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0700421"
+          ],
+          "currentCodes": [
+            "0700421"
+          ],
+          "previousLat": 39.838828,
+          "previousLon": 2.774336,
+          "currentLat": 39.838828,
+          "currentLon": 2.774336
+        },
+        {
+          "id": 1681,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "San Carlos del Valle",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1300145"
+          ],
+          "currentCodes": [
+            "1300145"
+          ],
+          "previousLat": 38.843703,
+          "previousLon": -3.239183,
+          "currentLat": 38.843703,
+          "currentLon": -3.239183
+        },
+        {
+          "id": 8249,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Lleida",
+          "direccion": "25_25177_000466",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2500562"
+          ],
+          "currentCodes": [
+            "2500562"
+          ],
+          "previousLat": 41.789889,
+          "previousLon": 1.046667,
+          "currentLat": 41.789889,
+          "currentLon": 1.046667
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-08T08:56:08.344Z",
       "previousSnapshotAt": "2026-09-07T09:29:11.439Z",
@@ -142431,6 +142602,166 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-09T09:01:52.194Z",
+      "id": 267,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Alicante/Alacant",
+      "direccion": "Montesinos, Los",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0302905"
+      ],
+      "currentCodes": [
+        "0302905"
+      ],
+      "previousLat": 38.043408,
+      "previousLon": -0.738922,
+      "currentLat": 38.043408,
+      "currentLon": -0.738922
+    },
+    {
+      "generatedAt": "2026-09-09T09:01:52.194Z",
+      "id": 791,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Balears, Illes",
+      "direccion": "Escorca",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0700421"
+      ],
+      "currentCodes": [
+        "0700421"
+      ],
+      "previousLat": 39.838828,
+      "previousLon": 2.774336,
+      "currentLat": 39.838828,
+      "currentLon": 2.774336
+    },
+    {
+      "generatedAt": "2026-09-09T09:01:52.194Z",
+      "id": 1681,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ciudad Real",
+      "direccion": "San Carlos del Valle",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1300145"
+      ],
+      "currentCodes": [
+        "1300145"
+      ],
+      "previousLat": 38.843703,
+      "previousLon": -3.239183,
+      "currentLat": 38.843703,
+      "currentLon": -3.239183
+    },
+    {
+      "generatedAt": "2026-09-09T09:01:52.194Z",
+      "id": 8249,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Lleida",
+      "direccion": "25_25177_000466",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2500562"
+      ],
+      "currentCodes": [
+        "2500562"
+      ],
+      "previousLat": 41.789889,
+      "previousLon": 1.046667,
+      "currentLat": 41.789889,
+      "currentLon": 1.046667
+    },
     {
       "generatedAt": "2026-09-05T08:25:57.914Z",
       "id": 5579,
