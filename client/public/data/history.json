@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T09:00:50.729Z",
+  "updatedAt": "2026-09-11T08:58:55.145Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,207 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-11T08:58:55.145Z",
+      "previousSnapshotAt": "2026-09-10T09:00:50.729Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 8,
+        "totalBandsRemoved": 1
+      },
+      "changes": [
+        {
+          "id": 4354,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Málaga",
+          "direccion": "Casarabonela",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "U21",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "2900163"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 36.774278,
+          "currentLon": -4.846161
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 4354,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Málaga",
+          "direccion": "Casarabonela",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "2900163"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 36.774278,
+          "currentLon": -4.846161
+        },
+        {
+          "id": 6292,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "Libros",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "N78+"
+          ],
+          "addedBands": [
+            "N28"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400225"
+          ],
+          "currentCodes": [
+            "4400225"
+          ],
+          "previousLat": 40.159964,
+          "previousLon": -1.235331,
+          "currentLat": 40.159883,
+          "currentLon": -1.234958
+        },
+        {
+          "id": 6836,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Valladolid",
+          "direccion": "Cistérniga",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [],
+          "removedBands": [
+            "B8"
+          ],
+          "previousCodes": [
+            "081746",
+            "81746"
+          ],
+          "currentCodes": [
+            "081746",
+            "81746"
+          ],
+          "previousLat": 41.614053,
+          "previousLon": -4.689292,
+          "currentLat": 41.614053,
+          "currentLon": -4.689292
+        },
+        {
+          "id": 8240,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Lleida",
+          "direccion": "25_25096_000669",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2500206"
+          ],
+          "currentCodes": [
+            "2500206"
+          ],
+          "previousLat": 41.712639,
+          "previousLon": 1.017889,
+          "currentLat": 41.712639,
+          "currentLon": 1.017889
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-10T09:00:50.729Z",
       "previousSnapshotAt": "2026-09-09T09:01:52.194Z",
@@ -142703,6 +142904,169 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-11T08:58:55.145Z",
+      "id": 4354,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Málaga",
+      "direccion": "Casarabonela",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "2900163"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 36.774278,
+      "currentLon": -4.846161
+    },
+    {
+      "generatedAt": "2026-09-11T08:58:55.145Z",
+      "id": 6292,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "Libros",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "N78+"
+      ],
+      "addedBands": [
+        "N28"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400225"
+      ],
+      "currentCodes": [
+        "4400225"
+      ],
+      "previousLat": 40.159964,
+      "previousLon": -1.235331,
+      "currentLat": 40.159883,
+      "currentLon": -1.234958
+    },
+    {
+      "generatedAt": "2026-09-11T08:58:55.145Z",
+      "id": 6836,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Valladolid",
+      "direccion": "Cistérniga",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [],
+      "removedBands": [
+        "B8"
+      ],
+      "previousCodes": [
+        "081746",
+        "81746"
+      ],
+      "currentCodes": [
+        "081746",
+        "81746"
+      ],
+      "previousLat": 41.614053,
+      "previousLon": -4.689292,
+      "currentLat": 41.614053,
+      "currentLon": -4.689292
+    },
+    {
+      "generatedAt": "2026-09-11T08:58:55.145Z",
+      "id": 8240,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Lleida",
+      "direccion": "25_25096_000669",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2500206"
+      ],
+      "currentCodes": [
+        "2500206"
+      ],
+      "previousLat": 41.712639,
+      "previousLon": 1.017889,
+      "currentLat": 41.712639,
+      "currentLon": 1.017889
+    },
     {
       "generatedAt": "2026-09-10T09:00:50.729Z",
       "id": 6314,
