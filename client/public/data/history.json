@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T09:22:19.633Z",
+  "updatedAt": "2026-09-17T09:31:59.827Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,197 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-17T09:31:59.827Z",
+      "previousSnapshotAt": "2026-09-16T09:22:19.633Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 4,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1696,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "Almadén",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1300345"
+          ],
+          "currentCodes": [
+            "1300345"
+          ],
+          "previousLat": 38.771503,
+          "previousLon": -4.830361,
+          "currentLat": 38.771503,
+          "currentLon": -4.830361
+        },
+        {
+          "id": 3295,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Jaén",
+          "direccion": "Marmolejo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2300006"
+          ],
+          "currentCodes": [
+            "2300006"
+          ],
+          "previousLat": 38.047544,
+          "previousLon": -4.173544,
+          "currentLat": 38.047544,
+          "currentLon": -4.173544
+        },
+        {
+          "id": 6389,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Novés",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4500164"
+          ],
+          "currentCodes": [
+            "4500164"
+          ],
+          "previousLat": 40.047867,
+          "previousLon": -4.269128,
+          "currentLat": 40.047867,
+          "currentLon": -4.269128
+        },
+        {
+          "id": 7181,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Ricla",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "5001407"
+          ],
+          "currentCodes": [
+            "5001407"
+          ],
+          "previousLat": 41.500314,
+          "previousLon": -1.404139,
+          "currentLat": 41.500242,
+          "currentLon": -1.404214
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-16T09:22:19.633Z",
       "previousSnapshotAt": "2026-09-15T09:29:39.833Z",
@@ -143531,6 +143722,186 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-17T09:31:59.827Z",
+      "id": 1696,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ciudad Real",
+      "direccion": "Almadén",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1300345"
+      ],
+      "currentCodes": [
+        "1300345"
+      ],
+      "previousLat": 38.771503,
+      "previousLon": -4.830361,
+      "currentLat": 38.771503,
+      "currentLon": -4.830361
+    },
+    {
+      "generatedAt": "2026-09-17T09:31:59.827Z",
+      "id": 3295,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Jaén",
+      "direccion": "Marmolejo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2300006"
+      ],
+      "currentCodes": [
+        "2300006"
+      ],
+      "previousLat": 38.047544,
+      "previousLon": -4.173544,
+      "currentLat": 38.047544,
+      "currentLon": -4.173544
+    },
+    {
+      "generatedAt": "2026-09-17T09:31:59.827Z",
+      "id": 6389,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Novés",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4500164"
+      ],
+      "currentCodes": [
+        "4500164"
+      ],
+      "previousLat": 40.047867,
+      "previousLon": -4.269128,
+      "currentLat": 40.047867,
+      "currentLon": -4.269128
+    },
+    {
+      "generatedAt": "2026-09-17T09:31:59.827Z",
+      "id": 7181,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Ricla",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "5001407"
+      ],
+      "currentCodes": [
+        "5001407"
+      ],
+      "previousLat": 41.500314,
+      "previousLon": -1.404139,
+      "currentLat": 41.500242,
+      "currentLon": -1.404214
+    },
     {
       "generatedAt": "2026-09-16T09:22:19.633Z",
       "id": 862,
