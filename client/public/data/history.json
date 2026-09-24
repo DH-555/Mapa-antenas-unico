@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T09:23:22.620Z",
+  "updatedAt": "2026-09-24T09:23:31.838Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,1230 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "previousSnapshotAt": "2026-09-23T09:23:22.620Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 31,
+        "totalBandsAdded": 34,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 157,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Albacete",
+          "direccion": "Casas-Ibáñez",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0200070"
+          ],
+          "currentCodes": [
+            "0200070"
+          ],
+          "previousLat": 39.28925,
+          "previousLon": -1.473069,
+          "currentLat": 39.28925,
+          "currentLon": -1.473069
+        },
+        {
+          "id": 560,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Ribera del Fresno",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0600126"
+          ],
+          "currentCodes": [
+            "0600126"
+          ],
+          "previousLat": 38.551053,
+          "previousLon": -6.231783,
+          "currentLat": 38.551053,
+          "currentLon": -6.231783
+        },
+        {
+          "id": 566,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Segura de León",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0600130"
+          ],
+          "currentCodes": [
+            "0600130"
+          ],
+          "previousLat": 38.118181,
+          "previousLon": -6.5271,
+          "currentLat": 38.118181,
+          "currentLon": -6.5271
+        },
+        {
+          "id": 847,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Monistrol de Calders",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0800847"
+          ],
+          "currentCodes": [
+            "0800847"
+          ],
+          "previousLat": 41.760114,
+          "previousLon": 2.020622,
+          "currentLat": 41.760083,
+          "currentLon": 2.020653
+        },
+        {
+          "id": 859,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Vilassar de Dalt",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0805270"
+          ],
+          "currentCodes": [
+            "0805270"
+          ],
+          "previousLat": 41.514703,
+          "previousLon": 2.361636,
+          "currentLat": 41.514703,
+          "currentLon": 2.361636
+        },
+        {
+          "id": 872,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Santa Eugènia de Berga",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0801284"
+          ],
+          "currentCodes": [
+            "0801284"
+          ],
+          "previousLat": 41.898822,
+          "previousLon": 2.281831,
+          "currentLat": 41.898814,
+          "currentLon": 2.281825
+        },
+        {
+          "id": 990,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Ullastrell",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B8",
+            "G09",
+            "G18",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "G18",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B20"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0802878"
+          ],
+          "currentCodes": [
+            "0802878"
+          ],
+          "previousLat": 41.529064,
+          "previousLon": 1.983506,
+          "currentLat": 41.529064,
+          "currentLon": 1.983506
+        },
+        {
+          "id": 2006,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Coruña, A",
+          "direccion": "Bergondo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "G09",
+            "N28",
+            "N3",
+            "N78"
+          ],
+          "addedBands": [
+            "G09",
+            "N3"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "GALR1053A"
+          ],
+          "currentCodes": [
+            "GALR1053A"
+          ],
+          "previousLat": 43.325389,
+          "previousLon": -8.238778,
+          "currentLat": 43.325389,
+          "currentLon": -8.238778
+        },
+        {
+          "id": 2514,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Girona",
+          "direccion": "Jonquera, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B7"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1700413"
+          ],
+          "currentCodes": [
+            "1700413"
+          ],
+          "previousLat": 42.402475,
+          "previousLon": 2.881506,
+          "currentLat": 42.402475,
+          "currentLon": 2.881506
+        },
+        {
+          "id": 2911,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Guadalajara",
+          "direccion": "Alaminos",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1900047"
+          ],
+          "currentCodes": [
+            "1900047"
+          ],
+          "previousLat": 40.860547,
+          "previousLon": -2.726308,
+          "currentLat": 40.860547,
+          "currentLon": -2.726308
+        },
+        {
+          "id": 2973,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Larraul",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2000226"
+          ],
+          "currentCodes": [
+            "2000226"
+          ],
+          "previousLat": 43.190789,
+          "previousLon": -2.099742,
+          "currentLat": 43.190789,
+          "currentLon": -2.099742
+        },
+        {
+          "id": 4269,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Málaga",
+          "direccion": "Almáchar",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2900189"
+          ],
+          "currentCodes": [
+            "2900189"
+          ],
+          "previousLat": 36.806244,
+          "previousLon": -4.212808,
+          "currentLat": 36.806244,
+          "currentLon": -4.212808
+        },
+        {
+          "id": 4422,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Basaburua",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100510"
+          ],
+          "currentCodes": [
+            "3100510"
+          ],
+          "previousLat": 43.015,
+          "previousLon": -1.808564,
+          "currentLat": 43.015,
+          "currentLon": -1.808564
+        },
+        {
+          "id": 4436,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Cascante",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100077"
+          ],
+          "currentCodes": [
+            "3100077"
+          ],
+          "previousLat": 41.997267,
+          "previousLon": -1.682219,
+          "currentLat": 41.997267,
+          "currentLon": -1.682219
+        },
+        {
+          "id": 4442,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Berrioplano/Berriobeiti",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100976"
+          ],
+          "currentCodes": [
+            "3100976"
+          ],
+          "previousLat": 42.834917,
+          "previousLon": -1.653125,
+          "currentLat": 42.834917,
+          "currentLon": -1.653125
+        },
+        {
+          "id": 4545,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Cortes",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100249"
+          ],
+          "currentCodes": [
+            "3100249"
+          ],
+          "previousLat": 41.921161,
+          "previousLon": -1.420322,
+          "currentLat": 41.921161,
+          "currentLon": -1.420322
+        },
+        {
+          "id": 4564,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Huarte/Uharte",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100231"
+          ],
+          "currentCodes": [
+            "3100231"
+          ],
+          "previousLat": 42.833125,
+          "previousLon": -1.596358,
+          "currentLat": 42.833125,
+          "currentLon": -1.596358
+        },
+        {
+          "id": 6497,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Toledo",
+          "direccion": "Sevilleja de la Jara",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4500973"
+          ],
+          "currentCodes": [
+            "4500973"
+          ],
+          "previousLat": 39.458578,
+          "previousLon": -4.977275,
+          "currentLat": 39.458578,
+          "currentLon": -4.977275
+        },
+        {
+          "id": 7555,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "08_08116_002347",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0800339"
+          ],
+          "currentCodes": [
+            "0800339"
+          ],
+          "previousLat": 41.980381,
+          "previousLon": 2.362119,
+          "currentLat": 41.980114,
+          "currentLon": 2.362197
+        },
+        {
+          "id": 7692,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "13_13084_000443",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1300171"
+          ],
+          "currentCodes": [
+            "1300171"
+          ],
+          "previousLat": 38.505789,
+          "previousLon": -3.361361,
+          "currentLat": 38.505789,
+          "currentLon": -3.361361
+        },
+        {
+          "id": 8237,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Lleida",
+          "direccion": "25_25151_000436",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2500650"
+          ],
+          "currentCodes": [
+            "2500650"
+          ],
+          "previousLat": 41.980397,
+          "previousLon": 1.554317,
+          "currentLat": 41.980397,
+          "currentLon": 1.554317
+        },
+        {
+          "id": 8267,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Rioja, La",
+          "direccion": "26_26091_000277",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2600134"
+          ],
+          "currentCodes": [
+            "2600134"
+          ],
+          "previousLat": 42.093778,
+          "previousLon": -2.578167,
+          "currentLat": 42.093778,
+          "currentLon": -2.578167
+        },
+        {
+          "id": 8712,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Palmas, Las",
+          "direccion": "35_35033_001016",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3501370"
+          ],
+          "currentCodes": [
+            "3501370"
+          ],
+          "previousLat": 28.004314,
+          "previousLon": -15.575203,
+          "currentLat": 28.004314,
+          "currentLon": -15.575203
+        },
+        {
+          "id": 8961,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cantabria",
+          "direccion": "39_39015_000057",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3900267"
+          ],
+          "currentCodes": [
+            "3900267"
+          ],
+          "previousLat": 43.109644,
+          "previousLon": -4.728514,
+          "currentLat": 43.109644,
+          "currentLon": -4.728514
+        },
+        {
+          "id": 8963,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cantabria",
+          "direccion": "39_39096_000628",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3900447"
+          ],
+          "currentCodes": [
+            "3900447"
+          ],
+          "previousLat": 43.057108,
+          "previousLon": -4.638853,
+          "currentLat": 43.057108,
+          "currentLon": -4.638853
+        },
+        {
+          "id": 9074,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "43_43162_000654",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4300019"
+          ],
+          "currentCodes": [
+            "4300019"
+          ],
+          "previousLat": 41.007861,
+          "previousLon": 0.800306,
+          "currentLat": 41.007861,
+          "currentLon": 0.800306
+        },
+        {
+          "id": 9093,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "43_43003_000004",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4300834"
+          ],
+          "currentCodes": [
+            "4300834"
+          ],
+          "previousLat": 41.250992,
+          "previousLon": 1.089228,
+          "currentLat": 41.250992,
+          "currentLon": 1.089228
+        },
+        {
+          "id": 9095,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "43_43001_000001",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4300199"
+          ],
+          "currentCodes": [
+            "4300199"
+          ],
+          "previousLat": 41.337664,
+          "previousLon": 1.356325,
+          "currentLat": 41.337664,
+          "currentLon": 1.356325
+        },
+        {
+          "id": 9129,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "44_44160_000267",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400110"
+          ],
+          "currentCodes": [
+            "4400110"
+          ],
+          "previousLat": 40.354319,
+          "previousLon": -0.4656,
+          "currentLat": 40.354344,
+          "currentLon": -0.465583
+        },
+        {
+          "id": 9138,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "44_01546_000505",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400041"
+          ],
+          "currentCodes": [
+            "4400041"
+          ],
+          "previousLat": 40.788356,
+          "previousLon": -0.036572,
+          "currentLat": 40.787806,
+          "currentLon": -0.037083
+        },
+        {
+          "id": 9269,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "50_50200_000421",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "5000315"
+          ],
+          "currentCodes": [
+            "5000315"
+          ],
+          "previousLat": 41.276139,
+          "previousLon": -1.211619,
+          "currentLat": 41.276108,
+          "currentLon": -1.211639
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-23T09:23:22.620Z",
       "previousSnapshotAt": "2026-09-22T09:22:33.091Z",
@@ -144501,6 +145725,1246 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 157,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Albacete",
+      "direccion": "Casas-Ibáñez",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0200070"
+      ],
+      "currentCodes": [
+        "0200070"
+      ],
+      "previousLat": 39.28925,
+      "previousLon": -1.473069,
+      "currentLat": 39.28925,
+      "currentLon": -1.473069
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 560,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Ribera del Fresno",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0600126"
+      ],
+      "currentCodes": [
+        "0600126"
+      ],
+      "previousLat": 38.551053,
+      "previousLon": -6.231783,
+      "currentLat": 38.551053,
+      "currentLon": -6.231783
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 566,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Segura de León",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0600130"
+      ],
+      "currentCodes": [
+        "0600130"
+      ],
+      "previousLat": 38.118181,
+      "previousLon": -6.5271,
+      "currentLat": 38.118181,
+      "currentLon": -6.5271
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 847,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Monistrol de Calders",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0800847"
+      ],
+      "currentCodes": [
+        "0800847"
+      ],
+      "previousLat": 41.760114,
+      "previousLon": 2.020622,
+      "currentLat": 41.760083,
+      "currentLon": 2.020653
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 859,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Vilassar de Dalt",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0805270"
+      ],
+      "currentCodes": [
+        "0805270"
+      ],
+      "previousLat": 41.514703,
+      "previousLon": 2.361636,
+      "currentLat": 41.514703,
+      "currentLon": 2.361636
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 872,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Santa Eugènia de Berga",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0801284"
+      ],
+      "currentCodes": [
+        "0801284"
+      ],
+      "previousLat": 41.898822,
+      "previousLon": 2.281831,
+      "currentLat": 41.898814,
+      "currentLon": 2.281825
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 990,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Ullastrell",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B8",
+        "G09",
+        "G18",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "G18",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B20"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0802878"
+      ],
+      "currentCodes": [
+        "0802878"
+      ],
+      "previousLat": 41.529064,
+      "previousLon": 1.983506,
+      "currentLat": 41.529064,
+      "currentLon": 1.983506
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 2006,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Coruña, A",
+      "direccion": "Bergondo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "G09",
+        "N28",
+        "N3",
+        "N78"
+      ],
+      "addedBands": [
+        "G09",
+        "N3"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "GALR1053A"
+      ],
+      "currentCodes": [
+        "GALR1053A"
+      ],
+      "previousLat": 43.325389,
+      "previousLon": -8.238778,
+      "currentLat": 43.325389,
+      "currentLon": -8.238778
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 2514,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Girona",
+      "direccion": "Jonquera, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B7"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1700413"
+      ],
+      "currentCodes": [
+        "1700413"
+      ],
+      "previousLat": 42.402475,
+      "previousLon": 2.881506,
+      "currentLat": 42.402475,
+      "currentLon": 2.881506
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 2911,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Guadalajara",
+      "direccion": "Alaminos",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1900047"
+      ],
+      "currentCodes": [
+        "1900047"
+      ],
+      "previousLat": 40.860547,
+      "previousLon": -2.726308,
+      "currentLat": 40.860547,
+      "currentLon": -2.726308
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 2973,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Gipuzkoa",
+      "direccion": "Larraul",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2000226"
+      ],
+      "currentCodes": [
+        "2000226"
+      ],
+      "previousLat": 43.190789,
+      "previousLon": -2.099742,
+      "currentLat": 43.190789,
+      "currentLon": -2.099742
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 4269,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Málaga",
+      "direccion": "Almáchar",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2900189"
+      ],
+      "currentCodes": [
+        "2900189"
+      ],
+      "previousLat": 36.806244,
+      "previousLon": -4.212808,
+      "currentLat": 36.806244,
+      "currentLon": -4.212808
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 4422,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Basaburua",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100510"
+      ],
+      "currentCodes": [
+        "3100510"
+      ],
+      "previousLat": 43.015,
+      "previousLon": -1.808564,
+      "currentLat": 43.015,
+      "currentLon": -1.808564
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 4436,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Cascante",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100077"
+      ],
+      "currentCodes": [
+        "3100077"
+      ],
+      "previousLat": 41.997267,
+      "previousLon": -1.682219,
+      "currentLat": 41.997267,
+      "currentLon": -1.682219
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 4442,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Berrioplano/Berriobeiti",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100976"
+      ],
+      "currentCodes": [
+        "3100976"
+      ],
+      "previousLat": 42.834917,
+      "previousLon": -1.653125,
+      "currentLat": 42.834917,
+      "currentLon": -1.653125
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 4545,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Cortes",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100249"
+      ],
+      "currentCodes": [
+        "3100249"
+      ],
+      "previousLat": 41.921161,
+      "previousLon": -1.420322,
+      "currentLat": 41.921161,
+      "currentLon": -1.420322
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 4564,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Huarte/Uharte",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100231"
+      ],
+      "currentCodes": [
+        "3100231"
+      ],
+      "previousLat": 42.833125,
+      "previousLon": -1.596358,
+      "currentLat": 42.833125,
+      "currentLon": -1.596358
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 6497,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Toledo",
+      "direccion": "Sevilleja de la Jara",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4500973"
+      ],
+      "currentCodes": [
+        "4500973"
+      ],
+      "previousLat": 39.458578,
+      "previousLon": -4.977275,
+      "currentLat": 39.458578,
+      "currentLon": -4.977275
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 7555,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "08_08116_002347",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0800339"
+      ],
+      "currentCodes": [
+        "0800339"
+      ],
+      "previousLat": 41.980381,
+      "previousLon": 2.362119,
+      "currentLat": 41.980114,
+      "currentLon": 2.362197
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 7692,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ciudad Real",
+      "direccion": "13_13084_000443",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1300171"
+      ],
+      "currentCodes": [
+        "1300171"
+      ],
+      "previousLat": 38.505789,
+      "previousLon": -3.361361,
+      "currentLat": 38.505789,
+      "currentLon": -3.361361
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 8237,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Lleida",
+      "direccion": "25_25151_000436",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2500650"
+      ],
+      "currentCodes": [
+        "2500650"
+      ],
+      "previousLat": 41.980397,
+      "previousLon": 1.554317,
+      "currentLat": 41.980397,
+      "currentLon": 1.554317
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 8267,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Rioja, La",
+      "direccion": "26_26091_000277",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2600134"
+      ],
+      "currentCodes": [
+        "2600134"
+      ],
+      "previousLat": 42.093778,
+      "previousLon": -2.578167,
+      "currentLat": 42.093778,
+      "currentLon": -2.578167
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 8712,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Palmas, Las",
+      "direccion": "35_35033_001016",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3501370"
+      ],
+      "currentCodes": [
+        "3501370"
+      ],
+      "previousLat": 28.004314,
+      "previousLon": -15.575203,
+      "currentLat": 28.004314,
+      "currentLon": -15.575203
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 8961,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Cantabria",
+      "direccion": "39_39015_000057",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3900267"
+      ],
+      "currentCodes": [
+        "3900267"
+      ],
+      "previousLat": 43.109644,
+      "previousLon": -4.728514,
+      "currentLat": 43.109644,
+      "currentLon": -4.728514
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 8963,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Cantabria",
+      "direccion": "39_39096_000628",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3900447"
+      ],
+      "currentCodes": [
+        "3900447"
+      ],
+      "previousLat": 43.057108,
+      "previousLon": -4.638853,
+      "currentLat": 43.057108,
+      "currentLon": -4.638853
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 9074,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Tarragona",
+      "direccion": "43_43162_000654",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4300019"
+      ],
+      "currentCodes": [
+        "4300019"
+      ],
+      "previousLat": 41.007861,
+      "previousLon": 0.800306,
+      "currentLat": 41.007861,
+      "currentLon": 0.800306
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 9093,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Tarragona",
+      "direccion": "43_43003_000004",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4300834"
+      ],
+      "currentCodes": [
+        "4300834"
+      ],
+      "previousLat": 41.250992,
+      "previousLon": 1.089228,
+      "currentLat": 41.250992,
+      "currentLon": 1.089228
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 9095,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Tarragona",
+      "direccion": "43_43001_000001",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4300199"
+      ],
+      "currentCodes": [
+        "4300199"
+      ],
+      "previousLat": 41.337664,
+      "previousLon": 1.356325,
+      "currentLat": 41.337664,
+      "currentLon": 1.356325
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 9129,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "44_44160_000267",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400110"
+      ],
+      "currentCodes": [
+        "4400110"
+      ],
+      "previousLat": 40.354319,
+      "previousLon": -0.4656,
+      "currentLat": 40.354344,
+      "currentLon": -0.465583
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 9138,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "44_01546_000505",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400041"
+      ],
+      "currentCodes": [
+        "4400041"
+      ],
+      "previousLat": 40.788356,
+      "previousLon": -0.036572,
+      "currentLat": 40.787806,
+      "currentLon": -0.037083
+    },
+    {
+      "generatedAt": "2026-09-24T09:23:31.838Z",
+      "id": 9269,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "50_50200_000421",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "5000315"
+      ],
+      "currentCodes": [
+        "5000315"
+      ],
+      "previousLat": 41.276139,
+      "previousLon": -1.211619,
+      "currentLat": 41.276108,
+      "currentLon": -1.211639
+    },
     {
       "generatedAt": "2026-09-22T09:22:33.091Z",
       "id": 1789,
