@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T09:23:31.838Z",
+  "updatedAt": "2026-09-25T09:41:19.280Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,118 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-25T09:41:19.280Z",
+      "previousSnapshotAt": "2026-09-24T09:23:31.838Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 6,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 2975,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Zaldibia",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78+",
+            "B8",
+            "B20",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "2000097"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 43.035978,
+          "currentLon": -2.145347
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 2006,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Coruña, A",
+          "direccion": "Bergondo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28",
+            "N3",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N3",
+            "N78"
+          ],
+          "addedBands": [
+            "B20"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "GALR1053A"
+          ],
+          "currentCodes": [
+            "GALR1053A"
+          ],
+          "previousLat": 43.325389,
+          "previousLon": -8.238778,
+          "currentLat": 43.325389,
+          "currentLon": -8.238778
+        },
+        {
+          "id": 2975,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Zaldibia",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "2000097"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 43.035978,
+          "currentLon": -2.145347
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-24T09:23:31.838Z",
       "previousSnapshotAt": "2026-09-23T09:23:22.620Z",
@@ -145725,6 +145837,79 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-25T09:41:19.280Z",
+      "id": 2006,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Coruña, A",
+      "direccion": "Bergondo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28",
+        "N3",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N3",
+        "N78"
+      ],
+      "addedBands": [
+        "B20"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "GALR1053A"
+      ],
+      "currentCodes": [
+        "GALR1053A"
+      ],
+      "previousLat": 43.325389,
+      "previousLon": -8.238778,
+      "currentLat": 43.325389,
+      "currentLon": -8.238778
+    },
+    {
+      "generatedAt": "2026-09-25T09:41:19.280Z",
+      "id": 2975,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Gipuzkoa",
+      "direccion": "Zaldibia",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "2000097"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 43.035978,
+      "currentLon": -2.145347
+    },
     {
       "generatedAt": "2026-09-24T09:23:31.838Z",
       "id": 157,
