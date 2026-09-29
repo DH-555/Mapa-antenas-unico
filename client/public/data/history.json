@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T11:03:48.318Z",
+  "updatedAt": "2026-09-29T10:47:03.920Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,63 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-09-29T10:47:03.920Z",
+      "previousSnapshotAt": "2026-09-28T11:03:48.318Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 1,
+        "totalBandsRemoved": 1
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 2698,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Granada",
+          "direccion": "Arenas del Rey",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "N1"
+          ],
+          "previousCodes": [
+            "ANDR5674A"
+          ],
+          "currentCodes": [
+            "ANDR5674A"
+          ],
+          "previousLat": 36.955822,
+          "previousLon": -3.860592,
+          "currentLat": 36.955822,
+          "currentLon": -3.860592
+        }
+      ]
+    },
     {
       "generatedAt": "2026-09-28T11:03:48.318Z",
       "previousSnapshotAt": "2026-09-27T10:05:07.024Z",
@@ -145879,6 +145936,49 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-09-29T10:47:03.920Z",
+      "id": 2698,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Granada",
+      "direccion": "Arenas del Rey",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "N1"
+      ],
+      "previousCodes": [
+        "ANDR5674A"
+      ],
+      "currentCodes": [
+        "ANDR5674A"
+      ],
+      "previousLat": 36.955822,
+      "previousLon": -3.860592,
+      "currentLat": 36.955822,
+      "currentLon": -3.860592
+    },
     {
       "generatedAt": "2026-09-25T09:41:19.280Z",
       "id": 2006,
