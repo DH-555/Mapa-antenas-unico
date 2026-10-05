@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T10:39:34.478Z",
+  "updatedAt": "2026-10-05T11:39:50.046Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,62 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-05T11:39:50.046Z",
+      "previousSnapshotAt": "2026-10-04T10:39:34.478Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 1,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 7958,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "Granada",
+          "direccion": "18_18115_000607",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "ANDR6013A"
+          ],
+          "currentCodes": [
+            "ANDR6013A"
+          ],
+          "previousLat": 37.188667,
+          "previousLon": -3.828333,
+          "currentLat": 37.188667,
+          "currentLon": -3.828333
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-04T10:39:34.478Z",
       "previousSnapshotAt": "2026-10-03T09:56:20.947Z",
@@ -146470,6 +146526,48 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-05T11:39:50.046Z",
+      "id": 7958,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "Granada",
+      "direccion": "18_18115_000607",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "ANDR6013A"
+      ],
+      "currentCodes": [
+        "ANDR6013A"
+      ],
+      "previousLat": 37.188667,
+      "previousLon": -3.828333,
+      "currentLat": 37.188667,
+      "currentLon": -3.828333
+    },
     {
       "generatedAt": "2026-10-03T09:56:20.947Z",
       "id": 56,
