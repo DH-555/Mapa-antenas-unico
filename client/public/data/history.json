@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T11:57:11.917Z",
+  "updatedAt": "2026-10-14T09:36:20.648Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,210 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-14T09:36:20.648Z",
+      "previousSnapshotAt": "2026-10-13T11:57:11.917Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 5,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 4513,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Ezcároz/Ezkaroze",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100229"
+          ],
+          "currentCodes": [
+            "3100229"
+          ],
+          "previousLat": 42.890786,
+          "previousLon": -1.101075,
+          "currentLat": 42.890786,
+          "currentLon": -1.101075
+        },
+        {
+          "id": 4527,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Navarra",
+          "direccion": "Guirguillano",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3100655"
+          ],
+          "currentCodes": [
+            "3100655"
+          ],
+          "previousLat": 42.719533,
+          "previousLon": -1.880297,
+          "currentLat": 42.719533,
+          "currentLon": -1.880297
+        },
+        {
+          "id": 5719,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Sevilla",
+          "direccion": "Cuervo de Sevilla, El",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4100489"
+          ],
+          "currentCodes": [
+            "4100489"
+          ],
+          "previousLat": 36.85475,
+          "previousLon": -6.038903,
+          "currentLat": 36.85475,
+          "currentLon": -6.038903
+        },
+        {
+          "id": 8083,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huesca",
+          "direccion": "22_22006_000016",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2200217"
+          ],
+          "currentCodes": [
+            "2200217"
+          ],
+          "previousLat": 42.682561,
+          "previousLon": -0.617239,
+          "currentLat": 42.682561,
+          "currentLon": -0.617239
+        },
+        {
+          "id": 8869,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Santa Cruz de Tenerife",
+          "direccion": "38_38005_000273",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "3800008"
+          ],
+          "currentCodes": [
+            "3800008"
+          ],
+          "previousLat": 28.151889,
+          "previousLon": -16.466861,
+          "currentLat": 28.151889,
+          "currentLon": -16.466861
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-13T11:57:11.917Z",
       "previousSnapshotAt": "2026-10-12T12:12:38.762Z",
@@ -147704,6 +147908,200 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-14T09:36:20.648Z",
+      "id": 4513,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Ezcároz/Ezkaroze",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100229"
+      ],
+      "currentCodes": [
+        "3100229"
+      ],
+      "previousLat": 42.890786,
+      "previousLon": -1.101075,
+      "currentLat": 42.890786,
+      "currentLon": -1.101075
+    },
+    {
+      "generatedAt": "2026-10-14T09:36:20.648Z",
+      "id": 4527,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Navarra",
+      "direccion": "Guirguillano",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3100655"
+      ],
+      "currentCodes": [
+        "3100655"
+      ],
+      "previousLat": 42.719533,
+      "previousLon": -1.880297,
+      "currentLat": 42.719533,
+      "currentLon": -1.880297
+    },
+    {
+      "generatedAt": "2026-10-14T09:36:20.648Z",
+      "id": 5719,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Sevilla",
+      "direccion": "Cuervo de Sevilla, El",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4100489"
+      ],
+      "currentCodes": [
+        "4100489"
+      ],
+      "previousLat": 36.85475,
+      "previousLon": -6.038903,
+      "currentLat": 36.85475,
+      "currentLon": -6.038903
+    },
+    {
+      "generatedAt": "2026-10-14T09:36:20.648Z",
+      "id": 8083,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huesca",
+      "direccion": "22_22006_000016",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2200217"
+      ],
+      "currentCodes": [
+        "2200217"
+      ],
+      "previousLat": 42.682561,
+      "previousLon": -0.617239,
+      "currentLat": 42.682561,
+      "currentLon": -0.617239
+    },
+    {
+      "generatedAt": "2026-10-14T09:36:20.648Z",
+      "id": 8869,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Santa Cruz de Tenerife",
+      "direccion": "38_38005_000273",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "3800008"
+      ],
+      "currentCodes": [
+        "3800008"
+      ],
+      "previousLat": 28.151889,
+      "previousLon": -16.466861,
+      "currentLat": 28.151889,
+      "currentLon": -16.466861
+    },
     {
       "generatedAt": "2026-10-10T10:41:59.233Z",
       "id": 207,
