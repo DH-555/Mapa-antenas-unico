@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T08:39:56.121Z",
+  "generatedAt": "2026-10-18T08:56:21.485Z",
   "source": "https://antenasmoviles.es/v1/show",
   "totalRaw": 59443,
   "total": 59443,
@@ -374524,8 +374524,8 @@
     },
     {
       "id": 23616,
-      "lat": 43.165653,
-      "lon": -2.397833,
+      "lat": 43.165639,
+      "lon": -2.397806,
       "operator": "7",
       "codes": [
         "2000105"
