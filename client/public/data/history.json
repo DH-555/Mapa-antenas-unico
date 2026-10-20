@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T10:03:54.070Z",
+  "updatedAt": "2026-10-20T09:30:56.600Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,191 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-20T09:30:56.600Z",
+      "previousSnapshotAt": "2026-10-19T10:03:54.070Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 8,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 2582,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Granada",
+          "direccion": "Vélez de Benaudalla",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1800082"
+          ],
+          "currentCodes": [
+            "1800082"
+          ],
+          "previousLat": 36.830283,
+          "previousLon": -3.5215,
+          "currentLat": 36.830283,
+          "currentLon": -3.5215
+        },
+        {
+          "id": 4125,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Molar, El",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2804696"
+          ],
+          "currentCodes": [
+            "2804696"
+          ],
+          "previousLat": 40.728961,
+          "previousLon": -3.579597,
+          "currentLat": 40.728881,
+          "currentLon": -3.579597
+        },
+        {
+          "id": 4149,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Ajalvir",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28+",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2803191"
+          ],
+          "currentCodes": [
+            "2803191"
+          ],
+          "previousLat": 40.537747,
+          "previousLon": -3.469728,
+          "currentLat": 40.537761,
+          "currentLon": -3.469725
+        },
+        {
+          "id": 9004,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Sevilla",
+          "direccion": "41_41072_000612",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4103839"
+          ],
+          "currentCodes": [
+            "4103839"
+          ],
+          "previousLat": 37.227556,
+          "previousLon": -4.885569,
+          "currentLat": 37.227556,
+          "currentLon": -4.885569
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-19T10:03:54.070Z",
       "previousSnapshotAt": "2026-10-18T08:56:21.485Z",
@@ -148208,6 +148393,180 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-20T09:30:56.600Z",
+      "id": 2582,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Granada",
+      "direccion": "Vélez de Benaudalla",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1800082"
+      ],
+      "currentCodes": [
+        "1800082"
+      ],
+      "previousLat": 36.830283,
+      "previousLon": -3.5215,
+      "currentLat": 36.830283,
+      "currentLon": -3.5215
+    },
+    {
+      "generatedAt": "2026-10-20T09:30:56.600Z",
+      "id": 4125,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Madrid",
+      "direccion": "Molar, El",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2804696"
+      ],
+      "currentCodes": [
+        "2804696"
+      ],
+      "previousLat": 40.728961,
+      "previousLon": -3.579597,
+      "currentLat": 40.728881,
+      "currentLon": -3.579597
+    },
+    {
+      "generatedAt": "2026-10-20T09:30:56.600Z",
+      "id": 4149,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Madrid",
+      "direccion": "Ajalvir",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28+",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2803191"
+      ],
+      "currentCodes": [
+        "2803191"
+      ],
+      "previousLat": 40.537747,
+      "previousLon": -3.469728,
+      "currentLat": 40.537761,
+      "currentLon": -3.469725
+    },
+    {
+      "generatedAt": "2026-10-20T09:30:56.600Z",
+      "id": 9004,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Sevilla",
+      "direccion": "41_41072_000612",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4103839"
+      ],
+      "currentCodes": [
+        "4103839"
+      ],
+      "previousLat": 37.227556,
+      "previousLon": -4.885569,
+      "currentLat": 37.227556,
+      "currentLon": -4.885569
+    },
     {
       "generatedAt": "2026-10-16T09:07:22.396Z",
       "id": 562,
