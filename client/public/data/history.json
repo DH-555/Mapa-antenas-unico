@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T09:30:56.600Z",
+  "updatedAt": "2026-10-21T09:26:46.670Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,219 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-21T09:26:46.670Z",
+      "previousSnapshotAt": "2026-10-20T09:30:56.600Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 5,
+        "totalBandsAdded": 5,
+        "totalBandsRemoved": 1
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 849,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Súria",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0800173"
+          ],
+          "currentCodes": [
+            "0800173"
+          ],
+          "previousLat": 41.831853,
+          "previousLon": 1.751469,
+          "currentLat": 41.831853,
+          "currentLon": 1.751469
+        },
+        {
+          "id": 1330,
+          "operador": "AVATEL TELECOM S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Torrecilla de los Ángeles",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B1"
+          ],
+          "removedBands": [
+            "N1"
+          ],
+          "previousCodes": [
+            "EXTR6347A"
+          ],
+          "currentCodes": [
+            "EXTR6347A"
+          ],
+          "previousLat": 40.252878,
+          "previousLon": -6.422967,
+          "currentLat": 40.252878,
+          "currentLon": -6.422967
+        },
+        {
+          "id": 2984,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "Lezo",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2000181"
+          ],
+          "currentCodes": [
+            "2000181"
+          ],
+          "previousLat": 43.324014,
+          "previousLon": -1.879972,
+          "currentLat": 43.324014,
+          "currentLon": -1.879972
+        },
+        {
+          "id": 3889,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Rioja, La",
+          "direccion": "Cárdenas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2600089"
+          ],
+          "currentCodes": [
+            "2600089"
+          ],
+          "previousLat": 42.374111,
+          "previousLon": -2.757389,
+          "currentLat": 42.374111,
+          "currentLon": -2.757389
+        },
+        {
+          "id": 4166,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Aldea del Fresno",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2805183"
+          ],
+          "currentCodes": [
+            "2805183"
+          ],
+          "previousLat": 40.316569,
+          "previousLon": -4.204742,
+          "currentLat": 40.316575,
+          "currentLon": -4.204686
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-20T09:30:56.600Z",
       "previousSnapshotAt": "2026-10-19T10:03:54.070Z",
@@ -148393,6 +148606,209 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-21T09:26:46.670Z",
+      "id": 849,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Súria",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0800173"
+      ],
+      "currentCodes": [
+        "0800173"
+      ],
+      "previousLat": 41.831853,
+      "previousLon": 1.751469,
+      "currentLat": 41.831853,
+      "currentLon": 1.751469
+    },
+    {
+      "generatedAt": "2026-10-21T09:26:46.670Z",
+      "id": 1330,
+      "operador": "AVATEL TELECOM S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Torrecilla de los Ángeles",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B1"
+      ],
+      "removedBands": [
+        "N1"
+      ],
+      "previousCodes": [
+        "EXTR6347A"
+      ],
+      "currentCodes": [
+        "EXTR6347A"
+      ],
+      "previousLat": 40.252878,
+      "previousLon": -6.422967,
+      "currentLat": 40.252878,
+      "currentLon": -6.422967
+    },
+    {
+      "generatedAt": "2026-10-21T09:26:46.670Z",
+      "id": 2984,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Gipuzkoa",
+      "direccion": "Lezo",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2000181"
+      ],
+      "currentCodes": [
+        "2000181"
+      ],
+      "previousLat": 43.324014,
+      "previousLon": -1.879972,
+      "currentLat": 43.324014,
+      "currentLon": -1.879972
+    },
+    {
+      "generatedAt": "2026-10-21T09:26:46.670Z",
+      "id": 3889,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Rioja, La",
+      "direccion": "Cárdenas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2600089"
+      ],
+      "currentCodes": [
+        "2600089"
+      ],
+      "previousLat": 42.374111,
+      "previousLon": -2.757389,
+      "currentLat": 42.374111,
+      "currentLon": -2.757389
+    },
+    {
+      "generatedAt": "2026-10-21T09:26:46.670Z",
+      "id": 4166,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Madrid",
+      "direccion": "Aldea del Fresno",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2805183"
+      ],
+      "currentCodes": [
+        "2805183"
+      ],
+      "previousLat": 40.316569,
+      "previousLon": -4.204742,
+      "currentLat": 40.316575,
+      "currentLon": -4.204686
+    },
     {
       "generatedAt": "2026-10-20T09:30:56.600Z",
       "id": 2582,
