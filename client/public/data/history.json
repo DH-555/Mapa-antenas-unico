@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T09:26:04.546Z",
+  "updatedAt": "2026-10-24T08:57:22.416Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,20 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-24T08:57:22.416Z",
+      "previousSnapshotAt": "2026-10-23T09:26:04.546Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 0,
+        "totalBandsAdded": 0,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": []
+    },
     {
       "generatedAt": "2026-10-23T09:26:04.546Z",
       "previousSnapshotAt": "2026-10-22T09:29:53.205Z",
