@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T08:57:22.416Z",
+  "generatedAt": "2026-10-25T09:14:33.231Z",
   "source": "https://antenasmoviles.es/v1/show",
   "totalRaw": 59478,
   "total": 59478,
@@ -701491,8 +701491,8 @@
     },
     {
       "id": 43934,
-      "lat": 41.643128,
-      "lon": -0.889728,
+      "lat": 41.643083,
+      "lon": -0.889806,
       "operator": "3",
       "codes": [
         "ARAR0014A"
