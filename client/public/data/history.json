@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T10:18:33.799Z",
+  "updatedAt": "2026-10-27T09:54:10.057Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,132 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-27T09:54:10.057Z",
+      "previousSnapshotAt": "2026-10-26T10:18:33.799Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 0,
+        "lost": 1,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 2,
+        "totalBandsRemoved": 3
+      },
+      "changes": [
+        {
+          "id": 7283,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Pintanos, Los",
+          "change": "deja_de_declarar",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "previousBands": [
+            "N78+",
+            "B8",
+            "N28",
+            "G09"
+          ],
+          "currentBands": [
+            "B20",
+            "G09"
+          ],
+          "previousCodes": [
+            "5002004"
+          ],
+          "currentCodes": [
+            "3100300"
+          ],
+          "previousLat": 42.544431,
+          "previousLon": -0.966675,
+          "currentLat": 42.544444,
+          "currentLon": -0.966667
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 1668,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "Pedro Muñoz",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1300057"
+          ],
+          "currentCodes": [
+            "1300057"
+          ],
+          "previousLat": 39.401761,
+          "previousLon": -2.939928,
+          "currentLat": 39.401761,
+          "currentLon": -2.939928
+        },
+        {
+          "id": 7283,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Pintanos, Los",
+          "fromDeclared": true,
+          "toDeclared": false,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "G09"
+          ],
+          "addedBands": [
+            "B20"
+          ],
+          "removedBands": [
+            "B8",
+            "N28",
+            "N78+"
+          ],
+          "previousCodes": [
+            "5002004"
+          ],
+          "currentCodes": [
+            "3100300"
+          ],
+          "previousLat": 42.544431,
+          "previousLon": -0.966675,
+          "currentLat": 42.544444,
+          "currentLon": -0.966667
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-26T10:18:33.799Z",
       "previousSnapshotAt": "2026-10-25T09:14:33.231Z",
@@ -149223,6 +149349,89 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-27T09:54:10.057Z",
+      "id": 1668,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ciudad Real",
+      "direccion": "Pedro Muñoz",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1300057"
+      ],
+      "currentCodes": [
+        "1300057"
+      ],
+      "previousLat": 39.401761,
+      "previousLon": -2.939928,
+      "currentLat": 39.401761,
+      "currentLon": -2.939928
+    },
+    {
+      "generatedAt": "2026-10-27T09:54:10.057Z",
+      "id": 7283,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Pintanos, Los",
+      "fromDeclared": true,
+      "toDeclared": false,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "G09"
+      ],
+      "addedBands": [
+        "B20"
+      ],
+      "removedBands": [
+        "B8",
+        "N28",
+        "N78+"
+      ],
+      "previousCodes": [
+        "5002004"
+      ],
+      "currentCodes": [
+        "3100300"
+      ],
+      "previousLat": 42.544431,
+      "previousLon": -0.966675,
+      "currentLat": 42.544444,
+      "currentLon": -0.966667
+    },
     {
       "generatedAt": "2026-10-26T10:18:33.799Z",
       "id": 2233,
