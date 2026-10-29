@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T10:41:14.942Z",
+  "updatedAt": "2026-10-29T10:58:12.403Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,66 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-29T10:58:12.403Z",
+      "previousSnapshotAt": "2026-10-28T10:41:14.942Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 1,
+        "totalBandsAdded": 1,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 4186,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Madrid",
+          "direccion": "Álamo, El",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B7",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2803767"
+          ],
+          "currentCodes": [
+            "2803767"
+          ],
+          "previousLat": 40.228628,
+          "previousLon": -3.996908,
+          "currentLat": 40.228628,
+          "currentLon": -3.996908
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-28T10:41:14.942Z",
       "previousSnapshotAt": "2026-10-27T09:54:10.057Z",
@@ -149778,6 +149838,52 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-29T10:58:12.403Z",
+      "id": 4186,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Madrid",
+      "direccion": "Álamo, El",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B7",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2803767"
+      ],
+      "currentCodes": [
+        "2803767"
+      ],
+      "previousLat": 40.228628,
+      "previousLon": -3.996908,
+      "currentLat": 40.228628,
+      "currentLon": -3.996908
+    },
     {
       "generatedAt": "2026-10-28T10:41:14.942Z",
       "id": 92,
