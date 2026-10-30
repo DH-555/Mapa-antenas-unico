@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T10:58:12.403Z",
+  "updatedAt": "2026-10-30T10:56:05.666Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,171 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-30T10:56:05.666Z",
+      "previousSnapshotAt": "2026-10-29T10:58:12.403Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 5,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 571,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Badajoz",
+          "direccion": "San Vicente de Alcántara",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0600581"
+          ],
+          "currentCodes": [
+            "0600581"
+          ],
+          "previousLat": 39.358456,
+          "previousLon": -7.140517,
+          "currentLat": 39.358456,
+          "currentLon": -7.140517
+        },
+        {
+          "id": 3243,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huesca",
+          "direccion": "Laspaúles",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B20",
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2200162"
+          ],
+          "currentCodes": [
+            "2200162"
+          ],
+          "previousLat": 42.447417,
+          "previousLon": 0.577667,
+          "currentLat": 42.447417,
+          "currentLon": 0.577667
+        },
+        {
+          "id": 6112,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Tarragona",
+          "direccion": "Benifallet",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B20"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4300120"
+          ],
+          "currentCodes": [
+            "4300120"
+          ],
+          "previousLat": 40.977589,
+          "previousLon": 0.516694,
+          "currentLat": 40.977589,
+          "currentLon": 0.516694
+        },
+        {
+          "id": 8036,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Gipuzkoa",
+          "direccion": "20_20035_000292",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2000442"
+          ],
+          "currentCodes": [
+            "2000442"
+          ],
+          "previousLat": 43.079678,
+          "previousLon": -2.2964,
+          "currentLat": 43.079661,
+          "currentLon": -2.296381
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-29T10:58:12.403Z",
       "previousSnapshotAt": "2026-10-28T10:41:14.942Z",
@@ -149838,6 +150003,160 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-30T10:56:05.666Z",
+      "id": 571,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Badajoz",
+      "direccion": "San Vicente de Alcántara",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0600581"
+      ],
+      "currentCodes": [
+        "0600581"
+      ],
+      "previousLat": 39.358456,
+      "previousLon": -7.140517,
+      "currentLat": 39.358456,
+      "currentLon": -7.140517
+    },
+    {
+      "generatedAt": "2026-10-30T10:56:05.666Z",
+      "id": 3243,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huesca",
+      "direccion": "Laspaúles",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B20",
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2200162"
+      ],
+      "currentCodes": [
+        "2200162"
+      ],
+      "previousLat": 42.447417,
+      "previousLon": 0.577667,
+      "currentLat": 42.447417,
+      "currentLon": 0.577667
+    },
+    {
+      "generatedAt": "2026-10-30T10:56:05.666Z",
+      "id": 6112,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Tarragona",
+      "direccion": "Benifallet",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B20"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4300120"
+      ],
+      "currentCodes": [
+        "4300120"
+      ],
+      "previousLat": 40.977589,
+      "previousLon": 0.516694,
+      "currentLat": 40.977589,
+      "currentLon": 0.516694
+    },
+    {
+      "generatedAt": "2026-10-30T10:56:05.666Z",
+      "id": 8036,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Gipuzkoa",
+      "direccion": "20_20035_000292",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2000442"
+      ],
+      "currentCodes": [
+        "2000442"
+      ],
+      "previousLat": 43.079678,
+      "previousLon": -2.2964,
+      "currentLat": 43.079661,
+      "currentLon": -2.296381
+    },
     {
       "generatedAt": "2026-10-29T10:58:12.403Z",
       "id": 4186,
