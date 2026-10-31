@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T10:56:05.666Z",
+  "updatedAt": "2026-10-31T10:28:26.094Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,182 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-10-31T10:28:26.094Z",
+      "previousSnapshotAt": "2026-10-30T10:56:05.666Z",
+      "summary": {
+        "totalChanges": 2,
+        "gained": 2,
+        "lost": 0,
+        "totalBandChangeSites": 3,
+        "totalBandsAdded": 4,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 3249,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huesca",
+          "direccion": "Tamarite de Litera",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "N28",
+            "G09"
+          ],
+          "previousCodes": [
+            "2200058"
+          ],
+          "currentCodes": [
+            "2200058"
+          ],
+          "previousLat": 41.717303,
+          "previousLon": 0.3565,
+          "currentLat": 41.717303,
+          "currentLon": 0.3565
+        },
+        {
+          "id": 9141,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "44_44105_000184",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "N78+",
+            "B20",
+            "G09"
+          ],
+          "previousCodes": [
+            "4400311"
+          ],
+          "currentCodes": [
+            "4400311"
+          ],
+          "previousLat": 40.889956,
+          "previousLon": -0.004986,
+          "currentLat": 40.889956,
+          "currentLon": -0.004986
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 974,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Masquefa",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0804682"
+          ],
+          "currentCodes": [
+            "0804682"
+          ],
+          "previousLat": 41.501819,
+          "previousLon": 1.827319,
+          "currentLat": 41.501553,
+          "currentLon": 1.827547
+        },
+        {
+          "id": 3249,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huesca",
+          "direccion": "Tamarite de Litera",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N28",
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2200058"
+          ],
+          "currentCodes": [
+            "2200058"
+          ],
+          "previousLat": 41.717303,
+          "previousLon": 0.3565,
+          "currentLat": 41.717303,
+          "currentLon": 0.3565
+        },
+        {
+          "id": 9141,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Teruel",
+          "direccion": "44_44105_000184",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N78+"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "4400311"
+          ],
+          "currentCodes": [
+            "4400311"
+          ],
+          "previousLat": 40.889956,
+          "previousLon": -0.004986,
+          "currentLat": 40.889956,
+          "currentLon": -0.004986
+        }
+      ]
+    },
     {
       "generatedAt": "2026-10-30T10:56:05.666Z",
       "previousSnapshotAt": "2026-10-29T10:58:12.403Z",
@@ -150003,6 +150179,114 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-10-31T10:28:26.094Z",
+      "id": 974,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Masquefa",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0804682"
+      ],
+      "currentCodes": [
+        "0804682"
+      ],
+      "previousLat": 41.501819,
+      "previousLon": 1.827319,
+      "currentLat": 41.501553,
+      "currentLon": 1.827547
+    },
+    {
+      "generatedAt": "2026-10-31T10:28:26.094Z",
+      "id": 3249,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huesca",
+      "direccion": "Tamarite de Litera",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09"
+      ],
+      "currentBands": [
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N28",
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2200058"
+      ],
+      "currentCodes": [
+        "2200058"
+      ],
+      "previousLat": 41.717303,
+      "previousLon": 0.3565,
+      "currentLat": 41.717303,
+      "currentLon": 0.3565
+    },
+    {
+      "generatedAt": "2026-10-31T10:28:26.094Z",
+      "id": 9141,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Teruel",
+      "direccion": "44_44105_000184",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N78+"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "4400311"
+      ],
+      "currentCodes": [
+        "4400311"
+      ],
+      "previousLat": 40.889956,
+      "previousLon": -0.004986,
+      "currentLat": 40.889956,
+      "currentLon": -0.004986
+    },
     {
       "generatedAt": "2026-10-30T10:56:05.666Z",
       "id": 571,
