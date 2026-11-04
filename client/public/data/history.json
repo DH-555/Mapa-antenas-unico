@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T12:05:32.628Z",
+  "updatedAt": "2026-11-04T12:18:47.403Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,206 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-11-04T12:18:47.403Z",
+      "previousSnapshotAt": "2026-11-03T12:05:32.628Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 6,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 512,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Ávila",
+          "direccion": "Barromán",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "N78",
+            "B20",
+            "N28+",
+            "G09"
+          ],
+          "previousCodes": [
+            "144207"
+          ],
+          "currentCodes": [
+            "206296"
+          ],
+          "previousLat": 41.067186,
+          "previousLon": -4.927831,
+          "currentLat": 41.066406,
+          "currentLon": -4.925747
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 512,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Ávila",
+          "direccion": "Barromán",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09"
+          ],
+          "currentBands": [
+            "B20",
+            "G09",
+            "N28+",
+            "N78"
+          ],
+          "addedBands": [
+            "B20",
+            "N28+",
+            "N78"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "144207"
+          ],
+          "currentCodes": [
+            "206296"
+          ],
+          "previousLat": 41.067186,
+          "previousLon": -4.927831,
+          "currentLat": 41.066406,
+          "currentLon": -4.925747
+        },
+        {
+          "id": 2217,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cuenca",
+          "direccion": "Villamayor de Santiago",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1600109"
+          ],
+          "currentCodes": [
+            "1600109"
+          ],
+          "previousLat": 39.729694,
+          "previousLon": -2.917972,
+          "currentLat": 39.729694,
+          "currentLon": -2.917972
+        },
+        {
+          "id": 3177,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huesca",
+          "direccion": "Castigaleu",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2200295"
+          ],
+          "currentCodes": [
+            "2200295"
+          ],
+          "previousLat": 42.198861,
+          "previousLon": 0.568944,
+          "currentLat": 42.198861,
+          "currentLon": 0.568944
+        },
+        {
+          "id": 3306,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Jaén",
+          "direccion": "Mengíbar",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2300078"
+          ],
+          "currentCodes": [
+            "2300078"
+          ],
+          "previousLat": 37.964083,
+          "previousLon": -3.808361,
+          "currentLat": 37.964083,
+          "currentLon": -3.808361
+        }
+      ]
+    },
     {
       "generatedAt": "2026-11-03T12:05:32.628Z",
       "previousSnapshotAt": "2026-11-02T12:40:10.017Z",
@@ -150732,6 +150932,166 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-11-04T12:18:47.403Z",
+      "id": 512,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Ávila",
+      "direccion": "Barromán",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09"
+      ],
+      "currentBands": [
+        "B20",
+        "G09",
+        "N28+",
+        "N78"
+      ],
+      "addedBands": [
+        "B20",
+        "N28+",
+        "N78"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "144207"
+      ],
+      "currentCodes": [
+        "206296"
+      ],
+      "previousLat": 41.067186,
+      "previousLon": -4.927831,
+      "currentLat": 41.066406,
+      "currentLon": -4.925747
+    },
+    {
+      "generatedAt": "2026-11-04T12:18:47.403Z",
+      "id": 2217,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Cuenca",
+      "direccion": "Villamayor de Santiago",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1600109"
+      ],
+      "currentCodes": [
+        "1600109"
+      ],
+      "previousLat": 39.729694,
+      "previousLon": -2.917972,
+      "currentLat": 39.729694,
+      "currentLon": -2.917972
+    },
+    {
+      "generatedAt": "2026-11-04T12:18:47.403Z",
+      "id": 3177,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huesca",
+      "direccion": "Castigaleu",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2200295"
+      ],
+      "currentCodes": [
+        "2200295"
+      ],
+      "previousLat": 42.198861,
+      "previousLon": 0.568944,
+      "currentLat": 42.198861,
+      "currentLon": 0.568944
+    },
+    {
+      "generatedAt": "2026-11-04T12:18:47.403Z",
+      "id": 3306,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Jaén",
+      "direccion": "Mengíbar",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2300078"
+      ],
+      "currentCodes": [
+        "2300078"
+      ],
+      "previousLat": 37.964083,
+      "previousLon": -3.808361,
+      "currentLat": 37.964083,
+      "currentLon": -3.808361
+    },
     {
       "generatedAt": "2026-11-03T12:05:32.628Z",
       "id": 372,
