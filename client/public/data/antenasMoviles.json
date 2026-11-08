@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T11:11:37.692Z",
+  "generatedAt": "2026-11-08T11:23:25.417Z",
   "source": "https://antenasmoviles.es/v1/show",
   "totalRaw": 59415,
   "total": 59415,
@@ -895538,8 +895538,8 @@
     },
     {
       "id": 56242,
-      "lat": 42.804406,
-      "lon": -1.693956,
+      "lat": 42.804286,
+      "lon": -1.694089,
       "operator": "3",
       "codes": [
         "NAVR0161H"
