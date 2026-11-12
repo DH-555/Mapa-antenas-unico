@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T11:58:03.905Z",
+  "updatedAt": "2026-11-12T12:58:16.631Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,99 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-11-12T12:58:16.631Z",
+      "previousSnapshotAt": "2026-11-11T11:58:03.905Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 2,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1463,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cáceres",
+          "direccion": "Monroy",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1000078"
+          ],
+          "currentCodes": [
+            "1000078"
+          ],
+          "previousLat": 39.638394,
+          "previousLon": -6.209125,
+          "currentLat": 39.638394,
+          "currentLon": -6.209125
+        },
+        {
+          "id": 3169,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Huesca",
+          "direccion": "Villanueva de Sigena",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N28+"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2200113"
+          ],
+          "currentCodes": [
+            "2200113"
+          ],
+          "previousLat": 41.716283,
+          "previousLon": -0.020981,
+          "currentLat": 41.716283,
+          "currentLon": -0.020981
+        }
+      ]
+    },
     {
       "generatedAt": "2026-11-11T11:58:03.905Z",
       "previousSnapshotAt": "2026-11-10T12:47:51.658Z",
@@ -151030,6 +151123,86 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-11-12T12:58:16.631Z",
+      "id": 1463,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Cáceres",
+      "direccion": "Monroy",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1000078"
+      ],
+      "currentCodes": [
+        "1000078"
+      ],
+      "previousLat": 39.638394,
+      "previousLon": -6.209125,
+      "currentLat": 39.638394,
+      "currentLon": -6.209125
+    },
+    {
+      "generatedAt": "2026-11-12T12:58:16.631Z",
+      "id": 3169,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Huesca",
+      "direccion": "Villanueva de Sigena",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N28+"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2200113"
+      ],
+      "currentCodes": [
+        "2200113"
+      ],
+      "previousLat": 41.716283,
+      "previousLon": -0.020981,
+      "currentLat": 41.716283,
+      "currentLon": -0.020981
+    },
     {
       "generatedAt": "2026-11-04T12:18:47.403Z",
       "id": 512,
