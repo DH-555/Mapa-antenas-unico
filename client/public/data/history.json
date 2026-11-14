@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T12:23:40.997Z",
+  "updatedAt": "2026-11-14T11:37:30.252Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,391 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "previousSnapshotAt": "2026-11-13T12:23:40.997Z",
+      "summary": {
+        "totalChanges": 1,
+        "gained": 1,
+        "lost": 0,
+        "totalBandChangeSites": 9,
+        "totalBandsAdded": 11,
+        "totalBandsRemoved": 0
+      },
+      "changes": [
+        {
+          "id": 8192,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "24_24024_000077",
+          "change": "declara_ahora",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "previousBands": [],
+          "currentBands": [
+            "N78",
+            "B20",
+            "N28"
+          ],
+          "previousCodes": [],
+          "currentCodes": [
+            "CYLR1431A"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 42.473917,
+          "currentLon": -5.2025
+        }
+      ],
+      "bandChanges": [
+        {
+          "id": 540,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Badajoz",
+          "direccion": "Santos de Maimona, Los",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0600225"
+          ],
+          "currentCodes": [
+            "0600225"
+          ],
+          "previousLat": 38.454031,
+          "previousLon": -6.3675,
+          "currentLat": 38.454028,
+          "currentLon": -6.3675
+        },
+        {
+          "id": 1715,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Ciudad Real",
+          "direccion": "Porzuna",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1300422"
+          ],
+          "currentCodes": [
+            "1300422"
+          ],
+          "previousLat": 39.143569,
+          "previousLon": -4.151517,
+          "currentLat": 39.143569,
+          "currentLon": -4.151517
+        },
+        {
+          "id": 4287,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Málaga",
+          "direccion": "Cuevas de San Marcos",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2900145"
+          ],
+          "currentCodes": [
+            "2900145"
+          ],
+          "previousLat": 37.262608,
+          "previousLon": -4.417247,
+          "currentLat": 37.262608,
+          "currentLon": -4.417247
+        },
+        {
+          "id": 7234,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Sos del Rey Católico",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "5000772"
+          ],
+          "currentCodes": [
+            "5000772"
+          ],
+          "previousLat": 42.435053,
+          "previousLon": -1.311211,
+          "currentLat": 42.435061,
+          "currentLon": -1.311172
+        },
+        {
+          "id": 8009,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Guadalajara",
+          "direccion": "19_19138_000318",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1900086"
+          ],
+          "currentCodes": [
+            "1900086"
+          ],
+          "previousLat": 40.827139,
+          "previousLon": -3.055278,
+          "currentLat": 40.827139,
+          "currentLon": -3.055278
+        },
+        {
+          "id": 8168,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "24_24176_000550",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B20"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "CYLR1407A"
+          ],
+          "currentCodes": [
+            "CYLR1407A"
+          ],
+          "previousLat": 42.328417,
+          "previousLon": -5.832222,
+          "currentLat": 42.328417,
+          "currentLon": -5.832222
+        },
+        {
+          "id": 8174,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "24_24219_000648",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B20"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "CYLR1413A"
+          ],
+          "currentCodes": [
+            "CYLR1413A"
+          ],
+          "previousLat": 42.485361,
+          "previousLon": -6.074917,
+          "currentLat": 42.485361,
+          "currentLon": -6.074917
+        },
+        {
+          "id": 8192,
+          "operador": "ORANGE ESPAGNE S.A.",
+          "provincia": "León",
+          "direccion": "24_24024_000077",
+          "fromDeclared": false,
+          "toDeclared": true,
+          "fromMatched": false,
+          "toMatched": true,
+          "previousBands": [],
+          "currentBands": [
+            "B20",
+            "N28",
+            "N78"
+          ],
+          "addedBands": [
+            "B20",
+            "N28",
+            "N78"
+          ],
+          "removedBands": [],
+          "previousCodes": [],
+          "currentCodes": [
+            "CYLR1431A"
+          ],
+          "previousLat": null,
+          "previousLon": null,
+          "currentLat": 42.473917,
+          "currentLon": -5.2025
+        },
+        {
+          "id": 8218,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Lleida",
+          "direccion": "25_25048_000107",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N1",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "N1"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "2500123"
+          ],
+          "currentCodes": [
+            "2500123"
+          ],
+          "previousLat": 41.631458,
+          "previousLon": 0.774972,
+          "currentLat": 41.631458,
+          "currentLon": 0.774972
+        }
+      ]
+    },
     {
       "generatedAt": "2026-11-13T12:23:40.997Z",
       "previousSnapshotAt": "2026-11-12T12:58:16.631Z",
@@ -151860,6 +152245,361 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 540,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Badajoz",
+      "direccion": "Santos de Maimona, Los",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0600225"
+      ],
+      "currentCodes": [
+        "0600225"
+      ],
+      "previousLat": 38.454031,
+      "previousLon": -6.3675,
+      "currentLat": 38.454028,
+      "currentLon": -6.3675
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 1715,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Ciudad Real",
+      "direccion": "Porzuna",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1300422"
+      ],
+      "currentCodes": [
+        "1300422"
+      ],
+      "previousLat": 39.143569,
+      "previousLon": -4.151517,
+      "currentLat": 39.143569,
+      "currentLon": -4.151517
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 4287,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Málaga",
+      "direccion": "Cuevas de San Marcos",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2900145"
+      ],
+      "currentCodes": [
+        "2900145"
+      ],
+      "previousLat": 37.262608,
+      "previousLon": -4.417247,
+      "currentLat": 37.262608,
+      "currentLon": -4.417247
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 7234,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Sos del Rey Católico",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "5000772"
+      ],
+      "currentCodes": [
+        "5000772"
+      ],
+      "previousLat": 42.435053,
+      "previousLon": -1.311211,
+      "currentLat": 42.435061,
+      "currentLon": -1.311172
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 8009,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Guadalajara",
+      "direccion": "19_19138_000318",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1900086"
+      ],
+      "currentCodes": [
+        "1900086"
+      ],
+      "previousLat": 40.827139,
+      "previousLon": -3.055278,
+      "currentLat": 40.827139,
+      "currentLon": -3.055278
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 8168,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "León",
+      "direccion": "24_24176_000550",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B20"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "CYLR1407A"
+      ],
+      "currentCodes": [
+        "CYLR1407A"
+      ],
+      "previousLat": 42.328417,
+      "previousLon": -5.832222,
+      "currentLat": 42.328417,
+      "currentLon": -5.832222
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 8174,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "León",
+      "direccion": "24_24219_000648",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B20"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "CYLR1413A"
+      ],
+      "currentCodes": [
+        "CYLR1413A"
+      ],
+      "previousLat": 42.485361,
+      "previousLon": -6.074917,
+      "currentLat": 42.485361,
+      "currentLon": -6.074917
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 8192,
+      "operador": "ORANGE ESPAGNE S.A.",
+      "provincia": "León",
+      "direccion": "24_24024_000077",
+      "fromDeclared": false,
+      "toDeclared": true,
+      "fromMatched": false,
+      "toMatched": true,
+      "previousBands": [],
+      "currentBands": [
+        "B20",
+        "N28",
+        "N78"
+      ],
+      "addedBands": [
+        "B20",
+        "N28",
+        "N78"
+      ],
+      "removedBands": [],
+      "previousCodes": [],
+      "currentCodes": [
+        "CYLR1431A"
+      ],
+      "previousLat": null,
+      "previousLon": null,
+      "currentLat": 42.473917,
+      "currentLon": -5.2025
+    },
+    {
+      "generatedAt": "2026-11-14T11:37:30.252Z",
+      "id": 8218,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Lleida",
+      "direccion": "25_25048_000107",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N1",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "N1"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "2500123"
+      ],
+      "currentCodes": [
+        "2500123"
+      ],
+      "previousLat": 41.631458,
+      "previousLon": 0.774972,
+      "currentLat": 41.631458,
+      "currentLon": 0.774972
+    },
     {
       "generatedAt": "2026-11-13T12:23:40.997Z",
       "id": 964,
