@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T13:13:21.513Z",
+  "updatedAt": "2026-11-19T13:33:56.996Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,106 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-11-19T13:33:56.996Z",
+      "previousSnapshotAt": "2026-11-18T13:13:21.513Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 2,
+        "totalBandsAdded": 7,
+        "totalBandsRemoved": 1
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 1541,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Cádiz",
+          "direccion": "Algodonales",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N78+"
+          ],
+          "addedBands": [
+            "N78+"
+          ],
+          "removedBands": [
+            "N78"
+          ],
+          "previousCodes": [
+            "1101779"
+          ],
+          "currentCodes": [
+            "1101779"
+          ],
+          "previousLat": 36.928286,
+          "previousLon": -5.414319,
+          "currentLat": 36.928286,
+          "currentLon": -5.414319
+        },
+        {
+          "id": 2445,
+          "operador": "VODAFONE ESPAÑA S.A.",
+          "provincia": "Girona",
+          "direccion": "Jonquera, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "G09",
+            "N28"
+          ],
+          "currentBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78",
+            "U21"
+          ],
+          "addedBands": [
+            "B1",
+            "B20",
+            "B3",
+            "B8",
+            "N78",
+            "U21"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "480"
+          ],
+          "currentCodes": [
+            "000480",
+            "00480",
+            "480"
+          ],
+          "previousLat": 42.41755,
+          "previousLon": 2.869275,
+          "currentLat": 42.417411,
+          "currentLon": 2.869317
+        }
+      ]
+    },
     {
       "generatedAt": "2026-11-18T13:13:21.513Z",
       "previousSnapshotAt": "2026-11-17T13:39:07.100Z",
@@ -152868,6 +152968,93 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-11-19T13:33:56.996Z",
+      "id": 1541,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Cádiz",
+      "direccion": "Algodonales",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N78+"
+      ],
+      "addedBands": [
+        "N78+"
+      ],
+      "removedBands": [
+        "N78"
+      ],
+      "previousCodes": [
+        "1101779"
+      ],
+      "currentCodes": [
+        "1101779"
+      ],
+      "previousLat": 36.928286,
+      "previousLon": -5.414319,
+      "currentLat": 36.928286,
+      "currentLon": -5.414319
+    },
+    {
+      "generatedAt": "2026-11-19T13:33:56.996Z",
+      "id": 2445,
+      "operador": "VODAFONE ESPAÑA S.A.",
+      "provincia": "Girona",
+      "direccion": "Jonquera, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "G09",
+        "N28"
+      ],
+      "currentBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78",
+        "U21"
+      ],
+      "addedBands": [
+        "B1",
+        "B20",
+        "B3",
+        "B8",
+        "N78",
+        "U21"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "480"
+      ],
+      "currentCodes": [
+        "000480",
+        "00480",
+        "480"
+      ],
+      "previousLat": 42.41755,
+      "previousLon": 2.869275,
+      "currentLat": 42.417411,
+      "currentLon": 2.869317
+    },
     {
       "generatedAt": "2026-11-18T13:13:21.513Z",
       "id": 6240,
