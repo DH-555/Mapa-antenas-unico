@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T14:01:28.694Z",
+  "updatedAt": "2026-11-28T13:19:11.539Z",
   "rules": {
     "requiredBands": [
       "N78",
@@ -11,6 +11,173 @@
     "yoigoAsOrange": true
   },
   "runs": [
+    {
+      "generatedAt": "2026-11-28T13:19:11.539Z",
+      "previousSnapshotAt": "2026-11-27T14:01:28.694Z",
+      "summary": {
+        "totalChanges": 0,
+        "gained": 0,
+        "lost": 0,
+        "totalBandChangeSites": 4,
+        "totalBandsAdded": 4,
+        "totalBandsRemoved": 0
+      },
+      "changes": [],
+      "bandChanges": [
+        {
+          "id": 989,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Barcelona",
+          "direccion": "Pobla de Claramunt, La",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B3",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28",
+            "N78+",
+            "U21"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "0800440"
+          ],
+          "currentCodes": [
+            "0800440"
+          ],
+          "previousLat": 41.562861,
+          "previousLon": 1.677386,
+          "currentLat": 41.562861,
+          "currentLon": 1.677386
+        },
+        {
+          "id": 2899,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Guadalajara",
+          "direccion": "Ciruelas",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "U21"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28",
+            "N28+",
+            "U21"
+          ],
+          "addedBands": [
+            "N28+"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1900396"
+          ],
+          "currentCodes": [
+            "1900396"
+          ],
+          "previousLat": 40.749933,
+          "previousLon": -3.086717,
+          "currentLat": 40.749933,
+          "currentLon": -3.086717
+        },
+        {
+          "id": 2903,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Guadalajara",
+          "direccion": "Valfermoso de Tajuña",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B8"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "1900243"
+          ],
+          "currentCodes": [
+            "1900243"
+          ],
+          "previousLat": 40.616533,
+          "previousLon": -2.946325,
+          "currentLat": 40.616533,
+          "currentLon": -2.946325
+        },
+        {
+          "id": 7207,
+          "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+          "provincia": "Zaragoza",
+          "direccion": "Orera",
+          "fromDeclared": true,
+          "toDeclared": true,
+          "fromMatched": true,
+          "toMatched": true,
+          "previousBands": [
+            "B20",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "currentBands": [
+            "B20",
+            "B3",
+            "B8",
+            "G09",
+            "N28+"
+          ],
+          "addedBands": [
+            "B3"
+          ],
+          "removedBands": [],
+          "previousCodes": [
+            "5000762"
+          ],
+          "currentCodes": [
+            "5000762"
+          ],
+          "previousLat": 41.297725,
+          "previousLon": -1.479169,
+          "currentLat": 41.297736,
+          "currentLon": -1.479189
+        }
+      ]
+    },
     {
       "generatedAt": "2026-11-27T14:01:28.694Z",
       "previousSnapshotAt": "2026-11-26T14:03:13.122Z",
@@ -154485,6 +154652,162 @@
     }
   ],
   "bandChangesLog": [
+    {
+      "generatedAt": "2026-11-28T13:19:11.539Z",
+      "id": 989,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Barcelona",
+      "direccion": "Pobla de Claramunt, La",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B3",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28",
+        "N78+",
+        "U21"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "0800440"
+      ],
+      "currentCodes": [
+        "0800440"
+      ],
+      "previousLat": 41.562861,
+      "previousLon": 1.677386,
+      "currentLat": 41.562861,
+      "currentLon": 1.677386
+    },
+    {
+      "generatedAt": "2026-11-28T13:19:11.539Z",
+      "id": 2899,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Guadalajara",
+      "direccion": "Ciruelas",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "U21"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28",
+        "N28+",
+        "U21"
+      ],
+      "addedBands": [
+        "N28+"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1900396"
+      ],
+      "currentCodes": [
+        "1900396"
+      ],
+      "previousLat": 40.749933,
+      "previousLon": -3.086717,
+      "currentLat": 40.749933,
+      "currentLon": -3.086717
+    },
+    {
+      "generatedAt": "2026-11-28T13:19:11.539Z",
+      "id": 2903,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Guadalajara",
+      "direccion": "Valfermoso de Tajuña",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B8"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "1900243"
+      ],
+      "currentCodes": [
+        "1900243"
+      ],
+      "previousLat": 40.616533,
+      "previousLon": -2.946325,
+      "currentLat": 40.616533,
+      "currentLon": -2.946325
+    },
+    {
+      "generatedAt": "2026-11-28T13:19:11.539Z",
+      "id": 7207,
+      "operador": "TELEFÓNICA MÓVILES ESPAÑA, S.A.",
+      "provincia": "Zaragoza",
+      "direccion": "Orera",
+      "fromDeclared": true,
+      "toDeclared": true,
+      "fromMatched": true,
+      "toMatched": true,
+      "previousBands": [
+        "B20",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "currentBands": [
+        "B20",
+        "B3",
+        "B8",
+        "G09",
+        "N28+"
+      ],
+      "addedBands": [
+        "B3"
+      ],
+      "removedBands": [],
+      "previousCodes": [
+        "5000762"
+      ],
+      "currentCodes": [
+        "5000762"
+      ],
+      "previousLat": 41.297725,
+      "previousLon": -1.479169,
+      "currentLat": 41.297736,
+      "currentLon": -1.479189
+    },
     {
       "generatedAt": "2026-11-27T14:01:28.694Z",
       "id": 652,
